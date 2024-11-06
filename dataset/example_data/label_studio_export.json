@@ -1,0 +1,220 @@
+[
+  {
+    "id": 81381,
+    "annotations": [
+      {
+        "id": 7650,
+        "completed_by": 33,
+        "result": [
+          {
+            "id": "bC0rAhkgQw",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 23.62496797882333,
+              "y": 1.394700139470014,
+              "width": 72.13730680556742,
+              "height": 96.93165969316595,
+              "rotation": 0,
+              "rectanglelabels": [
+                "Unsure"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "image",
+            "from_name": "label",
+            "image_rotation": 0,
+            "original_width": 2450,
+            "original_height": 3168
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2024-10-21T15:02:43.342152Z",
+        "updated_at": "2024-10-21T15:02:43.342159Z",
+        "draft_created_at": null,
+        "lead_time": 133.521,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "c6bfe549-941b-4ca9-8827-7c5455f43bf9",
+        "import_id": null,
+        "last_action": null,
+        "task": 81381,
+        "project": 27,
+        "updated_by": 33,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "image": "https://label-studio.semant.cz/data/local-files/?d=tables/tables_1st_phase_detection/images/0A7FCC8F300B11E39B0C0026B9C1BD00-img_0000.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-10-21T14:16:51.977360Z",
+    "updated_at": "2024-10-21T15:02:43.367667Z",
+    "inner_id": 29,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 27,
+    "updated_by": 33,
+    "comment_authors": []
+  },
+  {
+    "id": 81384,
+    "annotations": [
+      {
+        "id": 7653,
+        "completed_by": 33,
+        "result": [
+          {
+            "id": "AGatn-HUWW",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 58.4459255935914,
+              "y": 8.718547970446894,
+              "width": 31.968009224971887,
+              "height": 16.98164940512415,
+              "rotation": 0,
+              "rectanglelabels": [
+                "Table"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "image",
+            "from_name": "label",
+            "image_rotation": 0,
+            "original_width": 3000,
+            "original_height": 2000
+          },
+          {
+            "id": "JiA0iZPxac",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 58.63244179395421,
+              "y": 43.970109839015024,
+              "width": 33.20855883668728,
+              "height": 44.15879483240526,
+              "rotation": 0,
+              "rectanglelabels": [
+                "Table"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "image",
+            "from_name": "label",
+            "image_rotation": 0,
+            "original_width": 3000,
+            "original_height": 2000
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2024-10-21T15:05:14.945490Z",
+        "updated_at": "2024-10-21T15:05:14.945496Z",
+        "draft_created_at": "2024-10-21T15:04:57.963418Z",
+        "lead_time": 38.801,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "aff516fd-0246-43bd-9674-93002cfcc068",
+        "import_id": null,
+        "last_action": null,
+        "task": 81384,
+        "project": 27,
+        "updated_by": 33,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "image": "https://label-studio.semant.cz/data/local-files/?d=tables/tables_1st_phase_detection/images/0FE57CEBF7DB11E48B56B8CA3A743057-img_0087.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-10-21T14:16:51.991303Z",
+    "updated_at": "2024-10-21T15:05:15.040648Z",
+    "inner_id": 32,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 27,
+    "updated_by": 33,
+    "comment_authors": []
+  },
+  {
+    "id": 81388,
+    "annotations": [
+      {
+        "id": 7657,
+        "completed_by": 33,
+        "result": [
+          {
+            "id": "-Kw_VzYpzJ",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 51.89481782184519,
+              "y": 10.25342882150681,
+              "width": 44.222780598531855,
+              "height": 55.15547986839261,
+              "rotation": 0,
+              "rectanglelabels": [
+                "Complex table"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "image",
+            "from_name": "label",
+            "image_rotation": 0,
+            "original_width": 2885,
+            "original_height": 2192
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2024-10-21T15:51:50.634822Z",
+        "updated_at": "2024-10-22T16:14:36.884530Z",
+        "draft_created_at": "2024-10-21T15:51:50.040980Z",
+        "lead_time": 43.263,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "c01fac28-22f6-4e31-adad-6a8f4df9ee81",
+        "import_id": null,
+        "last_action": null,
+        "task": 81388,
+        "project": 27,
+        "updated_by": 33,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "image": "https://label-studio.semant.cz/data/local-files/?d=tables/tables_1st_phase_detection/images/1da0af9b6a3f4b769fb8b4960af49f2d-img_0359.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-10-21T14:16:52.007205Z",
+    "updated_at": "2024-10-22T16:14:36.994550Z",
+    "inner_id": 36,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 27,
+    "updated_by": 33,
+    "comment_authors": []
+  }
+]
