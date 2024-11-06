@@ -38,3 +38,39 @@ class LabelStudioResults:
             raise ValueError('No images to filter')
 
         self.data = [task for task in self.data if os.path.basename(task['data']['image']) in images]
+
+
+def label_studio_coords_to_xywh(coords: dict, image_shape: list[int], padding: int = 0) -> tuple[int, int, int, int]:
+
+    assert 'x' in coords and 'y' in coords and 'width' in coords and 'height' in coords, \
+        f'Invalid coordinates: {coords}. Expected keys: x, y, width, height'
+
+    x, y = coords['x'], coords['y']
+    w, h = coords['width'], coords['height']
+
+    assert len(image_shape) == 2, f'Invalid image shape: {image_shape}. Expected 2D shape.'
+
+    # x, y, w, h = coords
+    x = int(x / 100 * image_shape[1])
+    y = int(y / 100 * image_shape[0])
+    w = int(w / 100 * image_shape[1])
+    h = int(h / 100 * image_shape[0])
+
+    x, y, w, h = add_padding([x, y, w, h], padding, image_shape)
+
+    return x, y, w, h
+
+def add_padding(coords: list[int], padding: int, image_shape: list[int]) -> list[int]:
+    x, y, w, h = coords
+
+    x1 = max(0, x - padding)
+    y1 = max(0, y - padding)
+    x2 = min(image_shape[1], x + w + padding)
+    y2 = min(image_shape[0], y + h + padding)
+
+    return [x1, y1, x2 - x1, y2 - y1]
+
+# x = max(0, x - self.padding) 
+# y = max(0, y - self.padding)
+# w = min(img.shape[1], w + 2 * self.padding)
+# h = min(img.shape[0], h + 2 * self.padding)
