@@ -2,6 +2,8 @@ import json
 import logging
 import os
 
+import numpy as np
+
 
 class LabelStudioResults:
     def __init__(self, label_file: str, verbose: bool = False):
@@ -74,3 +76,43 @@ def add_padding(coords: list[int], padding: int, image_shape: list[int]) -> list
 # y = max(0, y - self.padding)
 # w = min(img.shape[1], w + 2 * self.padding)
 # h = min(img.shape[0], h + 2 * self.padding)
+
+def get_label_studio_coords(bbox, img_shape):
+    left_top = bbox[0]
+    right_bottom = bbox[2]
+
+    width = right_bottom[0] - left_top[0]
+    height = right_bottom[1] - left_top[1]
+    x = left_top[0]
+    y = left_top[1]
+
+    width /= img_shape[1]
+    height /= img_shape[0]
+    x /= img_shape[1]
+    y /= img_shape[0]
+
+    width *= 100
+    height *= 100
+    x *= 100
+    y *= 100
+
+    return x, y, width, height
+
+def get_label_studio_coords(polygon: np.ndarray, img_shape):
+    # polygon is a 2d list of points (x, y)
+    x = np.min(polygon[:, 0])
+    y = np.min(polygon[:, 1])
+    width = np.max(polygon[:, 0]) - x
+    height = np.max(polygon[:, 1]) - y
+
+    width /= img_shape[1]
+    height /= img_shape[0]
+    x /= img_shape[1]
+    y /= img_shape[0]
+
+    width *= 100
+    height *= 100
+    x *= 100
+    y *= 100
+
+    return x, y, width, height

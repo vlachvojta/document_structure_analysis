@@ -22,7 +22,7 @@ file_dirname = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(file_dirname)
 sys.path.append(os.path.dirname(file_dirname))
 
-from dataset.label_studio_results import LabelStudioResults, label_studio_coords_to_xywh, add_padding
+from dataset.label_studio_utils import LabelStudioResults, label_studio_coords_to_xywh, add_padding
 
 
 def parseargs():
