@@ -1,0 +1,915 @@
+{
+    "data": {
+        "image": "/data/local-files/?d=tables/tables_2nd_phase_cell_detection/images/0FE57CEBF7DB11E48B56B8CA3A743057-img_0087_Table_JiA0iZPxac.jpg"
+    },
+    "predictions": [
+        {
+            "model_version": "pero-ocr",
+            "score": "1.0",
+            "result": [
+                {
+                    "id": "r000-l001",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Po\u0159adatel."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 72.69076305220884,
+                        "y": 0.5662514156285391,
+                        "width": 21.78714859437751,
+                        "height": 5.662514156285391,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l002",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Akce; podnik:"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 17.570281124497992,
+                        "y": 0.4530011325028313,
+                        "width": 34.63855421686747,
+                        "height": 5.662514156285391,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l003",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Datum:"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 0.8032128514056224,
+                        "y": 0.11325028312570783,
+                        "width": 15.963855421686745,
+                        "height": 6.115515288788222,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l004",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "\u0160kola"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 72.99196787148594,
+                        "y": 5.322763306908267,
+                        "width": 10.040160642570282,
+                        "height": 5.775764439411098,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l005",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "zah\u00e1jen\u00ed \u0161kol. roku."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 18.072289156626507,
+                        "y": 5.549263873159683,
+                        "width": 36.144578313253014,
+                        "height": 5.889014722536806,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l006",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "3. 9. 1962"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.3092369477911645,
+                        "y": 6.0022650056625135,
+                        "width": 15.060240963855422,
+                        "height": 5.549263873159683,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l007",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Ti. u\u010d."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 73.09236947791165,
+                        "y": 10.87202718006795,
+                        "width": 11.546184738955825,
+                        "height": 5.436013590033975,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l008",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Vzpom\u00ednka ke Dni arm\u00e1dy"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 17.269076305220885,
+                        "y": 10.758776896942242,
+                        "width": 46.68674698795181,
+                        "height": 5.889014722536806,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l009",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "6. 10. 1963"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.3092369477911645,
+                        "y": 11.778029445073612,
+                        "width": 14.457831325301203,
+                        "height": 4.756511891279728,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l010",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "T\u0159. u\u010d."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 72.59036144578313,
+                        "y": 16.08154020385051,
+                        "width": 10.843373493975903,
+                        "height": 5.209513023782559,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l011",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "4. 9. 1963"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.5100401606425704,
+                        "y": 16.761041902604756,
+                        "width": 14.558232931726907,
+                        "height": 5.322763306908267,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l012",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Vzpom\u00ednka SNP"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 17.771084337349397,
+                        "y": 15.628539071347678,
+                        "width": 33.433734939759034,
+                        "height": 6.681766704416761,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l013",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "1. 10. 1962, 21./2. 62 a 14. 2.1963 n\u00e1v\u0161t\u011bva DPB T\u0159\u00edd. u\u010d. 4. a S. to."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.0080321285140563,
+                        "y": 20.498301245753115,
+                        "width": 97.38955823293173,
+                        "height": 7.701019252548131,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l014",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "v Ostrav\u011b."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 4.718875502008032,
+                        "y": 28.08607021517554,
+                        "width": 21.385542168674696,
+                        "height": 5.662514156285391,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l015",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "20. 9., 20. XI. a 11. 5. N\u00e1v\u0161t\u011bva Div. lovutek T\u0159\u00edd. z\u010d. 1. -3. t\u0159."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.610441767068273,
+                        "y": 31.257078142695356,
+                        "width": 95.58232931726907,
+                        "height": 8.154020385050963,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l016",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "v Ostrav\u011b"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.265060240963855,
+                        "y": 38.052095130237824,
+                        "width": 19.879518072289155,
+                        "height": 6.115515288788222,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l017",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "27. 10."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.3092369477911645,
+                        "y": 44.394110985277464,
+                        "width": 10.742971887550201,
+                        "height": 5.662514156285391,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l018",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Vzpom\u00ednka dne zn\u00e1rodn\u011bn\u00ed T\u0159\u00edd.v\u011b."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.666666666666664,
+                        "y": 42.46885617214043,
+                        "width": 71.8875502008032,
+                        "height": 7.9275198187995475,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l019",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "7. 11."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.0080321285140563,
+                        "y": 49.943374858437146,
+                        "width": 8.433734939759036,
+                        "height": 5.322763306908267,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l020",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "P\u0159ed\u00e1n\u00ed \u0160tafety p\u0159\u00edtelstv\u00ed a m\u00edru MNV, \u0161kola"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.967871485943775,
+                        "y": 46.998867497168746,
+                        "width": 75.0,
+                        "height": 8.493771234428086,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l021",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "\u0161koln\u00ed shrom\u00e1\u017ed\u011bn\u00ed k v\u00fdr. V\u0158SR \u0160kola"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.566265060240966,
+                        "y": 53.11438278595696,
+                        "width": 68.87550200803213,
+                        "height": 7.248018120045301,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l022",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "7. 11."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 1.8072289156626504,
+                        "y": 55.26613816534541,
+                        "width": 7.83132530120482,
+                        "height": 5.209513023782559,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l023",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "17. 11."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 1.5060240963855422,
+                        "y": 60.8154020385051,
+                        "width": 9.236947791164658,
+                        "height": 5.209513023782559,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l024",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Mezin\u00e1r. den studenstva - vxp. T\u0159\u00edd. u\u010d."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 17.06827309236948,
+                        "y": 58.437146092865234,
+                        "width": 73.59437751004016,
+                        "height": 7.474518686296716,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l025",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "MVNF, \u0161kola"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 72.59036144578313,
+                        "y": 63.87315968289921,
+                        "width": 20.582329317269078,
+                        "height": 5.436013590033975,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l026",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": ""
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 65.86345381526104,
+                        "y": 64.32616081540203,
+                        "width": 4.116465863453815,
+                        "height": 4.983012457531144,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l027",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "9. 12. 1962"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 1.8072289156626504,
+                        "y": 66.02491506228766,
+                        "width": 15.060240963855422,
+                        "height": 5.662514156285391,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l028",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Ahadernie k zakon\u010d. M\u010cSP"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 17.570281124497992,
+                        "y": 64.21291053227634,
+                        "width": 46.08433734939759,
+                        "height": 7.248018120045301,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l029",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Ra/, t\u0159. u\u010d."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 72.28915662650603,
+                        "y": 68.85617214043035,
+                        "width": 20.180722891566266,
+                        "height": 6.115515288788222,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l030",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "P\u0159edstaven\u00ed Str\u00fd\u010dka Jedli\u010dky"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.867469879518072,
+                        "y": 69.5356738391846,
+                        "width": 50.80321285140562,
+                        "height": 7.474518686296716,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l031",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "3. 6. 19862"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.3092369477911645,
+                        "y": 71.34767836919592,
+                        "width": 14.859437751004014,
+                        "height": 6.2287655719139305,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l032",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "\u0160koln\u00ed z\u00e1jezdy, v\u00fdlety."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.76706827309237,
+                        "y": 75.99093997734995,
+                        "width": 46.4859437751004,
+                        "height": 6.5685164212910525,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l033",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Ti. ne."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 73.59437751004016,
+                        "y": 80.29445073612685,
+                        "width": 11.44578313253012,
+                        "height": 4.8697621744054365,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l034",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "I. tr: 200 v Ostrav\u011b"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.566265060240966,
+                        "y": 80.86070215175538,
+                        "width": 44.678714859437754,
+                        "height": 7.474518686296716,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l035",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "13. 6."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 2.8112449799196786,
+                        "y": 83.12570781426953,
+                        "width": 8.333333333333332,
+                        "height": 5.322763306908267,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l036",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "F\u0159. adi"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 73.39357429718876,
+                        "y": 85.277463193658,
+                        "width": 12.449799196787147,
+                        "height": 5.549263873159683,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l037",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "13. 6."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 3.614457831325301,
+                        "y": 88.78822197055493,
+                        "width": 7.530120481927711,
+                        "height": 4.530011325028313,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l038",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "II. t\u0159. Lov o Ostrav\u011b"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.164658634538153,
+                        "y": 86.40996602491506,
+                        "width": 45.28112449799197,
+                        "height": 7.474518686296716,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l039",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "Tr. v\u010d."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 73.69477911646585,
+                        "y": 91.50622876557192,
+                        "width": 11.74698795180723,
+                        "height": 4.756511891279728,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l040",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "VII. tr. Kyjovice - les"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 16.566265060240966,
+                        "y": 91.84597961494903,
+                        "width": 38.152610441767074,
+                        "height": 6.795016987542468,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                },
+                {
+                    "id": "r000-l041",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "13. 6."
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 883,
+                    "original_width": 996,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 3.815261044176707,
+                        "y": 94.79048697621744,
+                        "width": 7.429718875502007,
+                        "height": 4.303510758776897,
+                        "rectanglelabels": [
+                            "Table cell"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

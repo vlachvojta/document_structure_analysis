@@ -17,13 +17,14 @@ from time import sleep
 import shutil
 
 from pero_ocr.core.layout import PageLayout
+import numpy as np
 
 # add parent directory to python file path to enable imports
 file_dirname = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(file_dirname)
 sys.path.append(os.path.dirname(file_dirname))
 
-# from dataset.label_studio_results import LabelStudioResults, label_studio_coords_to_xywh, add_padding
+from dataset.label_studio_utils import get_label_studio_coords
 
 
 def parseargs():
@@ -114,11 +115,12 @@ class TaskCreator:
 
             # create task
             layout = PageLayout(file=xml_file_path)
-            # task = self.create_task(layout, image_name)
+            task = self.create_task(layout, image_name)
 
-            # # save json task
-            # with open(task_path, 'w') as f:
-            #     json.dump(task, f, indent=4)
+            # save json task
+            with open(task_path, 'w') as f:
+                json.dump(task, f, indent=4)
+            print(f'Saved task to {task_path}')
 
             # copy image to self.output_folder_images using shutil
             shutil.copy(image_path, self.output_folder_images)
@@ -177,6 +179,52 @@ class TaskCreator:
         xml_files = [files[file]['xml'] for file in files]
         image_names = [files[file]['images'][0] for file in files]
         return xml_files, image_names
+
+    def create_task(self, layout: PageLayout, image_name: str) -> dict:
+        predictions = []
+        for textline in layout.lines_iterator():
+            print(f'textline.id: {textline.id}')
+
+            # get_label_studio_coords
+            x, y, w, h = get_label_studio_coords(textline.polygon, layout.page_size)
+
+            predictions.append(
+                {
+                    'id': textline.id,
+                    'type': 'rectanglelabels',
+                    "meta": {
+                        "text": textline.transcription,
+                    },
+                    'from_name': 'label',
+                    'to_name': 'image',
+                    'original_height': layout.page_size[0],
+                    'original_width': layout.page_size[1],
+                    'image_rotation': 0,
+                    'value': {
+                        'rotation': 0,
+                        'x': x,
+                        'y': y,
+                        'width': w,
+                        'height': h,
+                        'rectanglelabels': ['Table cell']
+                    }
+                }
+            )
+
+        task = {
+            'data': {
+                'image': os.path.join(self.task_image_path, image_name)
+            },
+            'predictions': [
+                {
+                    'model_version': 'pero-ocr',
+                    'score': "1.0",
+                    'result': predictions
+                }
+            ]
+        }
+
+        return task
 
 
 if __name__ == "__main__":
