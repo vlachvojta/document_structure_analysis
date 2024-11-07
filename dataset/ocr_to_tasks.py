@@ -105,7 +105,9 @@ class TaskCreator:
 
         # for each image-xml pair
         # iterate over xml files and images using tqdn
-        for xml_file, image_name in tqdm(zip(self.xml_files, self.image_names)):
+        total = len(self.xml_files)
+        for xml_file, image_name in tqdm(zip(self.xml_files, self.image_names),
+                                         total=total, desc='Creating tasks'):
             # load page xml using PageLayout
             xml_file_path = os.path.join(self.xml_folder, xml_file)
             image_path = os.path.join(self.image_folder, image_name)
@@ -120,7 +122,6 @@ class TaskCreator:
             # save json task
             with open(task_path, 'w') as f:
                 json.dump(task, f, indent=4)
-            print(f'Saved task to {task_path}')
 
             # copy image to self.output_folder_images using shutil
             shutil.copy(image_path, self.output_folder_images)
@@ -128,7 +129,6 @@ class TaskCreator:
         ls_tasks = os.listdir(self.output_folder_tasks)
         ls_images = os.listdir(self.output_folder_images)
         print(f'Created {len(ls_tasks)} tasks and {len(ls_images)} images in {self.output_folder_tasks} and {self.output_folder_images}')
-        print('asdffff')
 
     def load_image_xml_pairs(self, xml_folder: str, image_folder: str) -> tuple[list[str], list[str]]:
         # load xml files
@@ -183,7 +183,6 @@ class TaskCreator:
     def create_task(self, layout: PageLayout, image_name: str) -> dict:
         predictions = []
         for textline in layout.lines_iterator():
-            print(f'textline.id: {textline.id}')
 
             # get_label_studio_coords
             x, y, w, h = get_label_studio_coords(textline.polygon, layout.page_size)
