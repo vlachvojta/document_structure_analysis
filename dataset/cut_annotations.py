@@ -34,10 +34,10 @@ def parseargs():
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-i", "--image-folder", default='example_data/images',
+        "-i", "--image-folder", default='example_data/0_images',
         help="Input folder where to look for images.")
     parser.add_argument(
-        "-l", "--label-file", type=str, default='example_data/label_studio_export.json',
+        "-l", "--label-file", type=str, default='example_data/0_annotated_table_detection.json',
         help="Label studio JSON export file.")
     parser.add_argument(
         '-f', '--filter-labels', nargs='+', default=[],
@@ -46,8 +46,8 @@ def parseargs():
         '-p', '--padding', type=int, default=0,
         help="Padding around the object.")
     parser.add_argument(
-        "-o", "--output-folder", type=str, default='example_data/cut_anotations',
-        help="Output folder to copy complete pairs.")
+        "-o", "--output-folder", type=str, default='example_data/1_cut',
+        help="Output folder where to save cut out objects.")
     parser.add_argument(
         '-v', "--verbose", action='store_true', default=False,
         help="Activate verbose logging.")
@@ -75,9 +75,9 @@ def main():
 
 
 class AnotationCutter:
-    def __init__(self, image_folder: str, label_file: str, 
-                 filter_labels: list[str], padding: int = 0,
-                 output_folder: str = 'example_data/cut_anotations', verbose: bool = False):
+    def __init__(self, image_folder: str, label_file: str,
+                 filter_labels: list[str], output_folder: str,
+                 padding: int = 0, verbose: bool = False):
         self.image_folder = image_folder
         self.label_file = label_file
         self.filter_labels = [label.lower() for label in filter_labels]
