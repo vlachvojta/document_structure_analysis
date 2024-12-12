@@ -25,8 +25,8 @@ sys.path.append(file_dirname)
 sys.path.append(os.path.dirname(file_dirname))
 
 from dataset.label_studio_utils import LabelStudioResults, label_studio_coords_to_xywh, add_padding
-from organizer.tables.table_layout import TableCell
-from organizer.tables.order_guessing import guess_order_of_cells
+from organizer.tables.table_layout import TableCell, TableRegion, TablePageLayout
+from organizer.tables.order_guessing import guess_order_of_cells, reorder_cells
 from organizer.tables.rendering import render_cells
 from organizer.utils import xywh_to_polygon
 
@@ -86,6 +86,13 @@ class CellOrderRenderer:
         self.output_folder = output_folder
         self.verbose = verbose
 
+        self.output_folder_render = os.path.join(output_folder, 'render')
+        self.output_folder_xml = os.path.join(output_folder, 'xml')
+        # self.output_folder_tasks = os.path.join(output_folder, 'tasks')
+        os.makedirs(self.output_folder_render, exist_ok=True)
+        os.makedirs(self.output_folder_xml, exist_ok=True)
+        # os.makedirs(self.output_folder_tasks, exist_ok=True)
+
         if verbose:
             logging.basicConfig(level=logging.DEBUG, format='[%(levelname)-s]\t- %(message)s')
         else:
@@ -105,12 +112,9 @@ class CellOrderRenderer:
         if len(self.annotations) == 0:
             raise ValueError(f'No images from annotation file found in image folder {image_folder}')
 
-        os.makedirs(output_folder, exist_ok=True)
-
     def __call__(self):
         self.logger.info(f'Cutting out objects from {len(self.annotations)} images and saving them to {self.output_folder}')
 
-        # cut out objects from images
         for task in tqdm(self.annotations):
             image_path = task['data']['image']
             img_name = os.path.basename(image_path)
@@ -120,30 +124,28 @@ class CellOrderRenderer:
 
             # get all cells in annotataion task
             cells = self.read_cells_from_task(task, img)
-            # print(f'from img_name: {img_name} got {len(cells)} cells')
-            # print(f'cells: [')
-            # cell_ids = ', '.join([str(cell.id) for cell in cells])
-            # print(f'\t{cell_ids}')
-            # print(']')
 
             # guess order using guess_order_of_cells
             order = guess_order_of_cells(cells)
-            # print(f'Order: {order}')
-
             # reorder list of cells + put order to IDS so it can be rendered as a text for every cell
-            new_cells = []
-            for new_id, order_ in enumerate(order):
-                cells[order_].id = f'{new_id}'
-                new_cells.append(cells[order_])
-            cells = new_cells
-
+            cells = reorder_cells(cells, order)
             # render cells with order number
             img = render_cells(img, cells, render_ids=True)
 
-            # TODO export to page-xml
-
             filename = f"{img_name}_order.{img_ext}"
-            cv2.imwrite(os.path.join(self.output_folder, filename), img)
+            cv2.imwrite(os.path.join(self.output_folder_render, filename), img)
+
+            layout = self.create_layout(cells, img, img_name)
+            xml_filename = f"{img_name}.xml"
+            xml_path = os.path.join(self.output_folder_xml, xml_filename)
+            layout.to_table_pagexml(xml_path)
+
+            # test loading the xml file
+            layout = TablePageLayout.from_table_pagexml(xml_path)
+
+            assert len(layout.tables) == 1, f'Expected one table in layout, got {len(layout.tables)}'
+            loaded_cell_count = layout.tables[0].len(include_faulty=True)
+            assert loaded_cell_count == len(cells), f'Expected {len(cells)} cells in table, got {loaded_cell_count}'
 
 
     def read_cells_from_task(self, task: dict, img: np.ndarray) -> list[TableCell]:
@@ -162,13 +164,28 @@ class CellOrderRenderer:
                     continue
 
                 if len(labels) > 1:
-                    self.logger.warning(f'More than one label for result {result["id"]} in task {task["id"]}.\nUsing only the first one: {labels_filtered[0]}. Other labels: {labels_filtered[1:]}')
+                    self.logger.warning(f'More than one label for result {result["id"]} in task {task["id"]}.'
+                                        f'Using only the first one: {labels[0]}. Other labels: {labels[1:]}')
 
                 cell_category = labels[0].replace(' ', '_')
                 table_cell = TableCell(id=result['id'], coords=coords, category=cell_category)
                 cells.append(table_cell)
 
         return cells
+
+    def create_layout(self, cells: list[TableCell], img: np.ndarray, img_name: str) -> TablePageLayout:
+        # create tablePageLayout with one table to export to page-xml
+        layout = TablePageLayout(id=img_name, file=img_name, page_size=img.shape[:2])
+        table_coords = xywh_to_polygon(0, 0, img.shape[1], img.shape[0])
+        table = TableRegion(id='table', coords=table_coords)
+
+        for cell in cells:
+            cell.faulty = True
+
+        table.faulty_cells.extend(list(cells))  # add all cells as faulty because we don't know the real table structure
+        layout.tables = [table]
+
+        return layout
 
 if __name__ == "__main__":
     main()

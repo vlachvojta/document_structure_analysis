@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2024-12-12T17:04:11.682939+00:00</Created>
+    <LastChange>2024-12-12T17:04:11.682939+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="0002E1CB343111E5BB8FB8CA3A7430A7-img_0038_Table_jo1JmecH7p" imageHeight="109" imageWidth="584">
+    <TableRegion id="table">
+      <Coords points="0,0 584,0 584,109 0,109"/>
+      <TableCell id="0" type="Table_cell">
+        <Coords points="12,1 145,1 145,26 12,26"/>
+      </TableCell>
+      <TableCell id="1" type="Table_cell">
+        <Coords points="182,1 516,1 516,25 182,25"/>
+      </TableCell>
+      <TableCell id="2" type="Table_cell">
+        <Coords points="12,40 146,40 146,60 12,60"/>
+      </TableCell>
+      <TableCell id="3" type="Table_cell">
+        <Coords points="180,39 565,39 565,64 180,64"/>
+      </TableCell>
+      <TableCell id="4" type="Table_cell">
+        <Coords points="13,77 144,77 144,103 13,103"/>
+      </TableCell>
+      <TableCell id="5" type="Table_cell">
+        <Coords points="180,77 534,77 534,100 180,100"/>
+      </TableCell>
+    </TableRegion>
+  </Page>
+</PcGts>
