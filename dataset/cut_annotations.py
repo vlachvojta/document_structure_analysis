@@ -27,11 +27,6 @@ from dataset.label_studio_utils import LabelStudioResults, label_studio_coords_t
 
 def parseargs():
     """Parse arguments."""
-    print('')
-    print('sys.argv: ')
-    print(' '.join(sys.argv))
-    print('--------------------------------------')
-
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-i", "--image-folder", default='example_data/0_images',
@@ -58,6 +53,7 @@ def parseargs():
 def main():
     """Main function for simple testing"""
     args = parseargs()
+    print(f'Running {os.path.basename(__file__)} with args: {args}\n{80*"-"}\n')
 
     start = time.time()
 
