@@ -18,7 +18,7 @@ WORKDIR=$(get_arg_or_default $1 "example_data")
 # 0 - input: images of pages + table annotations
 # 1 - cutout table annotations
 CUT_TABLE_DIR=$WORKDIR/1_cut_tables
-python cut_annotations.py -i $WORKDIR/images/ -l $WORKDIR/0_annotated_table_detection.json -o $CUT_TABLE_DIR -f "Table"
+python cut_annotations.py -i $WORKDIR/0_images/ -l $WORKDIR/0_annotated_table_detection.json -o $CUT_TABLE_DIR -f "Table"
 
 # OCR Page-XML of table annotations
 ./run_pero_ocr.sh $CUT_TABLE_DIR
