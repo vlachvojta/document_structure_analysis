@@ -128,7 +128,6 @@ class TableConstructor:
             image_path = task['data']['image']
             img_name = os.path.basename(image_path)
             img = cv2.imread(os.path.join(self.image_folder, img_name))
-            img_orig = img.copy()
             img_ext = re.search(r'\.(.+)$', img_name).group(1)
             img_name = img_name.replace(f'.{img_ext}', '')
             img_orig = img.copy()
@@ -147,37 +146,8 @@ class TableConstructor:
             assert len(cells) <= layout.tables[0].len(include_faulty=True), \
                 f'Loaded more cells from HTML table than in XML page: {len(cells)} vs {layout.tables[0].len(include_faulty=True)}'
 
-            print(f'table: {table}')
-            print(f'cells: {cells}')
+            self.join_layout_cells_to_table_cells(layout, cells)
 
-            layout_id_to_cell = {cell.id: cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
-
-            for cell in cells:
-                if len(cell.lines) > 0:
-                    print(f'cell with ID {cell.id} has more than one line: {cell.lines}')
-                    for line in cell.lines:
-                        print(f'adding line: {line.id} in a cell with ID {cell.id}')
-
-                        layout_cell = layout_id_to_cell.get(str(line.id))
-                        if layout_cell is None:
-                            raise ValueError(f'Cell with ID {line.id} not found in layout cells')
-
-                        # add layout cell coords + category to line
-                        line.polygon = layout_cell.coords
-                        line.category = layout_cell.category
-                    # add joined lines coords + category to cell coords
-                    cell.coords = self.cell_polygon_from_lines([line.polygon for line in cell.lines])
-                    cell.category = self.get_the_most_common_category(cell.lines)
-                else:
-                    # add layout cell coords and category to cell coords
-                    layout_cell = layout_id_to_cell.get(str(cell.id))
-                    if layout_cell is None:
-                        raise ValueError(f'Cell with ID {cell.id} not found in layout cells')
-
-                    cell.coords = layout_cell.coords
-                    cell.category = layout_cell.category
-
-            print(f'cells after joining: {cells}')
             layout.tables[0].cells = None
             layout.tables[0].faulty_cells = []
             layout.tables[0].insert_cells(cells)
@@ -271,7 +241,7 @@ class TableConstructor:
                 col_span = int(col.get('colspan', 1))
                 row_span = int(col.get('rowspan', 1))
                 if col_span > 1 or row_span > 1:
-                    print(f'found span: {col_span}x{row_span} in cell {i}, {j}')
+                    self.logger.debug(f'found span: {col_span}x{row_span} in cell {i}, {j}')
 
                 table_np[i:i+row_span, j:j+col_span] = cell_repeater_id  # fill span with repeater id
 
@@ -280,7 +250,7 @@ class TableConstructor:
                     cell = TableCell(id=cell_id, coords=None, row=i, col=j, row_span=row_span, col_span=col_span)
                     cells.append(cell)
                 else:
-                    print(f'found more than one cell id in cell {i}, {j}: {cell_ids}')
+                    self.logger.debug(f'found more than one cell id in cell {i}, {j}: {cell_ids}')
                     joined_cell_id = ','.join([str(cell_id) for cell_id in cell_ids])
                     cell = TableCell(id=joined_cell_id, coords=None, row=i, col=j, row_span=row_span, col_span=col_span)
                     cell.lines = [TextLine(id=cell_id, polygon=None) for cell_id in cell_ids]
@@ -348,58 +318,35 @@ class TableConstructor:
         line_categories = [line.category for line in lines]
         return max(set(line_categories), key=line_categories.count)
 
-    # def copy_cel(self, cell: TableCell, row: int, col: int) -> TableCell:
-    #     new_cell = TableCell(id=cell.id, coords=cell.coords, row=row, col=col, row_span=cell.row_span, col_span=cell.col_span)
-    #     return new_cell
-
-    # def read_cells_from_task(self, task: dict, img: np.ndarray) -> list[TableCell]:
-    #     cells = []
-
-    #     for annotation in task['annotations']:
-    #         results = annotation['result']
-
-    #         for result in results:
-    #             x, y, w, h = label_studio_coords_to_xywh(result['value'], img.shape[:2])
-    #             coords = xywh_to_polygon(x, y, w, h)
-
-    #             labels = result['value']['rectanglelabels']
-    #             if len(labels) == 0:
-    #                 self.logger.debug(f'No label for result {result["id"]} in task {task["id"]}')
-    #                 continue
-
-    #             if len(labels) > 1:
-    #                 self.logger.warning(f'More than one label for result {result["id"]} in task {task["id"]}.'
-    #                                     f'Using only the first one: {labels[0]}. Other labels: {labels[1:]}')
-
-    #             cell_category = labels[0].replace(' ', '_')
-    #             table_cell = TableCell(id=result['id'], coords=coords, category=cell_category)
-    #             cells.append(table_cell)
-
-    #     return cells
-
-    def create_layout(self, cells: list[TableCell], img: np.ndarray, img_name: str) -> TablePageLayout:
-        # create tablePageLayout with one table to export to page-xml
-        layout = TablePageLayout(id=img_name, file=img_name, page_size=img.shape[:2])
-        table_coords = xywh_to_polygon(0, 0, img.shape[1], img.shape[0])
-        table = TableRegion(id='table', coords=table_coords)
+    def join_layout_cells_to_table_cells(self, layout: TablePageLayout, cells: list[TableCell]):
+        """Go through all cells and add coords and category from layout cells."""
+        layout_id_to_cell = {cell.id: cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
 
         for cell in cells:
-            cell.faulty = True
+            if len(cell.lines) > 0:
+                self.logger.debug(f'cell with ID {cell.id} has more than one line: {cell.lines}')
+                for line in cell.lines:
+                    self.logger.debug(f'adding line: {line.id} in a cell with ID {cell.id}')
 
-        table.faulty_cells.extend(list(cells))  # add all cells as faulty because we don't know the real table structure
-        layout.tables = [table]
+                    layout_cell = layout_id_to_cell.get(str(line.id))
+                    if layout_cell is None:
+                        raise ValueError(f'Cell with ID {line.id} not found in layout cells')
 
-        return layout
+                    # add layout cell coords + category to line
+                    line.polygon = layout_cell.coords
+                    line.category = layout_cell.category
+                # add joined lines coords + category to cell coords
+                cell.coords = self.cell_polygon_from_lines([line.polygon for line in cell.lines])
+                cell.category = self.get_the_most_common_category(cell.lines)
+            else:
+                # add layout cell coords and category to cell coords
+                layout_cell = layout_id_to_cell.get(str(cell.id))
+                if layout_cell is None:
+                    raise ValueError(f'Cell with ID {cell.id} not found in layout cells')
 
-    def create_export_image(self, img: np.ndarray, img_orig: np.ndarray) -> np.ndarray:
-        # concat orig image with rendered image
-        if img.shape[0] < img.shape[1]:
-            black_border = np.zeros([10, img_orig.shape[1], 3])
-            img = np.vstack([img, black_border, img_orig])
-        else:
-            black_border = np.zeros([img_orig.shape[0], 10, 3])
-            img = np.hstack([img, black_border, img_orig])
-        return img
+                cell.coords = layout_cell.coords
+                cell.category = layout_cell.category
+
 
 if __name__ == "__main__":
     main()
