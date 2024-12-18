@@ -1,0 +1,118 @@
+[
+  {
+    "id": 203717,
+    "annotations": [
+      {
+        "id": 37465,
+        "completed_by": 31,
+        "result": [
+          {
+            "id": "kqGdWMNBkv",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "<style type=\"text/css\"> .tg  {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;   overflow:hidden;padding:10px 5px;word-break:normal;} .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;} .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top} .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top} .tg .tg-0lax{text-align:left;vertical-align:top} </style> <table class=\"tg\"><thead>   <tr>     <th class=\"tg-c3ow\">0</th>     <th class=\"tg-c3ow\" colspan=\"3\">1</th>     <th class=\"tg-0pky\">2</th>     <th class=\"tg-c3ow\" colspan=\"3\">3</th>     <th class=\"tg-0lax\">4</th>     <th class=\"tg-0lax\"></th>   </tr></thead> <tbody>   <tr>     <td class=\"tg-c3ow\">5</td>     <td class=\"tg-c3ow\">6</td>     <td class=\"tg-c3ow\">7</td>     <td class=\"tg-0pky\">8</td>     <td class=\"tg-0pky\">9</td>     <td class=\"tg-c3ow\">10</td>     <td class=\"tg-0pky\">11</td>     <td class=\"tg-0pky\">12</td>     <td class=\"tg-0lax\">13</td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\">14</td>     <td class=\"tg-c3ow\">15</td>     <td class=\"tg-c3ow\">16</td>     <td class=\"tg-0pky\">17</td>     <td class=\"tg-0pky\">18</td>     <td class=\"tg-c3ow\">19</td>     <td class=\"tg-0pky\">20</td>     <td class=\"tg-0pky\">21</td>     <td class=\"tg-0lax\">22</td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\">23</td>     <td class=\"tg-c3ow\">24</td>     <td class=\"tg-c3ow\">25</td>     <td class=\"tg-0pky\">26</td>     <td class=\"tg-0pky\">27</td>     <td class=\"tg-c3ow\">28</td>     <td class=\"tg-0pky\">29</td>     <td class=\"tg-0pky\">30</td>     <td class=\"tg-0lax\">31</td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr> </tbody></table>"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "image",
+            "from_name": "text_annotation"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2024-12-12T19:32:03.617911Z",
+        "updated_at": "2024-12-12T19:32:03.617917Z",
+        "draft_created_at": null,
+        "lead_time": 257.397,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "c8d72660-7740-4975-885f-432ba906f017",
+        "import_id": null,
+        "last_action": null,
+        "task": 203717,
+        "project": 47,
+        "updated_by": 31,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "image": "https://label-studio.semant.cz/data/local-files/?d=tables/tables_3rd_phase_table_structure/01662B4E813D11E58C52F04DA2339EE3-img_0051_Table_4889C1NS2z_double.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-12-12T19:07:29.765721Z",
+    "updated_at": "2024-12-12T19:32:03.647216Z",
+    "inner_id": 9,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 47,
+    "updated_by": 31,
+    "comment_authors": []
+  },
+  {
+    "id": 203788,
+    "annotations": [
+      {
+        "id": 37466,
+        "completed_by": 31,
+        "result": [
+          {
+            "id": "oVx03tsZDH",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "<style type=\"text/css\"> .tg  {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;   overflow:hidden;padding:10px 5px;word-break:normal;} .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;} .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top} .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top} .tg .tg-0lax{text-align:left;vertical-align:top} </style> <table class=\"tg\"><thead>   <tr>     <th class=\"tg-c3ow\">0</th>     <th class=\"tg-c3ow\">1</th>     <th class=\"tg-c3ow\">2,3</th>     <th class=\"tg-0pky\">5,4</th>     <th class=\"tg-0pky\">6,7</th>     <th class=\"tg-c3ow\"></th>     <th class=\"tg-0pky\"></th>     <th class=\"tg-0pky\"></th>     <th class=\"tg-0lax\"></th>     <th class=\"tg-0lax\"></th>   </tr></thead> <tbody>   <tr>     <td class=\"tg-c3ow\">8</td>     <td class=\"tg-c3ow\">9</td>     <td class=\"tg-c3ow\">10</td>     <td class=\"tg-0pky\">11</td>     <td class=\"tg-0pky\">12</td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\">13</td>     <td class=\"tg-c3ow\">14</td>     <td class=\"tg-c3ow\">15</td>     <td class=\"tg-0pky\">16</td>     <td class=\"tg-0pky\">17</td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\">18</td>     <td class=\"tg-c3ow\">19</td>     <td class=\"tg-c3ow\">20</td>     <td class=\"tg-0pky\">21</td>     <td class=\"tg-0pky\">22</td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\">23</td>     <td class=\"tg-c3ow\">24</td>     <td class=\"tg-c3ow\">25</td>     <td class=\"tg-0pky\">26</td>     <td class=\"tg-0pky\">27</td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\">28</td>     <td class=\"tg-0pky\">29</td>     <td class=\"tg-0pky\">30</td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr>   <tr>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-c3ow\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0pky\"></td>     <td class=\"tg-0lax\"></td>     <td class=\"tg-0lax\"></td>   </tr> </tbody></table>"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "image",
+            "from_name": "text_annotation"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2024-12-12T20:08:02.945878Z",
+        "updated_at": "2024-12-12T20:08:02.945890Z",
+        "draft_created_at": null,
+        "lead_time": 408.314,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "c38dccd6-ca22-42ca-9ea0-3623a2ba2fb6",
+        "import_id": null,
+        "last_action": null,
+        "task": 203788,
+        "project": 47,
+        "updated_by": 31,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "image": "https://label-studio.semant.cz/data/local-files/?d=tables/tables_3rd_phase_table_structure/2EE595AE427D11E192490013D44045F8-img_0030_Table_IGpi8ygUoZ_double.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-12-12T19:07:30.651624Z",
+    "updated_at": "2024-12-12T20:08:02.973620Z",
+    "inner_id": 80,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 47,
+    "updated_by": 31,
+    "comment_authors": []
+  }
+]

@@ -41,6 +41,12 @@ class LabelStudioResults:
 
         self.data = [task for task in self.data if os.path.basename(task['data']['image']) in images]
 
+    def replace_image_names(self, old_name: str, new_name: str, base_name: bool = False):
+        for task in self.data:
+            task['data']['image'] = task['data']['image'].replace(old_name, new_name)
+            if base_name:
+                task['data']['image'] = os.path.basename(task['data']['image'])
+
 
 def label_studio_coords_to_xywh(coords: dict, image_shape: list[int], padding: int = 0) -> tuple[int, int, int, int]:
 
