@@ -111,11 +111,18 @@ class CellOrderRenderer:
         self.annotations.filter_tasks_using_images(self.image_names)
         self.logger.debug(f'Found {len(self.annotations)} images in annotation file')
 
+        # # filter labels to only given images
+        # filter_images = [
+        #     "C3636F8D876A45848BD407093100082F-img_0067_Table_AosCy3MRDk.jpg",
+        #     ...
+        # ]
+        # self.annotations.filter_tasks_using_images(filter_images)
+
         if len(self.annotations) == 0:
             raise ValueError(f'No images from annotation file found in image folder {image_folder}')
 
     def __call__(self):
-        self.logger.info(f'Cutting out objects from {len(self.annotations)} images and saving them to {self.output_folder}')
+        self.logger.info(f'Ordering cells in {len(self.annotations)} images and saving them to {self.output_folder}')
 
         exported = 0
 
