@@ -233,6 +233,10 @@ class TableConstructor:
             cols = row.find_all(['td', 'th'])
             j = 0
             for col in cols:
+                # skip repeated cells
+                while table_np[i, j] == cell_repeater_id:
+                    j += 1
+
                 if col is None:
                     print(f'col is None in cell {i}, {j}, which is strange...... TODO investigate')
                     continue
