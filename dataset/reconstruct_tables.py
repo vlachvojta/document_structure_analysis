@@ -197,6 +197,9 @@ class TableConstructor:
         # beautify html
         soup = BeautifulSoup(html)
 
+        # print prettified html if needed
+        # print(soup.prettify())
+
         # soup find table
         table = soup.find('table')
         if table is None:
@@ -233,9 +236,9 @@ class TableConstructor:
                     j += 1
                     continue
 
-                # print(f'col: {col.prettify()}')
                 cell_ids = self.cell_text_to_ids(col.text)
                 if cell_ids is None or len(cell_ids) == 0:
+                    j += 1
                     continue
 
                 col_span = int(col.get('colspan', 1))
@@ -312,7 +315,10 @@ class TableConstructor:
         x2 = max([line[:, 0].max() for line in lines])
         y2 = max([line[:, 1].max() for line in lines])
 
-        return xywh_to_polygon(x1, y1, x2 - x1, y2 - y1)
+        w = x2 - x1
+        h = y2 - y1
+
+        return xywh_to_polygon(x1, y1, w, h)
 
     def get_the_most_common_category(self, lines: list[TextLine]) -> str:
         line_categories = [line.category for line in lines]

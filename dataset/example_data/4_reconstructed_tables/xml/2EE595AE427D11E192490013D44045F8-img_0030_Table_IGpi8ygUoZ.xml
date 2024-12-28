@@ -2,8 +2,8 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2024-12-18T13:33:49.295225+00:00</Created>
-    <LastChange>2024-12-18T13:33:49.295225+00:00</LastChange>
+    <Created>2024-12-28T18:58:31.276137+00:00</Created>
+    <LastChange>2024-12-28T18:58:31.276137+00:00</LastChange>
   </Metadata>
   <Page imageFilename="2EE595AE427D11E192490013D44045F8-img_0030_Table_IGpi8ygUoZ" imageHeight="249" imageWidth="776">
     <TableRegion id="table">
@@ -101,13 +101,13 @@
       <TableCell id="27" type="Table_cell" row="4" col="4" rowSpan="1" colSpan="1">
         <Coords points="717,204 732,204 732,212 717,212"/>
       </TableCell>
-      <TableCell id="28" type="Table_cell" row="5" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="28" type="Table_cell" row="5" col="2" rowSpan="1" colSpan="1">
         <Coords points="557,217 588,217 588,241 557,241"/>
       </TableCell>
-      <TableCell id="29" type="Table_cell" row="5" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="29" type="Table_cell" row="5" col="3" rowSpan="1" colSpan="1">
         <Coords points="613,223 676,223 676,247 613,247"/>
       </TableCell>
-      <TableCell id="30" type="Table_cell" row="5" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="30" type="Table_cell" row="5" col="4" rowSpan="1" colSpan="1">
         <Coords points="718,223 729,223 729,241 718,241"/>
       </TableCell>
     </TableRegion>
