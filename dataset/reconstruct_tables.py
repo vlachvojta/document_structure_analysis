@@ -89,9 +89,11 @@ class TableConstructor:
         self.output_folder_render = os.path.join(output_folder, 'render')
         self.output_folder_reconstrution = os.path.join(output_folder, 'reconstruction')
         self.output_folder_xml = os.path.join(output_folder, 'xml')
+        self.output_folder_html = os.path.join(output_folder, 'html')
         os.makedirs(self.output_folder_render, exist_ok=True)
         os.makedirs(self.output_folder_reconstrution, exist_ok=True)
         os.makedirs(self.output_folder_xml, exist_ok=True)
+        os.makedirs(self.output_folder_html, exist_ok=True)
 
         if verbose:
             logging.basicConfig(level=logging.DEBUG, format='[%(levelname)-s]\t- %(message)s')
@@ -136,9 +138,20 @@ class TableConstructor:
             layout = TablePageLayout.from_table_pagexml(os.path.join(self.xml_folder, xml_name))
             assert len(layout.tables) == 1, f'Expected one table in layout, got {len(layout.tables)}'
 
-            html_table = self.read_html_table_from_task(task)
-            if html_table is None:
+            html = self.read_html_from_task(task)
+            if html is None:
                 continue
+
+            html_filename = f"{img_name}.html"
+            html_path = os.path.join(self.output_folder_html, html_filename)
+            with open(html_path, 'w') as f:
+                f.write(html.prettify())
+
+            # soup find table
+            html_table = html.find('table')
+            if html_table is None:
+                self.logger.warning(f'No table in task {task["id"]}')
+                return None
 
             table, cells = self.html_table_to_numpy(html_table)
             logging.debug(f'loaded {len(cells)} cells in table {table.shape}.')
@@ -174,39 +187,36 @@ class TableConstructor:
         print(f'Exported {exported} images from {len(self.annotations)} tasks ({ratio:.2%}) '
                          f'to: \n- {self.output_folder_render}\n- {self.output_folder_reconstrution}\n- {self.output_folder_xml}')
 
-    def read_html_table_from_task(self, task: dict) -> str:
+    def read_html_from_task(self, task: dict) -> str:
         if len(task['annotations']) == 0:
             self.logger.warning(f'No annotations in task {task["id"]}')
             return None
         elif len(task['annotations']) > 1:
-            self.logger.warning(f'More than one annotation in task {task["id"]}. Using only the first.')
+            lenn = len(task['annotations'])
+            self.logger.warning(f'More than one ({lenn}) annotation in task {task["id"]}. Using only the first.')
 
         task['annotations'] = sorted(task['annotations'], key=lambda x: x['id'])
         annotation = task['annotations'][0]
         if len(annotation['result']) == 0:
-            self.logger.warning(f'No results in annotation {annotation["id"]}')
+            self.logger.warning(f'No results in task {task["id"]}')
             return None
         elif len(annotation['result']) > 1:
-            self.logger.warning(f'More than one result in annotation {annotation["id"]}. Using only the first.')
+            lenn = len(annotation['result'])
+            self.logger.warning(f'More than one ({lenn}) result in task {task["id"]}. Using only the first.')
+        
+        if 'text' not in annotation['result'][0]['value']:
+            self.logger.warning(f'No text in task {task["id"]}')
+            return None
 
         html = annotation['result'][0]['value']['text'][0]
         if html is None:
-            self.logger.warning(f'No HTML in result {annotation["result"][0]["id"]}')
+            self.logger.warning(f'No HTML in task {task["id"]}')
             return None
 
         # beautify html
         soup = BeautifulSoup(html)
 
-        # print prettified html if needed
-        # print(soup.prettify())
-
-        # soup find table
-        table = soup.find('table')
-        if table is None:
-            self.logger.warning(f'No table in HTML in result {annotation["result"][0]["id"]}')
-            return None
-
-        return table
+        return soup
 
     def html_table_to_numpy(self, table: BeautifulSoup) -> tuple[np.ndarray, list[TableCell]]:
         max_rows, max_cols = self.get_max_rows_cols(table)
@@ -228,7 +238,6 @@ class TableConstructor:
                     continue
 
                 if table_np[i, j] == cell_repeater_id:
-                    print(f'cell {i}, {j} is already filled with repeater id')
                     j += 1
                     continue
                 elif table_np[i, j] > 0:
@@ -253,7 +262,8 @@ class TableConstructor:
                     cell = TableCell(id=cell_id, coords=None, row=i, col=j, row_span=row_span, col_span=col_span)
                     cells.append(cell)
                 else:
-                    self.logger.debug(f'found more than one cell id in cell {i}, {j}: {cell_ids}')
+                    lenn = len(cell_ids)
+                    self.logger.debug(f'found more than one ({lenn}) cell id in cell {i}, {j}: {cell_ids}')
                     joined_cell_id = ','.join([str(cell_id) for cell_id in cell_ids])
                     cell = TableCell(id=joined_cell_id, coords=None, row=i, col=j, row_span=row_span, col_span=col_span)
                     cell.lines = [TextLine(id=cell_id, polygon=None) for cell_id in cell_ids]
@@ -330,7 +340,8 @@ class TableConstructor:
 
         for cell in cells:
             if len(cell.lines) > 0:
-                self.logger.debug(f'cell with ID {cell.id} has more than one line: {cell.lines}')
+                lenn = len(cell.lines)
+                self.logger.debug(f'cell with ID {cell.id} has more than one ({lenn}) line: {cell.lines}')
                 for line in cell.lines:
                     self.logger.debug(f'adding line: {line.id} in a cell with ID {cell.id}')
 
