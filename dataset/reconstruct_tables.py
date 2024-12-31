@@ -90,10 +90,12 @@ class TableConstructor:
         self.output_folder_reconstrution = os.path.join(output_folder, 'reconstruction')
         self.output_folder_xml = os.path.join(output_folder, 'xml')
         self.output_folder_html = os.path.join(output_folder, 'html')
+        self.output_folder_html_render = os.path.join(output_folder, 'html_render')
         os.makedirs(self.output_folder_render, exist_ok=True)
         os.makedirs(self.output_folder_reconstrution, exist_ok=True)
         os.makedirs(self.output_folder_xml, exist_ok=True)
         os.makedirs(self.output_folder_html, exist_ok=True)
+        os.makedirs(self.output_folder_html_render, exist_ok=True)
 
         if verbose:
             logging.basicConfig(level=logging.DEBUG, format='[%(levelname)-s]\t- %(message)s')
@@ -133,6 +135,8 @@ class TableConstructor:
             img_ext = re.search(r'\.(.+)$', img_name).group(1)
             img_name = img_name.replace(f'.{img_ext}', '')
             img_orig = img.copy()
+            html_path = os.path.join(self.output_folder_html, img_name + '.html')
+            html_render_path = os.path.join(self.output_folder_html_render, img_name + '.png')
 
             xml_name = img_name + '.xml'
             layout = TablePageLayout.from_table_pagexml(os.path.join(self.xml_folder, xml_name))
@@ -142,10 +146,12 @@ class TableConstructor:
             if html is None:
                 continue
 
-            html_filename = f"{img_name}.html"
-            html_path = os.path.join(self.output_folder_html, html_filename)
             with open(html_path, 'w') as f:
                 f.write(html.prettify())
+            
+            # render html to image
+            html_render = self.render_html_table_to_image(html_path)
+            cv2.imwrite(html_render_path, html_render)
 
             # soup find table
             html_table = html.find('table')
@@ -368,6 +374,32 @@ class TableConstructor:
                 cell.coords = layout_cell.coords
                 cell.category = layout_cell.category
 
+    @staticmethod
+    def render_html_table_to_image(html_file: str, tmp_image='tmp.png') -> np.ndarray:
+        os.system(f'wkhtmltoimage -q {html_file} {tmp_image}')
+
+        img = cv2.imread(tmp_image)
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+        # Apply threshold to get binary image
+        _, binary = cv2.threshold(gray, 250, 255, cv2.THRESH_BINARY_INV)
+        coords = cv2.findNonZero(binary)
+
+        if coords is None:
+            print('No content found in the image')
+            return
+
+        x, y, w, h = cv2.boundingRect(coords)
+
+        # Add padding
+        padding = 10
+        x = max(0, x - padding)
+        y = max(0, y - padding)
+        w = min(img.shape[1] - x, w + 2 * padding)
+        h = min(img.shape[0] - y, h + 2 * padding)
+
+        cropped = img[y:y+h, x:x+w]
+        return cropped
 
 if __name__ == "__main__":
     main()
