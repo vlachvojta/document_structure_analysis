@@ -21,6 +21,7 @@ import logging
 import cv2
 from tqdm import tqdm
 from bs4 import BeautifulSoup
+from copy import deepcopy
 
 import numpy as np
 
@@ -91,11 +92,13 @@ class TableConstructor:
         self.output_folder_xml = os.path.join(output_folder, 'xml')
         self.output_folder_html = os.path.join(output_folder, 'html')
         self.output_folder_html_render = os.path.join(output_folder, 'html_render')
+        self.output_folder_mixed = os.path.join(output_folder, 'mixed')
         os.makedirs(self.output_folder_render, exist_ok=True)
         os.makedirs(self.output_folder_reconstrution, exist_ok=True)
         os.makedirs(self.output_folder_xml, exist_ok=True)
         os.makedirs(self.output_folder_html, exist_ok=True)
         os.makedirs(self.output_folder_html_render, exist_ok=True)
+        os.makedirs(self.output_folder_mixed, exist_ok=True)
 
         if verbose:
             logging.basicConfig(level=logging.DEBUG, format='[%(levelname)-s]\t- %(message)s')
@@ -140,6 +143,7 @@ class TableConstructor:
 
             xml_name = img_name + '.xml'
             layout = TablePageLayout.from_table_pagexml(os.path.join(self.xml_folder, xml_name))
+            layout_orig = deepcopy(layout)
             assert len(layout.tables) == 1, f'Expected one table in layout, got {len(layout.tables)}'
 
             html = self.read_html_from_task(task)
@@ -148,7 +152,7 @@ class TableConstructor:
 
             with open(html_path, 'w') as f:
                 f.write(html.prettify())
-            
+
             # render html to image
             html_render = self.render_html_table_to_image(html_path)
             cv2.imwrite(html_render_path, html_render)
@@ -177,15 +181,25 @@ class TableConstructor:
             layout.to_table_pagexml(xml_path)
 
             # render page with joined cells
-            img = render_cells(img, layout.tables[0].cell_iterator(include_faulty=True))
+            rendered_ids = render_cells(img, layout.tables[0].cell_iterator(include_faulty=True), render_ids=True)
             filename = f"{img_name}_render.{img_ext}"
-            cv2.imwrite(os.path.join(self.output_folder_render, filename), img)
+            cv2.imwrite(os.path.join(self.output_folder_render, filename), rendered_ids)
+
+            # render orig page with ids
+            # rendered_ids_orig = img_orig.copy()
+            # rendered_ids_orig = render_cells(rendered_ids_orig, layout_orig.tables[0].cell_iterator(include_faulty=True), render_ids=True)
 
             # render table reconstruction
-            img = img_orig.copy()
-            img = render_table_reconstruction(img, layout.tables[0].cells)
+            reconstruction = img_orig.copy()
+            reconstruction = render_table_reconstruction(reconstruction, layout.tables[0].cells)
             filename = f"{img_name}_reconstruction.{img_ext}"
-            cv2.imwrite(os.path.join(self.output_folder_reconstrution, filename), img)
+            cv2.imwrite(os.path.join(self.output_folder_reconstrution, filename), reconstruction)
+
+            # render image with orig table, reconstructed table, cell order and html render
+            # mixed = self.create_export_image(orig=img_orig, reconstruction=reconstruction, html_render=html_render, cell_order=rendered_ids_orig)
+            mixed = self.create_export_image(orig=img_orig, reconstruction=reconstruction, html_render=html_render, cell_order=rendered_ids)
+            filename = f"{img_name}_all.{img_ext}"
+            cv2.imwrite(os.path.join(self.output_folder_mixed, filename), mixed)
 
             exported += 1
 
@@ -373,6 +387,45 @@ class TableConstructor:
 
                 cell.coords = layout_cell.coords
                 cell.category = layout_cell.category
+
+    def create_export_image(self, orig: np.ndarray, reconstruction: np.ndarray, html_render: np.ndarray, cell_order: np.ndarray) -> np.ndarray:
+        # resize reconstruction to the same size as orig, keep aspect ratio and pad with white color
+        # reconstruction = cv2.resize(reconstruction, (orig.shape[1], orig.shape[0]))
+        reconstruction_resized = np.zeros_like(orig) + 255
+        if reconstruction.shape[0] > orig.shape[0] or reconstruction.shape[1] > orig.shape[1]:
+            scale = min(orig.shape[0] / reconstruction.shape[0], orig.shape[1] / reconstruction.shape[1])
+            reconstruction = cv2.resize(reconstruction, (0, 0), fx=scale, fy=scale)
+        reconstruction_resized[:reconstruction.shape[0], :reconstruction.shape[1]] = reconstruction
+
+        # pad html_render to the same size as orig with white color
+        html_render_resized = np.zeros_like(orig) + 255
+        if html_render.shape[0] > orig.shape[0] or html_render.shape[1] > orig.shape[1]:
+            scale = min(orig.shape[0] / html_render.shape[0], orig.shape[1] / html_render.shape[1])
+            html_render = cv2.resize(html_render, (0, 0), fx=scale, fy=scale)
+        html_render_resized[:html_render.shape[0], :html_render.shape[1]] = html_render
+
+        print(f'orig: {orig.shape}, reconstruction: {reconstruction_resized.shape}, html_render: {html_render.shape}, html_render_resized: {html_render_resized.shape}')
+        # check all images have the same shape (except for the number of channels)
+        assert orig.shape[:2] == reconstruction_resized.shape[:2] == html_render_resized.shape[:2] == cell_order.shape[:2], \
+            f'Images have different shapes: orig: {orig.shape}, reconstruction: {reconstruction_resized.shape}, html_render_resized: {html_render_resized.shape}'
+
+        # if x > y, render:       orig     | cell_order
+        #                   reconstruction | html_render
+        if orig.shape[1] > orig.shape[0]:
+            vertical_padding = np.zeros((orig.shape[0], 10, 3), dtype=np.uint8)
+            first_row = np.hstack([orig, vertical_padding, cell_order])
+            second_row = np.hstack([reconstruction_resized, vertical_padding, html_render_resized])
+            horizontal_padding = np.zeros((10, first_row.shape[1], 3), dtype=np.uint8)
+            return np.vstack([first_row, horizontal_padding, second_row])
+        # if x < y, render:    orig    | reconstruction 
+        #                   cell_order |   html_render
+        elif orig.shape[1] <= orig.shape[0]:
+            vertical_padding = np.zeros((orig.shape[0], 10, 3), dtype=np.uint8)
+            # print(f'hstacking orig: {orig.shape}, vertical_padding: {vertical_padding.shape}, reconstruction: {reconstruction_resized.shape}')
+            first_row = np.hstack([orig, vertical_padding, reconstruction_resized])
+            second_row = np.hstack([cell_order, vertical_padding, html_render_resized])
+            horizontal_padding = np.zeros((10, first_row.shape[1], 3), dtype=np.uint8)
+            return np.vstack([first_row, horizontal_padding, second_row])
 
     @staticmethod
     def render_html_table_to_image(html_file: str, tmp_image='tmp.png') -> np.ndarray:
