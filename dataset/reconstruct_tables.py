@@ -135,6 +135,10 @@ class TableConstructor:
             image_path = task['data']['image']
             img_name = os.path.basename(image_path)
             img = cv2.imread(os.path.join(self.image_folder, img_name))
+            if img is None:
+                self.logger.warning(f'Failed to load image {img_name}')
+                continue
+
             img_ext = re.search(r'\.(.+)$', img_name).group(1)
             img_name = img_name.replace(f'.{img_ext}', '')
             img_orig = img.copy()
@@ -217,6 +221,10 @@ class TableConstructor:
 
         task['annotations'] = sorted(task['annotations'], key=lambda x: x['id'])
         annotation = task['annotations'][0]
+
+        # filter annotation results only of type "textarea"
+        annotation['result'] = [result for result in annotation['result'] if result['type'] == 'textarea']
+
         if len(annotation['result']) == 0:
             self.logger.warning(f'No results in task {task["id"]}')
             return None
@@ -404,7 +412,7 @@ class TableConstructor:
             html_render = cv2.resize(html_render, (0, 0), fx=scale, fy=scale)
         html_render_resized[:html_render.shape[0], :html_render.shape[1]] = html_render
 
-        print(f'orig: {orig.shape}, reconstruction: {reconstruction_resized.shape}, html_render: {html_render.shape}, html_render_resized: {html_render_resized.shape}')
+        # print(f'orig: {orig.shape}, reconstruction: {reconstruction_resized.shape}, html_render: {html_render.shape}, html_render_resized: {html_render_resized.shape}')
         # check all images have the same shape (except for the number of channels)
         assert orig.shape[:2] == reconstruction_resized.shape[:2] == html_render_resized.shape[:2] == cell_order.shape[:2], \
             f'Images have different shapes: orig: {orig.shape}, reconstruction: {reconstruction_resized.shape}, html_render_resized: {html_render_resized.shape}'
