@@ -8,15 +8,20 @@ import os
 import argparse
 import json
 import yaml
+from tqdm import tqdm
 
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Inference script for video object detection using pre-trained YOLO model.")
 
-    parser.add_argument("-i", "--images", type=str, required=True, help="Path to the images directory.")
-    parser.add_argument("-a", "--annotations", type=str, required=True, help="Path to the annotation json file.")
-    parser.add_argument("-o", "--output", type=str, required=True, help="Path to the output directory.")
-    parser.add_argument("-d", "--data-yaml", type=str, required=True, help="Path to the data yaml file.")
+    parser.add_argument("-i", "--images", type=str, default="example_data/images",
+                        help="Path to the images directory.")
+    parser.add_argument("-a", "--annotations", type=str, default="example_data/annotations_label_studio.json",
+                        help="Path to the annotation json file.")
+    parser.add_argument("-o", "--output", type=str, default="example_data/labels",
+                        help="Path to the output directory.")
+    parser.add_argument("-d", "--data-yaml", type=str, default="example_data/data.yaml",
+                        help="Path to the data yaml file.")
 
     return parser.parse_args()
 
@@ -35,7 +40,7 @@ def main():
 
     stats = {
         "missing_images": 0,
-        "unknown_labels": 0,
+        "unknown_labels": {}, # label: count
         "total_annotations": 0,
         "total_objects": 0,
         "images_ok": 0,
@@ -59,42 +64,45 @@ def main():
         annotations = json.load(file)
 
     # create YOLO txt files
-    for annotation in annotations:
+    # for annotation in :
+    for annotation in tqdm(annotations):
         stats["total_annotations"] += 1
-        image_name = annotation["image"]
+        image_address = annotation["data"]["image"]
+        image_name = image_address.split('/')[-1]
         # check if image exists
         if image_name not in images:
             stats["missing_images"] += 1
             continue
 
         image_name = os.path.splitext(image_name)[0]
-
-        objects = annotation["label"]
+        objects = annotation["annotations"][0]["result"]
 
         with open(os.path.join(args.output, f"{image_name}.txt"), "w") as file:
             for obj in objects:
                 stats["total_objects"] += 1
-                try:
-                    label = label_to_id[obj["rectanglelabels"][0]]
-                except KeyError:
-                    stats["unknown_labels"] += 1
-                    print(f'WARNING: Unknown label "{obj["rectanglelabels"][0]}" in image {image_name}. Skipping...')
+                label = obj["value"]["rectanglelabels"][0]
+                if label not in label_to_id:
+                    stats["unknown_labels"].setdefault(label, 0)
+                    stats["unknown_labels"][label] += 1
+                    print(f'Unknown label "{label}" in image {image_name}. Skipping...')
                     continue
-                x = obj["x"] + (obj["width"] / 2)
+                label_id = label_to_id[label]
+
+                x = obj["value"]["x"] + (obj["value"]["width"] / 2)
                 x /= 100
-                y = obj["y"] + (obj["height"] / 2)
+                y = obj["value"]["y"] + (obj["value"]["height"] / 2)
                 y /= 100
 
-                width = obj["width"] / 100
-                height = obj["height"] / 100
+                width = obj["value"]["width"] / 100
+                height = obj["value"]["height"] / 100
 
-                file.write(f"{label} {x} {y} {width} {height}\n")
+                file.write(f"{label_id} {x} {y} {width} {height}\n")
                 stats["objects_ok"] += 1
         stats["images_ok"] += 1
 
     print(f"Finished creating YOLO txt files. ")
     print(f"Stats:")
-    print(json.dumps(stats, indent=4))
+    print(json.dumps(stats, indent=2))
 
 if __name__ == "__main__":
     main()
@@ -102,73 +110,3 @@ if __name__ == "__main__":
 # example of wanted YOLO txt file
 # 1 0.123 0.456 0.789 0.101
 # 0 0.123 0.456 0.789 0.101
-
-
-# example of annotations json file
-# [
-#   {
-#     "image": "20241106_133732.jpg",
-#     "id": 142825,
-#     "label": [
-#       {
-#         "x": 29.28719008264463,
-#         "y": 31.404958677685947,
-#         "width": 5.88842975206612,
-#         "height": 11.157024793388432,
-#         "rotation": 0,
-#         "rectanglelabels": [
-#           "mouse"
-#         ],
-#         "original_width": 1024,
-#         "original_height": 576
-#      },
-#       {
-#         "x": 26.34297520661157,
-#         "y": 0,
-#         "width": 19.44731404958678,
-#         "height": 22.31404958677686,
-#         "rotation": 0,
-#         "rectanglelabels": [
-#           "keyboard"
-#         ],
-#         "original_width": 1024,
-#         "original_height": 576
-#       }
-#     ],
-#     "annotator": 20,
-#     "annotation_id": 22415,
-#     "created_at": "2024-11-06T12:59:48.587825Z",
-#     "updated_at": "2024-11-06T13:08:18.032650Z",
-#     "lead_time": 48.026
-#   },
-#   {
-#     "image": "20241106_133735.jpg",
-#     "id": 142826,
-#     "label": [
-#       {
-#         "x": 0,
-#         "y": 26.836592690251187,
-#         "width": 38.23335530652604,
-#         "height": 17.344173441734455,
-#         "rotation": 0,
-#         "rectanglelabels": [
-#           "keyboard"
-#         ],
-#         "original_width": 1024,
-#         "original_height": 576
-#       },
-#       {
-#         "x": 1.5161502966381015,
-#         "y": 47.22771552039845,
-#         "width": 7.514831905075808,
-#         "height": 14.297224053321614,
-#         "rotation": 0,
-#         "rectanglelabels": [
-#           "mouse"
-#         ],
-#         "original_width": 1024,
-#         "original_height": 576
-#       }
-#     ]
-#   }
-# ]
