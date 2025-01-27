@@ -1,0 +1,14 @@
+path: /home/xvlach22/skola/11-sem-24-25-zimni/POVa/DUs/03/data # Put your path here
+train: train/images
+val: val/images
+
+# Labels are detected automatically by replacing the "images" with "labels" so the folders have to be next to each other
+
+nc: 1
+# nc: 4
+
+names:
+  0: "Table"
+  # 1: "Complex table"
+  # 2: "Unsure"
+  # 3: "Not interested"
