@@ -9,6 +9,7 @@ import argparse
 import json
 import yaml
 from tqdm import tqdm
+import re
 
 
 def parse_arguments():
@@ -18,10 +19,12 @@ def parse_arguments():
                         help="Path to the images directory.")
     parser.add_argument("-a", "--annotations", type=str, default="example_data/annotations_label_studio.json",
                         help="Path to the annotation json file.")
-    parser.add_argument("-o", "--output", type=str, default="example_data/labels",
-                        help="Path to the output directory.")
     parser.add_argument("-d", "--data-yaml", type=str, default="example_data/data.yaml",
                         help="Path to the data yaml file.")
+    parser.add_argument("-o", "--output", type=str, default="example_data/labels",
+                        help="Path to the output directory.")
+    parser.add_argument("-e", "--output-empty", type=str, default=None, # "example_data/empty",
+                        help="Path to the output directory for empty labels.")
 
     return parser.parse_args()
 
@@ -37,14 +40,17 @@ def main():
         raise FileNotFoundError(f"Error: Unable to find data yaml file at {args.data_yaml}.")
 
     os.makedirs(args.output, exist_ok=True)
+    if args.output_empty is not None:
+        os.makedirs(args.output_empty, exist_ok=True)
 
     stats = {
-        "missing_images": 0,
         "unknown_labels": {}, # label: count
+        "missing_images": 0,
         "total_annotations": 0,
         "total_objects": 0,
         "images_ok": 0,
         "objects_ok": 0,
+        "empty_labels": 0
     }
 
     # load data yaml
@@ -69,36 +75,58 @@ def main():
         stats["total_annotations"] += 1
         image_address = annotation["data"]["image"]
         image_name = image_address.split('/')[-1]
-        # check if image exists
+
+        # check if image exists and try different names
+        if image_name not in images:
+            image_name = image_name.replace('uuid%3A', 'uuid:')
+        if image_name not in images:
+            image_name = image_name.replace('%3A', ':')
+        if image_name not in images:
+            # if image starts with [a-zA-Z0-9]{8}-   , cut this part
+            image_name = re.sub(r'^[a-zA-Z0-9]{8}-', '', image_name)
+
         if image_name not in images:
             stats["missing_images"] += 1
+            print(f"Missing image {image_name}. Skipping...")
             continue
 
         image_name = os.path.splitext(image_name)[0]
         objects = annotation["annotations"][0]["result"]
 
-        with open(os.path.join(args.output, f"{image_name}.txt"), "w") as file:
-            for obj in objects:
-                stats["total_objects"] += 1
-                label = obj["value"]["rectanglelabels"][0]
-                if label not in label_to_id:
-                    stats["unknown_labels"].setdefault(label, 0)
-                    stats["unknown_labels"][label] += 1
-                    print(f'Unknown label "{label}" in image {image_name}. Skipping...')
-                    continue
-                label_id = label_to_id[label]
+        label_output = ""
 
-                x = obj["value"]["x"] + (obj["value"]["width"] / 2)
-                x /= 100
-                y = obj["value"]["y"] + (obj["value"]["height"] / 2)
-                y /= 100
+        for obj in objects:
+            stats["total_objects"] += 1
+            label = obj["value"]["rectanglelabels"][0]
+            if label not in label_to_id:
+                stats["unknown_labels"].setdefault(label, 0)
+                stats["unknown_labels"][label] += 1
+                # print(f'Unknown label "{label}" in image {image_name}. Skipping...')
+                continue
+            label_id = label_to_id[label]
 
-                width = obj["value"]["width"] / 100
-                height = obj["value"]["height"] / 100
+            x = obj["value"]["x"] + (obj["value"]["width"] / 2)
+            x /= 100
+            y = obj["value"]["y"] + (obj["value"]["height"] / 2)
+            y /= 100
 
-                file.write(f"{label_id} {x} {y} {width} {height}\n")
-                stats["objects_ok"] += 1
+            width = obj["value"]["width"] / 100
+            height = obj["value"]["height"] / 100
+
+            # file.write(f"{label_id} {x} {y} {width} {height}\n")
+            label_output += f"{label_id} {x} {y} {width} {height}\n"
+            stats["objects_ok"] += 1
+        
         stats["images_ok"] += 1
+        if label_output == "":
+            stats["empty_labels"] += 1
+            if args.output_empty is not None:
+                with open(os.path.join(args.output_empty, f"{image_name}.txt"), "w") as file:
+                    pass
+            continue
+        
+        with open(os.path.join(args.output, f"{image_name}.txt"), "w") as file:
+            file.write(label_output)
 
     print(f"Finished creating YOLO txt files. ")
     print(f"Stats:")
