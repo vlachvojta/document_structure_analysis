@@ -17,6 +17,9 @@ get_arg_or_default() {
     fi
 }
 
+# get abspath of this script
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 IMAGES=$(get_arg_or_default $1 ./)
 if ! [ -d "$IMAGES" ]; then
     echo "Directory $IMAGES does not exist. Provide a valid path as the first argument."
@@ -37,7 +40,7 @@ echo "Reading ${files_in_image_dir} image files from ${IMAGES}":
 echo ""
 
 python $PERO_OCR/user_scripts/parse_folder.py \
-    -c pipeline_layout_sort_ocr.ini \
+    -c $SCRIPT_DIR/pipeline_layout_sort_ocr.ini \
     -i $IMAGES \
     --output-xml-path $XML_PATH \
     --output-line-path $RENDER_LINE_PATH \
