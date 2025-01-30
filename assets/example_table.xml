@@ -1,0 +1,65 @@
+
+
+<Page imageFilename="101.jpg">
+    <TableRegion id="...">
+        <Coords points="x1,y1 x1,y2 x2,y2 x2,y1"/>
+        <TableCell row="0" col="0" rowSpan="1" colSpan="2" id="...">
+            <Coords points="x1,y1 x1,y2 x2,y2 x2,y1"/>
+            <TextLine>Joined cell</TextLine>
+        </TableCell>
+        <TableCell row="1" col="0" rowSpan="1" colSpan="1" id="...">
+            <Coords points="x1,y1 x1,y2 x2,y2 x2,y1"/>
+            <TextLine>24.12.</TextLine>
+        </TableCell>
+        <TableCell row="1" col="1" rowSpan="1" colSpan="1" id="...">
+            <Coords points="x1,y1 x1,y2 x2,y2 x2,y1"/>
+            <TextLine>Cell with one line</TextLine>
+        </TableCell>
+        <TableCell row="2" col="0" rowSpan="1" colSpan="1" id="...">
+            <Coords points="x1,y1 x1,y2 x2,y2 x2,y1"/>
+            <TextLine>31.12.</TextLine>
+        </TableCell>
+        <TableCell row="2" col="1" rowSpan="1" colSpan="1" id="...">
+            <Coords points="x1,y1 x1,y2 x2,y2 x2,y1"/>
+            <TextLine>Cell with line A</TextLine>
+            <TextLine>and line B</TextLine>
+        </TableCell>
+    </TableRegion>
+</Page>
+
+
+<TableRegion id="...">
+    <TableCell row="0" col="0" rowSpan="1" colSpan="2">
+        <TextLine>Joined cell</TextLine>
+    </TableCell>
+    <TableCell row="1" col="0" rowSpan="1" colSpan="1">
+        <TextLine>24.12.</TextLine>
+    </TableCell>
+    <TableCell row="1" col="1" rowSpan="1" colSpan="1">
+        <TextLine>Cell with one line</TextLine>
+    </TableCell>
+    <TableCell row="2" col="0" rowSpan="1" colSpan="1">
+        <TextLine>31.12.</TextLine>
+    </TableCell>
+    <TableCell row="2" col="1" rowSpan="1" colSpan="1">
+        <TextLine>Cell with line A</TextLine>
+        <TextLine>and line B</TextLine>
+    </TableCell>
+</TableRegion>
+
+
+
+<TableRegion>
+    <TableCell row="0" col="0" rowSpan="1" colSpan="2">
+        <TextLine>Joined cell</TextLine>
+    </TableCell>
+    ...
+    <TableCell row="1" col="1" rowSpan="1" colSpan="1">
+        <TextLine>Cell with one line</TextLine>
+    </TableCell>
+    ...
+    <TableCell row="2" col="1" rowSpan="1" colSpan="1">
+        <TextLine>Cell with line A</TextLine>
+        <TextLine>and line B</TextLine>
+    </TableCell>
+</TableRegion>
