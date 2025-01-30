@@ -1,5 +1,6 @@
 # Description: This script is used to infer the YOLO model on the images in the specified directory.
 # This code is based on the work of Martin Kišš in the Orbis Pictus project at FIT VUT (Brno University of Technology). The script was originally used for detection of non-text regions in historical documents.
+# Original script is available as the first commit of this filein this repository.
 # Author: Martin Kišš (2024)
 # coding: utf-8
 
