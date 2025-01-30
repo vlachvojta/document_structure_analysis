@@ -12,22 +12,29 @@ import argparse
 from collections import defaultdict
 from ultralytics import YOLO
 
-from safe_gpu.safe_gpu import GPUOwner
+# from safe_gpu.safe_gpu import GPUOwner
 
 
-CROPPED_CATEGORIES = {"obrázek", "fotografie", "kreslený-humor-karikatura-komiks", "erb-cejch-logo-symbol", "iniciála", "mapa", "graf", "geometrické-výkresy", "ostatní-výkresy", "schéma", "půdorys", "ex-libris" }
+# CROPPED_CATEGORIES = {"obrázek", "fotografie", "kreslený-humor-karikatura-komiks", "erb-cejch-logo-symbol", "iniciála", "mapa", "graf", "geometrické-výkresy", "ostatní-výkresy", "schéma", "půdorys", "ex-libris" }
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", help="Model path.", required=True)
-    parser.add_argument("--images", help="Path to a directory with images.", required=True)
-    parser.add_argument("--image-size", help="Image size.", required=False, default=640, type=int)
-    parser.add_argument("--batch-size", help="Batch size.", required=False, default=1, type=int)
-    parser.add_argument("--confidence", help="Confidence threshold.", required=True, type=float)
-    parser.add_argument("--labels", help="Path to a directory with predicted labels.", required=False)
-    parser.add_argument("--crops", help="Path to a directory with cropped images.", required=False)
-    parser.add_argument("--renders", help="Path to a directory with renders.", required=False)
+    parser.add_argument("--model", default="table_det_yolov8n_640.pt",
+                        help="Model path.") 
+    parser.add_argument("--images", default="example_data/images",
+                        help="Path to a directory with images.")
+    parser.add_argument("--image-size", default=640, type=int,
+                        help="Image size.")
+    parser.add_argument("--batch-size", required=False, default=1, type=int)
+    parser.add_argument("--confidence", default=0.5, type=float,
+                        help="Detection confidence threshold.")
+    parser.add_argument("--predictions", default='example_data/predictions',
+                        help="Path to a directory with predicted predictions.")
+    parser.add_argument("--crops", default='example_data/crops',
+                        help="Path to a directory with cropped images.")
+    parser.add_argument("--renders", default='example_data/renders',
+                        help="Path to a directory with renders.")
 
     return parser.parse_args()
 
@@ -40,9 +47,9 @@ def save_image(path, image):
     cv2.imwrite(path, image)
 
 
-def save_labels(path, labels):
+def save_predictions(path, predictions):
     with open(path, "w") as file:
-        for line in labels:
+        for line in predictions:
             file.write(f"{line}\n")
 
 
@@ -60,11 +67,11 @@ def get_crop_output_path(original_image_path, crops_dir, label_name, label_index
     return crop_output_path
 
 
-def get_label_output_path(original_image_path, labels_dir):
+def get_label_output_path(original_image_path, predictions_dir):
     _, filename = os.path.split(original_image_path)
     filename, _ = os.path.splitext(filename)
-    labels_path = os.path.join(labels_dir, f"{filename}.txt")
-    return labels_path
+    predictions_path = os.path.join(predictions_dir, f"{filename}.txt")
+    return predictions_path
 
 
 def get_render_output_path(original_image_path, renders_dir):
@@ -76,15 +83,15 @@ def get_render_output_path(original_image_path, renders_dir):
 def main():
     args = parse_args()
 
-    gpu_owner = GPUOwner()
+    # gpu_owner = GPUOwner()
 
     extensions = (".jpg", ".png")
 
     images = [f"{os.path.join(args.images, image)}" for image in os.listdir(args.images) if image.endswith(extensions)]
     model = YOLO(args.model)
 
-    if args.labels is not None and not os.path.exists(args.labels):
-        os.makedirs(args.labels)
+    if args.predictions is not None and not os.path.exists(args.predictions):
+        os.makedirs(args.predictions)
 
     if args.crops is not None and not os.path.exists(args.crops):
         os.makedirs(args.crops)
@@ -100,31 +107,31 @@ def main():
                         imgsz=args.image_size,
                         conf=args.confidence,
                         device=0)
-        
 
-        if args.labels or args.crops or args.renders:
+        if args.predictions or args.crops or args.renders:
             for result in results:
                 image = result.orig_img
-                labels = []
-                labels_counter = defaultdict(int)
+                predictions = []
+                predictions_counter = defaultdict(int)
 
                 for label, bbox in zip(result.boxes.cls, result.boxes.xyxy):
                     name = result.names[label.item()]
                     name = normalize_name(name)
                     coords = [round(coord.item()) for coord in bbox]
 
-                    if args.crops and name in CROPPED_CATEGORIES:
+                    # if args.crops and name in CROPPED_CATEGORIES:
+                    if args.crops:
                         crop = image[coords[1]:coords[3], coords[0]:coords[2]]
-                        crop_output_path = get_crop_output_path(original_image_path=result.path, crops_dir=args.crops, label_name=name, label_index=labels_counter[name])
+                        crop_output_path = get_crop_output_path(original_image_path=result.path, crops_dir=args.crops, label_name=name, label_index=predictions_counter[name])
                         save_image(crop_output_path, crop)
-                    
-                    labels_counter[name] += 1
 
-                    labels.append(f"{name} {coords[0]} {coords[1]} {coords[2]} {coords[3]}")
-                    
-                if args.labels and len(labels) > 0:
-                    label_output_path = get_label_output_path(original_image_path=result.path, labels_dir=args.labels)
-                    save_labels(label_output_path, labels)
+                    predictions_counter[name] += 1
+
+                    predictions.append(f"{name} {coords[0]} {coords[1]} {coords[2]} {coords[3]}")
+
+                if args.predictions and len(predictions) > 0:
+                    label_output_path = get_label_output_path(original_image_path=result.path, predictions_dir=args.predictions)
+                    save_predictions(label_output_path, predictions)
 
                 if args.renders:
                     render_output_path = get_render_output_path(original_image_path=result.path, renders_dir=args.renders)
