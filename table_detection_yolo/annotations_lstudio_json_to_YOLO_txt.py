@@ -21,7 +21,7 @@ def parse_arguments():
                         help="Path to the annotation json file.")
     parser.add_argument("-d", "--data-yaml", type=str, default="example_data/data.yaml",
                         help="Path to the data yaml file.")
-    parser.add_argument("-o", "--output", type=str, default="example_data/labels",
+    parser.add_argument("-o", "--output", type=str, default="example_data/labels_yolo_txt",
                         help="Path to the output directory.")
     parser.add_argument("-e", "--output-empty", type=str, default=None, # "example_data/empty",
                         help="Path to the output directory for empty labels.")
