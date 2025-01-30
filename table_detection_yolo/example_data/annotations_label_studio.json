@@ -30,9 +30,9 @@
         "was_cancelled": false,
         "ground_truth": false,
         "created_at": "2024-10-10T14:34:09.171561Z",
-        "updated_at": "2024-10-16T13:41:15.790391Z",
+        "updated_at": "2025-01-29T15:31:13.946973Z",
         "draft_created_at": null,
-        "lead_time": 32.9,
+        "lead_time": 99.049,
         "prediction": {},
         "result_count": 0,
         "unique_id": "6ad04a27-cedb-4602-ba9b-0b442eb16d6a",
@@ -54,7 +54,7 @@
     },
     "meta": {},
     "created_at": "2024-10-10T14:33:53.555486Z",
-    "updated_at": "2024-10-16T13:41:15.836433Z",
+    "updated_at": "2025-01-29T15:31:13.983398Z",
     "inner_id": 1,
     "total_annotations": 1,
     "cancelled_annotations": 0,
@@ -77,10 +77,10 @@
             "id": "RsvsU-EYTz",
             "type": "rectanglelabels",
             "value": {
-              "x": 11.233800465078764,
-              "y": 28.20934842734544,
+              "x": 11.233800465078755,
+              "y": 27.960076345556207,
               "width": 37.57848307048125,
-              "height": 13.43898687650531,
+              "height": 13.189714794716087,
               "rotation": 0,
               "rectanglelabels": [
                 "Table"
@@ -97,9 +97,9 @@
         "was_cancelled": false,
         "ground_truth": false,
         "created_at": "2024-10-10T14:34:20.509578Z",
-        "updated_at": "2024-10-16T13:55:01.309259Z",
+        "updated_at": "2025-01-29T15:28:16.043606Z",
         "draft_created_at": null,
-        "lead_time": 19.672,
+        "lead_time": 14265.189,
         "prediction": {},
         "result_count": 0,
         "unique_id": "46ae8f23-cb5b-4075-8fba-79128f6ed5cd",
@@ -116,10 +116,10 @@
     "file_upload": "2aeff03f-B829AF5DDDDA11E88209DC4A3E7983CD-img_0034.jpg",
     "drafts": [
       {
-        "id": 6654,
+        "id": 28001,
         "user": "xvlach22@vutbr.cz",
         "created_username": "xvlach22@vutbr.cz, 31",
-        "created_ago": "3 months, 1 week",
+        "created_ago": "27 minutes",
         "result": [
           {
             "id": "RsvsU-EYTz",
@@ -142,11 +142,11 @@
             "original_height": 1600
           }
         ],
-        "lead_time": 43.359,
+        "lead_time": 14291.435,
         "was_postponed": false,
         "import_id": null,
-        "created_at": "2024-10-16T13:59:17.122719Z",
-        "updated_at": "2024-10-16T13:59:17.122725Z",
+        "created_at": "2025-01-30T09:16:06.566472Z",
+        "updated_at": "2025-01-30T09:16:20.573254Z",
         "task": 80602,
         "annotation": 6650
       }
@@ -157,7 +157,7 @@
     },
     "meta": {},
     "created_at": "2024-10-10T14:33:53.555519Z",
-    "updated_at": "2024-10-16T13:55:01.379279Z",
+    "updated_at": "2025-01-29T15:28:16.151734Z",
     "inner_id": 2,
     "total_annotations": 1,
     "cancelled_annotations": 0,
