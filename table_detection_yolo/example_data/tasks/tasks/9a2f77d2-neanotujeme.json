@@ -1,0 +1,57 @@
+{
+    "data": {
+        "image": "/data/local-files/?d=tables/tables_1st_phase_detection/images_with_predictions/04/9a2f77d2-neanotujeme.jpg"
+    },
+    "predictions": [
+        {
+            "model_version": "pero-ocr",
+            "score": "1.0",
+            "result": [
+                {
+                    "id": "0000",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "complex-table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 2104,
+                    "original_width": 2976,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 0.03360215053763441,
+                        "y": 0.09505703422053231,
+                        "width": 50.06720430107527,
+                        "height": 99.04942965779468,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                },
+                {
+                    "id": "0001",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "complex-table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 2104,
+                    "original_width": 2976,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 49.865591397849464,
+                        "y": 0.0,
+                        "width": 49.93279569892473,
+                        "height": 99.42965779467681,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

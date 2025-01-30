@@ -1,0 +1,35 @@
+{
+    "data": {
+        "image": "/data/local-files/?d=tables/tables_1st_phase_detection/images_with_predictions/04/2aeff03f-B829AF5DDDDA11E88209DC4A3E7983CD-img_0034.jpg"
+    },
+    "predictions": [
+        {
+            "model_version": "pero-ocr",
+            "score": "1.0",
+            "result": [
+                {
+                    "id": "0000",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 1600,
+                    "original_width": 2280,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 11.842105263157894,
+                        "y": 27.5625,
+                        "width": 36.973684210526315,
+                        "height": 15.687499999999998,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

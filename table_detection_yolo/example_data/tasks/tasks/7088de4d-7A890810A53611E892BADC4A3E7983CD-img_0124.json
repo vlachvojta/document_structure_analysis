@@ -1,0 +1,101 @@
+{
+    "data": {
+        "image": "/data/local-files/?d=tables/tables_1st_phase_detection/images_with_predictions/04/7088de4d-7A890810A53611E892BADC4A3E7983CD-img_0124.jpg"
+    },
+    "predictions": [
+        {
+            "model_version": "pero-ocr",
+            "score": "1.0",
+            "result": [
+                {
+                    "id": "0000",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 1625,
+                    "original_width": 2200,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 14.181818181818182,
+                        "y": 29.046153846153842,
+                        "width": 28.72727272727273,
+                        "height": 12.615384615384615,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                },
+                {
+                    "id": "0001",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 1625,
+                    "original_width": 2200,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 14.40909090909091,
+                        "y": 10.76923076923077,
+                        "width": 26.727272727272727,
+                        "height": 7.6923076923076925,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                },
+                {
+                    "id": "0002",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 1625,
+                    "original_width": 2200,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 14.454545454545453,
+                        "y": 52.184615384615384,
+                        "width": 29.136363636363637,
+                        "height": 21.907692307692308,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                },
+                {
+                    "id": "0003",
+                    "type": "rectanglelabels",
+                    "meta": {
+                        "text": "table"
+                    },
+                    "from_name": "label",
+                    "to_name": "image",
+                    "original_height": 1625,
+                    "original_width": 2200,
+                    "image_rotation": 0,
+                    "value": {
+                        "rotation": 0,
+                        "x": 54.63636363636364,
+                        "y": 36.0,
+                        "width": 27.454545454545453,
+                        "height": 7.261538461538461,
+                        "rectanglelabels": [
+                            "Unsure"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

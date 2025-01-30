@@ -106,11 +106,21 @@ def get_label_studio_coords(bbox, img_shape):
 
 def get_label_studio_coords(polygon: np.ndarray, img_shape):
     # polygon is a 2d list of points (x, y)
+    assert polygon.shape[1] == 2, f'Invalid polygon shape: {polygon.shape}. Expected (n, 2)'
+
     x = np.min(polygon[:, 0])
     y = np.min(polygon[:, 1])
     width = np.max(polygon[:, 0]) - x
     height = np.max(polygon[:, 1]) - y
 
+    return get_label_studio_coords_from_xywh([x, y, width, height], img_shape)
+
+def get_label_studio_coords_from_xywh(coords: np.ndarray, img_shape):
+    print(f'coords: {coords}')
+    assert coords.shape == (4,), f'Invalid coords shape: {coords.shape}. Expected (4,)'
+    x, y, width, height = coords
+
+    # image shape is (height, width)
     width /= img_shape[1]
     height /= img_shape[0]
     x /= img_shape[1]
