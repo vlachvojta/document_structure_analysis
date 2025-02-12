@@ -63,3 +63,20 @@
         <TextLine>and line B</TextLine>
     </TableCell>
 </TableRegion>
+
+
+
+<TableRegion>
+    <TableCell row="0" col="0" rowSpan="1" colSpan="2">
+        <TextLine>Joined cell</TextLine>
+    </TableCell>
+    ...
+    <TableCell row="1" col="1" rowSpan="1" colSpan="1">
+        <TextLine>Cell with one line</TextLine>
+    </TableCell>
+    ...
+    <TableCell row="2" col="1" rowSpan="1" colSpan="1">
+        <TextLine>Cell with line A</TextLine>
+        <TextLine>and line B</TextLine>
+    </TableCell>
+</TableRegion>

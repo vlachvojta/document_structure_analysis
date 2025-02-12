@@ -1,0 +1,175 @@
+Můj reprezentativní projekt? Jednoznačně moje bakalářka na přepis hudby z obrázku (OMR)
+
+👉 2 týdny GPU času na trénování
+👉 8 měsíců práce
+👉 500 commitů
+👉 4 000 řádků #python kódu (většinou pro vytvoření datasetu)
+👉 100 000 obrázků v datasetu
+
+Můj první velký projet a byla to především jízda plná nejen bezesných nocí, ale hlavně nových zkušeností, například:
+
+👉 automatizace s #bash a #python
+👉 čtení vědeckých článků
+👉 první pořádné trénování neuronových sítí
+👉 trénování na super počítači, díky @e-infra-cz
+
+Ale to nejlepší, co z toho vzešlo, byla spolupráce s výzkumnou skupinou PERO u nás na FIT (@Michal, @Karel et al.), což mi umožnilo:
+
+👉 vylepšit dataset a model ve druhé iteraci
+👉 integrovat moje OMR do existující infrasruktury
+👉 dodělat @YOLO detektor řádků, který umožnil využití v reálné aplikaci 
+👉 zapojit se do dalších machine learning/computer vision projektů 
+
+Téma jsem si vybral sám a neměnil bych ani za nic...
+
+
+zdroje:
+- github můj
+- github na pero-ocr (music větev, nebo develop, idk...)
+- diplomka
+
+
+
+
+⛓️‍💥
+
+
+
+
+
+
+
+
+Můj reprezentativní projekt? Jednoznačně moje bakalářka na přepis hudby z obrázku (OMR)
+
+
+
+👉 2 týdny GPU času na trénování
+
+👉 8 měsíců práce
+
+👉 500 commitů
+
+👉 4 000 řádků #python kódu (většinou pro vytvoření datasetu)
+
+👉 100 000 obrázků v datasetu
+
+
+
+Můj první velký projet a byla to především jízda plná nejen bezesných nocí, ale hlavně nových zkušeností, například:
+
+
+
+👉 automatizace s #bash a #python
+
+👉 čtení vědeckých článků
+
+👉 první pořádné trénování neuronových sítí
+
+👉 trénování na super počítači, díky e-INFRA CZ
+
+
+
+Ale to nejlepší, co z toho vzešlo, byla spolupráce s výzkumnou skupinou PERO u nás na FIT (Michal Hradiš, Karel Beneš et al.), což mi umožnilo:
+
+
+
+👉 vylepšit dataset a model ve druhé iteraci
+
+👉 integrovat moje OMR do existující infrasruktury
+
+👉 dodělat YOLOvX detektor řádků, který umožnil využití v reálné aplikaci 
+
+👉 zapojit se do dalších machine learning/computer vision projektů 
+
+
+
+Téma jsem si vybral sám a neměnil bych ani za nic...
+
+
+
+
+
+bakalářka na GitHubu: https://github.com/vlachvojta/bachelor_thesis_OMR
+
+text bakalářky: https://www.vut.cz/studenti/zav-prace/detail/146120
+
+
+
+
+
+zdroje:
+
+- github můj
+
+- github na pero-ocr (music větev, nebo develop, idk...)
+
+- bakalářka
+
+
+
+
+
+
+
+
+
+
+
+
+
+Můj reprezentativní projekt? Jednoznačně moje bakalářka na přepis hudby z obrázku (OMR)
+
+
+
+👉 2 týdny GPU času na trénování
+
+👉 8 měsíců práce
+
+👉 500 commitů
+
+👉 4 000 řádků #python kódu (většina pro vytvoření datasetu)
+
+👉 100 000 obrázků v datasetu
+
+
+
+Můj první velký projekt a především jízda plná bezesných nocí a hlavně nových zkušeností, například:
+
+
+
+👉 automatizace s #bash a #python
+
+👉 čtení vědeckých článků
+
+👉 první pořádné trénování neuronových sítí
+
+👉 trénování na super počítači, díky e-INFRA CZ
+
+
+
+Ale to nejlepší, co z toho vzešlo, byla spolupráce s výzkumnou skupinou PERO u nás na FIT (Michal Hradiš, Karel Beneš et al.), což mi umožnilo:
+
+
+
+👉 vylepšit dataset a model ve druhé iteraci
+
+👉 integrovat moje OMR do existující infrasruktury
+
+👉 dodělat YOLOvX detektor řádků, který umožnil využití v reálné aplikaci 
+
+👉 zapojit se do dalších machine learning/computer vision projektů 
+
+
+
+Téma jsem si vybral sám a neměnil bych za nic na světě...
+
+
+
+Chci se dozvědět víc:
+
+⛓️‍💥 bakalářka na GitHubu: https://github.com/vlachvojta/bachelor_thesis_OMR
+
+⛓️‍💥 text bakalářky: https://www.vut.cz/studenti/zav-prace/detail/146120
+
+⛓️‍💥 integrace v PERO-OCR: https://github.com/DCGM/pero-ocr/tree/develop/pero_ocr/music
