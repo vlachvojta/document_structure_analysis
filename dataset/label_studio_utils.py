@@ -116,7 +116,7 @@ def get_label_studio_coords(polygon: np.ndarray, img_shape):
     return get_label_studio_coords_from_xywh([x, y, width, height], img_shape)
 
 def get_label_studio_coords_from_xywh(coords: np.ndarray, img_shape):
-    print(f'coords: {coords}')
+    # print(f'coords: {coords}')
     assert coords.shape == (4,), f'Invalid coords shape: {coords.shape}. Expected (4,)'
     x, y, width, height = coords
 

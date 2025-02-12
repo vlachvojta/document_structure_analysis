@@ -20,21 +20,25 @@ from ultralytics import YOLO
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="table_det_yolov8n_640.pt",
+    parser.add_argument("-m", "--model", default="table_det_yolov8n_640.pt",
                         help="Model path.") 
-    parser.add_argument("--images", default="example_data/images",
+    parser.add_argument("-i", "--images", default="example_data/images",
                         help="Path to a directory with images.")
-    parser.add_argument("--image-size", default=640, type=int,
+    parser.add_argument("-s", "--image-size", default=640, type=int,
                         help="Image size.")
-    parser.add_argument("--batch-size", required=False, default=1, type=int)
-    parser.add_argument("--confidence", default=0.5, type=float,
+    parser.add_argument("-b", "--batch-size", required=False, default=1, type=int)
+    parser.add_argument("-t", "--confidence-threshold", default=0.5, type=float,
                         help="Detection confidence threshold.")
-    parser.add_argument("--predictions", default='example_data/predictions',
+    parser.add_argument("-p", "--predictions", default='example_data/predictions',
                         help="Path to a directory with predicted predictions.")
-    parser.add_argument("--crops", default='example_data/crops',
+    parser.add_argument("-c", "--crops", default='example_data/crops',
                         help="Path to a directory with cropped images.")
-    parser.add_argument("--renders", default='example_data/renders',
+    parser.add_argument("-r", "--renders", default='example_data/renders',
                         help="Path to a directory with renders.")
+    parser.add_argument("-d", "--device", choices=['cpu', 'gpu'], default= 'gpu',
+                        help="Device to use")
+    parser.add_argument("-e", "--export-empty", action='store_true', default=False,
+                        help="Export empty labels and renders.")
 
     return parser.parse_args()
 
@@ -83,7 +87,10 @@ def get_render_output_path(original_image_path, renders_dir):
 def main():
     args = parse_args()
 
-    # gpu_owner = GPUOwner()
+    if args.device == 'gpu':
+        device = 0
+    else:
+        device = 'cpu'
 
     extensions = (".jpg", ".png")
 
@@ -105,8 +112,8 @@ def main():
 
         results = model(batch, 
                         imgsz=args.image_size,
-                        conf=args.confidence,
-                        device=0)
+                        conf=args.confidence_threshold,
+                        device=device)
 
         if args.predictions or args.crops or args.renders:
             for result in results:
@@ -129,11 +136,11 @@ def main():
 
                     predictions.append(f"{name} {coords[0]} {coords[1]} {coords[2]} {coords[3]}")
 
-                if args.predictions and len(predictions) > 0:
+                if args.predictions and (len(predictions) > 0 or args.export_empty):
                     label_output_path = get_label_output_path(original_image_path=result.path, predictions_dir=args.predictions)
                     save_predictions(label_output_path, predictions)
 
-                if args.renders:
+                if args.renders and (len(predictions) > 0 or args.export_empty):
                     render_output_path = get_render_output_path(original_image_path=result.path, renders_dir=args.renders)
                     render = result.plot()
                     save_image(render_output_path, render)

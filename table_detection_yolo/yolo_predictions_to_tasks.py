@@ -115,12 +115,12 @@ class TaskCreator:
 
             # read prediction from file
             predictions = self.get_predictions_from_file(prediction_file_path)
-            print(f'Loaded predictions from file {prediction_file_path}: {predictions}')
+            # print(f'Loaded predictions from file {prediction_file_path}: {predictions}')
 
             # read original image size from image_path
             image_loaded = cv2.imread(image_path)
             orig_h, orig_w, _ = image_loaded.shape
-            print(f'from image {image_path} loaded image with shape {image_loaded.shape} and orig_h {orig_h} orig_w {orig_w}')
+            # print(f'from image {image_path} loaded image with shape {image_loaded.shape} and orig_h {orig_h} orig_w {orig_w}')
 
             task = self.create_task(predictions, image_name, orig_h=orig_h, orig_w=orig_w)
 
@@ -190,10 +190,10 @@ class TaskCreator:
         for i, prediction in enumerate(predictions):
 
             # get_label_studio_coords
-            print(f'prediction: {prediction["coords"]}, orig_h: {orig_h}, orig_w: {orig_w}')
+            # print(f'prediction: {prediction["coords"]}, orig_h: {orig_h}, orig_w: {orig_w}')
             x, y, w, h = utils.get_label_studio_coords_from_xywh(prediction['coords'], (orig_h, orig_w))
-            print(f'x: {x}, y: {y}, w: {w}, h: {h}')
-            print('')
+            # print(f'x: {x}, y: {y}, w: {w}, h: {h}')
+            # print('')
 
             predictions_dicts.append(
                 {
