@@ -47,6 +47,9 @@ def parseargs():
     #     '-p', '--padding', type=int, default=0,
     #     help="Padding around the object.")
     parser.add_argument(
+        "-s", "--order-source", type=str, choices=['annotation', 'guess'], default='guess',
+        help="Source of the order number. 'annotation' uses the order of Label studio annotations, 'guess' guesses the order using simple clustering algorithm.")
+    parser.add_argument(
         "-o", "--output-folder", type=str, default='example_data/3_cell_detection_order',
         help="Output folder where to save cut out objects.")
     parser.add_argument(
@@ -67,6 +70,7 @@ def main():
         label_file=args.label_file,
         # filter_labels=args.filter_labels,
         # padding=args.padding,
+        order_source=args.order_source,
         output_folder=args.output_folder,
         verbose=args.verbose)
     renderer()
@@ -76,13 +80,14 @@ def main():
 
 
 class CellOrderRenderer:
-    def __init__(self, image_folder: str, label_file: str,
+    def __init__(self, image_folder: str, label_file: str, order_source: str,
                  output_folder: str, # filter_labels: list[str], padding: int = 0, 
                  verbose: bool = False):
         self.image_folder = image_folder
         self.label_file = label_file
         # self.filter_labels = [label.lower() for label in filter_labels]
         # self.padding = padding
+        self.order_source = order_source
         self.output_folder = output_folder
         self.verbose = verbose
 
@@ -141,10 +146,12 @@ class CellOrderRenderer:
                 self.logger.warning(f'No cells found in task {task["id"]}, image {img_name}')
                 continue
 
-            # guess order using guess_order_of_cells
-            order = guess_order_of_cells(cells)
-            # reorder list of cells + put order to IDS so it can be rendered as a text for every cell
-            cells = reorder_cells(cells, order)
+            if self.order_source == 'guess':
+                # guess order using guess_order_of_cells
+                order = guess_order_of_cells(cells)
+                # reorder list of cells + put order to IDS so it can be rendered as a text for every cell
+                cells = reorder_cells(cells, order)
+
             # render cells with order number
             img = render_cells(img, cells, render_ids=True)
 
@@ -180,7 +187,7 @@ class CellOrderRenderer:
         for annotation in task['annotations']:
             results = annotation['result']
 
-            for result in results:
+            for result_order, result in enumerate(results):
                 x, y, w, h = label_studio_coords_to_xywh(result['value'], img.shape[:2])
                 coords = xywh_to_polygon(x, y, w, h)
 
@@ -195,6 +202,8 @@ class CellOrderRenderer:
 
                 cell_category = labels[0].replace(' ', '_')
                 table_cell = TableCell(id=result['id'], coords=coords, category=cell_category)
+                if self.order_source == 'annotation':
+                    table_cell.id = f'{result_order}'
                 cells.append(table_cell)
 
         return cells
