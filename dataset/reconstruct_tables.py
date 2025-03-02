@@ -280,9 +280,6 @@ class TableConstructor:
                     continue
 
                 cell_ids = self.cell_text_to_ids(col.text)
-                if cell_ids is None or len(cell_ids) == 0:
-                    j += 1
-                    continue
 
                 col_span = int(col.get('colspan', 1))
                 row_span = int(col.get('rowspan', 1))
@@ -290,6 +287,10 @@ class TableConstructor:
                     self.logger.debug(f'found span: {col_span}x{row_span} in cell {i}, {j}')
 
                 table_np[i:i+row_span, j:j+col_span] = cell_repeater_id  # fill span with repeater id
+
+                if cell_ids is None or len(cell_ids) == 0:
+                    j += col_span
+                    continue
 
                 if len(cell_ids) == 1:
                     cell_id = cell_ids[0]
