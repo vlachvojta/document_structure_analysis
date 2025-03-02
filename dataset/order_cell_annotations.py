@@ -187,14 +187,20 @@ class CellOrderRenderer:
         for annotation in task['annotations']:
             results = annotation['result']
 
-            for result_order, result in enumerate(results):
+            result_order = -1
+            for result in results:
+                if result['type'] != 'rectanglelabels':
+                    # skip not rectanglelabels results (e.g. textarea)
+                    continue
+
+                result_order += 1
+
                 x, y, w, h = label_studio_coords_to_xywh(result['value'], img.shape[:2])
                 coords = xywh_to_polygon(x, y, w, h)
 
                 labels = result['value']['rectanglelabels']
                 if len(labels) == 0:
-                    self.logger.debug(f'No label for result {result["id"]} in task {task["id"]}')
-                    continue
+                    labels = ["Table cell"]  # default label
 
                 if len(labels) > 1:
                     self.logger.warning(f'More than one label for result {result["id"]} in task {task["id"]}.'
