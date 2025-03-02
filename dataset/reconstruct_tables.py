@@ -169,7 +169,7 @@ class TableConstructor:
                 self.logger.warning(f'No table in task {task["id"]}')
                 return None
 
-            table, cells = self.html_table_to_numpy(html_table)
+            table, cells = self.html_table_to_numpy(html_table, image_name=img_name)
             logging.debug(f'loaded {len(cells)} cells in table {table.shape}.')
 
             assert len(cells) <= layout.tables[0].len(include_faulty=True), \
@@ -248,11 +248,12 @@ class TableConstructor:
 
         return soup
 
-    def html_table_to_numpy(self, table: BeautifulSoup) -> tuple[np.ndarray, list[TableCell]]:
+    def html_table_to_numpy(self, table: BeautifulSoup, image_name: str) -> tuple[np.ndarray, list[TableCell]]:
         max_rows, max_cols = self.get_max_rows_cols(table)
         rows = table.find_all('tr')
         safety_padding = 5  # prevent index out of bounds, is deleted at the end of this function
         cell_repeater_id = -42
+        used_cell_ids = set()
 
         # create numpy array for numbers indicating cell rank in cells list
         table_np = np.zeros((max_rows + safety_padding, max_cols + safety_padding), dtype=int)
@@ -291,6 +292,12 @@ class TableConstructor:
                 if cell_ids is None or len(cell_ids) == 0:
                     j += col_span
                     continue
+
+                # check cell ID uniquness in HTML table
+                for cell_id in cell_ids:
+                    if cell_id in used_cell_ids:
+                        self.logger.warning(f'Cell ID {cell_id} is not unique in table {image_name}')
+                    used_cell_ids.add(cell_id)
 
                 if len(cell_ids) == 1:
                     cell_id = cell_ids[0]
