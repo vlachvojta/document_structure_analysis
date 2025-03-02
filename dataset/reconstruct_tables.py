@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 """Load label studio JSON results + XML pages and render reconstructed tables.
-- JSON result: HTML representation of table using cell IDs as a refference.
-- XML page: Detected cells with order number guessed by simple algorithm.
-
-Name rendered images same as input images, but with '_reconstructed' suffix before the extension.
+- JSON result: HTML representation of table
+- XML page: Detected cells/textlines in page-xml format
+- Output: Rendered images with reconstructed tables (cut out cells of original image with table borders)
 
 Usage:
 $ python3 order_cell_annotations.py -i <image_folder>  -x <xml_folder> -l <label_file> -o <output_folder>
 Resulting in:
-    - <output_folder>/images with rendered images, named as <image_name>_reconstructed.<image_extension>
+    - <output_folder>/html with HTML representation of tables (taken from label studio annotations)
+    - <output_folder>/html_render with rendered HTML tables (only IDs with borders, no parts from the actual image, named as <image_name>_html_render.png)
+    - <output_folder>/mixed with mix of original image, reconstructed table, cell render and HTML render (named as <image_name>_all.<image_extension>)
+    - <output_folder>/reconstruction with rendered images with reconstructed tables (named as <image_name>_reconstruction.<image_extension>)
+    - <output_folder>/render with rendered images with detected cells in the original image (named as <image_name>_render.<image_extension>)
     - <output_folder>/xml with reconstructed tables in page-xml format
 """
 
@@ -33,7 +36,6 @@ sys.path.append(os.path.dirname(file_dirname))
 from dataset.label_studio_utils import LabelStudioResults, label_studio_coords_to_xywh, add_padding
 from pero_ocr.core.layout import TextLine
 from organizer.tables.table_layout import TableCell, TableRegion, TablePageLayout
-from organizer.tables.order_guessing import guess_order_of_cells, reorder_cells
 from organizer.tables.rendering import render_cells, render_table_reconstruction
 from organizer.utils import xywh_to_polygon
 
@@ -143,7 +145,7 @@ class TableConstructor:
             img_name = img_name.replace(f'.{img_ext}', '')
             img_orig = img.copy()
             html_path = os.path.join(self.output_folder_html, img_name + '.html')
-            html_render_path = os.path.join(self.output_folder_html_render, img_name + '.png')
+            html_render_path = os.path.join(self.output_folder_html_render, img_name + '_html_render.png')
 
             xml_name = img_name + '.xml'
             layout = TablePageLayout.from_table_pagexml(os.path.join(self.xml_folder, xml_name))
