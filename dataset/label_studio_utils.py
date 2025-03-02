@@ -113,7 +113,7 @@ def get_label_studio_coords(polygon: np.ndarray, img_shape):
     width = np.max(polygon[:, 0]) - x
     height = np.max(polygon[:, 1]) - y
 
-    return get_label_studio_coords_from_xywh([x, y, width, height], img_shape)
+    return get_label_studio_coords_from_xywh(np.array([x, y, width, height]), img_shape)
 
 def get_label_studio_coords_from_xywh(coords: np.ndarray, img_shape):
     # print(f'coords: {coords}')
