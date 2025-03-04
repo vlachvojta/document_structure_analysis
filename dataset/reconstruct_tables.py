@@ -25,6 +25,9 @@ import cv2
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 from copy import deepcopy
+from collections import defaultdict
+import re
+import json
 
 import numpy as np
 
@@ -124,9 +127,11 @@ class TableConstructor:
         self.annotations.filter_tasks_using_images(filter_images)
         print(f'Found {len(self.annotations)} tasks in annotation file that have corresponding images and xmls.')
 
-
         if len(self.annotations) == 0:
             raise ValueError(f'No images from annotation file found in image folder {image_folder}')
+
+        # default dict with lists for statistics
+        self.stats = defaultdict(list)
 
     def __call__(self):
         print(f'Reconstructing tables from {len(self.annotations)} images and saving them to {self.output_folder}')
@@ -143,6 +148,7 @@ class TableConstructor:
 
             img_ext = re.search(r'\.(.+)$', img_name).group(1)
             img_name = img_name.replace(f'.{img_ext}', '')
+            self.logger.debug(f'Processing image {img_name}')
             img_orig = img.copy()
             html_path = os.path.join(self.output_folder_html, img_name + '.html')
             html_render_path = os.path.join(self.output_folder_html_render, img_name + '_html_render.png')
@@ -172,10 +178,13 @@ class TableConstructor:
             table, cells = self.html_table_to_numpy(html_table, image_name=img_name)
             logging.debug(f'loaded {len(cells)} cells in table {table.shape}.')
 
-            assert len(cells) <= layout.tables[0].len(include_faulty=True), \
-                f'Loaded more cells from HTML table than in XML page: {len(cells)} vs {layout.tables[0].len(include_faulty=True)}'
+            if len(cells) > layout.tables[0].len(include_faulty=True):
+                self.stats['loaded more cells from HTML table than in XML page'].append(img_name)
+                # f'Loaded more cells from HTML table than in XML page: {len(cells)} vs {layout.tables[0].len(include_faulty=True)}'
+                continue
 
-            self.join_layout_cells_to_table_cells(layout, cells)
+            start_from_one = self.get_start_from_one(cells)
+            self.join_layout_cells_to_table_cells(layout, cells, image_name=img_name, start_from_one=start_from_one)
 
             layout.tables[0].cells = None
             layout.tables[0].faulty_cells = []
@@ -202,16 +211,37 @@ class TableConstructor:
             cv2.imwrite(os.path.join(self.output_folder_reconstrution, filename), reconstruction)
 
             # render image with orig table, reconstructed table, cell order and html render
-            # mixed = self.create_export_image(orig=img_orig, reconstruction=reconstruction, html_render=html_render, cell_order=rendered_ids_orig)
-            mixed = self.create_export_image(orig=img_orig, reconstruction=reconstruction, html_render=html_render, cell_order=rendered_ids)
+            mixed = self.create_export_image(orig=img_orig, reconstruction=reconstruction, html_render=html_render, cell_order=rendered_ids, image_name=img_name)
             filename = f"{img_name}_all.{img_ext}"
             cv2.imwrite(os.path.join(self.output_folder_mixed, filename), mixed)
 
             exported += 1
 
+            for key, value in self.stats.items():
+                if img_name == value[-1]:
+                    break
+            else:
+                self.stats['probably ok'].append(img_name)
+
+            self.stats['exported images'].append(img_name)
+
         ratio = exported / len(self.annotations) if len(self.annotations) > 0 else 0
         print(f'Exported {exported} images from {len(self.annotations)} tasks ({ratio:.2%}) '
                          f'to: \n- {self.output_folder_render}\n- {self.output_folder_reconstrution}\n- {self.output_folder_xml}')
+
+        # save stats to json file
+        stats_dict = {}
+        print(f'Statistics:')
+        for key, value in self.stats.items():
+            print(f'- {key}: {len(value)}, for example: {value[:min(5, len(value))]}')
+            stats_dict[f'{key}_count'] = len(value)
+
+        for key, value in self.stats.items():
+            stats_dict[key] = value
+
+        stats_file = os.path.join(self.output_folder, 'stats.json')
+        with open(stats_file, 'w') as f:
+            json.dump(stats_dict, f, indent=4)
 
     def read_html_from_task(self, task: dict) -> str:
         if len(task['annotations']) == 0:
@@ -227,15 +257,17 @@ class TableConstructor:
         # filter annotation results only of type "textarea"
         annotation['result'] = [result for result in annotation['result'] if result['type'] == 'textarea']
 
+        image_name = os.path.basename(task['data']['image'])
+
         if len(annotation['result']) == 0:
-            self.logger.warning(f'No results in task {task["id"]}')
+            self.stats['no textarea in annotation'].append(image_name)
             return None
         elif len(annotation['result']) > 1:
             lenn = len(annotation['result'])
             self.logger.warning(f'More than one ({lenn}) result in task {task["id"]}. Using only the first.')
-        
+
         if 'text' not in annotation['result'][0]['value']:
-            self.logger.warning(f'No text in task {task["id"]}')
+            self.stats['no text in annotation'].append(image_name)
             return None
 
         html = annotation['result'][0]['value']['text'][0]
@@ -245,6 +277,29 @@ class TableConstructor:
 
         # beautify html
         soup = BeautifulSoup(html)
+
+        # CSS to make borders visible
+        css = """
+        table  {border-collapse:collapse;border-spacing:0;}
+        table td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+        table th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        table th{border-color:inherit;text-align:center;vertical-align:top}
+        table td{text-align:left;vertical-align:top}
+        """
+
+        # if no head, add head with style tag
+        html_tag = soup.html
+        head = html_tag.find('head')
+        if head is None:
+            head = soup.new_tag('head')
+            head.append(soup.new_tag('style', type='text/css'))
+            head.style.string = css
+            html_tag.insert(0, head)
+
+        # print HTML pretified
+        # print(soup.prettify())
 
         return soup
 
@@ -297,6 +352,7 @@ class TableConstructor:
                 for cell_id in cell_ids:
                     if cell_id in used_cell_ids:
                         self.logger.warning(f'Cell ID {cell_id} is not unique in table {image_name}')
+                        self.stats['duplicate cell IDs'].append(image_name)
                     used_cell_ids.add(cell_id)
 
                 if len(cell_ids) == 1:
@@ -306,7 +362,7 @@ class TableConstructor:
                 else:
                     lenn = len(cell_ids)
                     self.logger.debug(f'found more than one ({lenn}) cell id in cell {i}, {j}: {cell_ids}')
-                    joined_cell_id = ','.join([str(cell_id) for cell_id in cell_ids])
+                    joined_cell_id = self.cell_ids_to_text(cell_ids)
                     cell = TableCell(id=joined_cell_id, coords=None, row=i, col=j, row_span=row_span, col_span=col_span)
                     cell.lines = [TextLine(id=cell_id, polygon=None) for cell_id in cell_ids]
                     cells.append(cell)
@@ -347,7 +403,7 @@ class TableConstructor:
         if len(cell_text) == 0:
             return None
 
-        cell_ids = cell_text.split(',')
+        cell_ids = re.split(r'[,\.;\s]', cell_text)
         cell_ids = [text.strip() for text in cell_ids if text.strip()]
 
         # try:
@@ -359,6 +415,9 @@ class TableConstructor:
             return None
 
         return cell_ids
+
+    def cell_ids_to_text(self, cell_ids: list[str]) -> str:
+        return ','.join([str(cell_id) for cell_id in cell_ids])
 
     def cell_polygon_from_lines(self, lines: list[np.ndarray]) -> np.ndarray:
         # get min and max x, y from all lines
@@ -376,9 +435,35 @@ class TableConstructor:
         line_categories = [line.category for line in lines]
         return max(set(line_categories), key=line_categories.count)
 
-    def join_layout_cells_to_table_cells(self, layout: TablePageLayout, cells: list[TableCell]):
+    def join_layout_cells_to_table_cells(self, layout: TablePageLayout, cells: list[TableCell], image_name: str, start_from_one: bool) -> None:
         """Go through all cells and add coords and category from layout cells."""
-        layout_id_to_cell = {cell.id: cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
+        if start_from_one:
+            layout_id_to_cell = {str(int(cell.id) + 1): cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
+        else:  # start from zero
+            layout_id_to_cell = {cell.id: cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
+        # print('\n\n')
+        # print('layout cells:', len(layout_id_to_cell))
+        # print(f'cells: {len(cells)}')
+
+        # # debug_cell_ids_numpy = np.zeros((layout.tables[0].rows, layout.tables[0].cols), dtype=int) - 42
+        # # for cell in cells:
+        # #     debug_cell_ids_numpy[cell.row, cell.col] = int(cell.id)
+        # # print(debug_cell_ids_numpy)
+
+        # debug_cell_ids = [cell.id for cell in cells]
+        # print(f'cell IDs: {debug_cell_ids}')
+        # # print(f'sorted cell IDs: {sorted(debug_cell_ids)}')
+        # debug_cell_ids_sorted: list[int] = []
+        # for cell in cells:
+        #     cell_ids = self.cell_text_to_ids(cell.id)
+        #     debug_cell_ids_sorted += [int(cell_id) for cell_id in cell_ids]
+        # print(f'sorted cell IDs: {sorted(debug_cell_ids_sorted)}')
+        # # sorted([self.cell_text_to_ids(cell.id) for cell in cells])
+
+        # # print(cells)
+        # # print(f'layout_id_to_cell: {json.dumps(layout_id_to_cell, indent=4)}')
+        # print(f'layout_id_to_cell.keys: {layout_id_to_cell.keys()}')
+        # # print('exiting'); exit()
 
         for cell in cells:
             if len(cell.lines) > 0:
@@ -387,26 +472,80 @@ class TableConstructor:
                 for line in cell.lines:
                     self.logger.debug(f'adding line: {line.id} in a cell with ID {cell.id}')
 
-                    layout_cell = layout_id_to_cell.get(str(line.id))
+                    layout_cell = layout_id_to_cell.get(str(line.id), None)
                     if layout_cell is None:
-                        raise ValueError(f'Cell with ID {line.id} not found in layout cells')
+                        self.stats['line ID in HTML does not match line ID in layou'].append(image_name)
+
+                        # delete unmatched line from cell and update cell ID
+                        cell.lines.remove(line)
+                        cell_ids = self.cell_text_to_ids(cell.id)
+                        cell_ids.remove(line.id)
+                        cell.id = self.cell_ids_to_text(cell_ids)
+                        continue
 
                     # add layout cell coords + category to line
                     line.polygon = layout_cell.coords
                     line.category = layout_cell.category
-                # add joined lines coords + category to cell coords
-                cell.coords = self.cell_polygon_from_lines([line.polygon for line in cell.lines])
-                cell.category = self.get_the_most_common_category(cell.lines)
+                else:
+                    # add joined lines coords + category to cell coords
+                    cell.coords = self.cell_polygon_from_lines([line.polygon for line in cell.lines])
+                    cell.category = self.get_the_most_common_category(cell.lines)
             else:
                 # add layout cell coords and category to cell coords
-                layout_cell = layout_id_to_cell.get(str(cell.id))
+                layout_cell = layout_id_to_cell.get(str(cell.id), None)
                 if layout_cell is None:
-                    raise ValueError(f'Cell with ID {cell.id} not found in layout cells')
+                    self.stats['missing cell IDs'].append(image_name)
+                    continue
 
                 cell.coords = layout_cell.coords
                 cell.category = layout_cell.category
 
-    def create_export_image(self, orig: np.ndarray, reconstruction: np.ndarray, html_render: np.ndarray, cell_order: np.ndarray) -> np.ndarray:
+    def get_start_from_one(self, cells: list[TableCell]) -> bool:
+        # check if cell IDs start from one or zero
+        cell_ids = []
+        for cell in cells:
+            cell_ids += self.cell_text_to_ids(cell.id)
+
+        min_id = min([int(cell_id) for cell_id in cell_ids])
+        if min_id == 0:
+            return False
+        else:
+            return True
+
+    # def make_cell_ids_start_from_zero(self, cells: list[TableCell]) -> list[TableCell]:
+    #     # some cells have multiple IDs separated by comma (e.g. '1,2,3')
+    #     # split them and make them start from zero
+
+    #     cell_ids = []
+    #     for cell in cells:
+    #         cell_ids += self.cell_text_to_ids(cell.id)
+
+    #     # print(f'cell IDs before: {cell_ids}')
+
+    #     min_id = min([int(cell_id) for cell_id in cell_ids])
+    #     if min_id == 0:
+    #         return cells
+
+    #     # make cell IDs start from zero
+    #     for cell in cells:
+    #         cell_ids = self.cell_text_to_ids(cell.id)
+    #         new_cell_ids = [int(cell_id) - min_id for cell_id in cell_ids]
+
+    #         for line in cell.lines:
+    #             line.id = str(int(line.id) - min_id)
+
+    #         cell.id = self.cell_ids_to_text(new_cell_ids)
+
+    #     # cell_ids_after = [int(cell.id) for cell in cells]
+    #     cell_ids_after = [cell.id for cell in cells]
+    #     assert len(cell_ids_after) == len(cells), f'Cell IDs after should be the same length as cells: {len(cell_ids_after)}, but is {len(cells)}'
+
+    #     # print(f'cell IDs after: {cell_ids_after}')
+    #     # print('exiting'); exit()
+
+    #     return cells
+
+    def create_export_image(self, orig: np.ndarray, reconstruction: np.ndarray, html_render: np.ndarray, cell_order: np.ndarray, image_name: str) -> np.ndarray:
         # resize reconstruction to the same size as orig, keep aspect ratio and pad with white color
         # reconstruction = cv2.resize(reconstruction, (orig.shape[1], orig.shape[0]))
         reconstruction_resized = np.zeros_like(orig) + 255
@@ -434,7 +573,7 @@ class TableConstructor:
             first_row = np.hstack([orig, vertical_padding, cell_order])
             second_row = np.hstack([reconstruction_resized, vertical_padding, html_render_resized])
             horizontal_padding = np.zeros((10, first_row.shape[1], 3), dtype=np.uint8)
-            return np.vstack([first_row, horizontal_padding, second_row])
+            export_image = np.vstack([first_row, horizontal_padding, second_row])
         # if x < y, render:    orig    | reconstruction 
         #                   cell_order |   html_render
         elif orig.shape[1] <= orig.shape[0]:
@@ -443,7 +582,23 @@ class TableConstructor:
             first_row = np.hstack([orig, vertical_padding, reconstruction_resized])
             second_row = np.hstack([cell_order, vertical_padding, html_render_resized])
             horizontal_padding = np.zeros((10, first_row.shape[1], 3), dtype=np.uint8)
-            return np.vstack([first_row, horizontal_padding, second_row])
+            export_image = np.vstack([first_row, horizontal_padding, second_row])
+
+        # problems = []
+        # for key, value in self.stats.items():
+        #     if image_name == value[-1]:
+        #         problems.append(key)
+
+        # for problem in problems:
+        #     # add text to the top of the image on the left side, white background, big font
+        #     # each problem is on a new line
+        #     export_image = cv2.copyMakeBorder(export_image, 40, 0, 0, 0, cv2.BORDER_CONSTANT, value=(255, 255, 255))
+        #     cv2.putText(export_image, problem, (5, 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 5)
+
+        return export_image
+
+            # cv2.putText(export_image, ', '.join(problems), (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+        
 
     @staticmethod
     def render_html_table_to_image(html_file: str, tmp_image='tmp.png') -> np.ndarray:
