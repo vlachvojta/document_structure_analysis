@@ -407,7 +407,7 @@ class TableConstructor:
         cell_ids = [text.strip() for text in cell_ids if text.strip()]
 
         # try:
-        #     cell_ids = [text for text in cell_ids]
+        #     cell_ids = [int(text) for text in cell_ids]
         # except ValueError:
         #     raise ValueError(f'Failed to convert cell text to int: {cell_text} with ids: {cell_ids}')
 
@@ -441,29 +441,6 @@ class TableConstructor:
             layout_id_to_cell = {str(int(cell.id) + 1): cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
         else:  # start from zero
             layout_id_to_cell = {cell.id: cell for cell in layout.tables[0].cell_iterator(include_faulty=True)}
-        # print('\n\n')
-        # print('layout cells:', len(layout_id_to_cell))
-        # print(f'cells: {len(cells)}')
-
-        # # debug_cell_ids_numpy = np.zeros((layout.tables[0].rows, layout.tables[0].cols), dtype=int) - 42
-        # # for cell in cells:
-        # #     debug_cell_ids_numpy[cell.row, cell.col] = int(cell.id)
-        # # print(debug_cell_ids_numpy)
-
-        # debug_cell_ids = [cell.id for cell in cells]
-        # print(f'cell IDs: {debug_cell_ids}')
-        # # print(f'sorted cell IDs: {sorted(debug_cell_ids)}')
-        # debug_cell_ids_sorted: list[int] = []
-        # for cell in cells:
-        #     cell_ids = self.cell_text_to_ids(cell.id)
-        #     debug_cell_ids_sorted += [int(cell_id) for cell_id in cell_ids]
-        # print(f'sorted cell IDs: {sorted(debug_cell_ids_sorted)}')
-        # # sorted([self.cell_text_to_ids(cell.id) for cell in cells])
-
-        # # print(cells)
-        # # print(f'layout_id_to_cell: {json.dumps(layout_id_to_cell, indent=4)}')
-        # print(f'layout_id_to_cell.keys: {layout_id_to_cell.keys()}')
-        # # print('exiting'); exit()
 
         for cell in cells:
             if len(cell.lines) > 0:
@@ -512,39 +489,6 @@ class TableConstructor:
         else:
             return True
 
-    # def make_cell_ids_start_from_zero(self, cells: list[TableCell]) -> list[TableCell]:
-    #     # some cells have multiple IDs separated by comma (e.g. '1,2,3')
-    #     # split them and make them start from zero
-
-    #     cell_ids = []
-    #     for cell in cells:
-    #         cell_ids += self.cell_text_to_ids(cell.id)
-
-    #     # print(f'cell IDs before: {cell_ids}')
-
-    #     min_id = min([int(cell_id) for cell_id in cell_ids])
-    #     if min_id == 0:
-    #         return cells
-
-    #     # make cell IDs start from zero
-    #     for cell in cells:
-    #         cell_ids = self.cell_text_to_ids(cell.id)
-    #         new_cell_ids = [int(cell_id) - min_id for cell_id in cell_ids]
-
-    #         for line in cell.lines:
-    #             line.id = str(int(line.id) - min_id)
-
-    #         cell.id = self.cell_ids_to_text(new_cell_ids)
-
-    #     # cell_ids_after = [int(cell.id) for cell in cells]
-    #     cell_ids_after = [cell.id for cell in cells]
-    #     assert len(cell_ids_after) == len(cells), f'Cell IDs after should be the same length as cells: {len(cell_ids_after)}, but is {len(cells)}'
-
-    #     # print(f'cell IDs after: {cell_ids_after}')
-    #     # print('exiting'); exit()
-
-    #     return cells
-
     def create_export_image(self, orig: np.ndarray, reconstruction: np.ndarray, html_render: np.ndarray, cell_order: np.ndarray, image_name: str) -> np.ndarray:
         # resize reconstruction to the same size as orig, keep aspect ratio and pad with white color
         # reconstruction = cv2.resize(reconstruction, (orig.shape[1], orig.shape[0]))
@@ -584,21 +528,7 @@ class TableConstructor:
             horizontal_padding = np.zeros((10, first_row.shape[1], 3), dtype=np.uint8)
             export_image = np.vstack([first_row, horizontal_padding, second_row])
 
-        # problems = []
-        # for key, value in self.stats.items():
-        #     if image_name == value[-1]:
-        #         problems.append(key)
-
-        # for problem in problems:
-        #     # add text to the top of the image on the left side, white background, big font
-        #     # each problem is on a new line
-        #     export_image = cv2.copyMakeBorder(export_image, 40, 0, 0, 0, cv2.BORDER_CONSTANT, value=(255, 255, 255))
-        #     cv2.putText(export_image, problem, (5, 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 5)
-
         return export_image
-
-            # cv2.putText(export_image, ', '.join(problems), (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-        
 
     @staticmethod
     def render_html_table_to_image(html_file: str, tmp_image='tmp.png') -> np.ndarray:
