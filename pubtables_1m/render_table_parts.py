@@ -28,7 +28,7 @@ sys.path.append(file_dirname)
 sys.path.append(os.path.dirname(file_dirname))
 
 # from dataset.label_studio_utils import get_label_studio_coords
-from pubtables_1m.voc_xml import VocLayout, VocObject
+from pubtables_1m.voc_xml import VocLayout, VocObject, ObjectCategory, VocWord
 
 
 def parseargs():
@@ -127,14 +127,11 @@ class TablePartRenderer:
             output_image_file_base = os.path.join(self.output_folder_images_render, image_name)
             # output_words
 
-
-            voc_layout = VocLayout(xml_file, os.path.join(self.word_folder, word_file))
+            voc_layout = VocLayout(xml_file, os.path.join(self.word_folder, word_file), only_table_structure=True)
             if voc_layout is None:
                 continue
-            layout_categories = set([obj.name for obj in voc_layout.objects if obj.name in ['table', 'table row', 'table column']])
+            layout_categories = set([obj.category for obj in voc_layout.objects])
             self.categories_seen.update(layout_categories)
-
-            # words = voc_layout.words
 
             image_orig = cv2.imread(image_file)
             if image_orig is None:
@@ -153,11 +150,11 @@ class TablePartRenderer:
                 if image is None:
                     continue
 
-                output_file = output_image_file_base.replace('.jpg', f'_{category}.jpg')
+                output_file = output_image_file_base.replace('.jpg', f'_{category.value}.jpg')
                 cv2.imwrite(output_file, image)
                 logging.info(f'Saved image with table parts to: {output_file}')
                 self.stats['total_images_exported'] += 1
-                self.stats[f'{category.replace(" ", "_")}_category_images_exported'] += 1
+                self.stats[f'{category.value.replace(" ", "_")}_category_images_exported'] += 1
 
 
         print(f'Categories seen: {self.categories_seen}')
@@ -170,21 +167,20 @@ class TablePartRenderer:
         return tree.getroot()
 
     @staticmethod
-    def render_table_parts(image: np.ndarray, voc_layout: VocLayout, categories: list[str] = None
+    def render_table_parts(image: np.ndarray, voc_layout: VocLayout, categories: list[ObjectCategory] = None
                            ) -> np.ndarray:
         """Load image and xml file. Render table parts to the image."""
-        # Load image
-
         object_rendered = 0
         for object in voc_layout.objects:
-            name = object.name
-            if categories and name not in categories:
+            category = object.category
+
+            if categories and category not in categories:
                 continue
 
             l, t = object.lt()
             r, b = object.rb()
             cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), (0, 255, 0), 1)
-            cv2.putText(image, name, (int(l), int(t)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+            cv2.putText(image, category.value, (int(l), int(t)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
             object_rendered += 1
 
         if object_rendered == 0:
@@ -194,19 +190,11 @@ class TablePartRenderer:
     @staticmethod
     def render_words(image: np.ndarray, words: list[dict]) -> np.ndarray:
         """Load image and xml file. Render words to the image."""
-        # image = cv2.imread(image_file)
-        # if image is None:
-        #     logging.error(f'Could not load image: {image_file}')
-        #     return
 
         for word in words:
             l, t, r, b = word.ltrb()
             cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), (0, 255, 0), 1)
             # cv2.putText(image, word.text, (int(l), int(t)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
-
-        # output_file = image_file.replace('.jpg', '_words.jpg')
-        # cv2.imwrite(output_file, image)
-        # logging.info(f'Saved image with words to: {output_file}')
 
         return image
 
