@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-# TODO, info copied from other file, rewrite it
-"""Export Pero-OCR page XML results to Label Studio JSON format with detected textlines as predictions.
+"""Load VOC XML + words JSON from pubtables-1m dataset. Render table parts to images, export page XML and reconstruction.
 
 Usage:
 $ python3 ocr_to_tasks.py -i <image_folder> -x <xml_folder> -t <task_image_path> -o <output_folder>
-Resulting in <output_folder>/tasks with tasks and <output_folder>/images with images.
+Resulting in <output_folder>/* with output stuff. See example_data for example input and output data.
 """
 
 import argparse
@@ -18,9 +17,10 @@ import lxml.etree as ET
 from collections import defaultdict
 
 import cv2
-
-from pero_ocr.core.layout import PageLayout
 import numpy as np
+
+# from pero_ocr.core.layout import PageLayout
+from organizer.tables.rendering import render_table_reconstruction
 
 # add parent directory to python file path to enable imports
 file_dirname = os.path.dirname(os.path.abspath(__file__))
@@ -94,6 +94,10 @@ class TablePartRenderer:
         # self.task_image_path = task_image_path
         self.output_folder_images_render = os.path.join(output_folder, 'images_render')
         self.output_folder_images_words = os.path.join(output_folder, 'images_words')
+        self.output_folder_page_xml = os.path.join(output_folder, 'page_xml')
+        self.output_folder_page_xml_render = os.path.join(output_folder, 'page_xml_render')
+        self.output_folder_reconstruction = os.path.join(output_folder, 'reconstruction')
+        self.output_folder_table_cutouts = os.path.join(output_folder, 'table_cutouts')
         self.verbose = verbose
 
         if verbose:
@@ -107,12 +111,16 @@ class TablePartRenderer:
         self.xml_files = [os.path.join(xml_folder, f) for f in os.listdir(xml_folder) if f.endswith('.xml')]
         self.image_names = [f.replace('.xml', '.jpg') for f in os.listdir(xml_folder)]
         self.word_files = [f.replace('.xml', '_words.json') for f in os.listdir(xml_folder)]
-        print(f'words: {self.word_files}')
+        # print(f'words: {self.word_files}')
         logging.debug(f'Loaded {len(self.xml_files)} image-xml pairs')
 
         os.makedirs(output_folder, exist_ok=True)
         os.makedirs(self.output_folder_images_render, exist_ok=True)
         os.makedirs(self.output_folder_images_words, exist_ok=True)
+        os.makedirs(self.output_folder_page_xml, exist_ok=True)
+        os.makedirs(self.output_folder_page_xml_render, exist_ok=True)
+        os.makedirs(self.output_folder_reconstruction, exist_ok=True)
+        os.makedirs(self.output_folder_table_cutouts, exist_ok=True)
 
         self.categories_seen = set()
         # create stats as a int defaul dict
@@ -123,6 +131,7 @@ class TablePartRenderer:
 
         for xml_file, image_name, word_file in tqdm(zip(self.xml_files, self.image_names, self.word_files),
                                          total=len(self.xml_files), desc='Rendering images'):
+            # print(f'\nParsing {xml_file}')
             image_file = os.path.join(self.image_folder, image_name)
             output_image_file_base = os.path.join(self.output_folder_images_render, image_name)
             # output_words
@@ -156,10 +165,40 @@ class TablePartRenderer:
                 self.stats['total_images_exported'] += 1
                 self.stats[f'{category.value.replace(" ", "_")}_category_images_exported'] += 1
 
+            # render tsr image only with xml defined table objects
             rendered_tsr = voc_layout.render_tsr(image_orig.copy())
             output_file = output_image_file_base.replace('.jpg', '_tsr.jpg')
             cv2.imwrite(output_file, rendered_tsr)
             self.stats['tsr_images_exported'] += 1
+
+            # page layout to image and xml
+            table_layout = voc_layout.to_table_layout()
+            page_xml_file = os.path.join(self.output_folder_page_xml, image_name.replace('.jpg', '.xml'))
+            table_layout.to_table_pagexml(page_xml_file)
+            self.stats['page_layouts_exported'] += 1
+
+            rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1)
+            output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '.jpg'))
+            cv2.imwrite(output_file, rendered_page_layout)
+            self.stats['page_layout_rendered_exported'] += 1
+
+            rendered_page_layout_cropped = table_layout.render_table_crops(image_orig.copy(), thickness=1)[0]
+            output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '_crop.jpg'))
+            cv2.imwrite(output_file, rendered_page_layout_cropped)
+            self.stats['page_layout_crops_exported'] += 1
+
+            # render table cutouts
+            rendered_page_layout_cropped = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
+            output_file = os.path.join(self.output_folder_table_cutouts, image_name)
+            cv2.imwrite(output_file, rendered_page_layout_cropped)
+            self.stats['table_cutouts_exported'] += 1
+
+            # render table reconstruction
+            reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
+            output_file = os.path.join(self.output_folder_reconstruction, image_name)
+            cv2.imwrite(output_file, reconstructed_image)
+            self.stats['reconstruction_images_exported'] += 1
+
 
 
         print(f'Categories seen: {self.categories_seen}')

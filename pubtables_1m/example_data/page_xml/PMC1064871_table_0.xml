@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-03-18T15:29:10.007469+00:00</Created>
+    <LastChange>2025-03-18T15:29:10.007469+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="example_data/voc_xml/PMC1064871" imageHeight="221" imageWidth="471">
+    <TableRegion id="example_data/voc_xml/PMC1064871_table_0">
+      <Coords points="37,37 432,37 432,182 37,182"/>
+      <TableCell id="0" row="0" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,37 266,37 266,51 37,51"/>
+      </TableCell>
+      <TableCell id="1" row="0" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,37 432,37 432,51 266,51"/>
+      </TableCell>
+      <TableCell id="2" row="1" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,51 266,51 266,69 37,69"/>
+        <TextLine id="385" index="385">
+          <Coords points="37,53 60,53 60,65 37,65"/>
+          <TextEquiv>
+            <Unicode>Mean</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="386" index="386">
+          <Coords points="63,53 98,53 98,65 63,65"/>
+          <TextEquiv>
+            <Unicode>duration</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="387" index="387">
+          <Coords points="101,53 109,53 109,65 101,65"/>
+          <TextEquiv>
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="388" index="388">
+          <Coords points="112,53 145,53 145,65 112,65"/>
+          <TextEquiv>
+            <Unicode>disease</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="389" index="389">
+          <Coords points="147,53 178,53 178,65 147,65"/>
+          <TextEquiv>
+            <Unicode>(range)</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="3" row="1" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,51 432,51 432,69 266,69"/>
+        <TextLine id="390" index="390">
+          <Coords points="351,53 363,53 363,65 351,65"/>
+          <TextEquiv>
+            <Unicode>19</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="391" index="391">
+          <Coords points="366,53 396,53 396,65 366,65"/>
+          <TextEquiv>
+            <Unicode>(1–48)</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="392" index="392">
+          <Coords points="399,53 430,53 430,65 399,65"/>
+          <TextEquiv>
+            <Unicode>months</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="4" row="2" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,69 266,69 266,88 37,88"/>
+        <TextLine id="393" index="393">
+          <Coords points="37,72 60,72 60,84 37,84"/>
+          <TextEquiv>
+            <Unicode>Mean</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="394" index="394">
+          <Coords points="63,72 76,72 76,84 63,84"/>
+          <TextEquiv>
+            <Unicode>no.</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="395" index="395">
+          <Coords points="79,72 87,72 87,84 79,84"/>
+          <TextEquiv>
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="396" index="396">
+          <Coords points="90,72 122,72 122,84 90,84"/>
+          <TextEquiv>
+            <Unicode>swollen</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="397" index="397">
+          <Coords points="125,72 148,72 148,84 125,84"/>
+          <TextEquiv>
+            <Unicode>joints</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="398" index="398">
+          <Coords points="150,72 181,72 181,84 150,84"/>
+          <TextEquiv>
+            <Unicode>(range)</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="5" row="2" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,69 432,69 432,88 266,88"/>
+        <TextLine id="399" index="399">
+          <Coords points="352,72 363,72 363,84 352,84"/>
+          <TextEquiv>
+            <Unicode>20</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="400" index="400">
+          <Coords points="366,72 402,72 402,84 366,84"/>
+          <TextEquiv>
+            <Unicode>(10–36)</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="6" row="3" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,88 266,88 266,108 37,108"/>
+        <TextLine id="401" index="401">
+          <Coords points="37,92 60,92 60,104 37,104"/>
+          <TextEquiv>
+            <Unicode>Mean</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="402" index="402">
+          <Coords points="63,92 107,92 107,104 63,104"/>
+          <TextEquiv>
+            <Unicode>C-reactive</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="403" index="403">
+          <Coords points="110,92 140,92 140,104 110,104"/>
+          <TextEquiv>
+            <Unicode>protein</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="404" index="404">
+          <Coords points="142,92 173,92 173,104 142,104"/>
+          <TextEquiv>
+            <Unicode>(range)</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="7" row="3" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,88 432,88 432,108 266,108"/>
+        <TextLine id="405" index="405">
+          <Coords points="352,92 371,92 371,104 352,104"/>
+          <TextEquiv>
+            <Unicode>12.3</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="16" type="table projected row header" row="4" col="0" rowSpan="1" colSpan="2">
+        <Coords points="37,108 432,108 432,127 37,127"/>
+        <TextLine id="407" index="407">
+          <Coords points="37,111 52,111 52,123 37,123"/>
+          <TextEquiv>
+            <Unicode>No.</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="408" index="408">
+          <Coords points="54,111 62,111 62,123 54,123"/>
+          <TextEquiv>
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="409" index="409">
+          <Coords points="65,111 99,111 99,123 65,123"/>
+          <TextEquiv>
+            <Unicode>patients</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="410" index="410">
+          <Coords points="102,111 143,111 143,123 102,123"/>
+          <TextEquiv>
+            <Unicode>receiving:</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="10" row="5" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,127 266,127 266,147 37,147"/>
+        <TextLine id="411" index="411">
+          <Coords points="49,131 84,131 84,143 49,143"/>
+          <TextEquiv>
+            <Unicode>NSAIDs</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="11" row="5" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,127 432,127 432,147 266,147"/>
+        <TextLine id="412" index="412">
+          <Coords points="351,131 357,131 357,143 351,143"/>
+          <TextEquiv>
+            <Unicode>6</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="12" row="6" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,147 266,147 266,166 37,166"/>
+        <TextLine id="413" index="413">
+          <Coords points="49,151 90,151 90,163 49,163"/>
+          <TextEquiv>
+            <Unicode>DMARDs</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="414" index="414">
+          <Coords points="92,151 116,151 116,163 92,163"/>
+          <TextEquiv>
+            <Unicode>(MTX</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="415" index="415">
+          <Coords points="118,151 130,151 130,163 118,163"/>
+          <TextEquiv>
+            <Unicode>15</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="416" index="416">
+          <Coords points="133,151 165,151 165,163 133,163"/>
+          <TextEquiv>
+            <Unicode>mg/wk)</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="13" row="6" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,147 432,147 432,166 266,166"/>
+        <TextLine id="417" index="417">
+          <Coords points="351,151 357,151 357,163 351,163"/>
+          <TextEquiv>
+            <Unicode>2</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="14" row="7" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,166 266,166 266,182 37,182"/>
+        <TextLine id="418" index="418">
+          <Coords points="49,170 105,170 105,182 49,182"/>
+          <TextEquiv>
+            <Unicode>Prednisolone</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="15" row="7" col="1" rowSpan="1" colSpan="1">
+        <Coords points="266,166 432,166 432,182 266,182"/>
+        <TextLine id="419" index="419">
+          <Coords points="351,170 357,170 357,182 351,182"/>
+          <TextEquiv>
+            <Unicode>2</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+    </TableRegion>
+  </Page>
+</PcGts>

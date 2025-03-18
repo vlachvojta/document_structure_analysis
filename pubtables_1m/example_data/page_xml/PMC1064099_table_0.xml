@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-03-18T15:29:10.374819+00:00</Created>
+    <LastChange>2025-03-18T15:29:10.374819+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="example_data/voc_xml/PMC1064099" imageHeight="206" imageWidth="287">
+    <TableRegion id="example_data/voc_xml/PMC1064099_table_0">
+      <Coords points="37,37 248,37 248,167 37,167"/>
+      <TableCell id="0" row="0" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,37 130,37 130,53 37,53"/>
+        <TextLine id="679" index="679">
+          <Coords points="37,37 67,37 67,49 37,49"/>
+          <TextEquiv>
+            <Unicode>Protein</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="1" row="0" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,37 248,37 248,53 130,53"/>
+        <TextLine id="680" index="680">
+          <Coords points="190,37 239,37 239,49 190,49"/>
+          <TextEquiv>
+            <Unicode>Percentage</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="2" row="1" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,53 130,53 130,73 37,73"/>
+        <TextLine id="681" index="681">
+          <Coords points="37,57 64,57 64,69 37,69"/>
+          <TextEquiv>
+            <Unicode>PCNA</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="3" row="1" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,53 248,53 248,73 130,73"/>
+        <TextLine id="682" index="682">
+          <Coords points="190,57 216,57 216,69 190,69"/>
+          <TextEquiv>
+            <Unicode>15.93</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="683" index="683">
+          <Coords points="219,57 225,57 225,69 219,69"/>
+          <TextEquiv>
+            <Unicode>±</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="684" index="684">
+          <Coords points="228,57 248,57 248,69 228,69"/>
+          <TextEquiv>
+            <Unicode>4.38</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="4" row="2" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,73 130,73 130,92 37,92"/>
+        <TextLine id="685" index="685">
+          <Coords points="37,77 69,77 69,89 37,89"/>
+          <TextEquiv>
+            <Unicode>hMLH1</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="5" row="2" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,73 248,73 248,92 130,92"/>
+        <TextLine id="686" index="686">
+          <Coords points="190,77 210,77 210,89 190,89"/>
+          <TextEquiv>
+            <Unicode>0.25</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="687" index="687">
+          <Coords points="213,77 219,77 219,89 213,89"/>
+          <TextEquiv>
+            <Unicode>±</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="688" index="688">
+          <Coords points="222,77 242,77 242,89 222,89"/>
+          <TextEquiv>
+            <Unicode>1.11</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="6" row="3" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,92 130,92 130,112 37,112"/>
+        <TextLine id="689" index="689">
+          <Coords points="37,96 69,96 69,108 37,108"/>
+          <TextEquiv>
+            <Unicode>hPMS1</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="7" row="3" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,92 248,92 248,112 130,112"/>
+        <TextLine id="690" index="690">
+          <Coords points="190,96 204,96 204,108 190,108"/>
+          <TextEquiv>
+            <Unicode>0.6</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="691" index="691">
+          <Coords points="207,96 213,96 213,108 207,108"/>
+          <TextEquiv>
+            <Unicode>±</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="692" index="692">
+          <Coords points="216,96 236,96 236,108 216,108"/>
+          <TextEquiv>
+            <Unicode>0.99</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="8" row="4" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,112 130,112 130,132 37,132"/>
+        <TextLine id="693" index="693">
+          <Coords points="37,116 69,116 69,128 37,128"/>
+          <TextEquiv>
+            <Unicode>hPMS2</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="9" row="4" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,112 248,112 248,132 130,132"/>
+        <TextLine id="694" index="694">
+          <Coords points="190,116 196,116 196,128 190,128"/>
+          <TextEquiv>
+            <Unicode>0</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="695" index="695">
+          <Coords points="199,116 205,116 205,128 199,128"/>
+          <TextEquiv>
+            <Unicode>±</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="696" index="696">
+          <Coords points="208,116 214,116 214,128 208,128"/>
+          <TextEquiv>
+            <Unicode>0</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="10" row="5" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,132 130,132 130,151 37,151"/>
+        <TextLine id="697" index="697">
+          <Coords points="37,135 70,135 70,147 37,147"/>
+          <TextEquiv>
+            <Unicode>hMSH2</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="11" row="5" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,132 248,132 248,151 130,151"/>
+        <TextLine id="698" index="698">
+          <Coords points="190,135 210,135 210,147 190,147"/>
+          <TextEquiv>
+            <Unicode>72.7</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="699" index="699">
+          <Coords points="213,135 219,135 219,147 213,147"/>
+          <TextEquiv>
+            <Unicode>±</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="700" index="700">
+          <Coords points="222,135 248,135 248,147 222,147"/>
+          <TextEquiv>
+            <Unicode>20.33</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="12" row="6" col="0" rowSpan="1" colSpan="1">
+        <Coords points="37,151 130,151 130,167 37,167"/>
+        <TextLine id="701" index="701">
+          <Coords points="37,155 60,155 60,167 37,167"/>
+          <TextEquiv>
+            <Unicode>TP53</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+      <TableCell id="13" row="6" col="1" rowSpan="1" colSpan="1">
+        <Coords points="130,151 248,151 248,167 130,167"/>
+        <TextLine id="702" index="702">
+          <Coords points="190,155 196,155 196,167 190,167"/>
+          <TextEquiv>
+            <Unicode>0</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="703" index="703">
+          <Coords points="199,155 205,155 205,167 199,167"/>
+          <TextEquiv>
+            <Unicode>±</Unicode>
+          </TextEquiv>
+        </TextLine>
+        <TextLine id="704" index="704">
+          <Coords points="208,155 214,155 214,167 208,167"/>
+          <TextEquiv>
+            <Unicode>0</Unicode>
+          </TextEquiv>
+        </TextLine>
+      </TableCell>
+    </TableRegion>
+  </Page>
+</PcGts>
