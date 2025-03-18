@@ -2,6 +2,11 @@ import lxml.etree as ET
 import json
 from enum import Enum
 
+import numpy as np
+import cv2
+
+from organizer.tables.table_layout import TablePageLayout, TableRegion, TableCell
+
 
 class VocWord:
     def __init__(self, word: dict):
@@ -17,15 +22,6 @@ class VocWord:
 
     def ltrb(self):
         return self.xmin, self.ymin, self.xmax, self.ymax
-
-
-class ObjectCategory(Enum):
-    table = 'table'
-    table_column = 'table column'
-    table_row = 'table row'
-    table_projected_row_header = 'table projected row header'
-    table_spanning_cell = 'table spanning cell'
-    table_column_header = 'table column header'
 
 
 class VocObject:
@@ -47,7 +43,7 @@ class VocObject:
         self.xmax = float(self.bndbox.find('xmax').text)
         self.ymax = float(self.bndbox.find('ymax').text)
 
-    def to_ltrb(self):
+    def ltrb(self):
         return self.xmin, self.ymin, self.xmax, self.ymax
 
     def lt(self):
@@ -57,17 +53,39 @@ class VocObject:
         return self.xmax, self.ymax
 
 
+class ObjectCategory(Enum):
+    table = 'table'
+    table_column = 'table column'
+    table_row = 'table row'
+    table_projected_row_header = 'table projected row header'
+    table_spanning_cell = 'table spanning cell'
+    table_column_header = 'table column header'
+
+category_colors = {
+    ObjectCategory.table: (255, 0, 0), # blue
+    ObjectCategory.table_column: (240, 240, 70), # cyan
+    ObjectCategory.table_row: (128, 128, 0), # teal
+    ObjectCategory.table_projected_row_header: (0, 0, 128),  # maroon
+    ObjectCategory.table_spanning_cell: (0, 0, 128),  # maroon
+}
+
+
 class VocLayout:
-    def __init__(self, xml_file: str, word_file: str = None, only_table_structure: bool = False):
+    grid_categories = [ObjectCategory.table_column,
+                       ObjectCategory.table_row]
+    joind_cell_categories = [ObjectCategory.table_projected_row_header,
+                             ObjectCategory.table_spanning_cell]
+
+    def __init__(self, xml_file: str, word_file: str = None):
         self.xml_file = xml_file
         self.word_file = word_file
 
-        self.load_voc_xml(xml_file, only_table_structure)
+        self.load_voc_xml(xml_file)
 
         if word_file is not None:
             self.load_words(word_file)
 
-    def load_voc_xml(self, xml_file: str, only_table_structure: bool = False):
+    def load_voc_xml(self, xml_file: str):
         try:
             self.tree = ET.parse(xml_file)
             self.root = self.tree.getroot()
@@ -84,18 +102,46 @@ class VocLayout:
         objects = self.root.findall('object')
         self.objects = [VocObject(obj) for obj in objects]
 
-        if only_table_structure:
-            self.objects = [obj for obj in self.objects
-                            if obj.category in [ObjectCategory.table, ObjectCategory.table_column, ObjectCategory.table_row]]
-
     def load_words(self, word_file: str):
         with open(word_file) as f:
             words = json.load(f)
 
         self.words = [VocWord(word) for word in words]
 
+    def render_tsr(self, image: np.ndarray) -> np.ndarray:
+        # render words
+        for word in self.words:
+            l, t, r, b = word.ltrb()
+            word_color_pink = (255, 190, 220)
+            cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), word_color_pink, 1)
+            image_words = image.copy()
 
-        
+        grid_objects = [obj for obj in self.objects
+                        if obj.category in self.grid_categories]
+        joind_cells_objects = [obj for obj in self.objects 
+                               if obj.category in self.joind_cell_categories]
+
+        # render grid objects
+        for obj in grid_objects:
+            l, t, r, b = obj.ltrb()
+            cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), category_colors[obj.category], 1)
+
+        # render joined cells (on top of grid objects)
+        for obj in joind_cells_objects:
+            l, t, r, b = obj.ltrb()
+            # copy part of the image and place it on top of the image (to be on top already existing borders)
+            joined_cell_image = image_words[int(t):int(b), int(l):int(r)].copy()
+            image[int(t):int(b), int(l):int(r)] = joined_cell_image
+
+            cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), category_colors[obj.category], 1)
+
+        # re-render all table objects to be on top
+        table_objects = [obj for obj in self.objects if obj.category == ObjectCategory.table]
+        for obj in table_objects:
+            l, t, r, b = obj.ltrb()
+            cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), category_colors[obj.category], 1)
+
+        return image
 
 
 # words JSON file example:
