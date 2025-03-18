@@ -40,10 +40,10 @@ def parseargs():
         help="Input folder where to look for images.")
     parser.add_argument(
         "-x", "--xml-folder", type=str, default='example_data/1_cut_tables/xml',
-        help="Input folder where to look for images.")
+        help="Input folder where to look for xml files.")
     parser.add_argument(
         "-t", "--task-image-path", type=str, default='/data/local-files/?d=tables/tables_2nd_phase_cell_detection/images/',
-        help="Input folder where to look for images.")
+        help="Path to save to task json for Label Studio.")
 
     # parser.add_argument(
     #     '-p', '--padding', type=int, default=0,
