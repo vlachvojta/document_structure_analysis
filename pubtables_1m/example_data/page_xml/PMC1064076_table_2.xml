@@ -2,8 +2,8 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T20:25:16.650896+00:00</Created>
-    <LastChange>2025-03-22T20:25:16.650896+00:00</LastChange>
+    <Created>2025-03-22T21:05:07.309050+00:00</Created>
+    <LastChange>2025-03-22T21:05:07.309050+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064076_table_2" imageHeight="413" imageWidth="684">
     <TableRegion id="PMC1064076_table_2">
@@ -835,6 +835,18 @@
       </TableCell>
       <TableCell id="128" type="table projected row header" row="11" col="0" rowSpan="1" colSpan="7">
         <Coords points="37,260 645,260 645,280 37,280"/>
+        <TextLine id="128_l000" index="0">
+          <Coords points="37,264 54,264 54,276 37,276"/>
+          <Word id="529">
+            <Coords points="37,264 54,264 54,276 37,276"/>
+            <TextEquiv>
+              <Unicode>BMI</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>BMI</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c084" row="12" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,280 196,280 196,299 37,299"/>
@@ -1097,7 +1109,13 @@
       <TableCell id="129" type="table projected row header" row="14" col="0" rowSpan="1" colSpan="7">
         <Coords points="37,319 645,319 645,338 37,338"/>
         <TextLine id="129_l000" index="0">
-          <Coords points="64,323 134,323 134,335 64,335"/>
+          <Coords points="37,323 134,323 134,335 37,335"/>
+          <Word id="552">
+            <Coords points="37,323 61,323 61,335 37,335"/>
+            <TextEquiv>
+              <Unicode>Years</Unicode>
+            </TextEquiv>
+          </Word>
           <Word id="553">
             <Coords points="64,323 72,323 72,335 64,335"/>
             <TextEquiv>
@@ -1111,7 +1129,7 @@
             </TextEquiv>
           </Word>
           <TextEquiv>
-            <Unicode>of menstruationc</Unicode>
+            <Unicode>Years of menstruationc</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>

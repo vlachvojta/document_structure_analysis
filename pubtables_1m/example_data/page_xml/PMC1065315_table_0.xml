@@ -2,26 +2,116 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T20:25:15.658683+00:00</Created>
-    <LastChange>2025-03-22T20:25:15.658683+00:00</LastChange>
+    <Created>2025-03-22T21:05:06.300037+00:00</Created>
+    <LastChange>2025-03-22T21:05:06.300037+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1065315_table_0" imageHeight="167" imageWidth="672">
     <TableRegion id="PMC1065315_table_0">
       <Coords points="37,37 634,37 634,128 37,128"/>
       <TableCell id="c000" row="0" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,37 77,37 77,53 37,53"/>
+        <TextLine id="c000_l000" index="0">
+          <Coords points="37,37 64,37 64,49 37,49"/>
+          <Word id="543">
+            <Coords points="37,37 64,37 64,49 37,49"/>
+            <TextEquiv>
+              <Unicode>Group</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Group</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c001" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="77,37 310,37 310,53 77,53"/>
+        <TextLine id="c001_l000" index="0">
+          <Coords points="90,37 142,37 142,49 90,49"/>
+          <Word id="544">
+            <Coords points="90,37 110,37 110,49 90,49"/>
+            <TextEquiv>
+              <Unicode>RNA</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="545">
+            <Coords points="113,37 142,37 142,49 113,49"/>
+            <TextEquiv>
+              <Unicode>source</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>RNA source</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c002" row="0" col="2" rowSpan="1" colSpan="1">
         <Coords points="310,37 407,37 407,53 310,53"/>
+        <TextLine id="c002_l000" index="0">
+          <Coords points="317,37 360,37 360,49 317,49"/>
+          <Word id="546">
+            <Coords points="317,37 360,37 360,49 317,49"/>
+            <TextEquiv>
+              <Unicode>Treatment</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Treatment</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c003" row="0" col="3" rowSpan="1" colSpan="1">
         <Coords points="407,37 550,37 550,53 407,53"/>
+        <TextLine id="c003_l000" index="0">
+          <Coords points="446,37 528,37 528,49 446,49"/>
+          <Word id="547">
+            <Coords points="446,37 467,37 467,49 446,49"/>
+            <TextEquiv>
+              <Unicode>Days</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="548">
+            <Coords points="470,37 489,37 489,49 470,49"/>
+            <TextEquiv>
+              <Unicode>after</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="549">
+            <Coords points="492,37 528,37 528,49 492,49"/>
+            <TextEquiv>
+              <Unicode>injection</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Days after injection</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c004" row="0" col="4" rowSpan="1" colSpan="1">
         <Coords points="550,37 634,37 634,53 550,53"/>
+        <TextLine id="c004_l000" index="0">
+          <Coords points="573,37 634,37 634,49 573,49"/>
+          <Word id="550">
+            <Coords points="573,37 588,37 588,49 573,49"/>
+            <TextEquiv>
+              <Unicode>No.</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="551">
+            <Coords points="590,37 599,37 599,49 590,49"/>
+            <TextEquiv>
+              <Unicode>of</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="552">
+            <Coords points="601,37 634,37 634,49 601,49"/>
+            <TextEquiv>
+              <Unicode>animals</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>No. of animals</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c005" row="1" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,53 77,53 77,73 37,73"/>

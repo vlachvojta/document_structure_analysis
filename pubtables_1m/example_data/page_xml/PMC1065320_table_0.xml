@@ -2,26 +2,110 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T20:25:15.607289+00:00</Created>
-    <LastChange>2025-03-22T20:25:15.607289+00:00</LastChange>
+    <Created>2025-03-22T21:05:06.245600+00:00</Created>
+    <LastChange>2025-03-22T21:05:06.245600+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1065320_table_0" imageHeight="362" imageWidth="623">
     <TableRegion id="PMC1065320_table_0">
       <Coords points="37,37 585,37 585,323 37,323"/>
       <TableCell id="c000" row="0" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,37 133,37 133,53 37,53"/>
+        <TextLine id="c000_l000" index="0">
+          <Coords points="37,37 86,37 86,49 37,49"/>
+          <Word id="434">
+            <Coords points="37,37 70,37 70,49 37,49"/>
+            <TextEquiv>
+              <Unicode>Subject</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="435">
+            <Coords points="73,37 86,37 86,49 73,49"/>
+            <TextEquiv>
+              <Unicode>no.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Subject no.</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c001" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="133,37 231,37 231,53 133,53"/>
+        <TextLine id="c001_l000" index="0">
+          <Coords points="180,37 195,37 195,49 180,49"/>
+          <Word id="436">
+            <Coords points="180,37 195,37 195,49 180,49"/>
+            <TextEquiv>
+              <Unicode>Sex</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Sex</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c002" row="0" col="2" rowSpan="1" colSpan="1">
         <Coords points="231,37 392,37 392,53 231,53"/>
+        <TextLine id="c002_l000" index="0">
+          <Coords points="266,37 361,37 361,49 266,49"/>
+          <Word id="437">
+            <Coords points="266,37 283,37 283,49 266,49"/>
+            <TextEquiv>
+              <Unicode>Age</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="438">
+            <Coords points="286,37 294,37 294,49 286,49"/>
+            <TextEquiv>
+              <Unicode>at</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="439">
+            <Coords points="297,37 321,37 321,49 297,49"/>
+            <TextEquiv>
+              <Unicode>onset</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="440">
+            <Coords points="323,37 361,37 361,49 323,49"/>
+            <TextEquiv>
+              <Unicode>(months)</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Age at onset (months)</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c003" row="0" col="3" rowSpan="1" colSpan="1">
         <Coords points="392,37 501,37 501,53 392,53"/>
+        <TextLine id="c003_l000" index="0">
+          <Coords points="422,37 456,37 456,49 422,49"/>
+          <Word id="441">
+            <Coords points="422,37 456,37 456,49 422,49"/>
+            <TextEquiv>
+              <Unicode>CXCR3</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>CXCR3</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c004" row="0" col="4" rowSpan="1" colSpan="1">
         <Coords points="501,37 585,37 585,53 501,53"/>
+        <TextLine id="c004_l000" index="0">
+          <Coords points="546,37 585,37 585,49 546,49"/>
+          <Word id="442">
+            <Coords points="546,37 585,37 585,49 546,49"/>
+            <TextEquiv>
+              <Unicode>CXCL10</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>CXCL10</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="75" type="table projected row header" row="1" col="0" rowSpan="1" colSpan="5">
         <Coords points="37,53 585,53 585,73 37,73"/>

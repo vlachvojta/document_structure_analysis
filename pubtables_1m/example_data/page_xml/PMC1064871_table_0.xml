@@ -2,17 +2,59 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T20:25:15.315574+00:00</Created>
-    <LastChange>2025-03-22T20:25:15.315574+00:00</LastChange>
+    <Created>2025-03-22T21:05:05.953105+00:00</Created>
+    <LastChange>2025-03-22T21:05:05.953105+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064871_table_0" imageHeight="221" imageWidth="471">
     <TableRegion id="PMC1064871_table_0">
       <Coords points="37,37 432,37 432,182 37,182"/>
       <TableCell id="c000" row="0" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,37 266,37 266,51 37,51"/>
+        <TextLine id="c000_l000" index="0">
+          <Coords points="37,37 121,37 121,49 37,49"/>
+          <Word id="380">
+            <Coords points="37,37 58,37 58,49 37,49"/>
+            <TextEquiv>
+              <Unicode>Total</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="381">
+            <Coords points="60,37 73,37 73,49 60,49"/>
+            <TextEquiv>
+              <Unicode>no.</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="382">
+            <Coords points="76,37 84,37 84,49 76,49"/>
+            <TextEquiv>
+              <Unicode>of</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="383">
+            <Coords points="87,37 121,37 121,49 87,49"/>
+            <TextEquiv>
+              <Unicode>patients</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Total no. of patients</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c001" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="266,37 432,37 432,51 266,51"/>
+        <TextLine id="c001_l000" index="0">
+          <Coords points="351,37 357,37 357,49 351,49"/>
+          <Word id="384">
+            <Coords points="351,37 357,37 357,49 351,49"/>
+            <TextEquiv>
+              <Unicode>8</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>8</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c002" row="1" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,51 266,51 266,69 37,69"/>
@@ -182,15 +224,21 @@
       <TableCell id="c007" row="3" col="1" rowSpan="1" colSpan="1">
         <Coords points="266,88 432,88 432,108 266,108"/>
         <TextLine id="c007_l000" index="0">
-          <Coords points="352,92 371,92 371,104 352,104"/>
+          <Coords points="352,92 432,92 432,104 352,104"/>
           <Word id="405">
             <Coords points="352,92 371,92 371,104 352,104"/>
             <TextEquiv>
               <Unicode>12.3</Unicode>
             </TextEquiv>
           </Word>
+          <Word id="406">
+            <Coords points="374,92 432,92 432,104 374,104"/>
+            <TextEquiv>
+              <Unicode>(0–22)mg/dL</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>12.3</Unicode>
+            <Unicode>12.3 (0–22)mg/dL</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>

@@ -2,8 +2,8 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T20:25:15.523324+00:00</Created>
-    <LastChange>2025-03-22T20:25:15.523324+00:00</LastChange>
+    <Created>2025-03-22T21:05:06.156992+00:00</Created>
+    <LastChange>2025-03-22T21:05:06.156992+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064076_table_0" imageHeight="323" imageWidth="685">
     <TableRegion id="PMC1064076_table_0">
@@ -107,7 +107,13 @@
       <TableCell id="52" type="table projected row header" row="1" col="0" rowSpan="1" colSpan="4">
         <Coords points="37,53 646,53 646,73 37,73"/>
         <TextLine id="52_l000" index="0">
-          <Coords points="97,57 127,57 127,69 97,69"/>
+          <Coords points="37,57 127,57 127,69 37,69"/>
+          <Word id="544">
+            <Coords points="37,57 94,57 94,69 37,69"/>
+            <TextEquiv>
+              <Unicode>Demographic</Unicode>
+            </TextEquiv>
+          </Word>
           <Word id="545">
             <Coords points="97,57 127,57 127,69 97,69"/>
             <TextEquiv>
@@ -115,7 +121,7 @@
             </TextEquiv>
           </Word>
           <TextEquiv>
-            <Unicode>factors</Unicode>
+            <Unicode>Demographic factors</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
@@ -320,7 +326,13 @@
       <TableCell id="53" type="table projected row header" row="4" col="0" rowSpan="1" colSpan="4">
         <Coords points="37,112 646,112 646,132 37,132"/>
         <TextLine id="53_l000" index="0">
-          <Coords points="63,116 110,116 110,128 63,128"/>
+          <Coords points="37,116 110,116 110,128 37,128"/>
+          <Word id="567">
+            <Coords points="37,116 61,116 61,128 37,128"/>
+            <TextEquiv>
+              <Unicode>Major</Unicode>
+            </TextEquiv>
+          </Word>
           <Word id="568">
             <Coords points="63,116 78,116 78,128 63,128"/>
             <TextEquiv>
@@ -334,7 +346,7 @@
             </TextEquiv>
           </Word>
           <TextEquiv>
-            <Unicode>risk factors</Unicode>
+            <Unicode>Major risk factors</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
@@ -758,15 +770,21 @@
       <TableCell id="c035" row="8" col="3" rowSpan="1" colSpan="1">
         <Coords points="589,190 646,190 646,210 589,210"/>
         <TextLine id="c035_l000" index="0">
-          <Coords points="611,194 617,194 617,206 611,206"/>
+          <Coords points="611,194 646,194 646,206 611,206"/>
           <Word id="617">
             <Coords points="611,194 617,194 617,206 611,206"/>
             <TextEquiv>
               <Unicode>&lt;</Unicode>
             </TextEquiv>
           </Word>
+          <Word id="618">
+            <Coords points="620,194 646,194 646,206 620,206"/>
+            <TextEquiv>
+              <Unicode>0.001</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>&lt;</Unicode>
+            <Unicode>&lt; 0.001</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
@@ -1108,15 +1126,111 @@
       </TableCell>
       <TableCell id="c048" row="12" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,269 289,269 289,284 37,284"/>
+        <TextLine id="c048_l000" index="0">
+          <Coords points="49,272 182,272 182,284 49,284"/>
+          <Word id="657">
+            <Coords points="49,272 102,272 102,284 49,284"/>
+            <TextEquiv>
+              <Unicode>Waist-to-hip</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="658">
+            <Coords points="104,272 123,272 123,284 104,284"/>
+            <TextEquiv>
+              <Unicode>ratio</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="659">
+            <Coords points="126,272 152,272 152,284 126,284"/>
+            <TextEquiv>
+              <Unicode>(mean</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="660">
+            <Coords points="155,272 162,272 162,284 155,284"/>
+            <TextEquiv>
+              <Unicode>±</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="661">
+            <Coords points="165,272 182,272 182,284 165,284"/>
+            <TextEquiv>
+              <Unicode>SD)</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Waist-to-hip ratio (mean ± SD)</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c049" row="12" col="1" rowSpan="1" colSpan="1">
         <Coords points="289,269 455,269 455,284 289,284"/>
+        <TextLine id="c049_l000" index="0">
+          <Coords points="364,272 416,272 416,284 364,284"/>
+          <Word id="662">
+            <Coords points="364,272 384,272 384,284 364,284"/>
+            <TextEquiv>
+              <Unicode>0.81</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="663">
+            <Coords points="386,272 393,272 393,284 386,284"/>
+            <TextEquiv>
+              <Unicode>±</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="664">
+            <Coords points="396,272 416,272 416,284 396,284"/>
+            <TextEquiv>
+              <Unicode>0.06</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>0.81 ± 0.06</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c050" row="12" col="2" rowSpan="1" colSpan="1">
         <Coords points="455,269 589,269 589,284 455,284"/>
+        <TextLine id="c050_l000" index="0">
+          <Coords points="499,272 551,272 551,284 499,284"/>
+          <Word id="665">
+            <Coords points="499,272 519,272 519,284 499,284"/>
+            <TextEquiv>
+              <Unicode>0.80</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="666">
+            <Coords points="521,272 528,272 528,284 521,284"/>
+            <TextEquiv>
+              <Unicode>±</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="667">
+            <Coords points="531,272 551,272 551,284 531,284"/>
+            <TextEquiv>
+              <Unicode>0.06</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>0.80 ± 0.06</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c051" row="12" col="3" rowSpan="1" colSpan="1">
         <Coords points="589,269 646,269 646,284 589,284"/>
+        <TextLine id="c051_l000" index="0">
+          <Coords points="615,272 641,272 641,284 615,284"/>
+          <Word id="668">
+            <Coords points="615,272 641,272 641,284 615,284"/>
+            <TextEquiv>
+              <Unicode>0.004</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>0.004</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
     </TableRegion>
   </Page>

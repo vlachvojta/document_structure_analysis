@@ -2,23 +2,101 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T20:25:16.127366+00:00</Created>
-    <LastChange>2025-03-22T20:25:16.127366+00:00</LastChange>
+    <Created>2025-03-22T21:05:06.780725+00:00</Created>
+    <LastChange>2025-03-22T21:05:06.780725+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064893_table_0" imageHeight="480" imageWidth="655">
     <TableRegion id="PMC1064893_table_0">
       <Coords points="37,37 616,37 616,441 37,441"/>
       <TableCell id="c000" row="0" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,37 142,37 142,53 37,53"/>
+        <TextLine id="c000_l000" index="0">
+          <Coords points="37,37 61,37 61,49 37,49"/>
+          <Word id="363">
+            <Coords points="37,37 61,37 61,49 37,49"/>
+            <TextEquiv>
+              <Unicode>Gene</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Gene</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c001" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,37 343,37 343,53 142,53"/>
+        <TextLine id="c001_l000" index="0">
+          <Coords points="194,37 259,37 259,49 194,49"/>
+          <Word id="364">
+            <Coords points="194,37 229,37 229,49 194,49"/>
+            <TextEquiv>
+              <Unicode>Forward</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="365">
+            <Coords points="232,37 259,37 259,49 232,49"/>
+            <TextEquiv>
+              <Unicode>primer</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Forward primer</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c002" row="0" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,37 502,37 502,53 343,53"/>
+        <TextLine id="c002_l000" index="0">
+          <Coords points="351,37 416,37 416,49 351,49"/>
+          <Word id="366">
+            <Coords points="351,37 386,37 386,49 351,49"/>
+            <TextEquiv>
+              <Unicode>Reverse</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="367">
+            <Coords points="389,37 416,37 416,49 389,49"/>
+            <TextEquiv>
+              <Unicode>primer</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Reverse primer</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c003" row="0" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,37 616,37 616,53 502,53"/>
+        <TextLine id="c003_l000" index="0">
+          <Coords points="509,37 616,37 616,49 509,49"/>
+          <Word id="368">
+            <Coords points="509,37 543,37 543,49 509,49"/>
+            <TextEquiv>
+              <Unicode>Product</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="369">
+            <Coords points="546,37 562,37 562,49 546,49"/>
+            <TextEquiv>
+              <Unicode>size</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="370">
+            <Coords points="565,37 589,37 589,49 565,49"/>
+            <TextEquiv>
+              <Unicode>(base</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="371">
+            <Coords points="592,37 616,37 616,49 592,49"/>
+            <TextEquiv>
+              <Unicode>pairs)</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>Product size (base pairs)</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c004" row="1" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,53 142,53 142,73 37,73"/>
@@ -2566,15 +2644,135 @@
       </TableCell>
       <TableCell id="c080" row="20" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,425 142,425 142,441 37,441"/>
+        <TextLine id="c080_l000" index="0">
+          <Coords points="37,428 66,428 66,441 37,441"/>
+          <Word id="682">
+            <Coords points="37,428 66,428 66,441 37,441"/>
+            <TextEquiv>
+              <Unicode>β-actin</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>β-actin</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c081" row="20" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,425 343,425 343,441 142,441"/>
+        <TextLine id="c081_l000" index="0">
+          <Coords points="194,429 334,429 334,441 194,441"/>
+          <Word id="683">
+            <Coords points="194,429 221,429 221,441 194,441"/>
+            <TextEquiv>
+              <Unicode>5'-cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="684">
+            <Coords points="223,429 239,429 239,441 223,441"/>
+            <TextEquiv>
+              <Unicode>cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="685">
+            <Coords points="242,429 256,429 256,441 242,441"/>
+            <TextEquiv>
+              <Unicode>ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="686">
+            <Coords points="259,429 274,429 274,441 259,441"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="687">
+            <Coords points="277,429 294,429 294,441 277,441"/>
+            <TextEquiv>
+              <Unicode>ggg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="688">
+            <Coords points="297,429 312,429 312,441 297,441"/>
+            <TextEquiv>
+              <Unicode>aaa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="689">
+            <Coords points="315,429 334,429 334,441 315,441"/>
+            <TextEquiv>
+              <Unicode>tc-3'</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>5'-cca cag ctg aga ggg aaa tc-3'</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c082" row="20" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,425 502,425 502,441 343,441"/>
+        <TextLine id="c082_l000" index="0">
+          <Coords points="351,429 490,429 490,441 351,441"/>
+          <Word id="690">
+            <Coords points="351,429 374,429 374,441 351,441"/>
+            <TextEquiv>
+              <Unicode>5'-tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="691">
+            <Coords points="376,429 392,429 392,441 376,441"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="692">
+            <Coords points="395,429 412,429 412,441 395,441"/>
+            <TextEquiv>
+              <Unicode>ggg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="693">
+            <Coords points="414,429 431,429 431,441 414,441"/>
+            <TextEquiv>
+              <Unicode>agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="694">
+            <Coords points="434,429 449,429 449,441 434,441"/>
+            <TextEquiv>
+              <Unicode>aag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="695">
+            <Coords points="452,429 468,429 468,441 452,441"/>
+            <TextEquiv>
+              <Unicode>agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="696">
+            <Coords points="471,429 490,429 490,441 471,441"/>
+            <TextEquiv>
+              <Unicode>at-3'</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>5'-tct cca ggg agg aag agg at-3'</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
       <TableCell id="c083" row="20" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,425 616,425 616,441 502,441"/>
+        <TextLine id="c083_l000" index="0">
+          <Coords points="509,429 527,429 527,441 509,441"/>
+          <Word id="697">
+            <Coords points="509,429 527,429 527,441 509,441"/>
+            <TextEquiv>
+              <Unicode>108</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv>
+            <Unicode>108</Unicode>
+          </TextEquiv>
+        </TextLine>
       </TableCell>
     </TableRegion>
   </Page>
