@@ -160,8 +160,10 @@ class PubTablesConverter:
 
             output_page_xml_file = os.path.join(self.output_folder_page_xml, image_name.replace('.jpg', '.xml'))
             output_table_crop_file = os.path.join(self.output_folder_table_crops, image_name)
+            rendered_page_layout_out_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '.jpg'))
             if (not self.force_new and self.mass_export and
-                os.path.exists(output_page_xml_file) and os.path.exists(output_table_crop_file)):
+                os.path.exists(output_page_xml_file) and os.path.exists(output_table_crop_file)
+                and os.path.exists(rendered_page_layout_out_file)):
                 self.stats['skipped because exists'] += 1
                 continue
 
@@ -187,9 +189,10 @@ class PubTablesConverter:
             cv2.imwrite(output_table_crop_file, table_crop)
             self.stats['table_crops_exported'] += 1
 
-            # create table reconstruction for testing purposes
-            # TODO move this down after testing on first 1000 files or something
-            reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
+            # render page layout with table, cell, line and word bounding boxes
+            rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
+            cv2.imwrite(rendered_page_layout_out_file, rendered_page_layout)
+            self.stats['page_layout_rendered_exported'] += 1
 
             if self.mass_export:
                 continue
@@ -197,6 +200,7 @@ class PubTablesConverter:
             self.categories_seen.update(layout_categories)
 
             # render table reconstruction only if mass export is not enabled
+            reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
             output_file = os.path.join(self.output_folder_reconstruction, image_name)
             cv2.imwrite(output_file, reconstructed_image)
             self.stats['reconstruction_images_exported'] += 1
@@ -226,11 +230,6 @@ class PubTablesConverter:
             output_file = output_image_file_base.replace('.jpg', '_tsr.jpg')
             cv2.imwrite(output_file, rendered_tsr)
             self.stats['tsr_images_exported'] += 1
-
-            rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
-            output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '.jpg'))
-            cv2.imwrite(output_file, rendered_page_layout)
-            self.stats['page_layout_rendered_exported'] += 1
 
             rendered_page_layout_cropped = table_layout.render_table_crops(rendered_page_layout, render_borders=False)[0]
             output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '_crop.jpg'))
