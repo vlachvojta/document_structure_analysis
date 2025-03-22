@@ -58,6 +58,9 @@ def parseargs():
         "-m", "--mass-export", action='store_true', default=False,
         help="Mass export only image crops and PAGE XMLs.")
     parser.add_argument(
+        "-f", "--force_new", action='store_true', default=False,
+        help="Force new export of all images and xmls.")
+    parser.add_argument(
         "-o", "--output-folder", type=str, default='example_data',
         help="Output folder where to save json tasks.")
     parser.add_argument(
@@ -79,6 +82,7 @@ def main():
         word_folder=args.word_folder,
         # task_image_path=args.task_image_path,
         mass_export=args.mass_export,
+        force_new=args.force_new,
         output_folder=args.output_folder,
         verbose=args.verbose)
     pubtables_converter()
@@ -89,12 +93,13 @@ def main():
 
 class PubTablesConverter:
     def __init__(self, image_folder: str, xml_folder: str,
-                 word_folder: str, mass_export: bool,
+                 word_folder: str, mass_export: bool, force_new: bool,
                  output_folder: str, verbose: bool = False):
         self.image_folder = image_folder
         self.xml_folder = xml_folder
         self.word_folder = word_folder
         self.mass_export = mass_export
+        self.force_new = force_new
         self.output_folder = output_folder
         # self.task_image_path = task_image_path
         self.output_folder_images_render = os.path.join(output_folder, 'images_render')
@@ -146,14 +151,19 @@ class PubTablesConverter:
             # print(f'\nParsing {xml_file}')
             image_name = os.path.basename(image_file)
             output_image_file_base = os.path.join(self.output_folder_images_render, image_name)
-            # output_words
+
+            output_page_xml_file = os.path.join(self.output_folder_page_xml, image_name.replace('.jpg', '.xml'))
+            output_table_crop_file = os.path.join(self.output_folder_table_crops, image_name)
+            if (not self.force_new and self.mass_export and
+                os.path.exists(output_page_xml_file) and os.path.exists(output_table_crop_file)):
+                self.stats['skipped because exists'] += 1
+                continue
 
             voc_layout = VocLayout(xml_file, word_file)
             if voc_layout is None:
                 self.stats['voc_layout_load_failed'] += 1
                 logging.error(f'Could not load VOC layout: {xml_file}')
                 continue
-
 
             image_orig = cv2.imread(image_file)
             if image_orig is None:
@@ -163,14 +173,12 @@ class PubTablesConverter:
 
             # page layout to image and xml
             table_layout = voc_layout.to_table_layout()
-            page_xml_file = os.path.join(self.output_folder_page_xml, image_name.replace('.jpg', '.xml'))
-            table_layout.to_table_pagexml(page_xml_file)
+            table_layout.to_table_pagexml(output_page_xml_file)
             self.stats['page_layouts_exported'] += 1
 
             # render table cutouts
-            rendered_page_layout_cropped = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
-            output_file = os.path.join(self.output_folder_table_crops, image_name)
-            cv2.imwrite(output_file, rendered_page_layout_cropped)
+            table_crop = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
+            cv2.imwrite(output_table_crop_file, table_crop)
             self.stats['table_crops_exported'] += 1
 
             # create table reconstruction for testing purposes
