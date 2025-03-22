@@ -2,2122 +2,2578 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-18T15:29:10.423860+00:00</Created>
-    <LastChange>2025-03-18T15:29:10.423860+00:00</LastChange>
+    <Created>2025-03-22T20:25:16.127366+00:00</Created>
+    <LastChange>2025-03-22T20:25:16.127366+00:00</LastChange>
   </Metadata>
-  <Page imageFilename="example_data/voc_xml/PMC1064893" imageHeight="480" imageWidth="655">
-    <TableRegion id="example_data/voc_xml/PMC1064893_table_0">
+  <Page imageFilename="example_data/voc_xml/PMC1064893_table_0" imageHeight="480" imageWidth="655">
+    <TableRegion id="PMC1064893_table_0">
       <Coords points="37,37 616,37 616,441 37,441"/>
-      <TableCell id="0" row="0" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c000" row="0" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,37 142,37 142,53 37,53"/>
       </TableCell>
-      <TableCell id="1" row="0" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c001" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,37 343,37 343,53 142,53"/>
       </TableCell>
-      <TableCell id="2" row="0" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c002" row="0" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,37 502,37 502,53 343,53"/>
       </TableCell>
-      <TableCell id="3" row="0" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c003" row="0" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,37 616,37 616,53 502,53"/>
       </TableCell>
-      <TableCell id="4" row="1" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c004" row="1" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,53 142,53 142,73 37,73"/>
-        <TextLine id="372" index="372">
+        <TextLine id="c004_l000" index="0">
           <Coords points="37,56 59,56 59,69 37,69"/>
+          <Word id="372">
+            <Coords points="37,56 59,56 59,69 37,69"/>
+            <TextEquiv>
+              <Unicode>IFN-γ</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>IFN-γ</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="5" row="1" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c005" row="1" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,53 343,53 343,73 142,73"/>
-        <TextLine id="373" index="373">
-          <Coords points="194,57 222,57 222,69 194,69"/>
+        <TextLine id="c005_l000" index="0">
+          <Coords points="194,57 327,57 327,69 194,69"/>
+          <Word id="373">
+            <Coords points="194,57 222,57 222,69 194,69"/>
+            <TextEquiv>
+              <Unicode>5'-gcg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="374">
+            <Coords points="224,57 238,57 238,69 224,69"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="375">
+            <Coords points="240,57 252,57 252,69 240,69"/>
+            <TextEquiv>
+              <Unicode>ttg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="376">
+            <Coords points="255,57 268,57 268,69 255,69"/>
+            <TextEquiv>
+              <Unicode>aat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="377">
+            <Coords points="270,57 286,57 286,69 270,69"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="378">
+            <Coords points="289,57 304,57 304,69 289,69"/>
+            <TextEquiv>
+              <Unicode>acc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="379">
+            <Coords points="307,57 327,57 327,69 307,69"/>
+            <TextEquiv>
+              <Unicode>tg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gcg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="374" index="374">
-          <Coords points="224,57 238,57 238,69 224,69"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="375" index="375">
-          <Coords points="240,57 252,57 252,69 240,69"/>
-          <TextEquiv>
-            <Unicode>ttg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="376" index="376">
-          <Coords points="255,57 268,57 268,69 255,69"/>
-          <TextEquiv>
-            <Unicode>aat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="377" index="377">
-          <Coords points="270,57 286,57 286,69 270,69"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="378" index="378">
-          <Coords points="289,57 304,57 304,69 289,69"/>
-          <TextEquiv>
-            <Unicode>acc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="379" index="379">
-          <Coords points="307,57 327,57 327,69 307,69"/>
-          <TextEquiv>
-            <Unicode>tg-3'</Unicode>
+            <Unicode>5'-gcg tca ttg aat cac acc tg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="6" row="1" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c006" row="1" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,53 502,53 502,73 343,73"/>
-        <TextLine id="380" index="380">
-          <Coords points="351,57 378,57 378,69 351,69"/>
+        <TextLine id="c006_l000" index="0">
+          <Coords points="351,57 481,57 481,69 351,69"/>
+          <Word id="380">
+            <Coords points="351,57 378,57 378,69 351,69"/>
+            <TextEquiv>
+              <Unicode>5'-gac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="381">
+            <Coords points="381,57 395,57 395,69 381,69"/>
+            <TextEquiv>
+              <Unicode>ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="382">
+            <Coords points="398,57 412,57 412,69 398,69"/>
+            <TextEquiv>
+              <Unicode>tgg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="383">
+            <Coords points="415,57 426,57 426,69 415,69"/>
+            <TextEquiv>
+              <Unicode>gtt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="384">
+            <Coords points="429,57 441,57 441,69 429,69"/>
+            <TextEquiv>
+              <Unicode>gtt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="385">
+            <Coords points="443,57 459,57 459,69 443,69"/>
+            <TextEquiv>
+              <Unicode>gac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="386">
+            <Coords points="462,57 481,57 481,69 462,69"/>
+            <TextEquiv>
+              <Unicode>ct-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="381" index="381">
-          <Coords points="381,57 395,57 395,69 381,69"/>
-          <TextEquiv>
-            <Unicode>ctg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="382" index="382">
-          <Coords points="398,57 412,57 412,69 398,69"/>
-          <TextEquiv>
-            <Unicode>tgg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="383" index="383">
-          <Coords points="415,57 426,57 426,69 415,69"/>
-          <TextEquiv>
-            <Unicode>gtt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="384" index="384">
-          <Coords points="429,57 441,57 441,69 429,69"/>
-          <TextEquiv>
-            <Unicode>gtt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="385" index="385">
-          <Coords points="443,57 459,57 459,69 443,69"/>
-          <TextEquiv>
-            <Unicode>gac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="386" index="386">
-          <Coords points="462,57 481,57 481,69 462,69"/>
-          <TextEquiv>
-            <Unicode>ct-3'</Unicode>
+            <Unicode>5'-gac ctg tgg gtt gtt gac ct-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="7" row="1" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c007" row="1" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,53 616,53 616,73 502,73"/>
-        <TextLine id="387" index="387">
+        <TextLine id="c007_l000" index="0">
           <Coords points="509,57 527,57 527,69 509,69"/>
+          <Word id="387">
+            <Coords points="509,57 527,57 527,69 509,69"/>
+            <TextEquiv>
+              <Unicode>104</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>104</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="8" row="2" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c008" row="2" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,73 142,73 142,92 37,92"/>
-        <TextLine id="388" index="388">
+        <TextLine id="c008_l000" index="0">
           <Coords points="37,76 58,76 58,89 37,89"/>
+          <Word id="388">
+            <Coords points="37,76 58,76 58,89 37,89"/>
+            <TextEquiv>
+              <Unicode>IL-1β</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>IL-1β</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="9" row="2" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c009" row="2" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,73 343,73 343,92 142,92"/>
-        <TextLine id="389" index="389">
-          <Coords points="194,77 221,77 221,89 194,89"/>
+        <TextLine id="c009_l000" index="0">
+          <Coords points="194,77 331,77 331,89 194,89"/>
+          <Word id="389">
+            <Coords points="194,77 221,77 221,89 194,89"/>
+            <TextEquiv>
+              <Unicode>5'-cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="390">
+            <Coords points="224,77 240,77 240,89 224,89"/>
+            <TextEquiv>
+              <Unicode>gca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="391">
+            <Coords points="242,77 259,77 259,89 242,89"/>
+            <TextEquiv>
+              <Unicode>ggc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="392">
+            <Coords points="262,77 275,77 275,89 262,89"/>
+            <TextEquiv>
+              <Unicode>agt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="393">
+            <Coords points="278,77 291,77 291,89 278,89"/>
+            <TextEquiv>
+              <Unicode>atc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="394">
+            <Coords points="294,77 307,77 307,89 294,89"/>
+            <TextEquiv>
+              <Unicode>act</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="395">
+            <Coords points="310,77 331,77 331,89 310,89"/>
+            <TextEquiv>
+              <Unicode>ca-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="390" index="390">
-          <Coords points="224,77 240,77 240,89 224,89"/>
-          <TextEquiv>
-            <Unicode>gca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="391" index="391">
-          <Coords points="242,77 259,77 259,89 242,89"/>
-          <TextEquiv>
-            <Unicode>ggc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="392" index="392">
-          <Coords points="262,77 275,77 275,89 262,89"/>
-          <TextEquiv>
-            <Unicode>agt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="393" index="393">
-          <Coords points="278,77 291,77 291,89 278,89"/>
-          <TextEquiv>
-            <Unicode>atc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="394" index="394">
-          <Coords points="294,77 307,77 307,89 294,89"/>
-          <TextEquiv>
-            <Unicode>act</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="395" index="395">
-          <Coords points="310,77 331,77 331,89 310,89"/>
-          <TextEquiv>
-            <Unicode>ca-3'</Unicode>
+            <Unicode>5'-cag gca ggc agt atc act ca-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="10" row="2" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c010" row="2" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,73 502,73 502,92 343,92"/>
-        <TextLine id="396" index="396">
-          <Coords points="351,77 376,77 376,89 351,89"/>
+        <TextLine id="c010_l000" index="0">
+          <Coords points="351,77 490,77 490,89 351,89"/>
+          <Word id="396">
+            <Coords points="351,77 376,77 376,89 351,89"/>
+            <TextEquiv>
+              <Unicode>5'-atg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="397">
+            <Coords points="379,77 392,77 392,89 379,89"/>
+            <TextEquiv>
+              <Unicode>agt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="398">
+            <Coords points="395,77 411,77 411,89 395,89"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="399">
+            <Coords points="414,77 429,77 429,89 414,89"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="400">
+            <Coords points="432,77 448,77 448,89 432,89"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="401">
+            <Coords points="451,77 465,77 465,89 451,89"/>
+            <TextEquiv>
+              <Unicode>tgg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="402">
+            <Coords points="468,77 490,77 490,89 468,89"/>
+            <TextEquiv>
+              <Unicode>gc-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-atg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="397" index="397">
-          <Coords points="379,77 392,77 392,89 379,89"/>
-          <TextEquiv>
-            <Unicode>agt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="398" index="398">
-          <Coords points="395,77 411,77 411,89 395,89"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="399" index="399">
-          <Coords points="414,77 429,77 429,89 414,89"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="400" index="400">
-          <Coords points="432,77 448,77 448,89 432,89"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="401" index="401">
-          <Coords points="451,77 465,77 465,89 451,89"/>
-          <TextEquiv>
-            <Unicode>tgg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="402" index="402">
-          <Coords points="468,77 490,77 490,89 468,89"/>
-          <TextEquiv>
-            <Unicode>gc-3'</Unicode>
+            <Unicode>5'-atg agt cac aga gga tgg gc-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="11" row="2" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c011" row="2" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,73 616,73 616,92 502,92"/>
-        <TextLine id="403" index="403">
+        <TextLine id="c011_l000" index="0">
           <Coords points="509,77 527,77 527,89 509,89"/>
+          <Word id="403">
+            <Coords points="509,77 527,77 527,89 509,89"/>
+            <TextEquiv>
+              <Unicode>140</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>140</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="12" row="3" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c012" row="3" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,92 142,92 142,112 37,112"/>
-        <TextLine id="404" index="404">
+        <TextLine id="c012_l000" index="0">
           <Coords points="37,96 53,96 53,108 37,108"/>
+          <Word id="404">
+            <Coords points="37,96 53,96 53,108 37,108"/>
+            <TextEquiv>
+              <Unicode>IL-4</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>IL-4</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="13" row="3" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c013" row="3" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,92 343,92 343,112 142,112"/>
-        <TextLine id="405" index="405">
-          <Coords points="194,96 221,96 221,108 194,108"/>
+        <TextLine id="c013_l000" index="0">
+          <Coords points="194,96 328,96 328,108 194,108"/>
+          <Word id="405">
+            <Coords points="194,96 221,96 221,108 194,108"/>
+            <TextEquiv>
+              <Unicode>5'-agc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="406">
+            <Coords points="224,96 238,96 238,108 224,108"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="407">
+            <Coords points="240,96 256,96 256,108 240,108"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="408">
+            <Coords points="259,96 275,96 275,108 259,108"/>
+            <TextEquiv>
+              <Unicode>gac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="409">
+            <Coords points="277,96 289,96 289,108 277,108"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="410">
+            <Coords points="291,96 303,96 303,108 291,108"/>
+            <TextEquiv>
+              <Unicode>ttc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="411">
+            <Coords points="305,96 328,96 328,108 305,108"/>
+            <TextEquiv>
+              <Unicode>gg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-agc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="406" index="406">
-          <Coords points="224,96 238,96 238,108 224,108"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="407" index="407">
-          <Coords points="240,96 256,96 256,108 240,108"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="408" index="408">
-          <Coords points="259,96 275,96 275,108 259,108"/>
-          <TextEquiv>
-            <Unicode>gac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="409" index="409">
-          <Coords points="277,96 289,96 289,108 277,108"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="410" index="410">
-          <Coords points="291,96 303,96 303,108 291,108"/>
-          <TextEquiv>
-            <Unicode>ttc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="411" index="411">
-          <Coords points="305,96 328,96 328,108 305,108"/>
-          <TextEquiv>
-            <Unicode>gg-3'</Unicode>
+            <Unicode>5'-agc tgc aga gac tct ttc gg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="14" row="3" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c014" row="3" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,92 502,92 502,112 343,112"/>
-        <TextLine id="412" index="412">
-          <Coords points="351,96 376,96 376,108 351,108"/>
+        <TextLine id="c014_l000" index="0">
+          <Coords points="351,96 478,96 478,108 351,108"/>
+          <Word id="412">
+            <Coords points="351,96 376,96 376,108 351,108"/>
+            <TextEquiv>
+              <Unicode>5'-tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="413">
+            <Coords points="379,96 390,96 390,108 379,108"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="414">
+            <Coords points="393,96 404,96 404,108 393,108"/>
+            <TextEquiv>
+              <Unicode>tta</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="415">
+            <Coords points="407,96 423,96 423,108 407,108"/>
+            <TextEquiv>
+              <Unicode>ggc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="416">
+            <Coords points="426,96 435,96 435,108 426,108"/>
+            <TextEquiv>
+              <Unicode>ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="417">
+            <Coords points="438,96 453,96 453,108 438,108"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="418">
+            <Coords points="456,96 478,96 478,108 456,108"/>
+            <TextEquiv>
+              <Unicode>gg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="413" index="413">
-          <Coords points="379,96 390,96 390,108 379,108"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="414" index="414">
-          <Coords points="393,96 404,96 404,108 393,108"/>
-          <TextEquiv>
-            <Unicode>tta</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="415" index="415">
-          <Coords points="407,96 423,96 423,108 407,108"/>
-          <TextEquiv>
-            <Unicode>ggc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="416" index="416">
-          <Coords points="426,96 435,96 435,108 426,108"/>
-          <TextEquiv>
-            <Unicode>ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="417" index="417">
-          <Coords points="438,96 453,96 453,108 438,108"/>
-          <TextEquiv>
-            <Unicode>cca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="418" index="418">
-          <Coords points="456,96 478,96 478,108 456,108"/>
-          <TextEquiv>
-            <Unicode>gg-3'</Unicode>
+            <Unicode>5'-tgc tct tta ggc ttt cca gg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="15" row="3" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c015" row="3" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,92 616,92 616,112 502,112"/>
-        <TextLine id="419" index="419">
+        <TextLine id="c015_l000" index="0">
           <Coords points="509,96 527,96 527,108 509,108"/>
+          <Word id="419">
+            <Coords points="509,96 527,96 527,108 509,108"/>
+            <TextEquiv>
+              <Unicode>111</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>111</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="16" row="4" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c016" row="4" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,112 142,112 142,132 37,132"/>
-        <TextLine id="420" index="420">
+        <TextLine id="c016_l000" index="0">
           <Coords points="37,116 53,116 53,128 37,128"/>
+          <Word id="420">
+            <Coords points="37,116 53,116 53,128 37,128"/>
+            <TextEquiv>
+              <Unicode>IL-6</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>IL-6</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="17" row="4" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c017" row="4" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,112 343,112 343,132 142,132"/>
-        <TextLine id="421" index="421">
-          <Coords points="194,116 221,116 221,128 194,128"/>
+        <TextLine id="c017_l000" index="0">
+          <Coords points="194,116 335,116 335,128 194,128"/>
+          <Word id="421">
+            <Coords points="194,116 221,116 221,128 194,128"/>
+            <TextEquiv>
+              <Unicode>5'-ccg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="422">
+            <Coords points="224,116 240,116 240,128 224,128"/>
+            <TextEquiv>
+              <Unicode>gag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="423">
+            <Coords points="243,116 259,116 259,128 243,128"/>
+            <TextEquiv>
+              <Unicode>agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="424">
+            <Coords points="262,116 278,116 278,128 262,128"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="425">
+            <Coords points="281,116 292,116 292,128 281,128"/>
+            <TextEquiv>
+              <Unicode>ctt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="426">
+            <Coords points="295,116 310,116 310,128 295,128"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="427">
+            <Coords points="313,116 335,116 335,128 313,128"/>
+            <TextEquiv>
+              <Unicode>ag-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ccg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="422" index="422">
-          <Coords points="224,116 240,116 240,128 224,128"/>
-          <TextEquiv>
-            <Unicode>gag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="423" index="423">
-          <Coords points="243,116 259,116 259,128 243,128"/>
-          <TextEquiv>
-            <Unicode>agg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="424" index="424">
-          <Coords points="262,116 278,116 278,128 262,128"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="425" index="425">
-          <Coords points="281,116 292,116 292,128 281,128"/>
-          <TextEquiv>
-            <Unicode>ctt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="426" index="426">
-          <Coords points="295,116 310,116 310,128 295,128"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="427" index="427">
-          <Coords points="313,116 335,116 335,128 313,128"/>
-          <TextEquiv>
-            <Unicode>ag-3'</Unicode>
+            <Unicode>5'-ccg gag agg aga ctt cac ag-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="18" row="4" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c018" row="4" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,112 502,112 502,132 343,132"/>
-        <TextLine id="428" index="428">
-          <Coords points="351,116 378,116 378,128 351,128"/>
+        <TextLine id="c018_l000" index="0">
+          <Coords points="351,116 485,116 485,128 351,128"/>
+          <Word id="428">
+            <Coords points="351,116 378,116 378,128 351,128"/>
+            <TextEquiv>
+              <Unicode>5'-cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="429">
+            <Coords points="381,116 394,116 394,128 381,128"/>
+            <TextEquiv>
+              <Unicode>aat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="430">
+            <Coords points="397,116 411,116 411,128 397,128"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="431">
+            <Coords points="413,116 427,116 427,128 413,128"/>
+            <TextEquiv>
+              <Unicode>cat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="432">
+            <Coords points="429,116 443,116 443,128 429,128"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="433">
+            <Coords points="446,116 461,116 461,128 446,128"/>
+            <TextEquiv>
+              <Unicode>aca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="434">
+            <Coords points="464,116 485,116 485,128 464,128"/>
+            <TextEquiv>
+              <Unicode>ac-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="429" index="429">
-          <Coords points="381,116 394,116 394,128 381,128"/>
-          <TextEquiv>
-            <Unicode>aat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="430" index="430">
-          <Coords points="397,116 411,116 411,128 397,128"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="431" index="431">
-          <Coords points="413,116 427,116 427,128 413,128"/>
-          <TextEquiv>
-            <Unicode>cat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="432" index="432">
-          <Coords points="429,116 443,116 443,128 429,128"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="433" index="433">
-          <Coords points="446,116 461,116 461,128 446,128"/>
-          <TextEquiv>
-            <Unicode>aca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="434" index="434">
-          <Coords points="464,116 485,116 485,128 464,128"/>
-          <TextEquiv>
-            <Unicode>ac-3'</Unicode>
+            <Unicode>5'-cag aat tgc cat tgc aca ac-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="19" row="4" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c019" row="4" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,112 616,112 616,132 502,132"/>
-        <TextLine id="435" index="435">
+        <TextLine id="c019_l000" index="0">
           <Coords points="509,116 526,116 526,128 509,128"/>
+          <Word id="435">
+            <Coords points="509,116 526,116 526,128 509,128"/>
+            <TextEquiv>
+              <Unicode>134</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>134</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="20" row="5" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c020" row="5" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,132 142,132 142,151 37,151"/>
-        <TextLine id="436" index="436">
+        <TextLine id="c020_l000" index="0">
           <Coords points="37,135 59,135 59,147 37,147"/>
+          <Word id="436">
+            <Coords points="37,135 59,135 59,147 37,147"/>
+            <TextEquiv>
+              <Unicode>IL-17</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>IL-17</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="21" row="5" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c021" row="5" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,132 343,132 343,151 142,151"/>
-        <TextLine id="437" index="437">
-          <Coords points="194,135 218,135 218,147 194,147"/>
+        <TextLine id="c021_l000" index="0">
+          <Coords points="194,135 328,135 328,147 194,147"/>
+          <Word id="437">
+            <Coords points="194,135 218,135 218,147 194,147"/>
+            <TextEquiv>
+              <Unicode>5'-cct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="438">
+            <Coords points="221,135 237,135 237,147 221,147"/>
+            <TextEquiv>
+              <Unicode>aag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="439">
+            <Coords points="240,135 255,135 255,147 240,147"/>
+            <TextEquiv>
+              <Unicode>aaa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="440">
+            <Coords points="258,135 273,135 273,147 258,147"/>
+            <TextEquiv>
+              <Unicode>ccc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="441">
+            <Coords points="276,135 292,135 292,147 276,147"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="442">
+            <Coords points="294,135 308,135 308,147 294,147"/>
+            <TextEquiv>
+              <Unicode>cgt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="443">
+            <Coords points="311,135 328,135 328,147 311,147"/>
+            <TextEquiv>
+              <Unicode>tt-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="438" index="438">
-          <Coords points="221,135 237,135 237,147 221,147"/>
-          <TextEquiv>
-            <Unicode>aag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="439" index="439">
-          <Coords points="240,135 255,135 255,147 240,147"/>
-          <TextEquiv>
-            <Unicode>aaa</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="440" index="440">
-          <Coords points="258,135 273,135 273,147 258,147"/>
-          <TextEquiv>
-            <Unicode>ccc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="441" index="441">
-          <Coords points="276,135 292,135 292,147 276,147"/>
-          <TextEquiv>
-            <Unicode>cca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="442" index="442">
-          <Coords points="294,135 308,135 308,147 294,147"/>
-          <TextEquiv>
-            <Unicode>cgt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="443" index="443">
-          <Coords points="311,135 328,135 328,147 311,147"/>
-          <TextEquiv>
-            <Unicode>tt-3'</Unicode>
+            <Unicode>5'-cct aag aaa ccc cca cgt tt-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="22" row="5" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c022" row="5" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,132 502,132 502,151 343,151"/>
-        <TextLine id="444" index="444">
-          <Coords points="352,135 374,135 374,147 352,147"/>
+        <TextLine id="c022_l000" index="0">
+          <Coords points="352,135 476,135 476,147 352,147"/>
+          <Word id="444">
+            <Coords points="352,135 374,135 374,147 352,147"/>
+            <TextEquiv>
+              <Unicode>5'-ttc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="445">
+            <Coords points="376,135 385,135 385,147 376,147"/>
+            <TextEquiv>
+              <Unicode>ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="446">
+            <Coords points="388,135 401,135 401,147 388,147"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="447">
+            <Coords points="404,135 415,135 415,147 404,147"/>
+            <TextEquiv>
+              <Unicode>ttg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="448">
+            <Coords points="418,135 432,135 432,147 418,147"/>
+            <TextEquiv>
+              <Unicode>tgg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="449">
+            <Coords points="435,135 452,135 452,147 435,147"/>
+            <TextEquiv>
+              <Unicode>agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="450">
+            <Coords points="454,135 476,135 476,147 454,147"/>
+            <TextEquiv>
+              <Unicode>gc-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ttc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="445" index="445">
-          <Coords points="376,135 385,135 385,147 376,147"/>
-          <TextEquiv>
-            <Unicode>ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="446" index="446">
-          <Coords points="388,135 401,135 401,147 388,147"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="447" index="447">
-          <Coords points="404,135 415,135 415,147 404,147"/>
-          <TextEquiv>
-            <Unicode>ttg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="448" index="448">
-          <Coords points="418,135 432,135 432,147 418,147"/>
-          <TextEquiv>
-            <Unicode>tgg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="449" index="449">
-          <Coords points="435,135 452,135 452,147 435,147"/>
-          <TextEquiv>
-            <Unicode>agg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="450" index="450">
-          <Coords points="454,135 476,135 476,147 454,147"/>
-          <TextEquiv>
-            <Unicode>gc-3'</Unicode>
+            <Unicode>5'-ttc ttt tca ttg tgg agg gc-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="23" row="5" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c023" row="5" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,132 616,132 616,151 502,151"/>
-        <TextLine id="451" index="451">
+        <TextLine id="c023_l000" index="0">
           <Coords points="509,135 527,135 527,147 509,147"/>
+          <Word id="451">
+            <Coords points="509,135 527,135 527,147 509,147"/>
+            <TextEquiv>
+              <Unicode>129</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>129</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="24" row="6" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c024" row="6" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,151 142,151 142,171 37,171"/>
-        <TextLine id="452" index="452">
+        <TextLine id="c024_l000" index="0">
           <Coords points="37,154 64,154 64,167 37,167"/>
+          <Word id="452">
+            <Coords points="37,154 64,154 64,167 37,167"/>
+            <TextEquiv>
+              <Unicode>TNF-α</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>TNF-α</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="25" row="6" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c025" row="6" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,151 343,151 343,171 142,171"/>
-        <TextLine id="453" index="453">
-          <Coords points="194,155 221,155 221,167 194,167"/>
+        <TextLine id="c025_l000" index="0">
+          <Coords points="194,155 331,155 331,167 194,167"/>
+          <Word id="453">
+            <Coords points="194,155 221,155 221,167 194,167"/>
+            <TextEquiv>
+              <Unicode>5'-acg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="454">
+            <Coords points="224,155 240,155 240,167 224,167"/>
+            <TextEquiv>
+              <Unicode>gca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="455">
+            <Coords points="242,155 257,155 257,167 242,167"/>
+            <TextEquiv>
+              <Unicode>tgg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="456">
+            <Coords points="260,155 273,155 273,167 260,167"/>
+            <TextEquiv>
+              <Unicode>atc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="457">
+            <Coords points="275,155 289,155 289,167 275,167"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="458">
+            <Coords points="292,155 307,155 307,167 292,167"/>
+            <TextEquiv>
+              <Unicode>aag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="459">
+            <Coords points="310,155 331,155 331,167 310,167"/>
+            <TextEquiv>
+              <Unicode>ac-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-acg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="454" index="454">
-          <Coords points="224,155 240,155 240,167 224,167"/>
-          <TextEquiv>
-            <Unicode>gca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="455" index="455">
-          <Coords points="242,155 257,155 257,167 242,167"/>
-          <TextEquiv>
-            <Unicode>tgg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="456" index="456">
-          <Coords points="260,155 273,155 273,167 260,167"/>
-          <TextEquiv>
-            <Unicode>atc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="457" index="457">
-          <Coords points="275,155 289,155 289,167 275,167"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="458" index="458">
-          <Coords points="292,155 307,155 307,167 292,167"/>
-          <TextEquiv>
-            <Unicode>aag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="459" index="459">
-          <Coords points="310,155 331,155 331,167 310,167"/>
-          <TextEquiv>
-            <Unicode>ac-3'</Unicode>
+            <Unicode>5'-acg gca tgg atc tca aag ac-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="26" row="6" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c026" row="6" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,151 502,151 502,171 343,171"/>
-        <TextLine id="460" index="460">
-          <Coords points="352,155 377,155 377,167 352,167"/>
+        <TextLine id="c026_l000" index="0">
+          <Coords points="352,155 489,155 489,167 352,167"/>
+          <Word id="460">
+            <Coords points="352,155 377,155 377,167 352,167"/>
+            <TextEquiv>
+              <Unicode>5'-gtg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="461">
+            <Coords points="380,155 394,155 394,167 380,167"/>
+            <TextEquiv>
+              <Unicode>ggt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="462">
+            <Coords points="397,155 413,155 413,167 397,167"/>
+            <TextEquiv>
+              <Unicode>gag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="463">
+            <Coords points="416,155 432,155 432,167 416,167"/>
+            <TextEquiv>
+              <Unicode>gag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="464">
+            <Coords points="435,155 450,155 450,167 435,167"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="465">
+            <Coords points="453,155 467,155 467,167 453,167"/>
+            <TextEquiv>
+              <Unicode>gta</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="466">
+            <Coords points="469,155 489,155 489,167 469,167"/>
+            <TextEquiv>
+              <Unicode>gt-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gtg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="461" index="461">
-          <Coords points="380,155 394,155 394,167 380,167"/>
-          <TextEquiv>
-            <Unicode>ggt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="462" index="462">
-          <Coords points="397,155 413,155 413,167 397,167"/>
-          <TextEquiv>
-            <Unicode>gag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="463" index="463">
-          <Coords points="416,155 432,155 432,167 416,167"/>
-          <TextEquiv>
-            <Unicode>gag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="464" index="464">
-          <Coords points="435,155 450,155 450,167 435,167"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="465" index="465">
-          <Coords points="453,155 467,155 467,167 453,167"/>
-          <TextEquiv>
-            <Unicode>gta</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="466" index="466">
-          <Coords points="469,155 489,155 489,167 469,167"/>
-          <TextEquiv>
-            <Unicode>gt-3'</Unicode>
+            <Unicode>5'-gtg ggt gag gag cac gta gt-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="27" row="6" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c027" row="6" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,151 616,151 616,171 502,171"/>
-        <TextLine id="467" index="467">
+        <TextLine id="c027_l000" index="0">
           <Coords points="509,155 527,155 527,167 509,167"/>
+          <Word id="467">
+            <Coords points="509,155 527,155 527,167 509,167"/>
+            <TextEquiv>
+              <Unicode>116</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>116</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="28" row="7" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c028" row="7" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,171 142,171 142,190 37,190"/>
-        <TextLine id="468" index="468">
+        <TextLine id="c028_l000" index="0">
           <Coords points="37,174 68,174 68,187 37,187"/>
+          <Word id="468">
+            <Coords points="37,174 68,174 68,187 37,187"/>
+            <TextEquiv>
+              <Unicode>MMP-2</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>MMP-2</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="29" row="7" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c029" row="7" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,171 343,171 343,190 142,190"/>
-        <TextLine id="469" index="469">
-          <Coords points="194,174 221,174 221,187 194,187"/>
+        <TextLine id="c029_l000" index="0">
+          <Coords points="194,174 328,174 328,187 194,187"/>
+          <Word id="469">
+            <Coords points="194,174 221,174 221,187 194,187"/>
+            <TextEquiv>
+              <Unicode>5'-agc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="470">
+            <Coords points="224,174 238,174 238,187 224,187"/>
+            <TextEquiv>
+              <Unicode>gtg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="471">
+            <Coords points="241,174 257,174 257,187 241,187"/>
+            <TextEquiv>
+              <Unicode>aag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="472">
+            <Coords points="259,174 268,174 268,187 259,187"/>
+            <TextEquiv>
+              <Unicode>ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="473">
+            <Coords points="271,174 287,174 287,187 271,187"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="474">
+            <Coords points="290,174 306,174 306,187 290,187"/>
+            <TextEquiv>
+              <Unicode>agc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="475">
+            <Coords points="309,174 328,174 328,187 309,187"/>
+            <TextEquiv>
+              <Unicode>at-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-agc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="470" index="470">
-          <Coords points="224,174 238,174 238,187 224,187"/>
-          <TextEquiv>
-            <Unicode>gtg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="471" index="471">
-          <Coords points="241,174 257,174 257,187 241,187"/>
-          <TextEquiv>
-            <Unicode>aag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="472" index="472">
-          <Coords points="259,174 268,174 268,187 259,187"/>
-          <TextEquiv>
-            <Unicode>ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="473" index="473">
-          <Coords points="271,174 287,174 287,187 271,187"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="474" index="474">
-          <Coords points="290,174 306,174 306,187 290,187"/>
-          <TextEquiv>
-            <Unicode>agc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="475" index="475">
-          <Coords points="309,174 328,174 328,187 309,187"/>
-          <TextEquiv>
-            <Unicode>at-3'</Unicode>
+            <Unicode>5'-agc gtg aag ttt gga agc at-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="30" row="7" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c030" row="7" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,171 502,171 502,190 343,190"/>
-        <TextLine id="476" index="476">
-          <Coords points="352,174 378,174 378,187 352,187"/>
+        <TextLine id="c030_l000" index="0">
+          <Coords points="352,174 482,174 482,187 352,187"/>
+          <Word id="476">
+            <Coords points="352,174 378,174 378,187 352,187"/>
+            <TextEquiv>
+              <Unicode>5'-cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="477">
+            <Coords points="381,174 394,174 394,187 381,187"/>
+            <TextEquiv>
+              <Unicode>atc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="478">
+            <Coords points="397,174 408,174 408,187 397,187"/>
+            <TextEquiv>
+              <Unicode>ctt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="479">
+            <Coords points="411,174 426,174 426,187 411,187"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="480">
+            <Coords points="429,174 443,174 443,187 429,187"/>
+            <TextEquiv>
+              <Unicode>ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="481">
+            <Coords points="445,174 460,174 460,187 445,187"/>
+            <TextEquiv>
+              <Unicode>gtg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="482">
+            <Coords points="463,174 482,174 482,187 463,187"/>
+            <TextEquiv>
+              <Unicode>tg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="477" index="477">
-          <Coords points="381,174 394,174 394,187 381,187"/>
-          <TextEquiv>
-            <Unicode>atc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="478" index="478">
-          <Coords points="397,174 408,174 408,187 397,187"/>
-          <TextEquiv>
-            <Unicode>ctt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="479" index="479">
-          <Coords points="411,174 426,174 426,187 411,187"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="480" index="480">
-          <Coords points="429,174 443,174 443,187 429,187"/>
-          <TextEquiv>
-            <Unicode>ctg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="481" index="481">
-          <Coords points="445,174 460,174 460,187 445,187"/>
-          <TextEquiv>
-            <Unicode>gtg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="482" index="482">
-          <Coords points="463,174 482,174 482,187 463,187"/>
-          <TextEquiv>
-            <Unicode>tg-3'</Unicode>
+            <Unicode>5'-cac atc ctt cac ctg gtg tg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="31" row="7" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c031" row="7" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,171 616,171 616,190 502,190"/>
-        <TextLine id="483" index="483">
+        <TextLine id="c031_l000" index="0">
           <Coords points="509,174 527,174 527,187 509,187"/>
+          <Word id="483">
+            <Coords points="509,174 527,174 527,187 509,187"/>
+            <TextEquiv>
+              <Unicode>105</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>105</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="32" row="8" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c032" row="8" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,190 142,190 142,210 37,210"/>
-        <TextLine id="484" index="484">
+        <TextLine id="c032_l000" index="0">
           <Coords points="37,194 68,194 68,206 37,206"/>
+          <Word id="484">
+            <Coords points="37,194 68,194 68,206 37,206"/>
+            <TextEquiv>
+              <Unicode>MMP-3</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>MMP-3</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="33" row="8" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c033" row="8" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,190 343,190 343,210 142,210"/>
-        <TextLine id="485" index="485">
-          <Coords points="194,194 219,194 219,206 194,206"/>
+        <TextLine id="c033_l000" index="0">
+          <Coords points="194,194 325,194 325,206 194,206"/>
+          <Word id="485">
+            <Coords points="194,194 219,194 219,206 194,206"/>
+            <TextEquiv>
+              <Unicode>5'-tgg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="486">
+            <Coords points="222,194 238,194 238,206 222,206"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="487">
+            <Coords points="241,194 254,194 254,206 241,206"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="488">
+            <Coords points="257,194 270,194 270,206 257,206"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="489">
+            <Coords points="273,194 284,194 284,206 273,206"/>
+            <TextEquiv>
+              <Unicode>ctt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="490">
+            <Coords points="287,194 301,194 301,206 287,206"/>
+            <TextEquiv>
+              <Unicode>tga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="491">
+            <Coords points="303,194 325,194 325,206 303,206"/>
+            <TextEquiv>
+              <Unicode>cg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-tgg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="486" index="486">
-          <Coords points="222,194 238,194 238,206 222,206"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="487" index="487">
-          <Coords points="241,194 254,194 254,206 241,206"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="488" index="488">
-          <Coords points="257,194 270,194 270,206 257,206"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="489" index="489">
-          <Coords points="273,194 284,194 284,206 273,206"/>
-          <TextEquiv>
-            <Unicode>ctt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="490" index="490">
-          <Coords points="287,194 301,194 301,206 287,206"/>
-          <TextEquiv>
-            <Unicode>tga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="491" index="491">
-          <Coords points="303,194 325,194 325,206 303,206"/>
-          <TextEquiv>
-            <Unicode>cg-3'</Unicode>
+            <Unicode>5'-tgg aga tgc tca ctt tga cg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="34" row="8" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c034" row="8" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,190 502,190 502,210 343,210"/>
-        <TextLine id="492" index="492">
-          <Coords points="351,194 379,194 379,206 351,206"/>
+        <TextLine id="c034_l000" index="0">
+          <Coords points="351,194 487,194 487,206 351,206"/>
+          <Word id="492">
+            <Coords points="351,194 379,194 379,206 351,206"/>
+            <TextEquiv>
+              <Unicode>5'-gcc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="493">
+            <Coords points="381,194 393,194 393,206 381,206"/>
+            <TextEquiv>
+              <Unicode>ttg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="494">
+            <Coords points="396,194 410,194 410,206 396,206"/>
+            <TextEquiv>
+              <Unicode>gct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="495">
+            <Coords points="412,194 429,194 429,206 412,206"/>
+            <TextEquiv>
+              <Unicode>gag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="496">
+            <Coords points="431,194 446,194 446,206 431,206"/>
+            <TextEquiv>
+              <Unicode>tgg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="497">
+            <Coords points="448,194 462,194 462,206 448,206"/>
+            <TextEquiv>
+              <Unicode>tag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="498">
+            <Coords points="465,194 487,194 487,206 465,206"/>
+            <TextEquiv>
+              <Unicode>ag-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gcc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="493" index="493">
-          <Coords points="381,194 393,194 393,206 381,206"/>
-          <TextEquiv>
-            <Unicode>ttg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="494" index="494">
-          <Coords points="396,194 410,194 410,206 396,206"/>
-          <TextEquiv>
-            <Unicode>gct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="495" index="495">
-          <Coords points="412,194 429,194 429,206 412,206"/>
-          <TextEquiv>
-            <Unicode>gag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="496" index="496">
-          <Coords points="431,194 446,194 446,206 431,206"/>
-          <TextEquiv>
-            <Unicode>tgg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="497" index="497">
-          <Coords points="448,194 462,194 462,206 448,206"/>
-          <TextEquiv>
-            <Unicode>tag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="498" index="498">
-          <Coords points="465,194 487,194 487,206 465,206"/>
-          <TextEquiv>
-            <Unicode>ag-3'</Unicode>
+            <Unicode>5'-gcc ttg gct gag tgg tag ag-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="35" row="8" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c035" row="8" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,190 616,190 616,210 502,210"/>
-        <TextLine id="499" index="499">
+        <TextLine id="c035_l000" index="0">
           <Coords points="509,194 527,194 527,206 509,206"/>
+          <Word id="499">
+            <Coords points="509,194 527,194 527,206 509,206"/>
+            <TextEquiv>
+              <Unicode>120</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>120</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="36" row="9" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c036" row="9" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,210 142,210 142,229 37,229"/>
-        <TextLine id="500" index="500">
+        <TextLine id="c036_l000" index="0">
           <Coords points="37,214 68,214 68,226 37,226"/>
+          <Word id="500">
+            <Coords points="37,214 68,214 68,226 37,226"/>
+            <TextEquiv>
+              <Unicode>MMP-9</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>MMP-9</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="37" row="9" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c037" row="9" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,210 343,210 343,229 142,229"/>
-        <TextLine id="501" index="501">
-          <Coords points="194,214 218,214 218,226 194,226"/>
+        <TextLine id="c037_l000" index="0">
+          <Coords points="194,214 328,214 328,226 194,226"/>
+          <Word id="501">
+            <Coords points="194,214 218,214 218,226 194,226"/>
+            <TextEquiv>
+              <Unicode>5'-cat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="502">
+            <Coords points="221,214 235,214 235,226 221,226"/>
+            <TextEquiv>
+              <Unicode>tcg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="503">
+            <Coords points="238,214 252,214 252,226 238,226"/>
+            <TextEquiv>
+              <Unicode>cgt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="504">
+            <Coords points="254,214 271,214 271,226 254,226"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="505">
+            <Coords points="273,214 286,214 286,226 273,226"/>
+            <TextEquiv>
+              <Unicode>taa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="506">
+            <Coords points="289,214 306,214 306,226 289,226"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="507">
+            <Coords points="308,214 328,214 328,226 308,226"/>
+            <TextEquiv>
+              <Unicode>gt-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="502" index="502">
-          <Coords points="221,214 235,214 235,226 221,226"/>
-          <TextEquiv>
-            <Unicode>tcg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="503" index="503">
-          <Coords points="238,214 252,214 252,226 238,226"/>
-          <TextEquiv>
-            <Unicode>cgt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="504" index="504">
-          <Coords points="254,214 271,214 271,226 254,226"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="505" index="505">
-          <Coords points="273,214 286,214 286,226 273,226"/>
-          <TextEquiv>
-            <Unicode>taa</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="506" index="506">
-          <Coords points="289,214 306,214 306,226 289,226"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="507" index="507">
-          <Coords points="308,214 328,214 328,226 308,226"/>
-          <TextEquiv>
-            <Unicode>gt-3'</Unicode>
+            <Unicode>5'-cat tcg cgt gga taa gga gt-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="38" row="9" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c038" row="9" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,210 502,210 502,229 343,229"/>
-        <TextLine id="508" index="508">
-          <Coords points="351,214 373,214 373,226 351,226"/>
+        <TextLine id="c038_l000" index="0">
+          <Coords points="351,214 483,214 483,226 351,226"/>
+          <Word id="508">
+            <Coords points="351,214 373,214 373,226 351,226"/>
+            <TextEquiv>
+              <Unicode>5'-att</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="509">
+            <Coords points="376,214 388,214 388,226 376,226"/>
+            <TextEquiv>
+              <Unicode>ttg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="510">
+            <Coords points="390,214 406,214 406,226 390,226"/>
+            <TextEquiv>
+              <Unicode>gaa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="511">
+            <Coords points="409,214 422,214 422,226 409,226"/>
+            <TextEquiv>
+              <Unicode>act</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="512">
+            <Coords points="425,214 440,214 440,226 425,226"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="513">
+            <Coords points="443,214 459,214 459,226 443,226"/>
+            <TextEquiv>
+              <Unicode>acg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="514">
+            <Coords points="462,214 483,214 483,226 462,226"/>
+            <TextEquiv>
+              <Unicode>cc-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-att</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="509" index="509">
-          <Coords points="376,214 388,214 388,226 376,226"/>
-          <TextEquiv>
-            <Unicode>ttg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="510" index="510">
-          <Coords points="390,214 406,214 406,226 390,226"/>
-          <TextEquiv>
-            <Unicode>gaa</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="511" index="511">
-          <Coords points="409,214 422,214 422,226 409,226"/>
-          <TextEquiv>
-            <Unicode>act</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="512" index="512">
-          <Coords points="425,214 440,214 440,226 425,226"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="513" index="513">
-          <Coords points="443,214 459,214 459,226 443,226"/>
-          <TextEquiv>
-            <Unicode>acg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="514" index="514">
-          <Coords points="462,214 483,214 483,226 462,226"/>
-          <TextEquiv>
-            <Unicode>cc-3'</Unicode>
+            <Unicode>5'-att ttg gaa act cac acg cc-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="39" row="9" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c039" row="9" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,210 616,210 616,229 502,229"/>
-        <TextLine id="515" index="515">
+        <TextLine id="c039_l000" index="0">
           <Coords points="509,214 527,214 527,226 509,226"/>
+          <Word id="515">
+            <Coords points="509,214 527,214 527,226 509,226"/>
+            <TextEquiv>
+              <Unicode>118</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>118</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="40" row="10" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c040" row="10" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,229 142,229 142,249 37,249"/>
-        <TextLine id="516" index="516">
+        <TextLine id="c040_l000" index="0">
           <Coords points="37,233 74,233 74,245 37,245"/>
+          <Word id="516">
+            <Coords points="37,233 74,233 74,245 37,245"/>
+            <TextEquiv>
+              <Unicode>MMP-12</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>MMP-12</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="41" row="10" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c041" row="10" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,229 343,229 343,249 142,249"/>
-        <TextLine id="517" index="517">
-          <Coords points="194,233 214,233 214,245 194,245"/>
+        <TextLine id="c041_l000" index="0">
+          <Coords points="194,233 325,233 325,245 194,245"/>
+          <Word id="517">
+            <Coords points="194,233 214,233 214,245 194,245"/>
+            <TextEquiv>
+              <Unicode>5'-ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="518">
+            <Coords points="217,233 233,233 233,245 217,245"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="519">
+            <Coords points="236,233 250,233 250,245 236,245"/>
+            <TextEquiv>
+              <Unicode>gct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="520">
+            <Coords points="252,233 268,233 268,245 252,245"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="521">
+            <Coords points="271,233 287,233 287,245 271,245"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="522">
+            <Coords points="290,233 306,233 306,245 290,245"/>
+            <TextEquiv>
+              <Unicode>gac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="523">
+            <Coords points="309,233 325,233 325,245 309,245"/>
+            <TextEquiv>
+              <Unicode>tt-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="518" index="518">
-          <Coords points="217,233 233,233 233,245 217,245"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="519" index="519">
-          <Coords points="236,233 250,233 250,245 236,245"/>
-          <TextEquiv>
-            <Unicode>gct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="520" index="520">
-          <Coords points="252,233 268,233 268,245 252,245"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="521" index="521">
-          <Coords points="271,233 287,233 287,245 271,245"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="522" index="522">
-          <Coords points="290,233 306,233 306,245 290,245"/>
-          <TextEquiv>
-            <Unicode>gac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="523" index="523">
-          <Coords points="309,233 325,233 325,245 309,245"/>
-          <TextEquiv>
-            <Unicode>tt-3'</Unicode>
+            <Unicode>5'-ttt gga gct cac gga gac tt-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="42" row="10" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c042" row="10" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,229 502,229 502,249 343,249"/>
-        <TextLine id="524" index="524">
-          <Coords points="351,233 378,233 378,245 351,245"/>
+        <TextLine id="c042_l000" index="0">
+          <Coords points="351,233 481,233 481,245 351,245"/>
+          <Word id="524">
+            <Coords points="351,233 378,233 378,245 351,245"/>
+            <TextEquiv>
+              <Unicode>5'-cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="525">
+            <Coords points="381,233 392,233 392,245 381,245"/>
+            <TextEquiv>
+              <Unicode>gtt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="526">
+            <Coords points="395,233 406,233 406,245 395,245"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="527">
+            <Coords points="409,233 425,233 425,245 409,245"/>
+            <TextEquiv>
+              <Unicode>gcc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="528">
+            <Coords points="428,233 441,233 441,245 428,245"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="529">
+            <Coords points="444,233 457,233 457,245 444,245"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="530">
+            <Coords points="460,233 481,233 481,245 460,245"/>
+            <TextEquiv>
+              <Unicode>aa-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="525" index="525">
-          <Coords points="381,233 392,233 392,245 381,245"/>
-          <TextEquiv>
-            <Unicode>gtt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="526" index="526">
-          <Coords points="395,233 406,233 406,245 395,245"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="527" index="527">
-          <Coords points="409,233 425,233 425,245 409,245"/>
-          <TextEquiv>
-            <Unicode>gcc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="528" index="528">
-          <Coords points="428,233 441,233 441,245 428,245"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="529" index="529">
-          <Coords points="444,233 457,233 457,245 444,245"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="530" index="530">
-          <Coords points="460,233 481,233 481,245 460,245"/>
-          <TextEquiv>
-            <Unicode>aa-3'</Unicode>
+            <Unicode>5'-cac gtt tct gcc tca tca aa-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="43" row="10" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c043" row="10" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,229 616,229 616,249 502,249"/>
-        <TextLine id="531" index="531">
+        <TextLine id="c043_l000" index="0">
           <Coords points="509,233 527,233 527,245 509,245"/>
+          <Word id="531">
+            <Coords points="509,233 527,233 527,245 509,245"/>
+            <TextEquiv>
+              <Unicode>116</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>116</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="44" row="11" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c044" row="11" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,249 142,249 142,269 37,269"/>
-        <TextLine id="532" index="532">
+        <TextLine id="c044_l000" index="0">
           <Coords points="37,253 74,253 74,265 37,265"/>
+          <Word id="532">
+            <Coords points="37,253 74,253 74,265 37,265"/>
+            <TextEquiv>
+              <Unicode>MMP-13</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>MMP-13</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="45" row="11" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c045" row="11" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,249 343,249 343,269 142,269"/>
-        <TextLine id="533" index="533">
-          <Coords points="194,253 219,253 219,265 194,265"/>
+        <TextLine id="c045_l000" index="0">
+          <Coords points="194,253 332,253 332,265 194,265"/>
+          <Word id="533">
+            <Coords points="194,253 219,253 219,265 194,265"/>
+            <TextEquiv>
+              <Unicode>5'-agt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="534">
+            <Coords points="221,253 235,253 235,265 221,265"/>
+            <TextEquiv>
+              <Unicode>tga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="535">
+            <Coords points="238,253 254,253 254,265 238,265"/>
+            <TextEquiv>
+              <Unicode>cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="536">
+            <Coords points="257,253 270,253 270,265 257,265"/>
+            <TextEquiv>
+              <Unicode>gct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="537">
+            <Coords points="273,253 289,253 289,265 273,265"/>
+            <TextEquiv>
+              <Unicode>ccg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="538">
+            <Coords points="292,253 308,253 308,265 292,265"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="539">
+            <Coords points="311,253 332,253 332,265 311,265"/>
+            <TextEquiv>
+              <Unicode>aa-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-agt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="534" index="534">
-          <Coords points="221,253 235,253 235,265 221,265"/>
-          <TextEquiv>
-            <Unicode>tga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="535" index="535">
-          <Coords points="238,253 254,253 254,265 238,265"/>
-          <TextEquiv>
-            <Unicode>cag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="536" index="536">
-          <Coords points="257,253 270,253 270,265 257,265"/>
-          <TextEquiv>
-            <Unicode>gct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="537" index="537">
-          <Coords points="273,253 289,253 289,265 273,265"/>
-          <TextEquiv>
-            <Unicode>ccg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="538" index="538">
-          <Coords points="292,253 308,253 308,265 292,265"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="539" index="539">
-          <Coords points="311,253 332,253 332,265 311,265"/>
-          <TextEquiv>
-            <Unicode>aa-3'</Unicode>
+            <Unicode>5'-agt tga cag gct ccg aga aa-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="46" row="11" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c046" row="11" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,249 502,249 502,269 343,269"/>
-        <TextLine id="540" index="540">
-          <Coords points="351,253 379,253 379,265 351,265"/>
+        <TextLine id="c046_l000" index="0">
+          <Coords points="351,253 480,253 480,265 351,265"/>
+          <Word id="540">
+            <Coords points="351,253 379,253 379,265 351,265"/>
+            <TextEquiv>
+              <Unicode>5'-ggc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="541">
+            <Coords points="382,253 395,253 395,265 382,265"/>
+            <TextEquiv>
+              <Unicode>act</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="542">
+            <Coords points="398,253 413,253 413,265 398,265"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="543">
+            <Coords points="416,253 429,253 429,265 416,265"/>
+            <TextEquiv>
+              <Unicode>cat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="544">
+            <Coords points="432,253 443,253 443,265 432,265"/>
+            <TextEquiv>
+              <Unicode>ctt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="545">
+            <Coords points="446,253 460,253 460,265 446,265"/>
+            <TextEquiv>
+              <Unicode>ggt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="546">
+            <Coords points="463,253 480,253 480,265 463,265"/>
+            <TextEquiv>
+              <Unicode>tt-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ggc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="541" index="541">
-          <Coords points="382,253 395,253 395,265 382,265"/>
-          <TextEquiv>
-            <Unicode>act</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="542" index="542">
-          <Coords points="398,253 413,253 413,265 398,265"/>
-          <TextEquiv>
-            <Unicode>cca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="543" index="543">
-          <Coords points="416,253 429,253 429,265 416,265"/>
-          <TextEquiv>
-            <Unicode>cat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="544" index="544">
-          <Coords points="432,253 443,253 443,265 432,265"/>
-          <TextEquiv>
-            <Unicode>ctt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="545" index="545">
-          <Coords points="446,253 460,253 460,265 446,265"/>
-          <TextEquiv>
-            <Unicode>ggt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="546" index="546">
-          <Coords points="463,253 480,253 480,265 463,265"/>
-          <TextEquiv>
-            <Unicode>tt-3'</Unicode>
+            <Unicode>5'-ggc act cca cat ctt ggt tt-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="47" row="11" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c047" row="11" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,249 616,249 616,269 502,269"/>
-        <TextLine id="547" index="547">
+        <TextLine id="c047_l000" index="0">
           <Coords points="509,253 527,253 527,265 509,265"/>
+          <Word id="547">
+            <Coords points="509,253 527,253 527,265 509,265"/>
+            <TextEquiv>
+              <Unicode>105</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>105</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="48" row="12" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c048" row="12" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,269 142,269 142,288 37,288"/>
-        <TextLine id="548" index="548">
+        <TextLine id="c048_l000" index="0">
           <Coords points="37,272 68,272 68,284 37,284"/>
+          <Word id="548">
+            <Coords points="37,272 68,272 68,284 37,284"/>
+            <TextEquiv>
+              <Unicode>TIMP-1</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>TIMP-1</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="49" row="12" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c049" row="12" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,269 343,269 343,288 142,288"/>
-        <TextLine id="549" index="549">
-          <Coords points="194,272 219,272 219,284 194,284"/>
+        <TextLine id="c049_l000" index="0">
+          <Coords points="194,272 305,272 305,284 194,284"/>
+          <Word id="549">
+            <Coords points="194,272 219,272 219,284 194,284"/>
+            <TextEquiv>
+              <Unicode>5'-ggt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="550">
+            <Coords points="222,272 234,272 234,284 222,284"/>
+            <TextEquiv>
+              <Unicode>gtt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="551">
+            <Coords points="236,272 250,272 250,284 236,284"/>
+            <TextEquiv>
+              <Unicode>tcc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="552">
+            <Coords points="253,272 266,272 266,284 253,284"/>
+            <TextEquiv>
+              <Unicode>ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="553">
+            <Coords points="269,272 278,272 278,284 269,284"/>
+            <TextEquiv>
+              <Unicode>ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="554">
+            <Coords points="281,272 305,272 305,284 281,284"/>
+            <TextEquiv>
+              <Unicode>atc-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ggt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="550" index="550">
-          <Coords points="222,272 234,272 234,284 222,284"/>
-          <TextEquiv>
-            <Unicode>gtt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="551" index="551">
-          <Coords points="236,272 250,272 250,284 236,284"/>
-          <TextEquiv>
-            <Unicode>tcc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="552" index="552">
-          <Coords points="253,272 266,272 266,284 253,284"/>
-          <TextEquiv>
-            <Unicode>ctg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="553" index="553">
-          <Coords points="269,272 278,272 278,284 269,284"/>
-          <TextEquiv>
-            <Unicode>ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="554" index="554">
-          <Coords points="281,272 305,272 305,284 281,284"/>
-          <TextEquiv>
-            <Unicode>atc-3'</Unicode>
+            <Unicode>5'-ggt gtt tcc ctg ttt atc-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="50" row="12" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c050" row="12" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,269 502,269 502,288 343,288"/>
-        <TextLine id="555" index="555">
-          <Coords points="351,272 376,272 376,284 351,284"/>
+        <TextLine id="c050_l000" index="0">
+          <Coords points="351,272 474,272 474,284 351,284"/>
+          <Word id="555">
+            <Coords points="351,272 376,272 376,284 351,284"/>
+            <TextEquiv>
+              <Unicode>5'-tag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="556">
+            <Coords points="379,272 390,272 390,284 379,284"/>
+            <TextEquiv>
+              <Unicode>ttc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="557">
+            <Coords points="393,272 401,272 401,284 393,284"/>
+            <TextEquiv>
+              <Unicode>ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="558">
+            <Coords points="404,272 415,272 415,284 404,284"/>
+            <TextEquiv>
+              <Unicode>att</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="559">
+            <Coords points="418,272 431,272 431,284 418,284"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="560">
+            <Coords points="434,272 449,272 449,284 434,284"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="561">
+            <Coords points="452,272 474,272 474,284 452,284"/>
+            <TextEquiv>
+              <Unicode>tct-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-tag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="556" index="556">
-          <Coords points="379,272 390,272 390,284 379,284"/>
-          <TextEquiv>
-            <Unicode>ttc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="557" index="557">
-          <Coords points="393,272 401,272 401,284 393,284"/>
-          <TextEquiv>
-            <Unicode>ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="558" index="558">
-          <Coords points="404,272 415,272 415,284 404,284"/>
-          <TextEquiv>
-            <Unicode>att</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="559" index="559">
-          <Coords points="418,272 431,272 431,284 418,284"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="560" index="560">
-          <Coords points="434,272 449,272 449,284 434,284"/>
-          <TextEquiv>
-            <Unicode>cca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="561" index="561">
-          <Coords points="452,272 474,272 474,284 452,284"/>
-          <TextEquiv>
-            <Unicode>tct-3'</Unicode>
+            <Unicode>5'-tag ttc ttt att tca cca tct-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="51" row="12" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c051" row="12" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,269 616,269 616,288 502,288"/>
-        <TextLine id="562" index="562">
+        <TextLine id="c051_l000" index="0">
           <Coords points="509,272 527,272 527,284 509,284"/>
+          <Word id="562">
+            <Coords points="509,272 527,272 527,284 509,284"/>
+            <TextEquiv>
+              <Unicode>254</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>254</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="52" row="13" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c052" row="13" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,288 142,288 142,308 37,308"/>
-        <TextLine id="563" index="563">
+        <TextLine id="c052_l000" index="0">
           <Coords points="37,292 68,292 68,304 37,304"/>
+          <Word id="563">
+            <Coords points="37,292 68,292 68,304 37,304"/>
+            <TextEquiv>
+              <Unicode>TIMP-3</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>TIMP-3</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="53" row="13" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c053" row="13" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,288 343,288 343,308 142,308"/>
-        <TextLine id="564" index="564">
-          <Coords points="194,292 216,292 216,304 194,304"/>
+        <TextLine id="c053_l000" index="0">
+          <Coords points="194,292 325,292 325,304 194,304"/>
+          <Word id="564">
+            <Coords points="194,292 216,292 216,304 194,304"/>
+            <TextEquiv>
+              <Unicode>5'-ttg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="565">
+            <Coords points="219,292 234,292 234,304 219,304"/>
+            <TextEquiv>
+              <Unicode>ggt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="566">
+            <Coords points="236,292 252,292 252,304 236,304"/>
+            <TextEquiv>
+              <Unicode>acc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="567">
+            <Coords points="255,292 268,292 268,304 255,304"/>
+            <TextEquiv>
+              <Unicode>ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="568">
+            <Coords points="271,292 285,292 285,304 271,304"/>
+            <TextEquiv>
+              <Unicode>gct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="569">
+            <Coords points="288,292 301,292 301,304 288,304"/>
+            <TextEquiv>
+              <Unicode>atc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="570">
+            <Coords points="304,292 325,292 325,304 304,304"/>
+            <TextEquiv>
+              <Unicode>ag-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ttg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="565" index="565">
-          <Coords points="219,292 234,292 234,304 219,304"/>
-          <TextEquiv>
-            <Unicode>ggt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="566" index="566">
-          <Coords points="236,292 252,292 252,304 236,304"/>
-          <TextEquiv>
-            <Unicode>acc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="567" index="567">
-          <Coords points="255,292 268,292 268,304 255,304"/>
-          <TextEquiv>
-            <Unicode>ctg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="568" index="568">
-          <Coords points="271,292 285,292 285,304 271,304"/>
-          <TextEquiv>
-            <Unicode>gct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="569" index="569">
-          <Coords points="288,292 301,292 301,304 288,304"/>
-          <TextEquiv>
-            <Unicode>atc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="570" index="570">
-          <Coords points="304,292 325,292 325,304 304,304"/>
-          <TextEquiv>
-            <Unicode>ag-3'</Unicode>
+            <Unicode>5'-ttg ggt acc ctg gct atc ag-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="54" row="13" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c054" row="13" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,288 502,288 502,308 343,308"/>
-        <TextLine id="571" index="571">
-          <Coords points="351,292 379,292 379,304 351,304"/>
+        <TextLine id="c054_l000" index="0">
+          <Coords points="351,292 484,292 484,304 351,304"/>
+          <Word id="571">
+            <Coords points="351,292 379,292 379,304 351,304"/>
+            <TextEquiv>
+              <Unicode>5'-agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="572">
+            <Coords points="381,292 393,292 393,304 381,304"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="573">
+            <Coords points="395,292 412,292 412,304 395,304"/>
+            <TextEquiv>
+              <Unicode>ggg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="574">
+            <Coords points="415,292 426,292 426,304 415,304"/>
+            <TextEquiv>
+              <Unicode>ttc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="575">
+            <Coords points="429,292 445,292 445,304 429,304"/>
+            <TextEquiv>
+              <Unicode>agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="576">
+            <Coords points="448,292 462,292 462,304 448,304"/>
+            <TextEquiv>
+              <Unicode>gat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="577">
+            <Coords points="465,292 484,292 484,304 465,304"/>
+            <TextEquiv>
+              <Unicode>ct-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-agg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="572" index="572">
-          <Coords points="381,292 393,292 393,304 381,304"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="573" index="573">
-          <Coords points="395,292 412,292 412,304 395,304"/>
-          <TextEquiv>
-            <Unicode>ggg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="574" index="574">
-          <Coords points="415,292 426,292 426,304 415,304"/>
-          <TextEquiv>
-            <Unicode>ttc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="575" index="575">
-          <Coords points="429,292 445,292 445,304 429,304"/>
-          <TextEquiv>
-            <Unicode>agg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="576" index="576">
-          <Coords points="448,292 462,292 462,304 448,304"/>
-          <TextEquiv>
-            <Unicode>gat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="577" index="577">
-          <Coords points="465,292 484,292 484,304 465,304"/>
-          <TextEquiv>
-            <Unicode>ct-3'</Unicode>
+            <Unicode>5'-agg tct ggg ttc agg gat ct-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="55" row="13" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c055" row="13" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,288 616,288 616,308 502,308"/>
-        <TextLine id="578" index="578">
+        <TextLine id="c055_l000" index="0">
           <Coords points="509,292 527,292 527,304 509,304"/>
+          <Word id="578">
+            <Coords points="509,292 527,292 527,304 509,304"/>
+            <TextEquiv>
+              <Unicode>132</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>132</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="56" row="14" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c056" row="14" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,308 142,308 142,327 37,327"/>
-        <TextLine id="579" index="579">
-          <Coords points="37,311 81,311 81,323 37,323"/>
+        <TextLine id="c056_l000" index="0">
+          <Coords points="37,311 90,311 90,323 37,323"/>
+          <Word id="579">
+            <Coords points="37,311 81,311 81,323 37,323"/>
+            <TextEquiv>
+              <Unicode>Cathepsin</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="580">
+            <Coords points="83,311 90,311 90,323 83,323"/>
+            <TextEquiv>
+              <Unicode>B</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>Cathepsin</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="580" index="580">
-          <Coords points="83,311 90,311 90,323 83,323"/>
-          <TextEquiv>
-            <Unicode>B</Unicode>
+            <Unicode>Cathepsin B</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="57" row="14" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c057" row="14" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,308 343,308 343,327 142,327"/>
-        <TextLine id="581" index="581">
-          <Coords points="194,311 221,311 221,323 194,323"/>
+        <TextLine id="c057_l000" index="0">
+          <Coords points="194,311 332,311 332,323 194,323"/>
+          <Word id="581">
+            <Coords points="194,311 221,311 221,323 194,323"/>
+            <TextEquiv>
+              <Unicode>5'-gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="582">
+            <Coords points="224,311 238,311 238,323 224,323"/>
+            <TextEquiv>
+              <Unicode>gat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="583">
+            <Coords points="240,311 254,311 254,323 240,323"/>
+            <TextEquiv>
+              <Unicode>act</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="584">
+            <Coords points="256,311 272,311 272,323 256,323"/>
+            <TextEquiv>
+              <Unicode>ccc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="585">
+            <Coords points="275,311 291,311 291,323 275,323"/>
+            <TextEquiv>
+              <Unicode>agg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="586">
+            <Coords points="294,311 308,311 308,323 294,323"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="587">
+            <Coords points="311,311 332,311 332,323 311,323"/>
+            <TextEquiv>
+              <Unicode>aa-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="582" index="582">
-          <Coords points="224,311 238,311 238,323 224,323"/>
-          <TextEquiv>
-            <Unicode>gat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="583" index="583">
-          <Coords points="240,311 254,311 254,323 240,323"/>
-          <TextEquiv>
-            <Unicode>act</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="584" index="584">
-          <Coords points="256,311 272,311 272,323 256,323"/>
-          <TextEquiv>
-            <Unicode>ccc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="585" index="585">
-          <Coords points="275,311 291,311 291,323 275,323"/>
-          <TextEquiv>
-            <Unicode>agg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="586" index="586">
-          <Coords points="294,311 308,311 308,323 294,323"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="587" index="587">
-          <Coords points="311,311 332,311 332,323 311,323"/>
-          <TextEquiv>
-            <Unicode>aa-3'</Unicode>
+            <Unicode>5'-gga gat act ccc agg tgc aa-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="58" row="14" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c058" row="14" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,308 502,308 502,327 343,327"/>
-        <TextLine id="588" index="588">
-          <Coords points="351,311 376,311 376,323 351,323"/>
+        <TextLine id="c058_l000" index="0">
+          <Coords points="351,311 481,311 481,323 351,323"/>
+          <Word id="588">
+            <Coords points="351,311 376,311 376,323 351,323"/>
+            <TextEquiv>
+              <Unicode>5'-ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="589">
+            <Coords points="379,311 395,311 395,323 379,323"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="590">
+            <Coords points="397,311 411,311 411,323 397,323"/>
+            <TextEquiv>
+              <Unicode>tga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="591">
+            <Coords points="414,311 425,311 425,323 414,323"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="592">
+            <Coords points="428,311 441,311 441,323 428,323"/>
+            <TextEquiv>
+              <Unicode>cct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="593">
+            <Coords points="444,311 457,311 457,323 444,323"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="594">
+            <Coords points="460,311 481,311 481,323 460,323"/>
+            <TextEquiv>
+              <Unicode>ca-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ctg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="589" index="589">
-          <Coords points="379,311 395,311 395,323 379,323"/>
-          <TextEquiv>
-            <Unicode>cca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="590" index="590">
-          <Coords points="397,311 411,311 411,323 397,323"/>
-          <TextEquiv>
-            <Unicode>tga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="591" index="591">
-          <Coords points="414,311 425,311 425,323 414,323"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="592" index="592">
-          <Coords points="428,311 441,311 441,323 428,323"/>
-          <TextEquiv>
-            <Unicode>cct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="593" index="593">
-          <Coords points="444,311 457,311 457,323 444,323"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="594" index="594">
-          <Coords points="460,311 481,311 481,323 460,323"/>
-          <TextEquiv>
-            <Unicode>ca-3'</Unicode>
+            <Unicode>5'-ctg cca tga tct cct tca ca-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="59" row="14" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c059" row="14" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,308 616,308 616,327 502,327"/>
-        <TextLine id="595" index="595">
+        <TextLine id="c059_l000" index="0">
           <Coords points="509,311 527,311 527,323 509,323"/>
+          <Word id="595">
+            <Coords points="509,311 527,311 527,323 509,323"/>
+            <TextEquiv>
+              <Unicode>121</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>121</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="60" row="15" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c060" row="15" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,327 142,327 142,347 37,347"/>
-        <TextLine id="596" index="596">
-          <Coords points="37,331 81,331 81,343 37,343"/>
+        <TextLine id="c060_l000" index="0">
+          <Coords points="37,331 91,331 91,343 37,343"/>
+          <Word id="596">
+            <Coords points="37,331 81,331 81,343 37,343"/>
+            <TextEquiv>
+              <Unicode>Cathepsin</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="597">
+            <Coords points="83,331 91,331 91,343 83,343"/>
+            <TextEquiv>
+              <Unicode>H</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>Cathepsin</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="597" index="597">
-          <Coords points="83,331 91,331 91,343 83,343"/>
-          <TextEquiv>
-            <Unicode>H</Unicode>
+            <Unicode>Cathepsin H</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="61" row="15" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c061" row="15" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,327 343,327 343,347 142,347"/>
-        <TextLine id="598" index="598">
-          <Coords points="194,331 216,331 216,343 194,343"/>
+        <TextLine id="c061_l000" index="0">
+          <Coords points="194,331 327,331 327,343 194,343"/>
+          <Word id="598">
+            <Coords points="194,331 216,331 216,343 194,343"/>
+            <TextEquiv>
+              <Unicode>5'-gg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="599">
+            <Coords points="219,331 235,331 235,343 219,343"/>
+            <TextEquiv>
+              <Unicode>cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="600">
+            <Coords points="238,331 254,331 254,343 238,343"/>
+            <TextEquiv>
+              <Unicode>agc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="601">
+            <Coords points="257,331 270,331 270,343 257,343"/>
+            <TextEquiv>
+              <Unicode>ctc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="602">
+            <Coords points="273,331 288,331 288,343 273,343"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="603">
+            <Coords points="291,331 302,331 302,343 291,343"/>
+            <TextEquiv>
+              <Unicode>att</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="604">
+            <Coords points="305,331 327,331 327,343 305,343"/>
+            <TextEquiv>
+              <Unicode>gc-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="599" index="599">
-          <Coords points="219,331 235,331 235,343 219,343"/>
-          <TextEquiv>
-            <Unicode>cag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="600" index="600">
-          <Coords points="238,331 254,331 254,343 238,343"/>
-          <TextEquiv>
-            <Unicode>agc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="601" index="601">
-          <Coords points="257,331 270,331 270,343 257,343"/>
-          <TextEquiv>
-            <Unicode>ctc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="602" index="602">
-          <Coords points="273,331 288,331 288,343 273,343"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="603" index="603">
-          <Coords points="291,331 302,331 302,343 291,343"/>
-          <TextEquiv>
-            <Unicode>att</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="604" index="604">
-          <Coords points="305,331 327,331 327,343 305,343"/>
-          <TextEquiv>
-            <Unicode>gc-3'</Unicode>
+            <Unicode>5'-gg cag agc ctc aga att gc-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="62" row="15" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c062" row="15" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,327 502,327 502,347 343,347"/>
-        <TextLine id="605" index="605">
-          <Coords points="351,331 376,331 376,343 351,343"/>
+        <TextLine id="c062_l000" index="0">
+          <Coords points="351,331 486,331 486,343 351,343"/>
+          <Word id="605">
+            <Coords points="351,331 376,331 376,343 351,343"/>
+            <TextEquiv>
+              <Unicode>5'-act</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="606">
+            <Coords points="378,331 395,331 395,343 378,343"/>
+            <TextEquiv>
+              <Unicode>ggc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="607">
+            <Coords points="398,331 413,331 413,343 398,343"/>
+            <TextEquiv>
+              <Unicode>gaa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="608">
+            <Coords points="416,331 432,331 432,343 416,343"/>
+            <TextEquiv>
+              <Unicode>aca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="609">
+            <Coords points="434,331 450,331 450,343 434,343"/>
+            <TextEquiv>
+              <Unicode>aca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="610">
+            <Coords points="452,331 461,331 461,343 452,343"/>
+            <TextEquiv>
+              <Unicode>ttt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="611">
+            <Coords points="464,331 486,331 486,343 464,343"/>
+            <TextEquiv>
+              <Unicode>gc-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-act</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="606" index="606">
-          <Coords points="378,331 395,331 395,343 378,343"/>
-          <TextEquiv>
-            <Unicode>ggc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="607" index="607">
-          <Coords points="398,331 413,331 413,343 398,343"/>
-          <TextEquiv>
-            <Unicode>gaa</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="608" index="608">
-          <Coords points="416,331 432,331 432,343 416,343"/>
-          <TextEquiv>
-            <Unicode>aca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="609" index="609">
-          <Coords points="434,331 450,331 450,343 434,343"/>
-          <TextEquiv>
-            <Unicode>aca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="610" index="610">
-          <Coords points="452,331 461,331 461,343 452,343"/>
-          <TextEquiv>
-            <Unicode>ttt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="611" index="611">
-          <Coords points="464,331 486,331 486,343 464,343"/>
-          <TextEquiv>
-            <Unicode>gc-3'</Unicode>
+            <Unicode>5'-act ggc gaa aca aca ttt gc-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="63" row="15" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c063" row="15" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,327 616,327 616,347 502,347"/>
-        <TextLine id="612" index="612">
+        <TextLine id="c063_l000" index="0">
           <Coords points="509,331 527,331 527,343 509,343"/>
+          <Word id="612">
+            <Coords points="509,331 527,331 527,343 509,343"/>
+            <TextEquiv>
+              <Unicode>109</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>109</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="64" row="16" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c064" row="16" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,347 142,347 142,366 37,366"/>
-        <TextLine id="613" index="613">
-          <Coords points="37,351 81,351 81,363 37,363"/>
+        <TextLine id="c064_l000" index="0">
+          <Coords points="37,351 90,351 90,363 37,363"/>
+          <Word id="613">
+            <Coords points="37,351 81,351 81,363 37,363"/>
+            <TextEquiv>
+              <Unicode>Cathepsin</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="614">
+            <Coords points="83,351 90,351 90,363 83,363"/>
+            <TextEquiv>
+              <Unicode>K</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>Cathepsin</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="614" index="614">
-          <Coords points="83,351 90,351 90,363 83,363"/>
-          <TextEquiv>
-            <Unicode>K</Unicode>
+            <Unicode>Cathepsin K</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="65" row="16" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c065" row="16" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,347 343,347 343,366 142,366"/>
-        <TextLine id="615" index="615">
-          <Coords points="194,351 222,351 222,363 194,363"/>
+        <TextLine id="c065_l000" index="0">
+          <Coords points="194,351 330,351 330,363 194,363"/>
+          <Word id="615">
+            <Coords points="194,351 222,351 222,363 194,363"/>
+            <TextEquiv>
+              <Unicode>5'-ggg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="616">
+            <Coords points="225,351 240,351 240,363 225,363"/>
+            <TextEquiv>
+              <Unicode>cca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="617">
+            <Coords points="243,351 259,351 259,363 243,363"/>
+            <TextEquiv>
+              <Unicode>gga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="618">
+            <Coords points="262,351 276,351 276,363 262,363"/>
+            <TextEquiv>
+              <Unicode>tga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="619">
+            <Coords points="279,351 294,351 294,363 279,363"/>
+            <TextEquiv>
+              <Unicode>aag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="620">
+            <Coords points="297,351 309,351 309,363 297,363"/>
+            <TextEquiv>
+              <Unicode>ttg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="621">
+            <Coords points="311,351 330,351 330,363 311,363"/>
+            <TextEquiv>
+              <Unicode>ta-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-ggg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="616" index="616">
-          <Coords points="225,351 240,351 240,363 225,363"/>
-          <TextEquiv>
-            <Unicode>cca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="617" index="617">
-          <Coords points="243,351 259,351 259,363 243,363"/>
-          <TextEquiv>
-            <Unicode>gga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="618" index="618">
-          <Coords points="262,351 276,351 276,363 262,363"/>
-          <TextEquiv>
-            <Unicode>tga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="619" index="619">
-          <Coords points="279,351 294,351 294,363 279,363"/>
-          <TextEquiv>
-            <Unicode>aag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="620" index="620">
-          <Coords points="297,351 309,351 309,363 297,363"/>
-          <TextEquiv>
-            <Unicode>ttg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="621" index="621">
-          <Coords points="311,351 330,351 330,363 311,363"/>
-          <TextEquiv>
-            <Unicode>ta-3'</Unicode>
+            <Unicode>5'-ggg cca gga tga aag ttg ta-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="66" row="16" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c066" row="16" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,347 502,347 502,366 343,366"/>
-        <TextLine id="622" index="622">
-          <Coords points="351,351 378,351 378,363 351,363"/>
+        <TextLine id="c066_l000" index="0">
+          <Coords points="351,351 480,351 480,363 351,363"/>
+          <Word id="622">
+            <Coords points="351,351 378,351 378,363 351,363"/>
+            <TextEquiv>
+              <Unicode>5'-cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="623">
+            <Coords points="381,351 395,351 395,363 381,363"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="624">
+            <Coords points="397,351 408,351 408,363 397,363"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="625">
+            <Coords points="411,351 422,351 422,363 411,363"/>
+            <TextEquiv>
+              <Unicode>ctt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="626">
+            <Coords points="425,351 441,351 441,363 425,363"/>
+            <TextEquiv>
+              <Unicode>cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="627">
+            <Coords points="444,351 460,351 460,363 444,363"/>
+            <TextEquiv>
+              <Unicode>ggc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="628">
+            <Coords points="463,351 480,351 480,363 463,363"/>
+            <TextEquiv>
+              <Unicode>tt-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="623" index="623">
-          <Coords points="381,351 395,351 395,363 381,363"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="624" index="624">
-          <Coords points="397,351 408,351 408,363 397,363"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="625" index="625">
-          <Coords points="411,351 422,351 422,363 411,363"/>
-          <TextEquiv>
-            <Unicode>ctt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="626" index="626">
-          <Coords points="425,351 441,351 441,363 425,363"/>
-          <TextEquiv>
-            <Unicode>cag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="627" index="627">
-          <Coords points="444,351 460,351 460,363 444,363"/>
-          <TextEquiv>
-            <Unicode>ggc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="628" index="628">
-          <Coords points="463,351 480,351 480,363 463,363"/>
-          <TextEquiv>
-            <Unicode>tt-3'</Unicode>
+            <Unicode>5'-cac tgc tct ctt cag ggc tt-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="67" row="16" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c067" row="16" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,347 616,347 616,366 502,366"/>
-        <TextLine id="629" index="629">
+        <TextLine id="c067_l000" index="0">
           <Coords points="509,351 527,351 527,363 509,363"/>
+          <Word id="629">
+            <Coords points="509,351 527,351 527,363 509,363"/>
+            <TextEquiv>
+              <Unicode>106</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>106</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="68" row="17" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c068" row="17" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,366 142,366 142,386 37,386"/>
-        <TextLine id="630" index="630">
-          <Coords points="37,370 80,370 80,382 37,382"/>
+        <TextLine id="c068_l000" index="0">
+          <Coords points="37,370 88,370 88,382 37,382"/>
+          <Word id="630">
+            <Coords points="37,370 80,370 80,382 37,382"/>
+            <TextEquiv>
+              <Unicode>Cathepsin</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="631">
+            <Coords points="83,370 88,370 88,382 83,382"/>
+            <TextEquiv>
+              <Unicode>L</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>Cathepsin</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="631" index="631">
-          <Coords points="83,370 88,370 88,382 83,382"/>
-          <TextEquiv>
-            <Unicode>L</Unicode>
+            <Unicode>Cathepsin L</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="69" row="17" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c069" row="17" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,366 343,366 343,386 142,386"/>
-        <TextLine id="632" index="632">
-          <Coords points="194,370 218,370 218,382 194,382"/>
+        <TextLine id="c069_l000" index="0">
+          <Coords points="194,370 327,370 327,382 194,382"/>
+          <Word id="632">
+            <Coords points="194,370 218,370 218,382 194,382"/>
+            <TextEquiv>
+              <Unicode>5'-atc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="633">
+            <Coords points="221,370 237,370 237,382 221,382"/>
+            <TextEquiv>
+              <Unicode>ccc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="634">
+            <Coords points="239,370 255,370 255,382 239,382"/>
+            <TextEquiv>
+              <Unicode>aag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="635">
+            <Coords points="258,370 269,370 269,382 258,382"/>
+            <TextEquiv>
+              <Unicode>tct</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="636">
+            <Coords points="272,370 286,370 286,382 272,382"/>
+            <TextEquiv>
+              <Unicode>gtg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="637">
+            <Coords points="289,370 305,370 305,382 289,382"/>
+            <TextEquiv>
+              <Unicode>gac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="638">
+            <Coords points="308,370 327,370 327,382 308,382"/>
+            <TextEquiv>
+              <Unicode>tg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-atc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="633" index="633">
-          <Coords points="221,370 237,370 237,382 221,382"/>
-          <TextEquiv>
-            <Unicode>ccc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="634" index="634">
-          <Coords points="239,370 255,370 255,382 239,382"/>
-          <TextEquiv>
-            <Unicode>aag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="635" index="635">
-          <Coords points="258,370 269,370 269,382 258,382"/>
-          <TextEquiv>
-            <Unicode>tct</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="636" index="636">
-          <Coords points="272,370 286,370 286,382 272,382"/>
-          <TextEquiv>
-            <Unicode>gtg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="637" index="637">
-          <Coords points="289,370 305,370 305,382 289,382"/>
-          <TextEquiv>
-            <Unicode>gac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="638" index="638">
-          <Coords points="308,370 327,370 327,382 308,382"/>
-          <TextEquiv>
-            <Unicode>tg-3'</Unicode>
+            <Unicode>5'-atc ccc aag tct gtg gac tg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="70" row="17" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c070" row="17" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,366 502,366 502,386 343,386"/>
-        <TextLine id="639" index="639">
-          <Coords points="351,370 376,370 376,382 351,382"/>
+        <TextLine id="c070_l000" index="0">
+          <Coords points="351,370 483,370 483,382 351,382"/>
+          <Word id="639">
+            <Coords points="351,370 376,370 376,382 351,382"/>
+            <TextEquiv>
+              <Unicode>5'-tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="640">
+            <Coords points="378,370 393,370 393,382 378,382"/>
+            <TextEquiv>
+              <Unicode>gtg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="641">
+            <Coords points="395,370 411,370 411,382 395,382"/>
+            <TextEquiv>
+              <Unicode>aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="642">
+            <Coords points="414,370 427,370 427,382 414,382"/>
+            <TextEquiv>
+              <Unicode>tca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="643">
+            <Coords points="430,370 441,370 441,382 430,382"/>
+            <TextEquiv>
+              <Unicode>gtt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="644">
+            <Coords points="444,370 458,370 458,382 444,382"/>
+            <TextEquiv>
+              <Unicode>tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="645">
+            <Coords points="461,370 483,370 483,382 461,382"/>
+            <TextEquiv>
+              <Unicode>cg-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="640" index="640">
-          <Coords points="378,370 393,370 393,382 378,382"/>
-          <TextEquiv>
-            <Unicode>gtg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="641" index="641">
-          <Coords points="395,370 411,370 411,382 395,382"/>
-          <TextEquiv>
-            <Unicode>aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="642" index="642">
-          <Coords points="414,370 427,370 427,382 414,382"/>
-          <TextEquiv>
-            <Unicode>tca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="643" index="643">
-          <Coords points="430,370 441,370 441,382 430,382"/>
-          <TextEquiv>
-            <Unicode>gtt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="644" index="644">
-          <Coords points="444,370 458,370 458,382 444,382"/>
-          <TextEquiv>
-            <Unicode>tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="645" index="645">
-          <Coords points="461,370 483,370 483,382 461,382"/>
-          <TextEquiv>
-            <Unicode>cg-3'</Unicode>
+            <Unicode>5'-tca gtg aga tca gtt tgc cg-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="71" row="17" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c071" row="17" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,366 616,366 616,386 502,386"/>
-        <TextLine id="646" index="646">
+        <TextLine id="c071_l000" index="0">
           <Coords points="509,370 527,370 527,382 509,382"/>
+          <Word id="646">
+            <Coords points="509,370 527,370 527,382 509,382"/>
+            <TextEquiv>
+              <Unicode>145</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>145</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="72" row="18" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c072" row="18" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,386 142,386 142,406 37,406"/>
-        <TextLine id="647" index="647">
-          <Coords points="37,390 80,390 80,402 37,402"/>
+        <TextLine id="c072_l000" index="0">
+          <Coords points="37,390 90,390 90,402 37,402"/>
+          <Word id="647">
+            <Coords points="37,390 80,390 80,402 37,402"/>
+            <TextEquiv>
+              <Unicode>Cathepsin</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="648">
+            <Coords points="83,390 90,390 90,402 83,402"/>
+            <TextEquiv>
+              <Unicode>S</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>Cathepsin</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="648" index="648">
-          <Coords points="83,390 90,390 90,402 83,402"/>
-          <TextEquiv>
-            <Unicode>S</Unicode>
+            <Unicode>Cathepsin S</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="73" row="18" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c073" row="18" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,386 343,386 343,406 142,406"/>
-        <TextLine id="649" index="649">
-          <Coords points="194,390 221,390 221,402 194,402"/>
+        <TextLine id="c073_l000" index="0">
+          <Coords points="194,390 327,390 327,402 194,402"/>
+          <Word id="649">
+            <Coords points="194,390 221,390 221,402 194,402"/>
+            <TextEquiv>
+              <Unicode>5'-aga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="650">
+            <Coords points="223,390 239,390 239,402 223,402"/>
+            <TextEquiv>
+              <Unicode>gaa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="651">
+            <Coords points="242,390 259,390 259,402 242,402"/>
+            <TextEquiv>
+              <Unicode>ggg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="652">
+            <Coords points="262,390 276,390 276,402 262,402"/>
+            <TextEquiv>
+              <Unicode>ctg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="653">
+            <Coords points="278,390 292,390 292,402 278,402"/>
+            <TextEquiv>
+              <Unicode>cgt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="654">
+            <Coords points="295,390 310,390 310,402 295,402"/>
+            <TextEquiv>
+              <Unicode>cac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="655">
+            <Coords points="313,390 327,390 327,402 313,402"/>
+            <TextEquiv>
+              <Unicode>t-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-aga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="650" index="650">
-          <Coords points="223,390 239,390 239,402 223,402"/>
-          <TextEquiv>
-            <Unicode>gaa</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="651" index="651">
-          <Coords points="242,390 259,390 259,402 242,402"/>
-          <TextEquiv>
-            <Unicode>ggg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="652" index="652">
-          <Coords points="262,390 276,390 276,402 262,402"/>
-          <TextEquiv>
-            <Unicode>ctg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="653" index="653">
-          <Coords points="278,390 292,390 292,402 278,402"/>
-          <TextEquiv>
-            <Unicode>cgt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="654" index="654">
-          <Coords points="295,390 310,390 310,402 295,402"/>
-          <TextEquiv>
-            <Unicode>cac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="655" index="655">
-          <Coords points="313,390 327,390 327,402 313,402"/>
-          <TextEquiv>
-            <Unicode>t-3'</Unicode>
+            <Unicode>5'-aga gaa ggg ctg cgt cac t-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="74" row="18" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c074" row="18" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,386 502,386 502,406 343,406"/>
-        <TextLine id="656" index="656">
-          <Coords points="351,390 376,390 376,402 351,402"/>
+        <TextLine id="c074_l000" index="0">
+          <Coords points="351,390 496,390 496,402 351,402"/>
+          <Word id="656">
+            <Coords points="351,390 376,390 376,402 351,402"/>
+            <TextEquiv>
+              <Unicode>5'-gat</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="657">
+            <Coords points="379,390 392,390 392,402 379,402"/>
+            <TextEquiv>
+              <Unicode>atc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="658">
+            <Coords points="395,390 411,390 411,402 395,402"/>
+            <TextEquiv>
+              <Unicode>agc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="659">
+            <Coords points="413,390 425,390 425,402 413,402"/>
+            <TextEquiv>
+              <Unicode>ttc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="660">
+            <Coords points="427,390 443,390 443,402 427,402"/>
+            <TextEquiv>
+              <Unicode>ccc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="661">
+            <Coords points="446,390 457,390 457,402 446,402"/>
+            <TextEquiv>
+              <Unicode>gtt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="662">
+            <Coords points="460,390 471,390 471,402 460,402"/>
+            <TextEquiv>
+              <Unicode>ttc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="663">
+            <Coords points="474,390 496,390 496,402 474,402"/>
+            <TextEquiv>
+              <Unicode>ag-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gat</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="657" index="657">
-          <Coords points="379,390 392,390 392,402 379,402"/>
-          <TextEquiv>
-            <Unicode>atc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="658" index="658">
-          <Coords points="395,390 411,390 411,402 395,402"/>
-          <TextEquiv>
-            <Unicode>agc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="659" index="659">
-          <Coords points="413,390 425,390 425,402 413,402"/>
-          <TextEquiv>
-            <Unicode>ttc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="660" index="660">
-          <Coords points="427,390 443,390 443,402 427,402"/>
-          <TextEquiv>
-            <Unicode>ccc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="661" index="661">
-          <Coords points="446,390 457,390 457,402 446,402"/>
-          <TextEquiv>
-            <Unicode>gtt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="662" index="662">
-          <Coords points="460,390 471,390 471,402 460,402"/>
-          <TextEquiv>
-            <Unicode>ttc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="663" index="663">
-          <Coords points="474,390 496,390 496,402 474,402"/>
-          <TextEquiv>
-            <Unicode>ag-3'</Unicode>
+            <Unicode>5'-gat atc agc ttc ccc gtt ttc ag-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="75" row="18" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c075" row="18" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,386 616,386 616,406 502,406"/>
-        <TextLine id="664" index="664">
+        <TextLine id="c075_l000" index="0">
           <Coords points="509,390 527,390 527,402 509,402"/>
+          <Word id="664">
+            <Coords points="509,390 527,390 527,402 509,402"/>
+            <TextEquiv>
+              <Unicode>117</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>117</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="76" row="19" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c076" row="19" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,406 142,406 142,425 37,425"/>
-        <TextLine id="665" index="665">
-          <Coords points="37,409 72,409 72,421 37,421"/>
+        <TextLine id="c076_l000" index="0">
+          <Coords points="37,409 81,409 81,421 37,421"/>
+          <Word id="665">
+            <Coords points="37,409 72,409 72,421 37,421"/>
+            <TextEquiv>
+              <Unicode>Cystatin</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="666">
+            <Coords points="74,409 81,409 81,421 74,421"/>
+            <TextEquiv>
+              <Unicode>B</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>Cystatin</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="666" index="666">
-          <Coords points="74,409 81,409 81,421 74,421"/>
-          <TextEquiv>
-            <Unicode>B</Unicode>
+            <Unicode>Cystatin B</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="77" row="19" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c077" row="19" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,406 343,406 343,425 142,425"/>
-        <TextLine id="667" index="667">
-          <Coords points="194,409 219,409 219,421 194,421"/>
+        <TextLine id="c077_l000" index="0">
+          <Coords points="194,409 331,409 331,421 194,421"/>
+          <Word id="667">
+            <Coords points="194,409 219,409 219,421 194,421"/>
+            <TextEquiv>
+              <Unicode>5'-tgc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="668">
+            <Coords points="222,409 235,409 235,421 222,421"/>
+            <TextEquiv>
+              <Unicode>tga</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="669">
+            <Coords points="238,409 253,409 253,421 238,421"/>
+            <TextEquiv>
+              <Unicode>caa</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="670">
+            <Coords points="256,409 270,409 270,421 256,421"/>
+            <TextEquiv>
+              <Unicode>ggt</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="671">
+            <Coords points="273,409 289,409 289,421 273,421"/>
+            <TextEquiv>
+              <Unicode>cag</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="672">
+            <Coords points="292,409 307,409 307,421 292,421"/>
+            <TextEquiv>
+              <Unicode>acc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="673">
+            <Coords points="310,409 331,409 331,421 310,421"/>
+            <TextEquiv>
+              <Unicode>ac-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-tgc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="668" index="668">
-          <Coords points="222,409 235,409 235,421 222,421"/>
-          <TextEquiv>
-            <Unicode>tga</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="669" index="669">
-          <Coords points="238,409 253,409 253,421 238,421"/>
-          <TextEquiv>
-            <Unicode>caa</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="670" index="670">
-          <Coords points="256,409 270,409 270,421 256,421"/>
-          <TextEquiv>
-            <Unicode>ggt</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="671" index="671">
-          <Coords points="273,409 289,409 289,421 273,421"/>
-          <TextEquiv>
-            <Unicode>cag</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="672" index="672">
-          <Coords points="292,409 307,409 307,421 292,421"/>
-          <TextEquiv>
-            <Unicode>acc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="673" index="673">
-          <Coords points="310,409 331,409 331,421 310,421"/>
-          <TextEquiv>
-            <Unicode>ac-3'</Unicode>
+            <Unicode>5'-tgc tga caa ggt cag acc ac-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="78" row="19" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c078" row="19" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,406 502,406 502,425 343,425"/>
-        <TextLine id="674" index="674">
-          <Coords points="351,409 378,409 378,421 351,421"/>
+        <TextLine id="c078_l000" index="0">
+          <Coords points="351,409 485,409 485,421 351,421"/>
+          <Word id="674">
+            <Coords points="351,409 378,409 378,421 351,421"/>
+            <TextEquiv>
+              <Unicode>5'-gca</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="675">
+            <Coords points="381,409 397,409 397,421 381,421"/>
+            <TextEquiv>
+              <Unicode>acc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="676">
+            <Coords points="399,409 415,409 415,421 399,421"/>
+            <TextEquiv>
+              <Unicode>acg</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="677">
+            <Coords points="418,409 432,409 432,421 418,421"/>
+            <TextEquiv>
+              <Unicode>tcc</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="678">
+            <Coords points="434,409 448,409 448,421 434,421"/>
+            <TextEquiv>
+              <Unicode>tac</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="679">
+            <Coords points="450,409 461,409 461,421 450,421"/>
+            <TextEquiv>
+              <Unicode>att</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="680">
+            <Coords points="464,409 485,409 485,421 464,421"/>
+            <TextEquiv>
+              <Unicode>ca-3'</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
-            <Unicode>5'-gca</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="675" index="675">
-          <Coords points="381,409 397,409 397,421 381,421"/>
-          <TextEquiv>
-            <Unicode>acc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="676" index="676">
-          <Coords points="399,409 415,409 415,421 399,421"/>
-          <TextEquiv>
-            <Unicode>acg</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="677" index="677">
-          <Coords points="418,409 432,409 432,421 418,421"/>
-          <TextEquiv>
-            <Unicode>tcc</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="678" index="678">
-          <Coords points="434,409 448,409 448,421 434,421"/>
-          <TextEquiv>
-            <Unicode>tac</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="679" index="679">
-          <Coords points="450,409 461,409 461,421 450,421"/>
-          <TextEquiv>
-            <Unicode>att</Unicode>
-          </TextEquiv>
-        </TextLine>
-        <TextLine id="680" index="680">
-          <Coords points="464,409 485,409 485,421 464,421"/>
-          <TextEquiv>
-            <Unicode>ca-3'</Unicode>
+            <Unicode>5'-gca acc acg tcc tac att ca-3'</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="79" row="19" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c079" row="19" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,406 616,406 616,425 502,425"/>
-        <TextLine id="681" index="681">
+        <TextLine id="c079_l000" index="0">
           <Coords points="509,409 527,409 527,421 509,421"/>
+          <Word id="681">
+            <Coords points="509,409 527,409 527,421 509,421"/>
+            <TextEquiv>
+              <Unicode>133</Unicode>
+            </TextEquiv>
+          </Word>
           <TextEquiv>
             <Unicode>133</Unicode>
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="80" row="20" col="0" rowSpan="1" colSpan="1">
+      <TableCell id="c080" row="20" col="0" rowSpan="1" colSpan="1">
         <Coords points="37,425 142,425 142,441 37,441"/>
       </TableCell>
-      <TableCell id="81" row="20" col="1" rowSpan="1" colSpan="1">
+      <TableCell id="c081" row="20" col="1" rowSpan="1" colSpan="1">
         <Coords points="142,425 343,425 343,441 142,441"/>
       </TableCell>
-      <TableCell id="82" row="20" col="2" rowSpan="1" colSpan="1">
+      <TableCell id="c082" row="20" col="2" rowSpan="1" colSpan="1">
         <Coords points="343,425 502,425 502,441 343,441"/>
       </TableCell>
-      <TableCell id="83" row="20" col="3" rowSpan="1" colSpan="1">
+      <TableCell id="c083" row="20" col="3" rowSpan="1" colSpan="1">
         <Coords points="502,425 616,425 616,441 502,441"/>
       </TableCell>
     </TableRegion>
