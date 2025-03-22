@@ -2,13 +2,15 @@ import lxml.etree as ET
 import json
 from enum import Enum
 import re
+import os
 
 import numpy as np
 import cv2
 
+from organizer.tables.order_guessing import cluster_objects
 from organizer.tables.table_layout import TablePageLayout, TableRegion, TableCell
 from organizer import utils
-from pero_ocr.core.layout import TextLine
+from pero_ocr.core.layout import TextLine, Word
 
 
 class VocWord:
@@ -162,25 +164,25 @@ class VocLayout:
         columns.sort(key=lambda x: x.xmin)
 
         joined_cells = self.get_joined_cells(rows, columns)
-
         cells, cells_structure = self.create_cells(rows, columns, joined_cells)
-
         cells_with_words = self.assign_words_to_cells(rows, columns, cells, cells_structure, joined_cells)
+        for cell in cells_with_words:
+            if cell is not None:
+                self.order_words_in_cell(cell)
 
+        # check only one table region in the file
         table_objects = self.get_objects([ObjectCategory.table])
         if len(table_objects) != 1:
-            print(f'Warning: Expected exactly one table region, found {len(table_objects)}')
+            print(f'Warning: Expected exactly one table region, found {len(table_objects)}, skipping file {self.xml_file}')
             return None
 
+        # create table region
         table_polygon = utils.ltrb_to_polygon(*table_objects[0].ltrb())
-
-        table_region = TableRegion(id=self.table_id, coords=table_polygon)
+        table_region = TableRegion(id=os.path.basename(self.table_id), coords=table_polygon)
         table_region.insert_cells([cell for cell in cells_with_words if cell is not None])
 
-        # e.g. PMC1064076_table_2.jpg -> PMC1064076
-        page_id = re.match(r'(.+)_table_\d+', self.table_id).group(1)
-
-        page_layout = TablePageLayout(id=page_id, file=self.xml_file, page_size=(self.height, self.width))
+        # create page layout
+        page_layout = TablePageLayout(id=self.table_id, file=self.xml_file, page_size=(self.height, self.width))
         page_layout.tables.append(table_region)
 
         return page_layout
@@ -235,7 +237,7 @@ class VocLayout:
             for col_idx, column in enumerate(columns):
                 polygon = utils.ltrb_to_polygon(column.xmin, row.ymin, column.xmax, row.ymax)
                 cell_id = len(cells)
-                new_cell = TableCell(str(cell_id), polygon, row=row_idx, col=col_idx, row_span=1, col_span=1)
+                new_cell = TableCell(id=f'c{cell_id:03d}', coords=polygon, row=row_idx, col=col_idx, row_span=1, col_span=1)
                 cells.append(new_cell)
                 cells_structure[row_idx, col_idx] = cell_id
 
@@ -258,6 +260,7 @@ class VocLayout:
         return cells, cells_structure
 
     def assign_words_to_cells(self, rows: list[VocObject], columns: list[VocObject], cells: list[TableCell], cells_structure: np.ndarray[int], joined_cells: list[TableCell]) -> list[TableCell]:
+        """Assign words to cells based on their position. Words are added to a single TextLine in the order they were in the JSON file."""
         tolerance = 3
 
         for word in self.words:
@@ -281,6 +284,7 @@ class VocLayout:
                 print(f'Warning: Word {word} does not intersect any row or column')
                 continue
             elif len(intersecting_rows) > 1 or len(intersecting_columns) > 1:
+                # find the joined cell that the word intersects (cell interestcs more than one row or column)
                 intersecting_joined_cells = [
                     cell for cell in joined_cells
                     if word.xmin < cell.xmax - tolerance and word.xmax > cell.xmin + tolerance
@@ -302,20 +306,73 @@ class VocLayout:
 
             # word to textline
             word_polygon = utils.ltrb_to_polygon(*word.ltrb())
-            textline = TextLine(id=str(word.span_num), polygon=word_polygon, transcription=word.text)
+            word = Word(id=str(word.span_num), polygon=word_polygon, transcription=word.text)
 
-            cell.lines.append(textline)
-
-        # sort words in each cell by x coordinate (left to right)
-        for cell in cells:
-            if cell is None:
-                continue
-
-            words = cell.lines
-            words.sort(key=lambda x: np.min(x.polygon[:, 0])) # sort by x coordinate
-            # TODO sort words by y coordinate to allow multi-line cells
-
+            if cell.lines:
+                cell.lines[0].words.append(word)
+            else:
+                textline = TextLine(id=f'{cell.id}_l000', polygon=cell.coords, transcription='')
+                textline.words.append(word)
+                cell.lines.append(textline)
         return cells
+
+    def order_words_in_cell(self, cell: TableCell) -> TableCell:
+        if cell is None or len(cell.lines) == 0:
+            return cell
+
+        if len(cell.lines) > 1:
+            print(f'Warning: Cell {cell.id} has more than one line ({len(cell.lines)}) in table {self.table_id}. Getting words from all to reorder them.')
+
+        words = [word for line in cell.lines for word in line.words]
+
+        eps = 2
+        word_id_clusters = cluster_objects(words, min_samples=1, eps=eps)
+        overlap_indices = self.check_word_overlap(words, word_id_clusters)
+        if len(overlap_indices) > 0 and len(word_id_clusters) == 1:
+            print(f'Warning: Overlapping words in cell {cell.id}, but only one cluster found. Consider adjusting eps parameter (currently {eps}).')
+            print(f'\tOverlapping words: {overlap_indices}')
+            print(f'\tClusters: {word_id_clusters}')
+
+        # create new textline from each cluster of words
+        textlines = []
+        for cluster_id, cluster in enumerate(word_id_clusters):
+            words_in_cluster = [words[word_id] for word_id in cluster]
+
+            textline_polygon = polygon_around_polygons([word.polygon for word in words_in_cluster])
+            transcription = ' '.join([word.transcription for word in words_in_cluster])
+            textline = TextLine(id=f'{cell.id}_l{cluster_id:03d}', polygon=textline_polygon, transcription=transcription)
+            textline.words = words_in_cluster
+            textlines.append(textline)
+
+        cell.lines = textlines
+        # make cell coords the bounding box around all textlines
+        # cell.coords = polygon_around_polygons([textline.polygon for textline in textlines])
+
+        return cell
+
+    def check_word_overlap(self, words: list[Word], word_id_clusters: list[list[int]]) -> np.ndarray:
+        words = sorted(words, key=lambda x: np.min(x.polygon[:, 0])) # sort by xmin coordinate
+
+        # create bounding boxes consisting of xmin, xmax coordinates
+        bboxes = []
+        for word in words:
+            bboxes.append([np.min(word.polygon[:, 0]), np.max(word.polygon[:, 0])])
+        bboxes = np.array(bboxes)
+
+        # compare xmins of words with xmaxs of previous words, resulting in bool array of same length as bboxes
+        overlap_bool = bboxes[1:, 0] < bboxes[:-1, 1]
+        # get indices of true values
+        overlap_indices = np.where(overlap_bool)[0]
+
+        return overlap_indices
+
+def polygon_around_polygons(polygons: list[np.ndarray]) -> np.ndarray:
+    l = min([np.min(polygon[:, 0]) for polygon in polygons])
+    t = min([np.min(polygon[:, 1]) for polygon in polygons])
+    r = max([np.max(polygon[:, 0]) for polygon in polygons])
+    b = max([np.max(polygon[:, 1]) for polygon in polygons])
+
+    return utils.ltrb_to_polygon(l, t, r, b)
 
 # words JSON file example:
 # [

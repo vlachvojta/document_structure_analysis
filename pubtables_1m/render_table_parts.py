@@ -177,7 +177,7 @@ class TablePartRenderer:
             table_layout.to_table_pagexml(page_xml_file)
             self.stats['page_layouts_exported'] += 1
 
-            rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1)
+            rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
             output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '.jpg'))
             cv2.imwrite(output_file, rendered_page_layout)
             self.stats['page_layout_rendered_exported'] += 1
@@ -199,9 +199,8 @@ class TablePartRenderer:
             cv2.imwrite(output_file, reconstructed_image)
             self.stats['reconstruction_images_exported'] += 1
 
-
-
-        print(f'Categories seen: {self.categories_seen}')
+        print('')
+        # print(f'Categories seen: {self.categories_seen}')
         print(f'Statistics: {json.dumps(self.stats, indent=4)}')
 
     @staticmethod
