@@ -165,10 +165,10 @@ class VocLayout:
 
         joined_cells = self.get_joined_cells(rows, columns)
         cells, cells_structure = self.create_cells(rows, columns, joined_cells)
-        cells_with_words = self.assign_words_to_cells(rows, columns, cells, cells_structure, joined_cells)
+        cells_with_words = self.assign_words_to_cells(rows, columns, cells, cells_structure, joined_cells, table_id=self.table_id)
         for cell in cells_with_words:
             if cell is not None:
-                self.order_words_in_cell(cell)
+                self.order_words_in_cell(cell, table_id=self.table_id)
 
         # check only one table region in the file
         table_objects = self.get_objects([ObjectCategory.table])
@@ -259,7 +259,8 @@ class VocLayout:
 
         return cells, cells_structure
 
-    def assign_words_to_cells(self, rows: list[VocObject], columns: list[VocObject], cells: list[TableCell], cells_structure: np.ndarray[int], joined_cells: list[TableCell]) -> list[TableCell]:
+    def assign_words_to_cells(self, rows: list[VocObject], columns: list[VocObject], cells: list[TableCell], cells_structure: np.ndarray[int], joined_cells: list[TableCell],
+                              table_id: str) -> list[TableCell]:
         """Assign words to cells based on their position. Words are added to a single TextLine in the order they were in the JSON file."""
         tolerance = 3
 
@@ -276,15 +277,16 @@ class VocLayout:
 
             intersecting_columns = [
                 column for column in columns
-                if word.xmin < column.xmax - tolerance and word.xmax > column.xmin + tolerance]
+                if word.xmin < column.xmax and word.xmax > column.xmin]
+                # if word.xmin < column.xmax - tolerance and word.xmax > column.xmin + tolerance]
 
             if len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
                 if len(intersecting_rows) == 0 and len(intersecting_columns) == 0:
-                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any row or column')
+                    print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any row or column')
                 elif len(intersecting_rows) == 0:
-                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any row')
+                    print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any row')
                 elif len(intersecting_columns) == 0:
-                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any column')
+                    print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any column')
                 continue
             elif len(intersecting_rows) > 1 or len(intersecting_columns) > 1:
                 # find the joined cell that the word intersects (cell interestcs more than one row or column)
@@ -299,10 +301,10 @@ class VocLayout:
                     row_idx = cell.row
                     col_idx = cell.col
                 elif len(intersecting_joined_cells) == 0:
-                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any rows, columns or joined cells')
+                    print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any rows, columns or joined cells')
                     continue
                 elif len(intersecting_joined_cells) > 1:
-                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) intersects more than one joined cell')
+                    print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) intersects more than one joined cell')
                     continue
             else:  # word intersects exactly one row and one column
                 row_idx = rows.index(intersecting_rows[0])
@@ -323,20 +325,20 @@ class VocLayout:
                 cell.lines.append(textline)
         return cells
 
-    def order_words_in_cell(self, cell: TableCell) -> TableCell:
+    def order_words_in_cell(self, cell: TableCell, table_id: str) -> TableCell:
         if cell is None or len(cell.lines) == 0:
             return cell
 
         if len(cell.lines) > 1:
-            print(f'Warning: Cell {cell.id} has more than one line ({len(cell.lines)}) in table {self.table_id}. Getting words from all to reorder them.')
+            print(f'Warning({table_id}): Cell {cell.id} has more than one line ({len(cell.lines)}) in table {self.table_id}. Getting words from all to reorder them.')
 
         words = [word for line in cell.lines for word in line.words]
 
-        eps = 2
+        eps = 1
         word_id_clusters = cluster_objects(words, min_samples=1, eps=eps)
         overlap_indices = self.check_word_overlap(words, word_id_clusters)
         if len(overlap_indices) > 0 and len(word_id_clusters) == 1:
-            print(f'Warning: Overlapping words in cell {cell.id}, but only one cluster found. Consider adjusting eps parameter (currently {eps}).')
+            print(f'Warning({table_id}): Overlapping words in cell {cell.id}, but only one cluster found. Consider adjusting eps parameter (currently {eps}).')
             print(f'\tOverlapping words: {overlap_indices}')
             print(f'\tClusters: {word_id_clusters}')
 
@@ -358,6 +360,7 @@ class VocLayout:
         return cell
 
     def check_word_overlap(self, words: list[Word], word_id_clusters: list[list[int]]) -> np.ndarray:
+        tolerance = 3
         words = sorted(words, key=lambda x: np.min(x.polygon[:, 0])) # sort by xmin coordinate
 
         # create bounding boxes consisting of xmin, xmax coordinates
@@ -367,7 +370,7 @@ class VocLayout:
         bboxes = np.array(bboxes)
 
         # compare xmins of words with xmaxs of previous words, resulting in bool array of same length as bboxes
-        overlap_bool = bboxes[1:, 0] < bboxes[:-1, 1]
+        overlap_bool = bboxes[1:, 0] < bboxes[:-1, 1] - tolerance
         # get indices of true values
         overlap_indices = np.where(overlap_bool)[0]
 
