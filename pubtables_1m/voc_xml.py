@@ -265,7 +265,8 @@ class VocLayout:
 
         for word in self.words:
             # filter out words that are not inside the table
-            if word.xmin < columns[0].xmin or word.xmax > columns[-1].xmax or word.ymin < rows[0].ymin or word.ymax > rows[-1].ymax:
+            if (word.xmax < columns[0].xmin or word.xmin > columns[-1].xmax or
+                word.ymax < rows[0].ymin or word.ymin > rows[-1].ymax):
                 continue
 
             # find the row and column of the word
@@ -277,29 +278,35 @@ class VocLayout:
                 column for column in columns
                 if word.xmin < column.xmax - tolerance and word.xmax > column.xmin + tolerance]
 
-            if len(intersecting_rows) == 1 or len(intersecting_columns) == 1:
-                row_idx = rows.index(intersecting_rows[0])
-                col_idx = columns.index(intersecting_columns[0])
-            elif len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
-                print(f'Warning: Word {word} does not intersect any row or column')
+            if len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
+                if len(intersecting_rows) == 0 and len(intersecting_columns) == 0:
+                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any row or column')
+                elif len(intersecting_rows) == 0:
+                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any row')
+                elif len(intersecting_columns) == 0:
+                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any column')
                 continue
             elif len(intersecting_rows) > 1 or len(intersecting_columns) > 1:
                 # find the joined cell that the word intersects (cell interestcs more than one row or column)
-                intersecting_joined_cells = [
-                    cell for cell in joined_cells
-                    if word.xmin < cell.xmax - tolerance and word.xmax > cell.xmin + tolerance
-                    and word.ymin < cell.ymax - tolerance and word.ymax > cell.ymin + tolerance]
+                intersecting_joined_cells = []
+                for cell in joined_cells:
+                    cell_l, cell_t, cell_r, cell_b = utils.polygon_to_ltrb(cell.coords)
+                    if word.xmin < cell_r - tolerance and word.xmax > cell_l + tolerance and word.ymin < cell_b - tolerance and word.ymax > cell_t + tolerance:
+                        intersecting_joined_cells.append(cell)
 
                 if len(intersecting_joined_cells) == 1:
                     cell = intersecting_joined_cells[0]
                     row_idx = cell.row
                     col_idx = cell.col
                 elif len(intersecting_joined_cells) == 0:
-                    print(f'Warning: Word {word} does not intersect any rows, columns or joined cells')
+                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) does not intersect any rows, columns or joined cells')
                     continue
                 elif len(intersecting_joined_cells) > 1:
-                    print(f'Warning: Word {word} intersects more than one joined cell')
+                    print(f'Warning: Word {word} ({word.text} at {word.ltrb()}) intersects more than one joined cell')
                     continue
+            else:  # word intersects exactly one row and one column
+                row_idx = rows.index(intersecting_rows[0])
+                col_idx = columns.index(intersecting_columns[0])
 
             cell_id = cells_structure[row_idx, col_idx]
             cell = cells[cell_id]
