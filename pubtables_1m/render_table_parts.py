@@ -174,6 +174,7 @@ class PubTablesConverter:
             self.stats['table_crops_exported'] += 1
 
             # create table reconstruction for testing purposes
+            # TODO move this down after testing on first 1000 files or something
             reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
 
             if self.mass_export:
@@ -181,7 +182,7 @@ class PubTablesConverter:
             layout_categories = set([obj.category for obj in voc_layout.objects])
             self.categories_seen.update(layout_categories)
 
-            # render table reconstruction only if export all is set
+            # render table reconstruction only if mass export is not enabled
             output_file = os.path.join(self.output_folder_reconstruction, image_name)
             cv2.imwrite(output_file, reconstructed_image)
             self.stats['reconstruction_images_exported'] += 1
