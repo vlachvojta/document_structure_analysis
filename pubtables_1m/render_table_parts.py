@@ -182,7 +182,7 @@ class TablePartRenderer:
             cv2.imwrite(output_file, rendered_page_layout)
             self.stats['page_layout_rendered_exported'] += 1
 
-            rendered_page_layout_cropped = table_layout.render_table_crops(image_orig.copy(), thickness=1)[0]
+            rendered_page_layout_cropped = table_layout.render_table_crops(rendered_page_layout, render_borders=False)[0]
             output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '_crop.jpg'))
             cv2.imwrite(output_file, rendered_page_layout_cropped)
             self.stats['page_layout_crops_exported'] += 1
