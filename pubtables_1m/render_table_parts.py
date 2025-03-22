@@ -55,6 +55,9 @@ def parseargs():
     #     '-p', '--padding', type=int, default=0,
     #     help="Padding around the object.")
     parser.add_argument(
+        "-m", "--mass-export", action='store_true', default=False,
+        help="Mass export only image crops and PAGE XMLs.")
+    parser.add_argument(
         "-o", "--output-folder", type=str, default='example_data',
         help="Output folder where to save json tasks.")
     parser.add_argument(
@@ -70,26 +73,28 @@ def main():
 
     start = time.time()
 
-    task_creator = TablePartRenderer(
+    pubtables_converter = PubTablesConverter(
         image_folder=args.image_folder,
         xml_folder=args.xml_folder,
         word_folder=args.word_folder,
         # task_image_path=args.task_image_path,
+        mass_export=args.mass_export,
         output_folder=args.output_folder,
         verbose=args.verbose)
-    task_creator()
+    pubtables_converter()
 
     end = time.time()
     print(f'Total time: {end - start:.2f} s')
 
 
-class TablePartRenderer:
+class PubTablesConverter:
     def __init__(self, image_folder: str, xml_folder: str,
-                 word_folder: str,
+                 word_folder: str, mass_export: bool,
                  output_folder: str, verbose: bool = False):
         self.image_folder = image_folder
         self.xml_folder = xml_folder
         self.word_folder = word_folder
+        self.mass_export = mass_export
         self.output_folder = output_folder
         # self.task_image_path = task_image_path
         self.output_folder_images_render = os.path.join(output_folder, 'images_render')
@@ -97,7 +102,7 @@ class TablePartRenderer:
         self.output_folder_page_xml = os.path.join(output_folder, 'page_xml')
         self.output_folder_page_xml_render = os.path.join(output_folder, 'page_xml_render')
         self.output_folder_reconstruction = os.path.join(output_folder, 'reconstruction')
-        self.output_folder_table_cutouts = os.path.join(output_folder, 'table_cutouts')
+        self.output_folder_table_crops = os.path.join(output_folder, 'table_crops')
         self.verbose = verbose
 
         if verbose:
@@ -108,53 +113,89 @@ class TablePartRenderer:
         # TODO check if image and word exists for each xml file
         # TODO allow other images than jpg
         # self.xml_files, self.image_names = self.load_image_xml_pairs(xml_folder, image_folder)
-        self.xml_files = [os.path.join(xml_folder, f) for f in os.listdir(xml_folder) if f.endswith('.xml')]
-        self.image_names = [f.replace('.xml', '.jpg') for f in os.listdir(xml_folder)]
-        self.word_files = [f.replace('.xml', '_words.json') for f in os.listdir(xml_folder)]
+        exts = ['.xml', '.jpg', '_words.json']
+        file_groups = load_file_groups([xml_folder, image_folder, word_folder], exts)
+        if not file_groups:
+            logging.error('No matching files found in the input folders.')
+            return
+
+        self.xml_files = [os.path.join(xml_folder, f + exts[0]) for f in file_groups]
+        self.image_names = [os.path.join(image_folder, f + exts[1]) for f in file_groups]
+        self.word_files = [os.path.join(word_folder, f + exts[2]) for f in file_groups]
         # print(f'words: {self.word_files}')
-        logging.debug(f'Loaded {len(self.xml_files)} image-xml pairs')
+        logging.debug(f'Loaded {len(self.xml_files)} xml-image-words triplets.')
 
         os.makedirs(output_folder, exist_ok=True)
-        os.makedirs(self.output_folder_images_render, exist_ok=True)
-        os.makedirs(self.output_folder_images_words, exist_ok=True)
         os.makedirs(self.output_folder_page_xml, exist_ok=True)
-        os.makedirs(self.output_folder_page_xml_render, exist_ok=True)
-        os.makedirs(self.output_folder_reconstruction, exist_ok=True)
-        os.makedirs(self.output_folder_table_cutouts, exist_ok=True)
+        os.makedirs(self.output_folder_table_crops, exist_ok=True)
 
-        self.categories_seen = set()
-        # create stats as a int defaul dict
+        if not self.mass_export:
+            os.makedirs(self.output_folder_images_render, exist_ok=True)
+            os.makedirs(self.output_folder_images_words, exist_ok=True)
+            os.makedirs(self.output_folder_page_xml_render, exist_ok=True)
+            os.makedirs(self.output_folder_reconstruction, exist_ok=True)
+            self.categories_seen = set()
+
         self.stats = defaultdict(int)
 
     def __call__(self):
         print(f'Rendering {len(self.xml_files)} images.')
 
-        for xml_file, image_name, word_file in tqdm(zip(self.xml_files, self.image_names, self.word_files),
+        for xml_file, image_file, word_file in tqdm(zip(self.xml_files, self.image_names, self.word_files),
                                          total=len(self.xml_files), desc='Rendering images'):
             # print(f'\nParsing {xml_file}')
-            image_file = os.path.join(self.image_folder, image_name)
+            image_name = os.path.basename(image_file)
             output_image_file_base = os.path.join(self.output_folder_images_render, image_name)
             # output_words
 
-            voc_layout = VocLayout(xml_file, os.path.join(self.word_folder, word_file))
+            voc_layout = VocLayout(xml_file, word_file)
             if voc_layout is None:
+                self.stats['voc_layout_load_failed'] += 1
+                logging.error(f'Could not load VOC layout: {xml_file}')
+                continue
+
+
+            image_orig = cv2.imread(image_file)
+            if image_orig is None:
+                self.stats['image_load_failed'] += 1
+                logging.error(f'Could not load image: {image_file}')
+                continue
+
+            # page layout to image and xml
+            table_layout = voc_layout.to_table_layout()
+            page_xml_file = os.path.join(self.output_folder_page_xml, image_name.replace('.jpg', '.xml'))
+            table_layout.to_table_pagexml(page_xml_file)
+            self.stats['page_layouts_exported'] += 1
+
+            # render table cutouts
+            rendered_page_layout_cropped = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
+            output_file = os.path.join(self.output_folder_table_crops, image_name)
+            cv2.imwrite(output_file, rendered_page_layout_cropped)
+            self.stats['table_crops_exported'] += 1
+
+            # create table reconstruction for testing purposes
+            reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
+
+            if self.mass_export:
                 continue
             layout_categories = set([obj.category for obj in voc_layout.objects])
             self.categories_seen.update(layout_categories)
 
-            image_orig = cv2.imread(image_file)
-            if image_orig is None:
-                logging.error(f'Could not load image: {image_file}')
-                continue
+            # render table reconstruction only if export all is set
+            output_file = os.path.join(self.output_folder_reconstruction, image_name)
+            cv2.imwrite(output_file, reconstructed_image)
+            self.stats['reconstruction_images_exported'] += 1
 
-            rendered_words = TablePartRenderer.render_words(image_orig.copy(), voc_layout.words)
+            # render words
+            rendered_words = PubTablesConverter.render_words(image_orig.copy(), voc_layout.words)
             output_file = output_image_file_base.replace('.jpg', '_words.jpg')
             cv2.imwrite(output_file, rendered_words)
             self.stats['total_images_exported'] += 1
             self.stats['words_images_exported'] += 1
 
+            # render table parts
             for category in layout_categories:
-                image = TablePartRenderer.render_table_parts(image_orig.copy(), voc_layout, [category])
+                image = PubTablesConverter.render_table_parts(image_orig.copy(), voc_layout, [category])
 
                 if image is None:
                     continue
@@ -171,12 +212,6 @@ class TablePartRenderer:
             cv2.imwrite(output_file, rendered_tsr)
             self.stats['tsr_images_exported'] += 1
 
-            # page layout to image and xml
-            table_layout = voc_layout.to_table_layout()
-            page_xml_file = os.path.join(self.output_folder_page_xml, image_name.replace('.jpg', '.xml'))
-            table_layout.to_table_pagexml(page_xml_file)
-            self.stats['page_layouts_exported'] += 1
-
             rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
             output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '.jpg'))
             cv2.imwrite(output_file, rendered_page_layout)
@@ -186,18 +221,6 @@ class TablePartRenderer:
             output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '_crop.jpg'))
             cv2.imwrite(output_file, rendered_page_layout_cropped)
             self.stats['page_layout_crops_exported'] += 1
-
-            # render table cutouts
-            rendered_page_layout_cropped = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
-            output_file = os.path.join(self.output_folder_table_cutouts, image_name)
-            cv2.imwrite(output_file, rendered_page_layout_cropped)
-            self.stats['table_cutouts_exported'] += 1
-
-            # render table reconstruction
-            reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
-            output_file = os.path.join(self.output_folder_reconstruction, image_name)
-            cv2.imwrite(output_file, reconstructed_image)
-            self.stats['reconstruction_images_exported'] += 1
 
         print('')
         # print(f'Categories seen: {self.categories_seen}')
@@ -240,6 +263,17 @@ class TablePartRenderer:
 
         return image
 
+def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/images_orig', 'example_data/words'], exts: list[str]=['.xml', '.jpg', '_words.json']) -> list[str]:
+    if not folders:
+        return []
+
+    folder_files: list(set) = []
+    for folder, ext in zip(folders, exts):
+        files = [f.replace(ext, '') for f in os.listdir(folder) if f.endswith(ext)]
+        folder_files.append(set(files))
+
+    interestction = sorted(list(set.intersection(*folder_files)))
+    return interestction
 
 if __name__ == '__main__':
     main()
