@@ -61,6 +61,9 @@ def parseargs():
         "-f", "--force_new", action='store_true', default=False,
         help="Force new export of all images and xmls.")
     parser.add_argument(
+        "-l", "--limit", type=int, default=None,
+        help="Limit the number of files to process.")
+    parser.add_argument(
         "-o", "--output-folder", type=str, default='example_data',
         help="Output folder where to save json tasks.")
     parser.add_argument(
@@ -83,6 +86,7 @@ def main():
         # task_image_path=args.task_image_path,
         mass_export=args.mass_export,
         force_new=args.force_new,
+        limit=args.limit,
         output_folder=args.output_folder,
         verbose=args.verbose)
     pubtables_converter()
@@ -94,12 +98,14 @@ def main():
 class PubTablesConverter:
     def __init__(self, image_folder: str, xml_folder: str,
                  word_folder: str, mass_export: bool, force_new: bool,
+                 limit: int,
                  output_folder: str, verbose: bool = False):
         self.image_folder = image_folder
         self.xml_folder = xml_folder
         self.word_folder = word_folder
         self.mass_export = mass_export
         self.force_new = force_new
+        self.limit = limit
         self.output_folder = output_folder
         # self.task_image_path = task_image_path
         self.output_folder_images_render = os.path.join(output_folder, 'images_render')
@@ -119,7 +125,7 @@ class PubTablesConverter:
         # TODO allow other images than jpg
         # self.xml_files, self.image_names = self.load_image_xml_pairs(xml_folder, image_folder)
         exts = ['.xml', '.jpg', '_words.json']
-        file_groups = load_file_groups([xml_folder, image_folder, word_folder], exts)
+        file_groups = load_file_groups([xml_folder, image_folder, word_folder], exts, limit)
         if not file_groups:
             logging.error('No matching files found in the input folders.')
             return
@@ -272,7 +278,7 @@ class PubTablesConverter:
 
         return image
 
-def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/images_orig', 'example_data/words'], exts: list[str]=['.xml', '.jpg', '_words.json']) -> list[str]:
+def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/images_orig', 'example_data/words'], exts: list[str]=['.xml', '.jpg', '_words.json'], limit: int = None) -> list[str]:
     if not folders:
         return []
 
@@ -282,6 +288,10 @@ def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/i
         folder_files.append(set(files))
 
     interestction = sorted(list(set.intersection(*folder_files)))
+
+    if limit:
+        interestction = interestction[:limit]
+
     return interestction
 
 if __name__ == '__main__':
