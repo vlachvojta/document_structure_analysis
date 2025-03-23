@@ -121,8 +121,6 @@ class PubTablesConverter:
         else:
             logging.basicConfig(level=logging.INFO,format='[%(levelname)-s]\t- %(message)s')
 
-        # TODO check if image and word exists for each xml file
-        # TODO allow other images than jpg
         # self.xml_files, self.image_names = self.load_image_xml_pairs(xml_folder, image_folder)
         exts = ['.xml', '.jpg', '_words.json']
         file_groups = load_file_groups([xml_folder, image_folder, word_folder], exts, limit)
@@ -139,21 +137,25 @@ class PubTablesConverter:
         os.makedirs(output_folder, exist_ok=True)
         os.makedirs(self.output_folder_page_xml, exist_ok=True)
         os.makedirs(self.output_folder_table_crops, exist_ok=True)
+        os.makedirs(self.output_folder_page_xml_render, exist_ok=True)
 
         if not self.mass_export:
             os.makedirs(self.output_folder_images_render, exist_ok=True)
             os.makedirs(self.output_folder_images_words, exist_ok=True)
-            os.makedirs(self.output_folder_page_xml_render, exist_ok=True)
             os.makedirs(self.output_folder_reconstruction, exist_ok=True)
             self.categories_seen = set()
 
         self.stats = defaultdict(int)
+        self.warning_stats = {
+            'by_file': {},
+            'warning_counts': defaultdict(int),
+        }
 
     def __call__(self):
-        print(f'Rendering {len(self.xml_files)} images.')
+        print(f'Converting {len(self.xml_files)} triplets of xml, image and words to images.')
 
-        for xml_file, image_file, word_file in tqdm(zip(self.xml_files, self.image_names, self.word_files),
-                                         total=len(self.xml_files), desc='Rendering images'):
+        for file_id, (xml_file, image_file, word_file) in enumerate(tqdm(zip(self.xml_files, self.image_names, self.word_files),
+                                         total=len(self.xml_files), desc='Rendering images')):
             # print(f'\nParsing {xml_file}')
             image_name = os.path.basename(image_file)
             output_image_file_base = os.path.join(self.output_folder_images_render, image_name)
@@ -181,8 +183,18 @@ class PubTablesConverter:
 
             # page layout to image and xml
             table_layout = voc_layout.to_table_layout()
-            table_layout.to_table_pagexml(output_page_xml_file)
-            self.stats['page_layouts_exported'] += 1
+            pagexml_result = table_layout.to_table_pagexml(output_page_xml_file)
+            if pagexml_result:
+                self.stats['page_layouts_exported'] += 1
+            else:
+                self.stats['page_layouts_export_failed'] += 1
+                self.warning_stats['by_file'][xml_file] = ['page_layout_export_failed']
+                self.warning_stats['warning_counts']['page_layout_export_failed'] += 1
+
+            if len(voc_layout.warnings_sent) > 0:
+                self.warning_stats['by_file'][xml_file] = voc_layout.warnings_sent
+                for warning in voc_layout.warnings_sent:
+                    self.warning_stats['warning_counts'][warning] += 1
 
             # render table cutouts
             table_crop = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
@@ -196,6 +208,7 @@ class PubTablesConverter:
 
             if self.mass_export:
                 continue
+
             layout_categories = set([obj.category for obj in voc_layout.objects])
             self.categories_seen.update(layout_categories)
 
@@ -236,9 +249,21 @@ class PubTablesConverter:
             cv2.imwrite(output_file, rendered_page_layout_cropped)
             self.stats['page_layout_crops_exported'] += 1
 
+            if file_id and file_id % 100 == 0:
+                self.save_stats()
+
+        self.save_stats()
         print('')
         # print(f'Categories seen: {self.categories_seen}')
         print(f'Statistics: {json.dumps(self.stats, indent=4)}')
+        print(f'Warnings: {json.dumps(self.warning_stats["warning_counts"], indent=4)}')
+        print(f'(more stats in {self.output_folder}: stats.json, warning_stats.json)')
+    
+    def save_stats(self):
+        with open(os.path.join(self.output_folder, 'stats.json'), 'w') as f:
+            json.dump(self.stats, f, indent=4)
+        with open(os.path.join(self.output_folder, 'warning_stats.json'), 'w') as f:
+            json.dump(self.warning_stats, f, indent=4)
 
     @staticmethod
     def load_voc_xml(xml_file: str) -> ET.Element:
@@ -281,12 +306,16 @@ def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/i
     if not folders:
         return []
 
+    print(f'Loading files from folders:')
+
     folder_files: list(set) = []
     for folder, ext in zip(folders, exts):
         files = [f.replace(ext, '') for f in os.listdir(folder) if f.endswith(ext)]
         folder_files.append(set(files))
+        print(f'\t{folder}: {len(files)} files')
 
     interestction = sorted(list(set.intersection(*folder_files)))
+    print(f'\tInterestction: \t{len(interestction)} files')
 
     if limit:
         interestction = interestction[:limit]

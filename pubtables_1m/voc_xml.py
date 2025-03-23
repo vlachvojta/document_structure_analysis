@@ -91,6 +91,8 @@ class VocLayout:
         if word_file is not None:
             self.load_words(word_file)
 
+        self.warnings_sent = []
+
     def load_voc_xml(self, xml_file: str):
         try:
             self.tree = ET.parse(xml_file)
@@ -174,6 +176,7 @@ class VocLayout:
         table_objects = self.get_objects([ObjectCategory.table])
         if len(table_objects) != 1:
             print(f'Warning: Expected exactly one table region, found {len(table_objects)}, skipping file {self.xml_file}')
+            self.warnings_sent.append(f'more than one table region')
             return None
 
         # create table region
@@ -205,6 +208,7 @@ class VocLayout:
 
             if len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
                 print(f'Warning: Joined cell {cell} does not intersect any row or column')
+                self.warnings_sent.append(f'joined cell does not intersect any row or column')
                 continue
 
             # find the index of left-most column and top-most row
@@ -283,10 +287,13 @@ class VocLayout:
             if len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
                 if len(intersecting_rows) == 0 and len(intersecting_columns) == 0:
                     print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any row or column')
+                    self.warnings_sent.append(f'word does not intersect any row or column')
                 elif len(intersecting_rows) == 0:
                     print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any row')
+                    self.warnings_sent.append(f'word does not intersect any row')
                 elif len(intersecting_columns) == 0:
                     print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any column')
+                    self.warnings_sent.append(f'word does not intersect any column')
                 continue
             elif len(intersecting_rows) > 1 or len(intersecting_columns) > 1:
                 # find the joined cell that the word intersects (cell interestcs more than one row or column)
@@ -302,9 +309,11 @@ class VocLayout:
                     col_idx = cell.col
                 elif len(intersecting_joined_cells) == 0:
                     print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) does not intersect any rows, columns or joined cells')
+                    self.warnings_sent.append(f'word does not intersect any rows, columns or joined cells')
                     continue
                 elif len(intersecting_joined_cells) > 1:
                     print(f'Warning({table_id}): Word {word} ({word.text} at {word.ltrb()}) intersects more than one joined cell')
+                    self.warnings_sent.append(f'word intersects more than one joined cell')
                     continue
             else:  # word intersects exactly one row and one column
                 row_idx = rows.index(intersecting_rows[0])
@@ -331,6 +340,7 @@ class VocLayout:
 
         if len(cell.lines) > 1:
             print(f'Warning({table_id}): Cell {cell.id} has more than one line ({len(cell.lines)}) in table {self.table_id}. Getting words from all to reorder them.')
+            self.warnings_sent.append(f'more than one line in cell')
 
         words = [word for line in cell.lines for word in line.words]
 
@@ -341,6 +351,7 @@ class VocLayout:
             print(f'Warning({table_id}): Overlapping words in cell {cell.id}, but only one cluster found. Consider adjusting eps parameter (currently {eps}).')
             print(f'\tOverlapping words: {overlap_indices}')
             print(f'\tClusters: {word_id_clusters}')
+            self.warnings_sent.append(f'overlapping words in cell')
 
         # create new textline from each cluster of words
         textlines = []
