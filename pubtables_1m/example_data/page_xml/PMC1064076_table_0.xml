@@ -2,8 +2,8 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-22T21:05:06.156992+00:00</Created>
-    <LastChange>2025-03-22T21:05:06.156992+00:00</LastChange>
+    <Created>2025-03-23T11:40:16.421438+00:00</Created>
+    <LastChange>2025-03-23T11:40:16.421438+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064076_table_0" imageHeight="323" imageWidth="685">
     <TableRegion id="PMC1064076_table_0">
@@ -12,6 +12,7 @@
         <Coords points="37,37 289,37 289,53 37,53"/>
         <TextLine id="c000_l000" index="0">
           <Coords points="37,37 96,37 96,49 37,49"/>
+          <Baseline points="36,48 96,48"/>
           <Word id="534">
             <Coords points="37,37 96,37 96,49 37,49"/>
             <TextEquiv>
@@ -27,6 +28,7 @@
         <Coords points="289,37 455,37 455,53 289,53"/>
         <TextLine id="c001_l000" index="0">
           <Coords points="351,37 428,37 428,49 351,49"/>
+          <Baseline points="350,48 428,48"/>
           <Word id="535">
             <Coords points="351,37 378,37 378,49 351,49"/>
             <TextEquiv>
@@ -60,6 +62,7 @@
         <Coords points="455,37 589,37 589,53 455,53"/>
         <TextLine id="c002_l000" index="0">
           <Coords points="481,37 568,37 568,49 481,49"/>
+          <Baseline points="481,48 567,48"/>
           <Word id="539">
             <Coords points="481,37 518,37 518,49 481,49"/>
             <TextEquiv>
@@ -93,6 +96,7 @@
         <Coords points="589,37 646,37 646,53 589,53"/>
         <TextLine id="c003_l000" index="0">
           <Coords points="611,37 646,37 646,49 611,49"/>
+          <Baseline points="610,48 645,48"/>
           <Word id="543">
             <Coords points="611,37 646,37 646,49 611,49"/>
             <TextEquiv>
@@ -108,6 +112,7 @@
         <Coords points="37,53 646,53 646,73 37,73"/>
         <TextLine id="52_l000" index="0">
           <Coords points="37,57 127,57 127,69 37,69"/>
+          <Baseline points="36,69 126,69"/>
           <Word id="544">
             <Coords points="37,57 94,57 94,69 37,69"/>
             <TextEquiv>
@@ -129,6 +134,7 @@
         <Coords points="37,73 289,73 289,92 37,92"/>
         <TextLine id="c008_l000" index="0">
           <Coords points="49,77 157,77 157,89 49,89"/>
+          <Baseline points="49,88 156,88"/>
           <Word id="546">
             <Coords points="49,77 67,77 67,89 49,89"/>
             <TextEquiv>
@@ -168,6 +174,7 @@
         <Coords points="289,73 455,73 455,92 289,92"/>
         <TextLine id="c009_l000" index="0">
           <Coords points="361,77 419,77 419,89 361,89"/>
+          <Baseline points="360,88 418,88"/>
           <Word id="551">
             <Coords points="361,77 386,77 386,89 361,89"/>
             <TextEquiv>
@@ -195,6 +202,7 @@
         <Coords points="455,73 589,73 589,92 455,92"/>
         <TextLine id="c010_l000" index="0">
           <Coords points="496,77 554,77 554,89 496,89"/>
+          <Baseline points="495,88 553,88"/>
           <Word id="554">
             <Coords points="496,77 521,77 521,89 496,89"/>
             <TextEquiv>
@@ -222,6 +230,7 @@
         <Coords points="589,73 646,73 646,92 589,92"/>
         <TextLine id="c011_l000" index="0">
           <Coords points="615,77 641,77 641,89 615,89"/>
+          <Baseline points="615,88 641,88"/>
           <Word id="557">
             <Coords points="615,77 641,77 641,89 615,89"/>
             <TextEquiv>
@@ -237,6 +246,7 @@
         <Coords points="37,92 289,92 289,112 37,112"/>
         <TextLine id="c012_l000" index="0">
           <Coords points="49,96 223,96 223,108 49,108"/>
+          <Baseline points="49,108 222,108"/>
           <Word id="558">
             <Coords points="49,96 95,96 95,108 49,108"/>
             <TextEquiv>
@@ -282,6 +292,7 @@
         <Coords points="289,92 455,92 455,112 289,112"/>
         <TextLine id="c013_l000" index="0">
           <Coords points="377,96 403,96 403,108 377,108"/>
+          <Baseline points="376,108 402,108"/>
           <Word id="564">
             <Coords points="377,96 403,96 403,108 377,108"/>
             <TextEquiv>
@@ -297,6 +308,7 @@
         <Coords points="455,92 589,92 589,112 455,112"/>
         <TextLine id="c014_l000" index="0">
           <Coords points="512,96 538,96 538,108 512,108"/>
+          <Baseline points="511,108 537,108"/>
           <Word id="565">
             <Coords points="512,96 538,96 538,108 512,108"/>
             <TextEquiv>
@@ -312,6 +324,7 @@
         <Coords points="589,92 646,92 646,112 589,112"/>
         <TextLine id="c015_l000" index="0">
           <Coords points="615,96 641,96 641,108 615,108"/>
+          <Baseline points="615,108 641,108"/>
           <Word id="566">
             <Coords points="615,96 641,96 641,108 615,108"/>
             <TextEquiv>
@@ -327,6 +340,7 @@
         <Coords points="37,112 646,112 646,132 37,132"/>
         <TextLine id="53_l000" index="0">
           <Coords points="37,116 110,116 110,128 37,128"/>
+          <Baseline points="36,127 110,127"/>
           <Word id="567">
             <Coords points="37,116 61,116 61,128 37,128"/>
             <TextEquiv>
@@ -354,6 +368,7 @@
         <Coords points="37,132 289,132 289,151 37,151"/>
         <TextLine id="c020_l000" index="0">
           <Coords points="49,135 227,135 227,147 49,147"/>
+          <Baseline points="49,147 227,147"/>
           <Word id="570">
             <Coords points="49,135 77,135 77,147 49,147"/>
             <TextEquiv>
@@ -399,6 +414,7 @@
         <Coords points="289,132 455,132 455,151 289,151"/>
         <TextLine id="c021_l000" index="0">
           <Coords points="380,135 400,135 400,147 380,147"/>
+          <Baseline points="379,147 399,147"/>
           <Word id="576">
             <Coords points="380,135 400,135 400,147 380,147"/>
             <TextEquiv>
@@ -414,6 +430,7 @@
         <Coords points="455,132 589,132 589,151 455,151"/>
         <TextLine id="c022_l000" index="0">
           <Coords points="515,135 535,135 535,147 515,147"/>
+          <Baseline points="514,147 534,147"/>
           <Word id="577">
             <Coords points="515,135 535,135 535,147 515,147"/>
             <TextEquiv>
@@ -429,6 +446,7 @@
         <Coords points="589,132 646,132 646,151 589,151"/>
         <TextLine id="c023_l000" index="0">
           <Coords points="615,135 641,135 641,147 615,147"/>
+          <Baseline points="615,147 641,147"/>
           <Word id="578">
             <Coords points="615,135 641,135 641,147 615,147"/>
             <TextEquiv>
@@ -444,6 +462,7 @@
         <Coords points="37,151 289,151 289,171 37,171"/>
         <TextLine id="c024_l000" index="0">
           <Coords points="49,155 196,155 196,167 49,167"/>
+          <Baseline points="49,166 196,166"/>
           <Word id="579">
             <Coords points="49,155 68,155 68,167 49,167"/>
             <TextEquiv>
@@ -483,6 +502,7 @@
         <Coords points="289,151 455,151 455,171 289,171"/>
         <TextLine id="c025_l000" index="0">
           <Coords points="380,155 400,155 400,167 380,167"/>
+          <Baseline points="379,166 399,166"/>
           <Word id="584">
             <Coords points="380,155 400,155 400,167 380,167"/>
             <TextEquiv>
@@ -498,6 +518,7 @@
         <Coords points="455,151 589,151 589,171 455,171"/>
         <TextLine id="c026_l000" index="0">
           <Coords points="515,155 535,155 535,167 515,167"/>
+          <Baseline points="514,166 534,166"/>
           <Word id="585">
             <Coords points="515,155 535,155 535,167 515,167"/>
             <TextEquiv>
@@ -513,6 +534,7 @@
         <Coords points="589,151 646,151 646,171 589,171"/>
         <TextLine id="c027_l000" index="0">
           <Coords points="611,155 646,155 646,167 611,167"/>
+          <Baseline points="610,166 645,166"/>
           <Word id="586">
             <Coords points="611,155 617,155 617,167 611,167"/>
             <TextEquiv>
@@ -534,6 +556,7 @@
         <Coords points="37,171 289,171 289,190 37,190"/>
         <TextLine id="c028_l000" index="0">
           <Coords points="49,174 213,174 213,186 49,186"/>
+          <Baseline points="49,186 212,186"/>
           <Word id="588">
             <Coords points="49,174 67,174 67,186 49,186"/>
             <TextEquiv>
@@ -585,6 +608,7 @@
         <Coords points="289,171 455,171 455,190 289,190"/>
         <TextLine id="c029_l000" index="0">
           <Coords points="361,174 419,174 419,186 361,186"/>
+          <Baseline points="360,186 418,186"/>
           <Word id="595">
             <Coords points="361,174 386,174 386,186 361,186"/>
             <TextEquiv>
@@ -612,6 +636,7 @@
         <Coords points="455,171 589,171 589,190 455,190"/>
         <TextLine id="c030_l000" index="0">
           <Coords points="496,174 554,174 554,186 496,186"/>
+          <Baseline points="495,186 553,186"/>
           <Word id="598">
             <Coords points="496,174 521,174 521,186 496,186"/>
             <TextEquiv>
@@ -639,6 +664,7 @@
         <Coords points="589,171 646,171 646,190 589,190"/>
         <TextLine id="c031_l000" index="0">
           <Coords points="615,174 641,174 641,186 615,186"/>
+          <Baseline points="615,186 641,186"/>
           <Word id="601">
             <Coords points="615,174 641,174 641,186 615,186"/>
             <TextEquiv>
@@ -654,6 +680,7 @@
         <Coords points="37,190 289,190 289,210 37,210"/>
         <TextLine id="c032_l000" index="0">
           <Coords points="49,194 228,194 228,206 49,206"/>
+          <Baseline points="49,206 227,206"/>
           <Word id="602">
             <Coords points="49,194 67,194 67,206 49,206"/>
             <TextEquiv>
@@ -717,6 +744,7 @@
         <Coords points="289,190 455,190 455,210 289,210"/>
         <TextLine id="c033_l000" index="0">
           <Coords points="361,194 419,194 419,206 361,206"/>
+          <Baseline points="360,206 418,206"/>
           <Word id="611">
             <Coords points="361,194 386,194 386,206 361,206"/>
             <TextEquiv>
@@ -744,6 +772,7 @@
         <Coords points="455,190 589,190 589,210 455,210"/>
         <TextLine id="c034_l000" index="0">
           <Coords points="496,194 554,194 554,206 496,206"/>
+          <Baseline points="495,206 553,206"/>
           <Word id="614">
             <Coords points="496,194 521,194 521,206 496,206"/>
             <TextEquiv>
@@ -771,6 +800,7 @@
         <Coords points="589,190 646,190 646,210 589,210"/>
         <TextLine id="c035_l000" index="0">
           <Coords points="611,194 646,194 646,206 611,206"/>
+          <Baseline points="610,206 646,206"/>
           <Word id="617">
             <Coords points="611,194 617,194 617,206 611,206"/>
             <TextEquiv>
@@ -792,6 +822,7 @@
         <Coords points="37,210 289,210 289,229 37,229"/>
         <TextLine id="c036_l000" index="0">
           <Coords points="49,214 223,214 223,226 49,226"/>
+          <Baseline points="49,225 223,225"/>
           <Word id="619">
             <Coords points="49,214 67,214 67,226 49,226"/>
             <TextEquiv>
@@ -843,6 +874,7 @@
         <Coords points="289,210 455,210 455,229 289,229"/>
         <TextLine id="c037_l000" index="0">
           <Coords points="361,214 419,214 419,226 361,226"/>
+          <Baseline points="360,225 418,225"/>
           <Word id="626">
             <Coords points="361,214 386,214 386,226 361,226"/>
             <TextEquiv>
@@ -870,6 +902,7 @@
         <Coords points="455,210 589,210 589,229 455,229"/>
         <TextLine id="c038_l000" index="0">
           <Coords points="496,214 554,214 554,226 496,226"/>
+          <Baseline points="495,225 553,225"/>
           <Word id="629">
             <Coords points="496,214 521,214 521,226 496,226"/>
             <TextEquiv>
@@ -897,6 +930,7 @@
         <Coords points="589,210 646,210 646,229 589,229"/>
         <TextLine id="c039_l000" index="0">
           <Coords points="615,214 641,214 641,226 615,226"/>
+          <Baseline points="615,225 641,225"/>
           <Word id="632">
             <Coords points="615,214 641,214 641,226 615,226"/>
             <TextEquiv>
@@ -912,6 +946,7 @@
         <Coords points="37,229 289,229 289,249 37,249"/>
         <TextLine id="c040_l000" index="0">
           <Coords points="49,233 208,233 208,245 49,245"/>
+          <Baseline points="49,245 208,245"/>
           <Word id="633">
             <Coords points="49,233 91,233 91,245 49,245"/>
             <TextEquiv>
@@ -963,6 +998,7 @@
         <Coords points="289,229 455,229 455,249 289,249"/>
         <TextLine id="c041_l000" index="0">
           <Coords points="377,233 403,233 403,245 377,245"/>
+          <Baseline points="376,245 402,245"/>
           <Word id="640">
             <Coords points="377,233 403,233 403,245 377,245"/>
             <TextEquiv>
@@ -978,6 +1014,7 @@
         <Coords points="455,229 589,229 589,249 455,249"/>
         <TextLine id="c042_l000" index="0">
           <Coords points="512,233 538,233 538,245 512,245"/>
+          <Baseline points="511,245 537,245"/>
           <Word id="641">
             <Coords points="512,233 538,233 538,245 512,245"/>
             <TextEquiv>
@@ -993,6 +1030,7 @@
         <Coords points="589,229 646,229 646,249 589,249"/>
         <TextLine id="c043_l000" index="0">
           <Coords points="611,233 646,233 646,245 611,245"/>
+          <Baseline points="610,245 645,245"/>
           <Word id="642">
             <Coords points="611,233 617,233 617,245 611,245"/>
             <TextEquiv>
@@ -1014,6 +1052,7 @@
         <Coords points="37,249 289,249 289,269 37,269"/>
         <TextLine id="c044_l000" index="0">
           <Coords points="49,253 180,253 180,265 49,265"/>
+          <Baseline points="49,264 180,264"/>
           <Word id="644">
             <Coords points="49,253 72,253 72,265 49,265"/>
             <TextEquiv>
@@ -1059,6 +1098,7 @@
         <Coords points="289,249 455,249 455,269 289,269"/>
         <TextLine id="c045_l000" index="0">
           <Coords points="361,253 419,253 419,265 361,265"/>
+          <Baseline points="360,264 418,264"/>
           <Word id="650">
             <Coords points="361,253 386,253 386,265 361,265"/>
             <TextEquiv>
@@ -1086,6 +1126,7 @@
         <Coords points="455,249 589,249 589,269 455,269"/>
         <TextLine id="c046_l000" index="0">
           <Coords points="496,253 554,253 554,265 496,265"/>
+          <Baseline points="495,264 553,264"/>
           <Word id="653">
             <Coords points="496,253 521,253 521,265 496,265"/>
             <TextEquiv>
@@ -1113,6 +1154,7 @@
         <Coords points="589,249 646,249 646,269 589,269"/>
         <TextLine id="c047_l000" index="0">
           <Coords points="615,253 641,253 641,265 615,265"/>
+          <Baseline points="615,264 641,264"/>
           <Word id="656">
             <Coords points="615,253 641,253 641,265 615,265"/>
             <TextEquiv>
@@ -1128,6 +1170,7 @@
         <Coords points="37,269 289,269 289,284 37,284"/>
         <TextLine id="c048_l000" index="0">
           <Coords points="49,272 182,272 182,284 49,284"/>
+          <Baseline points="49,284 181,284"/>
           <Word id="657">
             <Coords points="49,272 102,272 102,284 49,284"/>
             <TextEquiv>
@@ -1167,6 +1210,7 @@
         <Coords points="289,269 455,269 455,284 289,284"/>
         <TextLine id="c049_l000" index="0">
           <Coords points="364,272 416,272 416,284 364,284"/>
+          <Baseline points="363,284 415,284"/>
           <Word id="662">
             <Coords points="364,272 384,272 384,284 364,284"/>
             <TextEquiv>
@@ -1194,6 +1238,7 @@
         <Coords points="455,269 589,269 589,284 455,284"/>
         <TextLine id="c050_l000" index="0">
           <Coords points="499,272 551,272 551,284 499,284"/>
+          <Baseline points="498,284 550,284"/>
           <Word id="665">
             <Coords points="499,272 519,272 519,284 499,284"/>
             <TextEquiv>
@@ -1221,6 +1266,7 @@
         <Coords points="589,269 646,269 646,284 589,284"/>
         <TextLine id="c051_l000" index="0">
           <Coords points="615,272 641,272 641,284 615,284"/>
+          <Baseline points="615,284 641,284"/>
           <Word id="668">
             <Coords points="615,272 641,272 641,284 615,284"/>
             <TextEquiv>
