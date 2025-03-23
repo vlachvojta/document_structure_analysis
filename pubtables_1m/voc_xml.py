@@ -15,15 +15,13 @@ from pero_ocr.core.layout import TextLine, Word
 
 class VocWord:
     def __init__(self, word: dict):
-        # self.bbox = word['bbox']
         self.xmin, self.ymin, self.xmax, self.ymax = word['bbox']
-        # self.bbox = (self.xmin, self.ymin, self.xmax, self.ymax)
 
-        self.text = word['text']
-        self.flags = word['flags']
-        self.span_num = word['span_num']
-        self.line_num = word['line_num']
-        self.block_num = word['block_num']
+        self.text = word.get('text', '')
+        self.flags = word.get('flags', 0)
+        self.span_num = word.get('span_num', 0)
+        self.line_num = word.get('line_num', 0)
+        self.block_num = word.get('block_num', 0)
 
     def ltrb(self):
         return self.xmin, self.ymin, self.xmax, self.ymax
@@ -78,7 +76,7 @@ category_colors = {
 class VocLayout:
     grid_categories = [ObjectCategory.table_column,
                        ObjectCategory.table_row]
-    joind_cell_categories = [ObjectCategory.table_projected_row_header,
+    joined_cell_categories = [ObjectCategory.table_projected_row_header,
                              ObjectCategory.table_spanning_cell]
 
     def __init__(self, xml_file: str, word_file: str = None):
@@ -92,6 +90,7 @@ class VocLayout:
             self.load_words(word_file)
 
         self.warnings_sent = []
+        self.tolerance = 0
 
     def load_voc_xml(self, xml_file: str):
         try:
@@ -134,7 +133,7 @@ class VocLayout:
             image_words = image.copy()
 
         grid_objects = self.get_objects(self.grid_categories)
-        joind_cells_objects = self.get_objects(self.joind_cell_categories)
+        joined_cells_objects = self.get_objects(self.joined_cell_categories)
 
         # render grid objects
         for obj in grid_objects:
@@ -142,7 +141,7 @@ class VocLayout:
             cv2.rectangle(image, (int(l), int(t)), (int(r), int(b)), category_colors[obj.category], 1)
 
         # render joined cells (on top of grid objects)
-        for obj in joind_cells_objects:
+        for obj in joined_cells_objects:
             l, t, r, b = obj.ltrb()
             # copy part of the image and place it on top of the image (to be on top already existing borders)
             joined_cell_image = image_words[int(t):int(b), int(l):int(r)].copy()
@@ -165,19 +164,20 @@ class VocLayout:
         columns = [obj for obj in self.objects if obj.category == ObjectCategory.table_column]
         columns.sort(key=lambda x: x.xmin)
 
-        joined_cells = self.get_joined_cells(rows, columns)
-        cells, cells_structure = self.create_cells(rows, columns, joined_cells)
-        cells_with_words = self.assign_words_to_cells(rows, columns, cells, cells_structure, joined_cells, table_id=self.table_id)
-        for cell in cells_with_words:
-            if cell is not None:
-                self.order_words_in_cell(cell, table_id=self.table_id)
-
         # check only one table region in the file
         table_objects = self.get_objects([ObjectCategory.table])
         if len(table_objects) != 1:
             print(f'Warning: Expected exactly one table region, found {len(table_objects)}, skipping file {self.xml_file}')
             self.warnings_sent.append(f'more than one table region')
             return None
+
+        joined_cells = self.get_joined_cells(rows, columns)
+        print(f'found {len(joined_cells)} joined cells')
+        cells, cells_structure = self.create_cells(rows, columns, joined_cells)
+        cells_with_words = self.assign_words_to_cells(rows, columns, cells, cells_structure, joined_cells, table_id=self.table_id)
+        for cell in cells_with_words:
+            if cell is not None:
+                self.order_words_in_cell(cell, table_id=self.table_id)
 
         # create table region
         table_polygon = utils.ltrb_to_polygon(*table_objects[0].ltrb())
@@ -192,19 +192,19 @@ class VocLayout:
 
     def get_joined_cells(self, rows: list[VocObject], columns: list[VocObject]) -> list[TableCell]:
         """Find joined cells and assign them position (left-most column, top-most row) and span."""
-        tolerance = 3
-        get_joined_cells = [obj for obj in self.objects if obj.category in self.joind_cell_categories]
+        joined_cell_tolerance = - 5
+        joined_cell_objects = self.get_objects(self.joined_cell_categories)
 
         joined_cells = []
 
-        for cell_id, cell in enumerate(get_joined_cells):
+        for cell_id, cell in enumerate(joined_cell_objects):
             intersecting_rows = [
                 row for row in rows
-                if cell.ymin < row.ymax - tolerance and cell.ymax > row.ymin + tolerance]
+                if objects_intersect(row, cell, joined_cell_tolerance)[1]]
 
             intersecting_columns = [
                 column for column in columns 
-                if cell.xmin < column.xmax - tolerance and cell.xmax > column.xmin + tolerance]
+                if objects_intersect(column, cell, joined_cell_tolerance)[0]]
 
             if len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
                 print(f'Warning: Joined cell {cell} does not intersect any row or column')
@@ -226,7 +226,6 @@ class VocLayout:
                                        category=cell.category.value, row=top_row_idx, col=left_column_idx,
                                        row_span=row_span, col_span=column_span)
             joined_cells.append(new_table_cell)
-
 
         return joined_cells
 
@@ -266,23 +265,22 @@ class VocLayout:
     def assign_words_to_cells(self, rows: list[VocObject], columns: list[VocObject], cells: list[TableCell], cells_structure: np.ndarray[int], joined_cells: list[TableCell],
                               table_id: str) -> list[TableCell]:
         """Assign words to cells based on their position. Words are added to a single TextLine in the order they were in the JSON file."""
-        tolerance = 3
 
         for word in self.words:
             # filter out words that are not inside the table
-            if (word.xmax < columns[0].xmin or word.xmin > columns[-1].xmax or
-                word.ymax < rows[0].ymin or word.ymin > rows[-1].ymax):
+            main_table = self.get_objects([ObjectCategory.table])[0]
+            intersect_result = objects_intersect(main_table, word, self.tolerance)
+            if not intersect_result[0] or not intersect_result[1]:
                 continue
 
             # find the row and column of the word
             intersecting_rows = [
                 row for row in rows
-                if word.ymin < row.ymax - tolerance and word.ymax > row.ymin + tolerance]
+                if objects_intersect(row, word, self.tolerance)[1]]
 
             intersecting_columns = [
                 column for column in columns
-                if word.xmin < column.xmax and word.xmax > column.xmin]
-                # if word.xmin < column.xmax - tolerance and word.xmax > column.xmin + tolerance]
+                if objects_intersect(column, word, self.tolerance)[0]]
 
             if len(intersecting_rows) == 0 or len(intersecting_columns) == 0:
                 if len(intersecting_rows) == 0 and len(intersecting_columns) == 0:
@@ -300,7 +298,7 @@ class VocLayout:
                 intersecting_joined_cells = []
                 for cell in joined_cells:
                     cell_l, cell_t, cell_r, cell_b = utils.polygon_to_ltrb(cell.coords)
-                    if word.xmin < cell_r - tolerance and word.xmax > cell_l + tolerance and word.ymin < cell_b - tolerance and word.ymax > cell_t + tolerance:
+                    if all(objects_intersect(cell, word, self.tolerance)):
                         intersecting_joined_cells.append(cell)
 
                 if len(intersecting_joined_cells) == 1:
@@ -373,7 +371,6 @@ class VocLayout:
         return cell
 
     def check_word_overlap(self, words: list[Word], word_id_clusters: list[list[int]]) -> np.ndarray:
-        tolerance = 3
         words = sorted(words, key=lambda x: np.min(x.polygon[:, 0])) # sort by xmin coordinate
 
         # create bounding boxes consisting of xmin, xmax coordinates
@@ -383,7 +380,7 @@ class VocLayout:
         bboxes = np.array(bboxes)
 
         # compare xmins of words with xmaxs of previous words, resulting in bool array of same length as bboxes
-        overlap_bool = bboxes[1:, 0] < bboxes[:-1, 1] - tolerance
+        overlap_bool = bboxes[1:, 0] < bboxes[:-1, 1] - self.tolerance
         # get indices of true values
         overlap_indices = np.where(overlap_bool)[0]
 
@@ -400,6 +397,47 @@ def polygon_around_polygons(polygons: list[np.ndarray]) -> np.ndarray:
 def polygon_to_baseline(polygon: np.ndarray) -> np.ndarray:
     l, t, r, b = utils.polygon_to_ltrb(polygon)
     return np.array([[l, b], [r, b]])
+
+def convert_to_VocWord(obj) -> VocWord:
+    if isinstance(obj, VocWord):
+        return obj
+    elif isinstance(obj, VocObject):
+        return VocWord({'bbox': obj.ltrb()})
+    elif hasattr(obj, 'coords'):
+        return VocWord({'bbox': utils.polygon_to_ltrb(obj.coords)})
+    elif hasattr(obj, 'polygon'):
+        return VocWord({'bbox': utils.polygon_to_ltrb(obj.polygon)})
+    else:
+        raise ValueError(f'Object of type {type(obj)} does not have coords or polygon attribute')
+
+def objects_intersect(big: VocObject | VocWord | TableCell, small: VocObject | VocWord | TableCell, tolerance: int) -> tuple[bool, bool]:
+    """Return True if two objects intersect, with a tolerance. Return a tuple of two bools: (intersect on x axis, intersect on y axis)."""
+    big = convert_to_VocWord(big)
+    small = convert_to_VocWord(small)
+
+    return (small.xmin < big.xmax + tolerance and small.xmax > big.xmin - tolerance,
+            small.ymin < big.ymax + tolerance and small.ymax > big.ymin - tolerance)
+
+def test_intersection(ltrb_big, ltrb_small, tolerance, assert_result):
+    big = VocWord({'bbox': ltrb_big})
+    small = VocWord({'bbox': ltrb_small})
+
+    intersect_result = objects_intersect(big, small, tolerance)
+
+    assert objects_intersect(big, small, tolerance) == assert_result, f'For {ltrb_big} and {ltrb_small} (tolerance {tolerance}) expected {assert_result}, but got {intersect_result}'
+
+def test_intersections():
+    test_intersection([0, 0, 10, 10], [5, 5, 15, 15], 0, (True, True))
+    test_intersection([5, 5, 10, 10], [0, 0, 10, 10], 0, (True, True))
+    test_intersection([0, 0, 10, 10], [10, 10, 20, 20], 3, (True, True))
+    test_intersection([50, 0, 70, 10], [45, 10, 47, 20], 3, (False, True))
+    test_intersection([0, 30, 10, 40], [10, 43, 20, 58], 3, (True, False))
+    test_intersection([0, 30, 10, 40], [25, 43, 30, 58], 3, (False, False))
+
+    print(f'All tests passed')
+
+if __name__ == '__main__':
+    test_intersections()
 
 # words JSON file example:
 # [
