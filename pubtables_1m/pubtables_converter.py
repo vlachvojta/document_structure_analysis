@@ -207,15 +207,16 @@ class PubTablesConverter:
                 for warning in voc_layout.warnings_sent:
                     self.warning_stats['warning_counts'][warning] += 1
 
+            if not self.mass_export or len(voc_layout.warnings_sent) > 0:
+                # render page layout with table, cell, line and word bounding boxes
+                rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
+                cv2.imwrite(rendered_page_layout_out_file, rendered_page_layout)
+                self.stats['page_layout_rendered_exported'] += 1
+
             # render table cutouts
             table_crop = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
             cv2.imwrite(output_table_crop_file, table_crop)
             self.stats['table_crops_exported'] += 1
-
-            # render page layout with table, cell, line and word bounding boxes
-            rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
-            cv2.imwrite(rendered_page_layout_out_file, rendered_page_layout)
-            self.stats['page_layout_rendered_exported'] += 1
 
             if self.mass_export:
                 continue
