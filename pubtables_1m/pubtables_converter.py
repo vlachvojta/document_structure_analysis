@@ -175,8 +175,7 @@ class PubTablesConverter:
             output_table_crop_file = os.path.join(self.output_folder_table_crops, image_name)
             rendered_page_layout_out_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '.jpg'))
             if (not self.force_new and self.mass_export and
-                os.path.exists(output_page_xml_file) and os.path.exists(output_table_crop_file)
-                and os.path.exists(rendered_page_layout_out_file)):
+                os.path.exists(output_page_xml_file) and os.path.exists(output_table_crop_file)):
                 self.stats['skipped because exists'] += 1
                 continue
 
