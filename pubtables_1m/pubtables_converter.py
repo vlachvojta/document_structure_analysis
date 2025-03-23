@@ -168,6 +168,8 @@ class PubTablesConverter:
         for file_id, (xml_file, image_file, word_file) in enumerate(tqdm(zip(self.xml_files, self.image_names, self.word_files),
                                          total=len(self.xml_files), desc='Rendering images')):
             # print(f'\nParsing {xml_file}')
+            if file_id and file_id % 100 == 0:
+                self.save_stats()
             image_name = os.path.basename(image_file)
             output_image_file_base = os.path.join(self.output_folder_images_render, image_name)
 
@@ -259,9 +261,6 @@ class PubTablesConverter:
             output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '_crop.jpg'))
             cv2.imwrite(output_file, rendered_page_layout_cropped)
             self.stats['page_layout_crops_exported'] += 1
-
-            if file_id and file_id % 100 == 0:
-                self.save_stats()
 
         self.save_stats()
         print('')
