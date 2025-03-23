@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15">
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-23T11:40:17.265415+00:00</Created>
-    <LastChange>2025-03-23T11:40:17.265415+00:00</LastChange>
+    <Created>2025-03-23T17:14:29.787271+00:00</Created>
+    <LastChange>2025-03-23T17:14:29.787271+00:00</LastChange>
   </Metadata>
-  <Page imageFilename="example_data/voc_xml/PMC1065315_table_0" imageHeight="167" imageWidth="672">
+  <Page imageFilename="example_data/voc_xml/PMC1065315_table_0" imageHeight="111" imageWidth="616">
     <TableRegion id="PMC1065315_table_0">
-      <Coords points="37,37 634,37 634,128 37,128"/>
+      <Coords points="10,10 607,10 607,101 10,101"/>
       <TableCell id="c000" row="0" col="0" rowSpan="1" colSpan="1">
-        <Coords points="37,37 77,37 77,53 37,53"/>
+        <Coords points="10,10 50,10 50,26 10,26"/>
         <TextLine id="c000_l000" index="0">
-          <Coords points="37,37 64,37 64,49 37,49"/>
-          <Baseline points="36,48 64,48"/>
+          <Coords points="10,10 38,10 38,22 10,22"/>
+          <Baseline points="9,22 37,22"/>
           <Word id="543">
-            <Coords points="37,37 64,37 64,49 37,49"/>
+            <Coords points="10,10 38,10 38,22 10,22"/>
             <TextEquiv>
               <Unicode>Group</Unicode>
             </TextEquiv>
@@ -25,18 +25,18 @@
         </TextLine>
       </TableCell>
       <TableCell id="c001" row="0" col="1" rowSpan="1" colSpan="1">
-        <Coords points="77,37 310,37 310,53 77,53"/>
+        <Coords points="50,10 284,10 284,26 50,26"/>
         <TextLine id="c001_l000" index="0">
-          <Coords points="90,37 142,37 142,49 90,49"/>
-          <Baseline points="89,48 141,48"/>
+          <Coords points="63,10 115,10 115,22 63,22"/>
+          <Baseline points="62,22 115,22"/>
           <Word id="544">
-            <Coords points="90,37 110,37 110,49 90,49"/>
+            <Coords points="63,10 83,10 83,22 63,22"/>
             <TextEquiv>
               <Unicode>RNA</Unicode>
             </TextEquiv>
           </Word>
           <Word id="545">
-            <Coords points="113,37 142,37 142,49 113,49"/>
+            <Coords points="86,10 115,10 115,22 86,22"/>
             <TextEquiv>
               <Unicode>source</Unicode>
             </TextEquiv>
@@ -47,12 +47,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c002" row="0" col="2" rowSpan="1" colSpan="1">
-        <Coords points="310,37 407,37 407,53 310,53"/>
+        <Coords points="284,10 381,10 381,26 284,26"/>
         <TextLine id="c002_l000" index="0">
-          <Coords points="317,37 360,37 360,49 317,49"/>
-          <Baseline points="316,48 359,48"/>
+          <Coords points="290,10 333,10 333,22 290,22"/>
+          <Baseline points="290,22 333,22"/>
           <Word id="546">
-            <Coords points="317,37 360,37 360,49 317,49"/>
+            <Coords points="290,10 333,10 333,22 290,22"/>
             <TextEquiv>
               <Unicode>Treatment</Unicode>
             </TextEquiv>
@@ -63,24 +63,24 @@
         </TextLine>
       </TableCell>
       <TableCell id="c003" row="0" col="3" rowSpan="1" colSpan="1">
-        <Coords points="407,37 550,37 550,53 407,53"/>
+        <Coords points="381,10 524,10 524,26 381,26"/>
         <TextLine id="c003_l000" index="0">
-          <Coords points="446,37 528,37 528,49 446,49"/>
-          <Baseline points="445,48 527,48"/>
+          <Coords points="419,10 501,10 501,22 419,22"/>
+          <Baseline points="419,22 501,22"/>
           <Word id="547">
-            <Coords points="446,37 467,37 467,49 446,49"/>
+            <Coords points="419,10 441,10 441,22 419,22"/>
             <TextEquiv>
               <Unicode>Days</Unicode>
             </TextEquiv>
           </Word>
           <Word id="548">
-            <Coords points="470,37 489,37 489,49 470,49"/>
+            <Coords points="443,10 462,10 462,22 443,22"/>
             <TextEquiv>
               <Unicode>after</Unicode>
             </TextEquiv>
           </Word>
           <Word id="549">
-            <Coords points="492,37 528,37 528,49 492,49"/>
+            <Coords points="465,10 501,10 501,22 465,22"/>
             <TextEquiv>
               <Unicode>injection</Unicode>
             </TextEquiv>
@@ -91,24 +91,24 @@
         </TextLine>
       </TableCell>
       <TableCell id="c004" row="0" col="4" rowSpan="1" colSpan="1">
-        <Coords points="550,37 634,37 634,53 550,53"/>
+        <Coords points="524,10 607,10 607,26 524,26"/>
         <TextLine id="c004_l000" index="0">
-          <Coords points="573,37 634,37 634,49 573,49"/>
-          <Baseline points="572,48 633,48"/>
+          <Coords points="546,10 607,10 607,22 546,22"/>
+          <Baseline points="546,22 606,22"/>
           <Word id="550">
-            <Coords points="573,37 588,37 588,49 573,49"/>
+            <Coords points="546,10 561,10 561,22 546,22"/>
             <TextEquiv>
               <Unicode>No.</Unicode>
             </TextEquiv>
           </Word>
           <Word id="551">
-            <Coords points="590,37 599,37 599,49 590,49"/>
+            <Coords points="564,10 572,10 572,22 564,22"/>
             <TextEquiv>
               <Unicode>of</Unicode>
             </TextEquiv>
           </Word>
           <Word id="552">
-            <Coords points="601,37 634,37 634,49 601,49"/>
+            <Coords points="575,10 607,10 607,22 575,22"/>
             <TextEquiv>
               <Unicode>animals</Unicode>
             </TextEquiv>
@@ -119,12 +119,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c005" row="1" col="0" rowSpan="1" colSpan="1">
-        <Coords points="37,53 77,53 77,73 37,73"/>
+        <Coords points="10,26 50,26 50,46 10,46"/>
         <TextLine id="c005_l000" index="0">
-          <Coords points="37,57 50,57 50,69 37,69"/>
-          <Baseline points="36,69 50,69"/>
+          <Coords points="10,30 24,30 24,42 10,42"/>
+          <Baseline points="10,42 23,42"/>
           <Word id="553">
-            <Coords points="37,57 50,57 50,69 37,69"/>
+            <Coords points="10,30 24,30 24,42 10,42"/>
             <TextEquiv>
               <Unicode>AN</Unicode>
             </TextEquiv>
@@ -135,42 +135,42 @@
         </TextLine>
       </TableCell>
       <TableCell id="c006" row="1" col="1" rowSpan="1" colSpan="1">
-        <Coords points="77,53 310,53 310,73 77,73"/>
+        <Coords points="50,26 284,26 284,46 50,46"/>
         <TextLine id="c006_l000" index="0">
-          <Coords points="90,57 304,57 304,69 90,69"/>
-          <Baseline points="89,69 304,69"/>
+          <Coords points="63,30 277,30 277,42 63,42"/>
+          <Baseline points="62,42 277,42"/>
           <Word id="554">
-            <Coords points="90,57 114,57 114,69 90,69"/>
+            <Coords points="63,30 87,30 87,42 63,42"/>
             <TextEquiv>
               <Unicode>Naive</Unicode>
             </TextEquiv>
           </Word>
           <Word id="555">
-            <Coords points="116,57 146,57 146,69 116,69"/>
+            <Coords points="90,30 119,30 119,42 90,42"/>
             <TextEquiv>
               <Unicode>control</Unicode>
             </TextEquiv>
           </Word>
           <Word id="556">
-            <Coords points="149,57 188,57 188,69 149,69"/>
+            <Coords points="122,30 162,30 162,42 122,42"/>
             <TextEquiv>
               <Unicode>(absolute</Unicode>
             </TextEquiv>
           </Word>
           <Word id="557">
-            <Coords points="191,57 230,57 230,69 191,69"/>
+            <Coords points="165,30 204,30 204,42 165,42"/>
             <TextEquiv>
               <Unicode>negative)</Unicode>
             </TextEquiv>
           </Word>
           <Word id="558">
-            <Coords points="233,57 284,57 284,69 233,69"/>
+            <Coords points="207,30 257,30 257,42 207,42"/>
             <TextEquiv>
               <Unicode>BALB/cSCID</Unicode>
             </TextEquiv>
           </Word>
           <Word id="559">
-            <Coords points="286,57 304,57 304,69 286,69"/>
+            <Coords points="259,30 277,30 277,42 259,42"/>
             <TextEquiv>
               <Unicode>paw</Unicode>
             </TextEquiv>
@@ -181,12 +181,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c007" row="1" col="2" rowSpan="1" colSpan="1">
-        <Coords points="310,53 407,53 407,73 310,73"/>
+        <Coords points="284,26 381,26 381,46 284,46"/>
         <TextLine id="c007_l000" index="0">
-          <Coords points="317,57 340,57 340,69 317,69"/>
-          <Baseline points="316,69 339,69"/>
+          <Coords points="290,30 313,30 313,42 290,42"/>
+          <Baseline points="290,42 313,42"/>
           <Word id="560">
-            <Coords points="317,57 340,57 340,69 317,69"/>
+            <Coords points="290,30 313,30 313,42 290,42"/>
             <TextEquiv>
               <Unicode>None</Unicode>
             </TextEquiv>
@@ -197,12 +197,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c008" row="1" col="3" rowSpan="1" colSpan="1">
-        <Coords points="407,53 550,53 550,73 407,73"/>
+        <Coords points="381,26 524,26 524,46 381,46"/>
         <TextLine id="c008_l000" index="0">
-          <Coords points="478,57 495,57 495,69 478,69"/>
-          <Baseline points="478,69 495,69"/>
+          <Coords points="452,30 469,30 469,42 452,42"/>
+          <Baseline points="451,42 468,42"/>
           <Word id="561">
-            <Coords points="478,57 495,57 495,69 478,69"/>
+            <Coords points="452,30 469,30 469,42 452,42"/>
             <TextEquiv>
               <Unicode>N/A</Unicode>
             </TextEquiv>
@@ -213,12 +213,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c009" row="1" col="4" rowSpan="1" colSpan="1">
-        <Coords points="550,53 634,53 634,73 550,73"/>
+        <Coords points="524,26 607,26 607,46 524,46"/>
         <TextLine id="c009_l000" index="0">
-          <Coords points="600,57 606,57 606,69 600,69"/>
-          <Baseline points="600,69 606,69"/>
+          <Coords points="574,30 579,30 579,42 574,42"/>
+          <Baseline points="573,42 579,42"/>
           <Word id="562">
-            <Coords points="600,57 606,57 606,69 600,69"/>
+            <Coords points="574,30 579,30 579,42 574,42"/>
             <TextEquiv>
               <Unicode>3</Unicode>
             </TextEquiv>
@@ -229,12 +229,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c010" row="2" col="0" rowSpan="1" colSpan="1">
-        <Coords points="37,73 77,73 77,92 37,92"/>
+        <Coords points="10,46 50,46 50,66 10,66"/>
         <TextLine id="c010_l000" index="0">
-          <Coords points="37,77 49,77 49,89 37,89"/>
-          <Baseline points="36,88 49,88"/>
+          <Coords points="10,50 23,50 23,62 10,62"/>
+          <Baseline points="10,61 22,61"/>
           <Word id="563">
-            <Coords points="37,77 49,77 49,89 37,89"/>
+            <Coords points="10,50 23,50 23,62 10,62"/>
             <TextEquiv>
               <Unicode>PA</Unicode>
             </TextEquiv>
@@ -245,42 +245,42 @@
         </TextLine>
       </TableCell>
       <TableCell id="c011" row="2" col="1" rowSpan="1" colSpan="1">
-        <Coords points="77,73 310,73 310,92 77,92"/>
+        <Coords points="50,46 284,46 284,66 50,66"/>
         <TextLine id="c011_l000" index="0">
-          <Coords points="90,77 282,77 282,89 90,89"/>
-          <Baseline points="89,88 281,88"/>
+          <Coords points="63,50 255,50 255,62 63,62"/>
+          <Baseline points="63,61 255,61"/>
           <Word id="564">
-            <Coords points="90,77 120,77 120,89 90,89"/>
+            <Coords points="63,50 94,50 94,62 63,62"/>
             <TextEquiv>
               <Unicode>Normal</Unicode>
             </TextEquiv>
           </Word>
           <Word id="565">
-            <Coords points="123,77 141,77 141,89 123,89"/>
+            <Coords points="97,50 115,50 115,62 97,62"/>
             <TextEquiv>
               <Unicode>paw</Unicode>
             </TextEquiv>
           </Word>
           <Word id="566">
-            <Coords points="144,77 163,77 163,89 144,89"/>
+            <Coords points="117,50 136,50 136,62 117,62"/>
             <TextEquiv>
               <Unicode>from</Unicode>
             </TextEquiv>
           </Word>
           <Word id="567">
-            <Coords points="166,77 198,77 198,89 166,89"/>
+            <Coords points="139,50 171,50 171,62 139,62"/>
             <TextEquiv>
               <Unicode>arthritic</Unicode>
             </TextEquiv>
           </Word>
           <Word id="568">
-            <Coords points="200,77 251,77 251,89 200,89"/>
+            <Coords points="174,50 225,50 225,62 174,62"/>
             <TextEquiv>
               <Unicode>BALB/cSCID</Unicode>
             </TextEquiv>
           </Word>
           <Word id="569">
-            <Coords points="253,77 282,77 282,89 253,89"/>
+            <Coords points="227,50 255,50 255,62 227,62"/>
             <TextEquiv>
               <Unicode>mouse</Unicode>
             </TextEquiv>
@@ -291,18 +291,18 @@
         </TextLine>
       </TableCell>
       <TableCell id="c012" row="2" col="2" rowSpan="1" colSpan="1">
-        <Coords points="310,73 407,73 407,92 310,92"/>
+        <Coords points="284,46 381,46 381,66 284,66"/>
         <TextLine id="c012_l000" index="0">
-          <Coords points="317,77 369,77 369,89 317,89"/>
-          <Baseline points="316,88 369,88"/>
+          <Coords points="290,50 343,50 343,62 290,62"/>
+          <Baseline points="290,61 342,61"/>
           <Word id="570">
-            <Coords points="317,77 334,77 334,89 317,89"/>
+            <Coords points="290,50 307,50 307,62 290,62"/>
             <TextEquiv>
               <Unicode>Cell</Unicode>
             </TextEquiv>
           </Word>
           <Word id="571">
-            <Coords points="337,77 369,77 369,89 337,89"/>
+            <Coords points="310,50 343,50 343,62 310,62"/>
             <TextEquiv>
               <Unicode>transfer</Unicode>
             </TextEquiv>
@@ -313,12 +313,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c013" row="2" col="3" rowSpan="1" colSpan="1">
-        <Coords points="407,73 550,73 550,92 407,92"/>
+        <Coords points="381,46 524,46 524,66 381,66"/>
         <TextLine id="c013_l000" index="0">
-          <Coords points="484,77 490,77 490,89 484,89"/>
-          <Baseline points="483,88 489,88"/>
+          <Coords points="457,50 463,50 463,62 457,62"/>
+          <Baseline points="457,61 463,61"/>
           <Word id="572">
-            <Coords points="484,77 490,77 490,89 484,89"/>
+            <Coords points="457,50 463,50 463,62 457,62"/>
             <TextEquiv>
               <Unicode>6</Unicode>
             </TextEquiv>
@@ -329,12 +329,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c014" row="2" col="4" rowSpan="1" colSpan="1">
-        <Coords points="550,73 634,73 634,92 550,92"/>
+        <Coords points="524,46 607,46 607,66 524,66"/>
         <TextLine id="c014_l000" index="0">
-          <Coords points="600,77 606,77 606,89 600,89"/>
-          <Baseline points="600,88 606,88"/>
+          <Coords points="574,50 580,50 580,62 574,62"/>
+          <Baseline points="573,61 579,61"/>
           <Word id="573">
-            <Coords points="600,77 606,77 606,89 600,89"/>
+            <Coords points="574,50 580,50 580,62 574,62"/>
             <TextEquiv>
               <Unicode>3</Unicode>
             </TextEquiv>
@@ -345,12 +345,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c015" row="3" col="0" rowSpan="1" colSpan="1">
-        <Coords points="37,92 77,92 77,112 37,112"/>
+        <Coords points="10,66 50,66 50,85 10,85"/>
         <TextLine id="c015_l000" index="0">
-          <Coords points="37,96 50,96 50,108 37,108"/>
-          <Baseline points="36,108 49,108"/>
+          <Coords points="10,69 23,69 23,82 10,82"/>
+          <Baseline points="10,81 23,81"/>
           <Word id="574">
-            <Coords points="37,96 50,96 50,108 37,108"/>
+            <Coords points="10,69 23,69 23,82 10,82"/>
             <TextEquiv>
               <Unicode>AA</Unicode>
             </TextEquiv>
@@ -361,42 +361,42 @@
         </TextLine>
       </TableCell>
       <TableCell id="c016" row="3" col="1" rowSpan="1" colSpan="1">
-        <Coords points="77,92 310,92 310,112 77,112"/>
+        <Coords points="50,66 284,66 284,85 50,85"/>
         <TextLine id="c016_l000" index="0">
-          <Coords points="90,96 266,96 266,108 90,108"/>
-          <Baseline points="89,108 265,108"/>
+          <Coords points="63,69 239,69 239,82 63,82"/>
+          <Baseline points="63,81 238,81"/>
           <Word id="575">
-            <Coords points="90,96 115,96 115,108 90,108"/>
+            <Coords points="63,69 88,69 88,82 63,82"/>
             <TextEquiv>
               <Unicode>Acute</Unicode>
             </TextEquiv>
           </Word>
           <Word id="576">
-            <Coords points="118,96 149,96 149,108 118,108"/>
+            <Coords points="91,69 123,69 123,82 91,82"/>
             <TextEquiv>
               <Unicode>arthritic</Unicode>
             </TextEquiv>
           </Word>
           <Word id="577">
-            <Coords points="152,96 170,96 170,108 152,108"/>
+            <Coords points="126,69 144,69 144,82 126,82"/>
             <TextEquiv>
               <Unicode>paw</Unicode>
             </TextEquiv>
           </Word>
           <Word id="578">
-            <Coords points="173,96 181,96 181,108 173,108"/>
+            <Coords points="146,69 155,69 155,82 146,82"/>
             <TextEquiv>
               <Unicode>of</Unicode>
             </TextEquiv>
           </Word>
           <Word id="579">
-            <Coords points="184,96 235,96 235,108 184,108"/>
+            <Coords points="157,69 208,69 208,82 157,82"/>
             <TextEquiv>
               <Unicode>BALB/cSCID</Unicode>
             </TextEquiv>
           </Word>
           <Word id="580">
-            <Coords points="237,96 266,96 266,108 237,108"/>
+            <Coords points="210,69 239,69 239,82 210,82"/>
             <TextEquiv>
               <Unicode>mouse</Unicode>
             </TextEquiv>
@@ -407,18 +407,18 @@
         </TextLine>
       </TableCell>
       <TableCell id="c017" row="3" col="2" rowSpan="1" colSpan="1">
-        <Coords points="310,92 407,92 407,112 310,112"/>
+        <Coords points="284,66 381,66 381,85 284,85"/>
         <TextLine id="c017_l000" index="0">
-          <Coords points="317,96 369,96 369,108 317,108"/>
-          <Baseline points="316,108 369,108"/>
+          <Coords points="290,69 342,69 342,82 290,82"/>
+          <Baseline points="290,81 342,81"/>
           <Word id="581">
-            <Coords points="317,96 334,96 334,108 317,108"/>
+            <Coords points="290,69 307,69 307,82 290,82"/>
             <TextEquiv>
               <Unicode>Cell</Unicode>
             </TextEquiv>
           </Word>
           <Word id="582">
-            <Coords points="337,96 369,96 369,108 337,108"/>
+            <Coords points="310,69 342,69 342,82 310,82"/>
             <TextEquiv>
               <Unicode>transfer</Unicode>
             </TextEquiv>
@@ -429,12 +429,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c018" row="3" col="3" rowSpan="1" colSpan="1">
-        <Coords points="407,92 550,92 550,112 407,112"/>
+        <Coords points="381,66 524,66 524,85 381,85"/>
         <TextLine id="c018_l000" index="0">
-          <Coords points="484,96 489,96 489,108 484,108"/>
-          <Baseline points="483,108 489,108"/>
+          <Coords points="457,69 463,69 463,82 457,82"/>
+          <Baseline points="457,81 462,81"/>
           <Word id="583">
-            <Coords points="484,96 489,96 489,108 484,108"/>
+            <Coords points="457,69 463,69 463,82 457,82"/>
             <TextEquiv>
               <Unicode>6</Unicode>
             </TextEquiv>
@@ -445,12 +445,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c019" row="3" col="4" rowSpan="1" colSpan="1">
-        <Coords points="550,92 634,92 634,112 550,112"/>
+        <Coords points="524,66 607,66 607,85 524,85"/>
         <TextLine id="c019_l000" index="0">
-          <Coords points="600,96 606,96 606,108 600,108"/>
-          <Baseline points="600,108 605,108"/>
+          <Coords points="574,69 579,69 579,82 574,82"/>
+          <Baseline points="573,81 579,81"/>
           <Word id="584">
-            <Coords points="600,96 606,96 606,108 600,108"/>
+            <Coords points="574,69 579,69 579,82 574,82"/>
             <TextEquiv>
               <Unicode>5</Unicode>
             </TextEquiv>
@@ -461,12 +461,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c020" row="4" col="0" rowSpan="1" colSpan="1">
-        <Coords points="37,112 77,112 77,128 37,128"/>
+        <Coords points="10,85 50,85 50,101 10,101"/>
         <TextLine id="c020_l000" index="0">
-          <Coords points="37,116 51,116 51,128 37,128"/>
-          <Baseline points="36,127 50,127"/>
+          <Coords points="10,89 24,89 24,101 10,101"/>
+          <Baseline points="10,101 24,101"/>
           <Word id="585">
-            <Coords points="37,116 51,116 51,128 37,128"/>
+            <Coords points="10,89 24,89 24,101 10,101"/>
             <TextEquiv>
               <Unicode>CA</Unicode>
             </TextEquiv>
@@ -477,42 +477,42 @@
         </TextLine>
       </TableCell>
       <TableCell id="c021" row="4" col="1" rowSpan="1" colSpan="1">
-        <Coords points="77,112 310,112 310,128 77,128"/>
+        <Coords points="50,85 284,85 284,101 50,101"/>
         <TextLine id="c021_l000" index="0">
-          <Coords points="90,116 288,116 288,128 90,128"/>
-          <Baseline points="89,127 288,127"/>
+          <Coords points="63,89 261,89 261,101 63,101"/>
+          <Baseline points="63,101 261,101"/>
           <Word id="586">
-            <Coords points="90,116 137,116 137,128 90,128"/>
+            <Coords points="63,89 111,89 111,101 63,101"/>
             <TextEquiv>
               <Unicode>Chronically</Unicode>
             </TextEquiv>
           </Word>
           <Word id="587">
-            <Coords points="140,116 172,116 172,128 140,128"/>
+            <Coords points="113,89 145,89 145,101 113,101"/>
             <TextEquiv>
               <Unicode>arthritic</Unicode>
             </TextEquiv>
           </Word>
           <Word id="588">
-            <Coords points="175,116 193,116 193,128 175,128"/>
+            <Coords points="148,89 166,89 166,101 148,101"/>
             <TextEquiv>
               <Unicode>paw</Unicode>
             </TextEquiv>
           </Word>
           <Word id="589">
-            <Coords points="195,116 204,116 204,128 195,128"/>
+            <Coords points="169,89 177,89 177,101 169,101"/>
             <TextEquiv>
               <Unicode>of</Unicode>
             </TextEquiv>
           </Word>
           <Word id="590">
-            <Coords points="206,116 257,116 257,128 206,128"/>
+            <Coords points="180,89 231,89 231,101 180,101"/>
             <TextEquiv>
               <Unicode>BALB/cSCID</Unicode>
             </TextEquiv>
           </Word>
           <Word id="591">
-            <Coords points="259,116 288,116 288,128 259,128"/>
+            <Coords points="233,89 261,89 261,101 233,101"/>
             <TextEquiv>
               <Unicode>mouse</Unicode>
             </TextEquiv>
@@ -523,18 +523,18 @@
         </TextLine>
       </TableCell>
       <TableCell id="c022" row="4" col="2" rowSpan="1" colSpan="1">
-        <Coords points="310,112 407,112 407,128 310,128"/>
+        <Coords points="284,85 381,85 381,101 284,101"/>
         <TextLine id="c022_l000" index="0">
-          <Coords points="317,116 369,116 369,128 317,128"/>
-          <Baseline points="316,127 369,127"/>
+          <Coords points="290,89 343,89 343,101 290,101"/>
+          <Baseline points="290,101 342,101"/>
           <Word id="592">
-            <Coords points="317,116 334,116 334,128 317,128"/>
+            <Coords points="290,89 307,89 307,101 290,101"/>
             <TextEquiv>
               <Unicode>Cell</Unicode>
             </TextEquiv>
           </Word>
           <Word id="593">
-            <Coords points="337,116 369,116 369,128 337,128"/>
+            <Coords points="310,89 343,89 343,101 310,101"/>
             <TextEquiv>
               <Unicode>transfer</Unicode>
             </TextEquiv>
@@ -545,12 +545,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c023" row="4" col="3" rowSpan="1" colSpan="1">
-        <Coords points="407,112 550,112 550,128 407,128"/>
+        <Coords points="381,85 524,85 524,101 381,101"/>
         <TextLine id="c023_l000" index="0">
-          <Coords points="472,116 501,116 501,128 472,128"/>
-          <Baseline points="471,127 501,127"/>
+          <Coords points="445,89 475,89 475,101 445,101"/>
+          <Baseline points="445,101 474,101"/>
           <Word id="594">
-            <Coords points="472,116 501,116 501,128 472,128"/>
+            <Coords points="445,89 475,89 475,101 445,101"/>
             <TextEquiv>
               <Unicode>12–14</Unicode>
             </TextEquiv>
@@ -561,12 +561,12 @@
         </TextLine>
       </TableCell>
       <TableCell id="c024" row="4" col="4" rowSpan="1" colSpan="1">
-        <Coords points="550,112 634,112 634,128 550,128"/>
+        <Coords points="524,85 607,85 607,101 524,101"/>
         <TextLine id="c024_l000" index="0">
-          <Coords points="600,116 606,116 606,128 600,128"/>
-          <Baseline points="600,127 606,127"/>
+          <Coords points="574,89 580,89 580,101 574,101"/>
+          <Baseline points="573,101 579,101"/>
           <Word id="595">
-            <Coords points="600,116 606,116 606,128 600,128"/>
+            <Coords points="574,89 580,89 580,101 574,101"/>
             <TextEquiv>
               <Unicode>3</Unicode>
             </TextEquiv>
