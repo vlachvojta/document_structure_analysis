@@ -144,6 +144,17 @@ class PubTablesConverter:
             os.makedirs(self.output_folder_images_words, exist_ok=True)
             os.makedirs(self.output_folder_reconstruction, exist_ok=True)
             self.categories_seen = set()
+        
+        self.stats_file = os.path.join(self.output_folder, 'stats.json')
+
+        if os.path.exists(self.stats_file) and not self.force_new and self.mass_export:
+            # copy existing stats to a new file
+            create_backup(self.stats_file)
+
+        self.warning_stats_file = os.path.join(self.output_folder, 'warning_stats.json')
+        if os.path.exists(self.warning_stats_file) and not self.force_new and self.mass_export:
+            # copy existing stats to a new file
+            create_backup(self.warning_stats_file)
 
         self.stats = defaultdict(int)
         self.warning_stats = {
@@ -257,12 +268,12 @@ class PubTablesConverter:
         # print(f'Categories seen: {self.categories_seen}')
         print(f'Statistics: {json.dumps(self.stats, indent=4)}')
         print(f'Warnings: {json.dumps(self.warning_stats["warning_counts"], indent=4)}')
-        print(f'(more stats in {self.output_folder}: stats.json, warning_stats.json)')
-    
+        print(f'(more stats in {self.output_folder}: {os.path.basename(self.stats_file)}, {os.path.basename(self.warning_stats_file)})')
+
     def save_stats(self):
-        with open(os.path.join(self.output_folder, 'stats.json'), 'w') as f:
+        with open(self.stats_file, 'w') as f:
             json.dump(self.stats, f, indent=4)
-        with open(os.path.join(self.output_folder, 'warning_stats.json'), 'w') as f:
+        with open(self.warning_stats_file, 'w') as f:
             json.dump(self.warning_stats, f, indent=4)
 
     @staticmethod
@@ -321,6 +332,12 @@ def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/i
         interestction = interestction[:limit]
 
     return interestction
+
+def create_backup(file: str):
+    # split file name and extension (extension is whatever there is after the last dot)
+    filename, file_extension = os.path.splitext(file)
+    backup_file = filename + '_backup_' + time.strftime("%Y%m%d-%H%M%S") + file_extension
+    os.rename(file, backup_file)
 
 if __name__ == '__main__':
     main()
