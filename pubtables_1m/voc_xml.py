@@ -329,7 +329,8 @@ class VocLayout:
             if cell.lines:
                 cell.lines[0].words.append(word)
             else:
-                textline = TextLine(id=f'{cell.id}_l000', polygon=cell.coords, transcription='')
+                textline = TextLine(id=f'{cell.id}_l000', polygon=cell.coords, transcription='',
+                                    baseline=polygon_to_baseline(cell.coords))
                 textline.words.append(word)
                 cell.lines.append(textline)
         return cells
@@ -360,7 +361,8 @@ class VocLayout:
 
             textline_polygon = polygon_around_polygons([word.polygon for word in words_in_cluster])
             transcription = ' '.join([word.transcription for word in words_in_cluster])
-            textline = TextLine(id=f'{cell.id}_l{cluster_id:03d}', polygon=textline_polygon, transcription=transcription)
+            textline = TextLine(id=f'{cell.id}_l{cluster_id:03d}', polygon=textline_polygon, transcription=transcription,
+                                baseline=polygon_to_baseline(textline_polygon))
             textline.words = words_in_cluster
             textlines.append(textline)
 
@@ -394,6 +396,10 @@ def polygon_around_polygons(polygons: list[np.ndarray]) -> np.ndarray:
     b = max([np.max(polygon[:, 1]) for polygon in polygons])
 
     return utils.ltrb_to_polygon(l, t, r, b)
+
+def polygon_to_baseline(polygon: np.ndarray) -> np.ndarray:
+    l, t, r, b = utils.polygon_to_ltrb(polygon)
+    return np.array([[l, b], [r, b]])
 
 # words JSON file example:
 # [

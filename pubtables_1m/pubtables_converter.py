@@ -146,7 +146,6 @@ class PubTablesConverter:
             self.categories_seen = set()
         
         self.stats_file = os.path.join(self.output_folder, 'stats.json')
-
         if os.path.exists(self.stats_file) and not self.force_new and self.mass_export:
             # copy existing stats to a new file
             create_backup(self.stats_file)
