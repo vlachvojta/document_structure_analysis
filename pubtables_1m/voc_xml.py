@@ -1,3 +1,4 @@
+from __future__ import annotations
 import lxml.etree as ET
 import json
 from enum import Enum
@@ -25,6 +26,19 @@ class VocWord:
 
     def ltrb(self):
         return self.xmin, self.ymin, self.xmax, self.ymax
+
+    def cut_yourself(self, x_cut, y_cut, width_max, height_max) -> VocObject | None:
+        self.xmin = max(0, self.xmin - x_cut)
+        self.ymin = max(0, self.ymin - y_cut)
+        self.xmax = min(width_max, self.xmax - x_cut)
+        self.ymax = min(height_max, self.ymax - y_cut)
+
+        # if object is outside the cut area, return None
+        width = self.xmax - self.xmin
+        height = self.ymax - self.ymin
+        if width <= 0 or height <= 0:
+            return None
+        return self
 
 
 class VocObject:
@@ -54,6 +68,19 @@ class VocObject:
     
     def rb(self):
         return self.xmax, self.ymax
+
+    def cut_yourself(self, x_cut, y_cut, width_max, height_max) -> VocObject | None:
+        self.xmin = max(0, self.xmin - x_cut)
+        self.ymin = max(0, self.ymin - y_cut)
+        self.xmax = min(width_max, self.xmax - x_cut)
+        self.ymax = min(height_max, self.ymax - y_cut)
+
+        # if object is outside the cut area, return None
+        width = self.xmax - self.xmin
+        height = self.ymax - self.ymin
+        if width <= 0 or height <= 0:
+            return None
+        return self
 
 
 class ObjectCategory(Enum):
@@ -157,6 +184,45 @@ class VocLayout:
 
         return image
 
+    def cut_to_table(self, image: np.ndarray, padding: int = 10) -> np.ndarray:
+        table_objects = self.get_objects([ObjectCategory.table])
+        if len(table_objects) != 1:
+            print(f'Warning: Expected exactly one table region, found {len(table_objects)}, skipping file {self.xml_file}')
+            self.warnings_sent.append(f'more than one table region')
+            return None
+
+        table = table_objects[0]
+        l, t, r, b = table.ltrb()
+        l_padded = max(0, l - padding)
+        t_padded = max(0, t - padding)
+        r_padded = min(self.width, r + padding)
+        b_padded = min(self.height, b + padding)
+
+        l_cut = l_padded
+        t_cut = t_padded
+        width_max = r_padded - l_padded
+        height_max = b_padded - t_padded
+
+        cut_objects = []
+        for obj in self.objects:
+            cut_obj = obj.cut_yourself(l_cut, t_cut, width_max, height_max)
+            if cut_obj is not None:
+                cut_objects.append(cut_obj)
+        self.objects = cut_objects
+
+        cut_words = []
+        for word in self.words:
+            cut_word = word.cut_yourself(l_cut, t_cut, width_max, height_max)
+            if cut_word is not None:
+                cut_words.append(cut_word)
+        self.words = cut_words
+
+        self.width = width_max
+        self.height = height_max
+
+        image_cut = image[int(t_padded):int(b_padded), int(l_padded):int(r_padded)]
+        return image_cut
+
     def to_table_layout(self) -> TablePageLayout:
         rows = [obj for obj in self.objects if obj.category == ObjectCategory.table_row]
         rows.sort(key=lambda x: x.ymin)
@@ -172,7 +238,6 @@ class VocLayout:
             return None
 
         joined_cells = self.get_joined_cells(rows, columns)
-        print(f'found {len(joined_cells)} joined cells')
         cells, cells_structure = self.create_cells(rows, columns, joined_cells)
         cells_with_words = self.assign_words_to_cells(rows, columns, cells, cells_structure, joined_cells, table_id=self.table_id)
         for cell in cells_with_words:

@@ -15,6 +15,7 @@ import json
 from tqdm import tqdm
 import lxml.etree as ET
 from collections import defaultdict
+from copy import deepcopy
 
 import cv2
 import numpy as np
@@ -193,6 +194,9 @@ class PubTablesConverter:
                 continue
 
             # page layout to image and xml
+            # deepcopy voc_layout to avoid modifying the original layout
+            voc_layout_orig = deepcopy(voc_layout)
+            table_crop = voc_layout.cut_to_table(image=image_orig.copy())
             table_layout = voc_layout.to_table_layout()
             pagexml_result = table_layout.to_table_pagexml(output_page_xml_file)
             if pagexml_result:
@@ -209,23 +213,25 @@ class PubTablesConverter:
 
             if not self.mass_export or len(voc_layout.warnings_sent) > 0:
                 # render page layout with table, cell, line and word bounding boxes
-                rendered_page_layout = table_layout.render_to_image(image_orig.copy(), thickness=1, circles=False)
+                rendered_page_layout = table_layout.render_to_image(table_crop.copy(), thickness=1, circles=False)
                 cv2.imwrite(rendered_page_layout_out_file, rendered_page_layout)
                 self.stats['page_layout_rendered_exported'] += 1
 
             # render table cutouts
-            table_crop = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
+            # table_crop = table_layout.render_table_crops(image_orig.copy(), thickness=1, render_borders=False)[0]
             cv2.imwrite(output_table_crop_file, table_crop)
             self.stats['table_crops_exported'] += 1
 
             if self.mass_export:
                 continue
 
+            voc_layout = voc_layout_orig  # reset layout to original
+
             layout_categories = set([obj.category for obj in voc_layout.objects])
             self.categories_seen.update(layout_categories)
 
             # render table reconstruction only if mass export is not enabled
-            reconstructed_image = render_table_reconstruction(image_orig.copy(), table_layout.tables[0].cells)
+            reconstructed_image = render_table_reconstruction(table_crop.copy(), table_layout.tables[0].cells)
             output_file = os.path.join(self.output_folder_reconstruction, image_name)
             cv2.imwrite(output_file, reconstructed_image)
             self.stats['reconstruction_images_exported'] += 1
@@ -256,10 +262,6 @@ class PubTablesConverter:
             cv2.imwrite(output_file, rendered_tsr)
             self.stats['tsr_images_exported'] += 1
 
-            rendered_page_layout_cropped = table_layout.render_table_crops(rendered_page_layout, render_borders=False)[0]
-            output_file = os.path.join(self.output_folder_page_xml_render, image_name.replace('.jpg', '_crop.jpg'))
-            cv2.imwrite(output_file, rendered_page_layout_cropped)
-            self.stats['page_layout_crops_exported'] += 1
 
         self.save_stats()
         print('')
