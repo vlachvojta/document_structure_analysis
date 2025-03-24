@@ -384,8 +384,12 @@ class VocLayout:
 
             cell_id = cells_structure[row_idx, col_idx]
             cell = cells[cell_id]
+            if cell is None:
+                print(f'Warning({table_id}): Cell {cell_id} is None, skipping word {word.text}')
+                self.warnings_sent.append(f'cell is None')
+                continue
 
-            # word to textline
+            # VOC Word to PERO OCR Word
             word_polygon = utils.ltrb_to_polygon(*word.ltrb())
             word = Word(id=str(word.span_num), polygon=word_polygon, transcription=word.text)
 
