@@ -2,15 +2,15 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-23T17:14:29.402599+00:00</Created>
-    <LastChange>2025-03-23T17:14:29.402599+00:00</LastChange>
+    <Created>2025-03-24T19:36:51.022198+00:00</Created>
+    <LastChange>2025-03-24T19:36:51.022198+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064076_table_3" imageHeight="618" imageWidth="705">
     <TableRegion id="PMC1064076_table_3">
       <Coords points="10,10 696,10 696,609 10,609"/>
-      <TableCell id="390" type="table spanning cell" row="0" col="0" rowSpan="3" colSpan="1">
+      <TableCell id="c390" type="table spanning cell" row="0" col="0" rowSpan="3" colSpan="1">
         <Coords points="10,10 94,10 94,90 10,90"/>
-        <TextLine id="390_l000" index="0">
+        <TextLine id="c390_l000" index="0">
           <Coords points="10,10 75,10 75,20 10,20"/>
           <Baseline points="10,20 74,20"/>
           <Word id="167">
@@ -30,9 +30,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="391" type="table spanning cell" row="0" col="1" rowSpan="1" colSpan="6">
+      <TableCell id="c391" type="table spanning cell" row="0" col="1" rowSpan="1" colSpan="6">
         <Coords points="94,10 406,10 406,27 94,27"/>
-        <TextLine id="391_l000" index="0">
+        <TextLine id="c391_l000" index="0">
           <Coords points="207,10 294,10 294,20 207,20"/>
           <Baseline points="206,20 294,20"/>
           <Word id="169">
@@ -52,9 +52,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="392" type="table spanning cell" row="0" col="7" rowSpan="1" colSpan="6">
+      <TableCell id="c392" type="table spanning cell" row="0" col="7" rowSpan="1" colSpan="6">
         <Coords points="406,10 696,10 696,27 406,27"/>
-        <TextLine id="392_l000" index="0">
+        <TextLine id="c392_l000" index="0">
           <Coords points="508,10 600,10 600,20 508,20"/>
           <Baseline points="507,20 599,20"/>
           <Word id="171">
@@ -74,9 +74,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="393" type="table spanning cell" row="1" col="1" rowSpan="1" colSpan="2">
+      <TableCell id="c393" type="table spanning cell" row="1" col="1" rowSpan="1" colSpan="2">
         <Coords points="94,27 190,27 190,52 94,52"/>
-        <TextLine id="393_l000" index="0">
+        <TextLine id="c393_l000" index="0">
           <Coords points="129,33 157,33 157,44 129,44"/>
           <Baseline points="128,43 156,43"/>
           <Word id="173">
@@ -90,9 +90,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="394" type="table spanning cell" row="1" col="3" rowSpan="1" colSpan="2">
+      <TableCell id="c394" type="table spanning cell" row="1" col="3" rowSpan="1" colSpan="2">
         <Coords points="190,27 302,27 302,52 190,52"/>
-        <TextLine id="394_l000" index="0">
+        <TextLine id="c394_l000" index="0">
           <Coords points="232,33 260,33 260,44 232,44"/>
           <Baseline points="231,43 260,43"/>
           <Word id="174">
@@ -106,9 +106,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="395" type="table spanning cell" row="1" col="5" rowSpan="1" colSpan="2">
+      <TableCell id="c395" type="table spanning cell" row="1" col="5" rowSpan="1" colSpan="2">
         <Coords points="302,27 406,27 406,52 302,52"/>
-        <TextLine id="395_l000" index="0">
+        <TextLine id="c395_l000" index="0">
           <Coords points="340,33 369,33 369,44 340,44"/>
           <Baseline points="339,43 368,43"/>
           <Word id="175">
@@ -122,9 +122,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="396" type="table spanning cell" row="1" col="7" rowSpan="1" colSpan="2">
+      <TableCell id="c396" type="table spanning cell" row="1" col="7" rowSpan="1" colSpan="2">
         <Coords points="406,27 501,27 501,52 406,52"/>
-        <TextLine id="396_l000" index="0">
+        <TextLine id="c396_l000" index="0">
           <Coords points="440,33 468,33 468,44 440,44"/>
           <Baseline points="439,43 467,43"/>
           <Word id="176">
@@ -138,9 +138,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="397" type="table spanning cell" row="1" col="9" rowSpan="1" colSpan="2">
+      <TableCell id="c397" type="table spanning cell" row="1" col="9" rowSpan="1" colSpan="2">
         <Coords points="501,27 601,27 601,52 501,52"/>
-        <TextLine id="397_l000" index="0">
+        <TextLine id="c397_l000" index="0">
           <Coords points="537,33 565,33 565,44 537,44"/>
           <Baseline points="536,43 565,43"/>
           <Word id="177">
@@ -154,9 +154,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="398" type="table spanning cell" row="1" col="11" rowSpan="1" colSpan="2">
+      <TableCell id="c398" type="table spanning cell" row="1" col="11" rowSpan="1" colSpan="2">
         <Coords points="601,27 696,27 696,52 601,52"/>
-        <TextLine id="398_l000" index="0">
+        <TextLine id="c398_l000" index="0">
           <Coords points="636,33 665,33 665,44 636,44"/>
           <Baseline points="636,43 665,43"/>
           <Word id="178">
@@ -476,9 +476,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="399" type="table projected row header" row="3" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c399" type="table projected row header" row="3" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,90 696,90 696,113 10,113"/>
-        <TextLine id="399_l000" index="0">
+        <TextLine id="c399_l000" index="0">
           <Coords points="10,98 76,98 76,109 10,109"/>
           <Baseline points="10,109 75,109"/>
           <Word id="203">
@@ -998,9 +998,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="400" type="table projected row header" row="6" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c400" type="table projected row header" row="6" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,151 696,151 696,170 10,170"/>
-        <TextLine id="400_l000" index="0">
+        <TextLine id="c400_l000" index="0">
           <Coords points="10,155 52,155 52,166 10,166"/>
           <Baseline points="10,166 52,166"/>
           <Word id="245">
@@ -1520,9 +1520,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="401" type="table projected row header" row="9" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c401" type="table projected row header" row="9" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,208 696,208 696,227 10,227"/>
-        <TextLine id="401_l000" index="0">
+        <TextLine id="c401_l000" index="0">
           <Coords points="10,212 48,212 48,223 10,223"/>
           <Baseline points="10,223 48,223"/>
           <Word id="287">
@@ -2042,9 +2042,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="402" type="table projected row header" row="12" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c402" type="table projected row header" row="12" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,265 696,265 696,283 10,283"/>
-        <TextLine id="402_l000" index="0">
+        <TextLine id="c402_l000" index="0">
           <Coords points="10,269 48,269 48,280 10,280"/>
           <Baseline points="10,279 47,279"/>
           <Word id="329">
@@ -2558,9 +2558,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="403" type="table projected row header" row="15" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c403" type="table projected row header" row="15" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,322 696,322 696,340 10,340"/>
-        <TextLine id="403_l000" index="0">
+        <TextLine id="c403_l000" index="0">
           <Coords points="10,325 48,325 48,337 10,337"/>
           <Baseline points="10,336 47,336"/>
           <Word id="370">
@@ -3080,9 +3080,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="404" type="table projected row header" row="18" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c404" type="table projected row header" row="18" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,378 696,378 696,397 10,397"/>
-        <TextLine id="404_l000" index="0">
+        <TextLine id="c404_l000" index="0">
           <Coords points="10,382 49,382 49,393 10,393"/>
           <Baseline points="10,393 49,393"/>
           <Word id="412">
@@ -3602,9 +3602,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="405" type="table projected row header" row="21" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c405" type="table projected row header" row="21" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,435 696,435 696,454 10,454"/>
-        <TextLine id="405_l000" index="0">
+        <TextLine id="c405_l000" index="0">
           <Coords points="10,439 47,439 47,450 10,450"/>
           <Baseline points="10,450 47,450"/>
           <Word id="454">
@@ -4118,9 +4118,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="406" type="table projected row header" row="24" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c406" type="table projected row header" row="24" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,492 696,492 696,511 10,511"/>
-        <TextLine id="406_l000" index="0">
+        <TextLine id="c406_l000" index="0">
           <Coords points="10,496 89,496 89,507 10,507"/>
           <Baseline points="10,507 88,507"/>
           <Word id="495">
@@ -4628,9 +4628,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="407" type="table projected row header" row="27" col="0" rowSpan="1" colSpan="13">
+      <TableCell id="c407" type="table projected row header" row="27" col="0" rowSpan="1" colSpan="13">
         <Coords points="10,549 696,549 696,576 10,576"/>
-        <TextLine id="407_l000" index="0">
+        <TextLine id="c407_l000" index="0">
           <Coords points="10,553 79,553 79,563 10,563"/>
           <Baseline points="10,563 78,563"/>
           <Word id="535">
@@ -4649,7 +4649,7 @@
             <Unicode>Dietary antioxidant</Unicode>
           </TextEquiv>
         </TextLine>
-        <TextLine id="407_l001" index="0">
+        <TextLine id="c407_l001" index="0">
           <Coords points="18,562 40,562 40,572 18,572"/>
           <Baseline points="17,572 40,572"/>
           <Word id="537">

@@ -322,7 +322,7 @@ class VocLayout:
 
             cell_id = len(cells)
             cells_structure[row:row + row_span, col:col + col_span] = cell_id
-            joined_cell.id = str(cell_id)
+            joined_cell.id = f'c{cell_id:03d}'
             cells.append(joined_cell)
 
         return cells, cells_structure

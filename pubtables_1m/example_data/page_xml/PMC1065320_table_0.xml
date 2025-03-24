@@ -2,8 +2,8 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-23T17:14:30.276388+00:00</Created>
-    <LastChange>2025-03-23T17:14:30.276388+00:00</LastChange>
+    <Created>2025-03-24T19:36:51.895421+00:00</Created>
+    <LastChange>2025-03-24T19:36:51.895421+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1065320_table_0" imageHeight="306" imageWidth="567">
     <TableRegion id="PMC1065320_table_0">
@@ -112,9 +112,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="75" type="table projected row header" row="1" col="0" rowSpan="1" colSpan="5">
+      <TableCell id="c075" type="table projected row header" row="1" col="0" rowSpan="1" colSpan="5">
         <Coords points="10,26 558,26 558,46 10,46"/>
-        <TextLine id="75_l000" index="0">
+        <TextLine id="c075_l000" index="0">
           <Coords points="17,30 52,30 52,42 17,42"/>
           <Baseline points="17,42 51,42"/>
           <Word id="443">
@@ -848,9 +848,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="76" type="table projected row header" row="11" col="0" rowSpan="1" colSpan="5">
+      <TableCell id="c076" type="table projected row header" row="11" col="0" rowSpan="1" colSpan="5">
         <Coords points="10,222 558,222 558,242 10,242"/>
-        <TextLine id="76_l000" index="0">
+        <TextLine id="c076_l000" index="0">
           <Coords points="16,226 53,226 53,238 16,238"/>
           <Baseline points="16,238 52,238"/>
           <Word id="489">

@@ -2,8 +2,8 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-03-23T17:14:29.593309+00:00</Created>
-    <LastChange>2025-03-23T17:14:29.593309+00:00</LastChange>
+    <Created>2025-03-24T19:36:51.213599+00:00</Created>
+    <LastChange>2025-03-24T19:36:51.213599+00:00</LastChange>
   </Metadata>
   <Page imageFilename="example_data/voc_xml/PMC1064871_table_0" imageHeight="165" imageWidth="415">
     <TableRegion id="PMC1064871_table_0">
@@ -250,9 +250,9 @@
           </TextEquiv>
         </TextLine>
       </TableCell>
-      <TableCell id="16" type="table projected row header" row="4" col="0" rowSpan="1" colSpan="2">
+      <TableCell id="c016" type="table projected row header" row="4" col="0" rowSpan="1" colSpan="2">
         <Coords points="10,81 405,81 405,101 10,101"/>
-        <TextLine id="16_l000" index="0">
+        <TextLine id="c016_l000" index="0">
           <Coords points="10,85 117,85 117,97 10,97"/>
           <Baseline points="10,96 116,96"/>
           <Word id="407">
