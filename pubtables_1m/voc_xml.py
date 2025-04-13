@@ -4,6 +4,9 @@ import json
 from enum import Enum
 import re
 import os
+# from dataclasses import dataclass
+from pydantic import BaseModel
+from typing import Optional
 
 import numpy as np
 import cv2
@@ -13,16 +16,34 @@ from organizer.tables.table_layout import TablePageLayout, TableRegion, TableCel
 from organizer import utils
 from pero_ocr.core.layout import TextLine, Word
 
+class VocWord(BaseModel):
+    """Class representing a word in the VOC format."""
+    xmin: float
+    ymin: float
+    xmax: float
+    ymax: float
+    text: str
+    transcription_confidence: Optional[float] = None
+    flags: Optional[int] = 0
+    span_num: Optional[int] = 0
+    line_num: Optional[int] = 0
+    block_num: Optional[int] = 0
 
-class VocWord:
-    def __init__(self, word: dict):
-        self.xmin, self.ymin, self.xmax, self.ymax = word['bbox']
+    @classmethod
+    def from_word_dict(cls, word: dict):
+        """Initialize the word from a dictionary."""
+        xmin, ymin, xmax, ymax = word['bbox']
 
-        self.text = word.get('text', '')
-        self.flags = word.get('flags', 0)
-        self.span_num = word.get('span_num', 0)
-        self.line_num = word.get('line_num', 0)
-        self.block_num = word.get('block_num', 0)
+        text = word.get('text', '')
+        flags = word.get('flags', 0)
+        span_num = word.get('span_num', 0)
+        line_num = word.get('line_num', 0)
+        block_num = word.get('block_num', 0)
+        transcription_confidence = word.get('transcription_confidence', None)
+
+        return cls(xmin=xmin, ymin=ymin, xmax=xmax, ymax=ymax, text=text,
+                   flags=flags, span_num=span_num, line_num=line_num,
+                   block_num=block_num, transcription_confidence=transcription_confidence)
 
     def ltrb(self):
         return self.xmin, self.ymin, self.xmax, self.ymax
@@ -41,24 +62,42 @@ class VocWord:
         return self
 
 
-class VocObject:
-    def __init__(self, obj: ET.Element):
+class VocObject(BaseModel):
+    category: ObjectCategory
+    xmin: float
+    ymin: float
+    xmax: float
+    ymax: float
+    pose: Optional[str] = 'Frontal'
+    truncated: Optional[int] = 0
+    difficult: Optional[int] = 0
+    occluded: Optional[int] = 0
+
+    @classmethod
+    def from_voc_xml(cls, obj: ET.Element):
         try:
-            self.category = ObjectCategory(obj.find('name').text)
+            category = ObjectCategory(obj.find('name').text)
         except ValueError:
             print(f'Warning: Unknown object category: {obj.find("name").text}')
-            self.category = obj.find('name').text
+            category = obj.find('name').text
 
-        self.pose = obj.find('pose').text
-        self.truncated = int(obj.find('truncated').text)
-        self.difficult = int(obj.find('difficult').text)
-        self.occluded = int(obj.find('occluded').text)
+        pose = obj.find('pose').text
+        truncated = int(obj.find('truncated').text)
+        difficult = int(obj.find('difficult').text)
+        occluded = int(obj.find('occluded').text)
 
-        self.bndbox = obj.find('bndbox')
-        self.xmin = float(self.bndbox.find('xmin').text)
-        self.ymin = float(self.bndbox.find('ymin').text)
-        self.xmax = float(self.bndbox.find('xmax').text)
-        self.ymax = float(self.bndbox.find('ymax').text)
+        bndbox = obj.find('bndbox')
+        xmin = float(bndbox.find('xmin').text)
+        ymin = float(bndbox.find('ymin').text)
+        xmax = float(bndbox.find('xmax').text)
+        ymax = float(bndbox.find('ymax').text)
+
+        return cls(
+            category=category,
+            xmin=xmin, ymin=ymin, xmax=xmax, ymax=ymax,
+            pose=pose,
+            truncated=truncated, difficult=difficult, occluded=occluded
+        )
 
     def ltrb(self):
         return self.xmin, self.ymin, self.xmax, self.ymax
@@ -134,13 +173,13 @@ class VocLayout:
         self.depth = int(size.find('depth').text)
 
         objects = self.root.findall('object')
-        self.objects = [VocObject(obj) for obj in objects]
+        self.objects = [VocObject.from_voc_xml(obj) for obj in objects]
 
     def load_words(self, word_file: str):
         with open(word_file) as f:
             words = json.load(f)
 
-        self.words = [VocWord(word) for word in words]
+        self.words = [VocWord.from_word_dict(word) for word in words]
 
     def get_objects(self, categories: list[ObjectCategory] = None) -> list[VocObject]:
         selected_categories = []
@@ -471,11 +510,11 @@ def convert_to_VocWord(obj) -> VocWord:
     if isinstance(obj, VocWord):
         return obj
     elif isinstance(obj, VocObject):
-        return VocWord({'bbox': obj.ltrb()})
+        return VocWord.from_word_dict({'bbox': obj.ltrb()})
     elif hasattr(obj, 'coords'):
-        return VocWord({'bbox': utils.polygon_to_ltrb(obj.coords)})
+        return VocWord.from_word_dict({'bbox': utils.polygon_to_ltrb(obj.coords)})
     elif hasattr(obj, 'polygon'):
-        return VocWord({'bbox': utils.polygon_to_ltrb(obj.polygon)})
+        return VocWord.from_word_dict({'bbox': utils.polygon_to_ltrb(obj.polygon)})
     else:
         raise ValueError(f'Object of type {type(obj)} does not have coords or polygon attribute')
 
@@ -488,8 +527,8 @@ def objects_intersect(big: VocObject | VocWord | TableCell, small: VocObject | V
             small.ymin < big.ymax + tolerance and small.ymax > big.ymin - tolerance)
 
 def test_intersection(ltrb_big, ltrb_small, tolerance, assert_result):
-    big = VocWord({'bbox': ltrb_big})
-    small = VocWord({'bbox': ltrb_small})
+    big = VocWord.from_word_dict({'bbox': ltrb_big})
+    small = VocWord.from_word_dict({'bbox': ltrb_small})
 
     intersect_result = objects_intersect(big, small, tolerance)
 
