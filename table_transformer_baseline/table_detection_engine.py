@@ -21,9 +21,7 @@ class TableDetectionEngine:
     def __init__(self, model_name: str = "microsoft/table-transformer-detection", device: str = "cuda"):
         self.feature_extractor = DetrImageProcessor()
         self.detection_model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
-
         self.id2label = self.detection_model.config.id2label
-
 
     def __call__(self, image):
         width, height = image.size
@@ -33,18 +31,6 @@ class TableDetectionEngine:
             outputs = self.detection_model(**encoding)
         results = self.feature_extractor.post_process_object_detection(
             outputs, threshold=0.7, target_sizes=[(height, width)])[0]
-
-        if len(results["scores"]) == 0:
-            # no tables detected
-            return results
-
-        xmin, ymin, xmax, ymax = results["boxes"][0]
-        xmin_ref = 203.07
-        ymin_ref = 210.85
-        xmax_ref = 1120.87
-        ymax_ref = 384.19
-        print(f'xmin:     {xmin:.2f} ymin:     {ymin:.2f}, xmax:     {xmax:.2f}, ymax:     {ymax:.2f}')
-        print(f'xmin_ref: {xmin_ref:.2f} ymin_ref: {ymin_ref:.2f}, xmax_ref: {xmax_ref:.2f}, ymax_ref: {ymax_ref:.2f}')
 
         return results
 
@@ -82,10 +68,9 @@ class TableDetectionEngine:
 
         for box, label, score in zip(results["boxes"], results["labels"], results["scores"]):
             # Convert the box coordinates to integers
-            box = [round(i, 2) for i in box.tolist()]
-            color = (255, 0, 0)
-            # blue
-            cv2.rectangle(image, (int(box[0]), int(box[1])), (int(box[2]), int(box[3])), color, 2)
+            box = [int(round(i, 2)) for i in box.tolist()]
+            color = (255, 0, 0) # blue
+            cv2.rectangle(image, (box[0], box[1]), (box[2], box[3]), color, 2)
             cv2.putText(image, f"{self.detection_model.config.id2label[label.item()]}: {round(score.item(), 3)}", (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
         # Visualize the detected tables on the image
         # render detections to the image
