@@ -68,6 +68,7 @@ class VocObject(BaseModel):
     ymin: float
     xmax: float
     ymax: float
+    confidence: Optional[float] = None
     pose: Optional[str] = 'Frontal'
     truncated: Optional[int] = 0
     difficult: Optional[int] = 0

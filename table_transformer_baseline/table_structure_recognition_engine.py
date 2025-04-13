@@ -55,10 +55,24 @@ class TableStructureRecognitionEngine:
     #     # return page_layout
     #     pass
 
-# Example usage:
-# engine = TableDetectionEngine(model_name="microsoft/table-transformer")
+def plot_certain_categories(image: np.ndarray, results: dict, categories: list[str], id2label: dict) -> np.ndarray:
+    # if image is a PIL image, convert to numpy array
+    if isinstance(image, Image.Image):
+        image = np.array(image)
+        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
-# TODO add example_data WITH expected output, and script main to run it..
+    for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
+        label = id2label[label.item()]
+        if label not in categories:
+            continue
+
+        box = [round(i, 2) for i in box.tolist()]
+        xmin, ymin, xmax, ymax = box
+        cv2.rectangle(image, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (0, 255, 0), 2)
+        cv2.putText(image, f"{label}: {score:.2f}", (int(xmin), int(ymin) - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+    return image
 
 
 def main():
@@ -96,6 +110,17 @@ def main():
     print(f'detected objects:')
     for detected_object in detected_objects:
         print(f'\t{detected_object}')
+
+    output_render_folder = "example_data/tables_tsr_renders/"
+    os.makedirs(output_render_folder, exist_ok=True)
+
+    image_columns = plot_certain_categories(np.array(image), results, ["table column"], model.config.id2label)
+    cv2.imwrite(os.path.join(output_render_folder, "columns.png"), image_columns)
+    image_rows = plot_certain_categories(np.array(image), results, ["table row", "table projected row header"], model.config.id2label)
+    cv2.imwrite(os.path.join(output_render_folder, "rows.png"), image_rows)
+    image_other = plot_certain_categories(np.array(image), results, ["table spanning cell", "table column header", "table"], model.config.id2label)
+    cv2.imwrite(os.path.join(output_render_folder, "other.png"), image_other)
+
 
 if __name__ == "__main__":
     main()
