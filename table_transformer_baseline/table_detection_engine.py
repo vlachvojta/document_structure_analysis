@@ -7,9 +7,7 @@ import numpy as np
 
 from huggingface_hub import hf_hub_download
 from PIL import Image
-# from transformers import DetrFeatureExtractor
-from transformers import DetrImageProcessor
-from transformers import TableTransformerForObjectDetection
+from transformers import DetrImageProcessor, TableTransformerForObjectDetection
 import torch
 
 from pubtables_1m.voc_xml import VocObject
