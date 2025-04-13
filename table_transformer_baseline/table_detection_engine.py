@@ -1,5 +1,6 @@
 import os
 import sys
+import argparse
 
 import cv2
 import numpy as np
@@ -18,9 +19,6 @@ class TableDetectionEngine:
     """Use microsoft table transformer model to detect tables in images."""
 
     def __init__(self, model_name: str = "microsoft/table-transformer-detection", device: str = "cuda"):
-        # self.model_name = model_name
-        # self.device = device
-        # self.model = self.load_model()
         self.feature_extractor = DetrImageProcessor()
         self.detection_model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
 
@@ -36,6 +34,10 @@ class TableDetectionEngine:
         results = self.feature_extractor.post_process_object_detection(
             outputs, threshold=0.7, target_sizes=[(height, width)])[0]
 
+        if len(results["scores"]) == 0:
+            # no tables detected
+            return results
+
         xmin, ymin, xmax, ymax = results["boxes"][0]
         xmin_ref = 203.07
         ymin_ref = 210.85
@@ -46,9 +48,38 @@ class TableDetectionEngine:
 
         return results
 
+    def get_tables_as_voc_objects(self, image: Image.Image) -> list[VocObject]:
+        results = self(image)
+        tables = []
+        for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
+            box = [round(i, 2) for i in box.tolist()]
 
+            xmin, ymin, xmax, ymax = box
+            table = VocObject(category=self.id2label[label.item()],
+                xmin=xmin, ymin=ymin, xmax=xmax, ymax=ymax,
+                confidence=score.item())
+            tables.append(table)
 
-    def render_results(self, image, results):
+        return tables
+
+    def get_table_crops(self, image: Image.Image, results: dict, padding: int = 10) -> list[Image.Image]:
+        crops = []
+        for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
+            box = [round(i, 2) for i in box.tolist()]
+            table_crop = image.crop((box[0] - padding,
+                                     box[1] - padding,
+                                     box[2] + padding,
+                                     box[3] + padding))
+            crops.append(table_crop)
+
+        return crops
+
+    def render_results(self, image, results) -> np.ndarray:
+        # if image is pil, convert to cv2
+        if isinstance(image, Image.Image):
+            image = np.array(image)
+            image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+
         for box, label, score in zip(results["boxes"], results["labels"], results["scores"]):
             # Convert the box coordinates to integers
             box = [round(i, 2) for i in box.tolist()]
@@ -60,54 +91,58 @@ class TableDetectionEngine:
         # render detections to the image
         return image
 
+def parse_args():
+    args = argparse.ArgumentParser()
+    # args.add_argument("--model", type=str, default="microsoft/table-transformer-detection")
+    # args.add_argument("--device", type=str, default="cuda")
+    args.add_argument("-i", "--image-folder", type=str, default="example_data/pages")
+    args.add_argument("-t", "--table-crops", type=str, default="example_data/pages_crops")
+    args.add_argument("-r", "--rendered", type=str, default="example_data/rendered")
+
+    return args.parse_args()
+
 def main():
-    input_image_path = os.path.join('example_data', 'pages', 'printed_page_1.png')
-    image = Image.open(input_image_path).convert("RGB")
-    width, height = image.size
+    args = parse_args()
 
-    image.resize((int(width*0.5), int(height*0.5)))
+    if args.table_crops is not None:
+        os.makedirs(args.table_crops, exist_ok=True)
+    if args.rendered is not None:
+        os.makedirs(args.rendered, exist_ok=True)
 
-    # feature_extractor = DetrImageProcessor()
-    # model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
-
-    # encoding = feature_extractor(image, return_tensors="pt")
-    # print(encoding['pixel_values'].shape)
-    # with torch.no_grad():
-    #     outputs = model(**encoding)
-    # results = feature_extractor.post_process_object_detection(outputs, threshold=0.7, target_sizes=[(height, width)])[0]
-
-    # print(f'results: {results}')
-
+    # list all files in the image folder
+    image_files = os.listdir(args.image_folder)
+    image_extensions = ['.png', '.jpg', '.jpeg']
+    image_files = [f for f in image_files if os.path.splitext(f)[1].lower() in image_extensions]
 
     table_detection_engine = TableDetectionEngine()
-    results = table_detection_engine(image)
 
-    # pil image to cv2 image
-    image_np = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
-    rendered_image = table_detection_engine.render_results(image_np, results)
-    # save image to output.png
-    output_path = 'output.png'
-    cv2.imwrite(output_path, rendered_image)
+    for image_file in image_files:
+        image_path = os.path.join(args.image_folder, image_file)
+        image = Image.open(image_path).convert("RGB")
+        width, height = image.size
 
-    image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+        results = table_detection_engine(image)
+        print(f'results: {results}')
 
-    # draw boxes on image
-    for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
-        box = [round(i, 2) for i in box.tolist()]
-        color = (255, 0, 0)  # blue
-        cv2.rectangle(image, (int(box[0]), int(box[1])), (int(box[2]), int(box[3])), color, 2)
-        cv2.putText(image, f"{table_detection_engine.id2label[label.item()]}: {round(score.item(), 3)}", (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
-        # cv2 save image to output.png
-        output_path = os.path.join('example_data', 'detection_output', 'output.png')
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        cv2.imwrite(output_path, image)
+        if len(results["scores"]) == 0:
+            # no tables detected
+            continue
 
-        # generate VocObject
-        voc_obj = VocObject(category=table_detection_engine.id2label[label.item()],
-            xmin=box[0], ymin=box[1], xmax=box[2], ymax=box[3],
-            confidence=score.item())
+        # save the image with boxes
+        image_np = np.array(image)
+        image_np = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
+        rendered_results = table_detection_engine.render_results(image_np, results)
+        render_out_file = os.path.join(args.rendered, image_file)
+        cv2.imwrite(render_out_file, rendered_results)
 
-        print(f'voc_obj: {voc_obj}') 
+        # save individual table crops
+        crops = table_detection_engine.get_table_crops(image, results)
+        for i, crop in enumerate(crops):
+            crop_out_file = os.path.join(args.table_crops, f"{os.path.splitext(image_file)[0]}_crop_{i}.png")
+            crop.save(crop_out_file)
+            print(f"Saved crop to {crop_out_file}")
+
 
 if __name__ == "__main__":
+
     main()
