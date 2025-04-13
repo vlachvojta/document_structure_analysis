@@ -17,28 +17,48 @@ from pubtables_1m.voc_xml import VocObject
 class TableDetectionEngine:
     """Use microsoft table transformer model to detect tables in images."""
 
-    def __init__(self, model_name: str, device: str = "cuda"):
-        self.model_name = model_name
-        self.device = device
-        self.model = self.load_model()
+    def __init__(self, model_name: str = "microsoft/table-transformer-detection", device: str = "cuda"):
+        # self.model_name = model_name
+        # self.device = device
+        # self.model = self.load_model()
+        self.feature_extractor = DetrImageProcessor()
+        self.detection_model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
+
+        self.id2label = self.detection_model.config.id2label
+
 
     def __call__(self, image):
-        # see guide in the first part of
-        # Using_Table_Transformer_for_table_detection_and_table_structure_recognition.ipynb
+        width, height = image.size
 
-        # Perform table detection on the input image
-        detections = [0.1, 0.2, 0.3, 0.4]
-        # Placeholder for actual detection results in some bounding box format
-        return detections
+        encoding = self.feature_extractor(image, return_tensors="pt")
+        with torch.no_grad():
+            outputs = self.detection_model(**encoding)
+        results = self.feature_extractor.post_process_object_detection(
+            outputs, threshold=0.7, target_sizes=[(height, width)])[0]
 
-    def load_model(self):
-        # Load the model from the specified path or URL
-        pass
+        xmin, ymin, xmax, ymax = results["boxes"][0]
+        xmin_ref = 203.07
+        ymin_ref = 210.85
+        xmax_ref = 1120.87
+        ymax_ref = 384.19
+        print(f'xmin:     {xmin:.2f} ymin:     {ymin:.2f}, xmax:     {xmax:.2f}, ymax:     {ymax:.2f}')
+        print(f'xmin_ref: {xmin_ref:.2f} ymin_ref: {ymin_ref:.2f}, xmax_ref: {xmax_ref:.2f}, ymax_ref: {ymax_ref:.2f}')
 
-    def visualize(self, image, detections):
+        return results
+
+
+
+    def render_results(self, image, results):
+        for box, label, score in zip(results["boxes"], results["labels"], results["scores"]):
+            # Convert the box coordinates to integers
+            box = [round(i, 2) for i in box.tolist()]
+            color = (255, 0, 0)
+            # blue
+            cv2.rectangle(image, (int(box[0]), int(box[1])), (int(box[2]), int(box[3])), color, 2)
+            cv2.putText(image, f"{self.detection_model.config.id2label[label.item()]}: {round(score.item(), 3)}", (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
         # Visualize the detected tables on the image
         # render detections to the image
-        pass
+        return image
 
 def main():
     input_image_path = os.path.join('example_data', 'pages', 'printed_page_1.png')
@@ -47,22 +67,28 @@ def main():
 
     image.resize((int(width*0.5), int(height*0.5)))
 
-    table_detection_engine = TableDetectionEngine(model_name="microsoft/table-transformer-detection")
+    # feature_extractor = DetrImageProcessor()
+    # model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
+
+    # encoding = feature_extractor(image, return_tensors="pt")
+    # print(encoding['pixel_values'].shape)
+    # with torch.no_grad():
+    #     outputs = model(**encoding)
+    # results = feature_extractor.post_process_object_detection(outputs, threshold=0.7, target_sizes=[(height, width)])[0]
+
+    # print(f'results: {results}')
 
 
-    feature_extractor = DetrImageProcessor()
-    model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
-
-
-    encoding = feature_extractor(image, return_tensors="pt")
-    print(encoding['pixel_values'].shape)
-    with torch.no_grad():
-        outputs = model(**encoding)
-    results = feature_extractor.post_process_object_detection(outputs, threshold=0.7, target_sizes=[(height, width)])[0]
-
-    print(f'results: {results}')
+    table_detection_engine = TableDetectionEngine()
+    results = table_detection_engine(image)
 
     # pil image to cv2 image
+    image_np = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+    rendered_image = table_detection_engine.render_results(image_np, results)
+    # save image to output.png
+    output_path = 'output.png'
+    cv2.imwrite(output_path, rendered_image)
+
     image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
 
     # draw boxes on image
@@ -70,14 +96,14 @@ def main():
         box = [round(i, 2) for i in box.tolist()]
         color = (255, 0, 0)  # blue
         cv2.rectangle(image, (int(box[0]), int(box[1])), (int(box[2]), int(box[3])), color, 2)
-        cv2.putText(image, f"{model.config.id2label[label.item()]}: {round(score.item(), 3)}", (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+        cv2.putText(image, f"{table_detection_engine.id2label[label.item()]}: {round(score.item(), 3)}", (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
         # cv2 save image to output.png
         output_path = os.path.join('example_data', 'detection_output', 'output.png')
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         cv2.imwrite(output_path, image)
 
         # generate VocObject
-        voc_obj = VocObject(category=model.config.id2label[label.item()],
+        voc_obj = VocObject(category=table_detection_engine.id2label[label.item()],
             xmin=box[0], ymin=box[1], xmax=box[2], ymax=box[3],
             confidence=score.item())
 
