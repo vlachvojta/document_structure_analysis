@@ -181,7 +181,7 @@ class PubTablesConverter:
                 self.stats['skipped because exists'] += 1
                 continue
 
-            voc_layout = VocLayout(xml_file, word_file)
+            voc_layout = VocLayout.from_files(xml_file, word_file)
             if voc_layout is None:
                 self.stats['voc_layout_load_failed'] += 1
                 logging.error(f'Could not load VOC layout: {xml_file}')

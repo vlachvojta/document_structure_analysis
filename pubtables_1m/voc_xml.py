@@ -140,41 +140,58 @@ category_colors = {
 }
 
 
-class VocLayout:
-    grid_categories = [ObjectCategory.table_column,
+class VocLayout(BaseModel):
+    """Class representing a layout in the VOC format."""
+    objects: list[VocObject] = []
+    words: list[VocWord] = []
+    width: int = 0
+    height: int = 0
+    depth: int = 0
+    xml_file: str = None
+    word_file: str = None
+    table_id: str = None
+    warnings_sent: list[str] = []
+    tolerance: int = 0
+
+    grid_categories: list[ObjectCategory] = [ObjectCategory.table_column,
                        ObjectCategory.table_row]
-    joined_cell_categories = [ObjectCategory.table_projected_row_header,
+    joined_cell_categories: list[ObjectCategory] = [ObjectCategory.table_projected_row_header,
                              ObjectCategory.table_spanning_cell]
 
-    def __init__(self, xml_file: str, word_file: str = None):
-        self.xml_file = xml_file
-        self.word_file = word_file
-        self.table_id = xml_file.replace('.xml', '')
+    @classmethod
+    def from_files(cls, xml_file: str, word_file: str = None):
+        layout = VocLayout.load_voc_xml(xml_file)
 
-        self.load_voc_xml(xml_file)
+        layout.xml_file = xml_file
+        layout.word_file = word_file
+        layout.table_id = xml_file.replace('.xml', '')
 
         if word_file is not None:
-            self.load_words(word_file)
+            layout.load_words(word_file)
 
-        self.warnings_sent = []
-        self.tolerance = 0
+        layout.warnings_sent = []
+        layout.tolerance = 0
+        return layout
 
-    def load_voc_xml(self, xml_file: str):
+    @classmethod
+    def load_voc_xml(cls, xml_file: str):
         try:
-            self.tree = ET.parse(xml_file)
-            self.root = self.tree.getroot()
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
         except Exception as e:
             print(f'Error loading xml file: {xml_file}')
             print(e)
             return None
 
-        size = self.root.find('size')
-        self.width = int(size.find('width').text)
-        self.height = int(size.find('height').text)
-        self.depth = int(size.find('depth').text)
+        size = root.find('size')
+        width = int(size.find('width').text)
+        height = int(size.find('height').text)
+        depth = int(size.find('depth').text)
 
-        objects = self.root.findall('object')
-        self.objects = [VocObject.from_voc_xml(obj) for obj in objects]
+        objects_xml = root.findall('object')
+        objects = [VocObject.from_voc_xml(obj) for obj in objects_xml]
+
+        return cls(objects=objects, width=width, height=height, depth=depth)
 
     def load_words(self, word_file: str):
         with open(word_file) as f:
