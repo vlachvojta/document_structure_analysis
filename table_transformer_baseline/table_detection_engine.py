@@ -79,8 +79,10 @@ def parse_args():
     # args.add_argument("--model", type=str, default="microsoft/table-transformer-detection")
     # args.add_argument("--device", type=str, default="cuda")
     args.add_argument("-i", "--image-folder", type=str, default="example_data/pages")
-    args.add_argument("-t", "--table-crops", type=str, default="example_data/pages_crops")
-    args.add_argument("-r", "--rendered", type=str, default="example_data/rendered")
+    args.add_argument("-t", "--table-crops", type=str, default="example_data/pages_crops",
+                      help="folder to save detected table crops.")
+    args.add_argument("-r", "--rendered", type=str, default="example_data/rendered",
+                      help="folder to save rendered images with detections")
 
     return args.parse_args()
 
@@ -127,5 +129,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()

@@ -73,35 +73,48 @@ class TableStructureRecognitionEngine:
 
         return image
 
+def parse_args():
+    args = argparse.ArgumentParser()
+    # args.add_argument("--model", type=str, default="microsoft/table-transformer-detection")
+    # args.add_argument("--device", type=str, default="cuda")
+    args.add_argument("-i", "--image-folder", type=str, default="example_data/tables")
+    args.add_argument("-r", "--rendered", type=str, default="example_data/tables_tsr_renders",
+                      help="folder to save rendered images")
+
+    return args.parse_args()
+
 
 def main():
-    file_path = hf_hub_download(repo_id="nielsr/example-pdf", repo_type="dataset", filename="example_table.png")
-    image = Image.open(file_path).convert("RGB")
+    args = parse_args()
 
-    width, height = image.size
-    image.resize((int(width*0.5), int(height*0.5)))
+    if args.rendered is not None:
+        os.makedirs(args.rendered, exist_ok=True)
 
-    tsr_model = TableStructureRecognitionEngine()
-    results = tsr_model(image)
 
-    detected_objects = tsr_model.call_result_to_voc_objects(results)
+    # list all files in the image folder
+    image_files = os.listdir(args.image_folder)
+    image_extensions = ['.png', '.jpg', '.jpeg']
+    image_files = [f for f in image_files if os.path.splitext(f)[1].lower() in image_extensions]
 
-    print(f'detected objects:')
-    for detected_object in detected_objects:
-        print(f'\t{detected_object}')
+    tsr_engine = TableStructureRecognitionEngine()
 
-    output_render_folder = "example_data/tables_tsr_renders/"
-    os.makedirs(output_render_folder, exist_ok=True)
+    for image_file in image_files:
+        image_path = os.path.join(args.image_folder, image_file)
+        image = Image.open(image_path).convert("RGB")
 
-    image_columns = tsr_model.plot_categories(np.array(image), results, ["table column"])
-    cv2.imwrite(os.path.join(output_render_folder, "columns.png"), image_columns)
-    image_rows = tsr_model.plot_categories(np.array(image), results, ["table row", "table projected row header"])
-    cv2.imwrite(os.path.join(output_render_folder, "rows.png"), image_rows)
-    image_other = tsr_model.plot_categories(np.array(image), results, ["table spanning cell", "table column header", "table"])
-    cv2.imwrite(os.path.join(output_render_folder, "other.png"), image_other)
+        results = tsr_engine(image)
+        print(f'tsr result: {results}')
 
-    voc_layout = tsr_model.call_result_to_voc_layout(image, results, "example_table.png")
-    print(f'voc layout: {voc_layout}')
+        voc_layout = tsr_engine.call_result_to_voc_layout(image, results, image_file)
+        print(f'voc layout: {voc_layout}')
+        table_id = voc_layout.table_id
+
+        image_columns = tsr_engine.plot_categories(np.array(image), results, ["table column"])
+        cv2.imwrite(os.path.join(args.rendered, f"{table_id}_columns.png"), image_columns)
+        image_rows = tsr_engine.plot_categories(np.array(image), results, ["table row", "table projected row header"])
+        cv2.imwrite(os.path.join(args.rendered, f"{table_id}_rows.png"), image_rows)
+        image_other = tsr_engine.plot_categories(np.array(image), results, ["table spanning cell", "table column header", "table"])
+        cv2.imwrite(os.path.join(args.rendered, f"{table_id}_other.png"), image_other)
 
 
 if __name__ == "__main__":
