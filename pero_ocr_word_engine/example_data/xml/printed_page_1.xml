@@ -1,0 +1,853 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-04-17T09:53:57.680896+00:00</Created>
+    <LastChange>2025-04-17T09:53:57.680896+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="printed_page_1" imageWidth="1362" imageHeight="1760">
+    <TextRegion id="r006" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="347,159 346,179 979,181 979,161 347,159"/>
+      <TextLine id="r006-l001" index="0" custom="{&quot;heights&quot;: [14.1, 5.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="346,179 979,181 979,161 906,161 836,161 767,161 697,161 627,161 558,161 488,161 418,161 347,159 346,179"/>
+        <Baseline points="346,173 418,175 488,175 558,175 627,175 697,175 767,175 836,175 906,175 979,175"/>
+        <TextEquiv conf="0.731">
+          <Unicode>Table I. Comparison of crowd-sourced datasets for table structure recognition.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r004" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="219,225 198,225 198,244 261,242 260,223 219,225"/>
+      <TextLine id="r004-l008" index="0" custom="{&quot;heights&quot;: [12.7, 6.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="198,225 198,244 261,242 260,223 237,225 219,225 198,225"/>
+        <Baseline points="198,238 219,238 238,238 261,236"/>
+        <TextEquiv conf="1.000">
+          <Unicode>Dataset</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r003" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="198,264 198,351 312,352 341,331 341,310 321,310 306,288 307,267 198,264"/>
+      <TextLine id="r003-l016" index="0" custom="{&quot;heights&quot;: [14.8, 5.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="198,285 218,285 235,285 251,285 269,286 286,286 306,288 307,267 198,264 198,285"/>
+        <Baseline points="198,279 218,279 235,279 252,279 269,281 286,281 306,282"/>
+        <TextEquiv conf="0.607">
+          <Unicode>TableBank 191</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r003-l019" index="1" custom="{&quot;heights&quot;: [15.6, 6.4], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="198,301 198,307 220,306 240,306 261,307 283,307 283,285 261,285 242,284 220,284 198,285 198,301"/>
+        <Baseline points="198,301 220,299 240,299 261,301 283,301"/>
+        <TextEquiv conf="0.466">
+          <Unicode>SCITSR /3</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r003-l022" index="2" custom="{&quot;heights&quot;: [15.4, 6.2], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="198,328 218,328 235,328 252,328 269,328 286,330 303,330 321,331 341,331 341,310 321,310 305,308 286,308 270,307 252,307 235,307 218,307 198,307 198,328"/>
+        <Baseline points="198,322 218,322 235,322 252,322 269,322 286,323 303,323 321,325 341,325"/>
+        <TextEquiv conf="0.747">
+          <Unicode>PubTabNet (22,231</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r003-l026" index="3" custom="{&quot;heights&quot;: [14.9, 5.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="198,351 218,351 236,351 254,351 265,352 312,352 312,331 291,331 272,331 256,330 236,330 218,330 198,330 198,351"/>
+        <Baseline points="198,345 218,345 236,345 255,345 272,346 291,346 312,346"/>
+        <TextEquiv conf="0.939">
+          <Unicode>Fin TabNet (22)</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r007" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="402,266 403,350 438,347 449,329 449,286 474,253 474,233 449,213 402,214 402,266"/>
+      <TextLine id="r007-l007" index="0" custom="{&quot;heights&quot;: [13.4, 5.5], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="424,214 402,214 402,233 425,233 450,232 449,213 424,214"/>
+        <Baseline points="402,228 425,228 449,226"/>
+        <TextEquiv conf="0.993">
+          <Unicode>Input</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r007-l014" index="1" custom="{&quot;heights&quot;: [14.2, 5.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="474,233 448,233 425,233 402,233 402,253 425,253 448,253 474,253 474,233"/>
+        <Baseline points="402,248 425,248 448,248 474,248"/>
+        <TextEquiv conf="1.000">
+          <Unicode>Modality</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r007-l018" index="2" custom="{&quot;heights&quot;: [13.5, 5.4], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="402,285 425,286 449,286 449,267 425,267 402,266 402,285"/>
+        <Baseline points="402,279 425,281 449,281"/>
+        <TextEquiv conf="0.643">
+          <Unicode>lmage</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r007-l020" index="3" custom="{&quot;heights&quot;: [14.2, 6.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="402,298 403,307 446,302 444,282 402,286 402,298"/>
+        <Baseline points="402,301 445,296"/>
+        <TextEquiv conf="0.361">
+          <Unicode>PDRT</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r007-l023" index="4" custom="{&quot;heights&quot;: [13.0, 5.5], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="402,329 425,329 449,329 449,310 425,310 402,310 402,329"/>
+        <Baseline points="402,323 425,323 449,323"/>
+        <TextEquiv conf="0.440">
+          <Unicode>Image</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r007-l025" index="5" custom="{&quot;heights&quot;: [13.1, 5.3], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="403,350 438,347 437,329 402,332 403,350"/>
+        <Baseline points="403,345 438,342"/>
+        <TextEquiv conf="0.561">
+          <Unicode>PDR</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r009" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="531,224 510,224 510,244 576,244 578,224 531,224"/>
+      <TextLine id="r009-l009" index="0" custom="{&quot;heights&quot;: [14.0, 6.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="510,224 510,244 533,244 552,242 576,244 578,224 531,224 510,224"/>
+        <Baseline points="510,238 532,238 552,236 577,238"/>
+        <TextEquiv conf="0.931">
+          <Unicode>H Tables</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r010" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="534,284 522,309 534,352 575,352 575,265 534,265 534,284"/>
+      <TextLine id="r010-l017" index="0" custom="{&quot;heights&quot;: [13.8, 5.3], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="575,265 534,265 534,284 575,284 575,265"/>
+        <Baseline points="534,279 575,279"/>
+        <TextEquiv conf="0.966">
+          <Unicode>145K</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r010-l021" index="1" custom="{&quot;heights&quot;: [13.2, 5.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="575,287 542,287 542,306 575,306 575,287"/>
+        <Baseline points="542,301 575,301"/>
+        <TextEquiv conf="0.594">
+          <Unicode>I5K</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r010-l024" index="2" custom="{&quot;heights&quot;: [14.0, 6.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="528,329 568,328 568,308 522,309 528,329"/>
+        <Baseline points="526,323 568,322"/>
+        <TextEquiv conf="0.902">
+          <Unicode>SIOK</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r010-l027" index="3" custom="{&quot;heights&quot;: [14.0, 5.5], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="575,352 575,332 534,332 534,352 575,352"/>
+        <Baseline points="534,346 575,346"/>
+        <TextEquiv conf="0.443">
+          <Unicode>113K</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r012" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="622,213 603,234 603,253 674,256 676,237 659,215 622,213"/>
+      <TextLine id="r012-l006" index="0" custom="{&quot;heights&quot;: [12.7, 5.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="622,213 621,231 658,233 659,215 622,213"/>
+        <Baseline points="621,226 658,228"/>
+        <TextEquiv conf="0.940">
+          <Unicode>Cell</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r012-l010" index="1" custom="{&quot;heights&quot;: [13.9, 5.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="603,253 627,253 648,253 674,256 676,237 650,234 627,234 603,234 603,253"/>
+        <Baseline points="603,248 627,248 648,248 674,250"/>
+        <TextEquiv conf="0.998">
+          <Unicode>Topology</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r016" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="702,234 703,255 770,254 770,232 750,213 714,213 702,234"/>
+      <TextLine id="r016-l003" index="0" custom="{&quot;heights&quot;: [13.1, 5.3], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="714,213 714,231 750,231 750,213 714,213"/>
+        <Baseline points="714,226 750,226"/>
+        <TextEquiv conf="0.917">
+          <Unicode>Cell</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r016-l015" index="1" custom="{&quot;heights&quot;: [15.3, 6.2], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="703,255 726,254 746,254 770,254 770,232 746,232 726,232 702,234 703,255"/>
+        <Baseline points="703,249 726,248 746,248 770,248"/>
+        <TextEquiv conf="1.000">
+          <Unicode>Content</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r017" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="740,328 723,328 723,356 740,356 740,328"/>
+      <TextLine id="r017-l029" index="0" custom="{&quot;heights&quot;: [20.0, 7.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="723,328 723,356 740,356 740,328 723,328"/>
+        <Baseline points="723,348 740,348"/>
+        <TextEquiv conf="0.989">
+          <Unicode>5</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r018" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="770,253 862,253 862,233 844,215 808,214 770,233 770,253"/>
+      <TextLine id="r018-l005" index="0" custom="{&quot;heights&quot;: [12.4, 5.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="808,214 807,231 843,233 844,215 808,214"/>
+        <Baseline points="807,226 843,228"/>
+        <TextEquiv conf="0.927">
+          <Unicode>Cell</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r018-l012" index="1" custom="{&quot;heights&quot;: [14.3, 5.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="790,253 807,253 824,253 842,253 862,253 862,233 842,233 824,233 807,233 790,233 770,233 770,253 790,253"/>
+        <Baseline points="770,248 790,248 807,248 824,248 842,248 862,248"/>
+        <TextEquiv conf="1.000">
+          <Unicode>Location</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r019" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="835,319 808,323 813,357 840,353 835,319"/>
+      <TextLine id="r019-l028" index="0" custom="{&quot;heights&quot;: [24.7, 9.5], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="808,323 813,357 840,353 835,319 808,323"/>
+        <Baseline points="812,348 839,344"/>
+        <TextEquiv conf="0.437">
+          <Unicode>s+</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r020" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="907,213 889,213 889,231 915,253 988,253 1013,231 1013,213 907,213"/>
+      <TextLine id="r020-l002" index="0" custom="{&quot;heights&quot;: [12.9, 5.2], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="889,213 889,231 907,231 925,231 942,231 959,231 976,231 993,231 1013,231 1013,213 993,213 976,213 959,213 942,213 925,213 907,213 889,213"/>
+        <Baseline points="889,226 907,226 925,226 942,226 959,226 976,226 993,226 1013,226"/>
+        <TextEquiv conf="0.960">
+          <Unicode>Row &amp; Column</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r020-l011" index="1" custom="{&quot;heights&quot;: [13.1, 5.5], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="939,253 962,253 988,253 988,234 962,234 939,234 915,234 915,253 939,253"/>
+        <Baseline points="915,248 939,248 962,248 988,248"/>
+        <TextEquiv conf="0.994">
+          <Unicode>Location</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r021" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="1043,214 1043,253 1121,253 1122,215 1043,214"/>
+      <TextLine id="r021-l004" index="0" custom="{&quot;heights&quot;: [12.6, 5.2], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1043,231 1063,233 1082,233 1101,233 1121,233 1122,215 1101,215 1082,215 1063,215 1043,214 1043,231"/>
+        <Baseline points="1043,226 1063,228 1082,228 1101,228 1122,228"/>
+        <TextEquiv conf="1.000">
+          <Unicode>Canonical</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r021-l013" index="1" custom="{&quot;heights&quot;: [13.2, 5.3], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1063,253 1082,253 1099,253 1121,253 1121,234 1099,234 1082,234 1063,234 1043,234 1043,253 1063,253"/>
+        <Baseline points="1043,248 1063,248 1082,248 1099,248 1121,248"/>
+        <TextEquiv conf="1.000">
+          <Unicode>Structure</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r002" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="218,363 198,363 198,384 364,385 364,365 218,363"/>
+      <TextLine id="r002-l031" index="0" custom="{&quot;heights&quot;: [14.6, 5.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="198,363 198,384 218,384 235,384 253,384 271,384 289,384 306,384 324,384 340,385 364,385 364,365 342,365 339,364 218,363 198,363"/>
+        <Baseline points="198,378 218,378 235,378 253,378 271,378 289,378 306,378 325,378 342,379 364,379"/>
+        <TextEquiv conf="0.920">
+          <Unicode>PubTables-IM (ours)</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r008" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="445,362 402,364 402,383 445,382 445,362"/>
+      <TextLine id="r008-l032" index="0" custom="{&quot;heights&quot;: [14.0, 5.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="402,364 402,383 445,382 445,362 402,364"/>
+        <Baseline points="402,378 445,376"/>
+        <TextEquiv conf="0.664">
+          <Unicode>PDF</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r011" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="531,363 531,382 575,384 576,364 531,363"/>
+      <TextLine id="r011-l030" index="0" custom="{&quot;heights&quot;: [13.8, 5.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="531,382 575,384 576,364 531,363 531,382"/>
+        <Baseline points="531,376 575,378"/>
+        <TextEquiv conf="0.711">
+          <Unicode>9A8K</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r005" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="201,439 200,456 283,459 932,459 932,442 847,442 769,401 208,399 201,439"/>
+      <TextLine id="r005-l033" index="0" custom="{&quot;heights&quot;: [11.7, 4.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="703,401 641,401 580,401 518,401 457,401 395,401 333,401 272,401 208,399 207,416 272,417 333,417 395,417 457,417 518,417 580,417 641,417 703,417 769,417 769,401 703,401"/>
+        <Baseline points="208,411 272,412 333,412 395,412 457,412 518,412 580,412 641,412 703,412 769,412"/>
+        <TextEquiv conf="0.982">
+          <Unicode>Multiple input modalities, such as image or text, can be derived from annotated PDF data</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r005-l034" index="1" custom="{&quot;heights&quot;: [12.3, 5.3], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="207,438 266,439 322,439 378,438 434,438 490,438 545,438 601,438 657,438 717,439 717,421 657,420 601,420 545,420 490,420 434,420 378,420 322,421 266,421 208,420 207,438"/>
+        <Baseline points="208,432 266,434 322,434 378,432 434,432 490,432 545,432 601,432 657,432 717,434"/>
+        <TextEquiv conf="0.553">
+          <Unicode>The authors release annotations for 5lOK of the 568 K total tables in their dataset.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r005-l035" index="2" custom="{&quot;heights&quot;: [11.7, 4.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="200,456 283,459 363,457 445,459 499,459 525,459 605,457 687,457 767,459 932,459 932,442 847,442 767,442 687,441 605,441 525,442 445,442 364,441 283,442 201,439 200,456"/>
+        <Baseline points="200,451 283,454 364,452 445,454 525,454 605,452 687,452 767,454 847,454 932,454"/>
+        <TextEquiv conf="0.502">
+          <Unicode>For these datasets, cell bounding boxes are given for non-blank cells only and exclude any non-text portion of a cell</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r000" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="108,669 107,692 488,694 521,667 641,667 640,510 109,510 108,669"/>
+      <TextLine id="r000-l036" index="0" custom="{&quot;heights&quot;: [16.5, 6.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="578,510 520,510 461,510 402,510 345,510 286,510 228,510 169,510 109,510 109,533 169,533 228,533 286,533 345,533 402,533 461,533 520,533 578,533 640,533 640,510 578,510"/>
+        <Baseline points="109,527 169,527 228,527 286,527 345,527 402,527 461,527 520,527 578,527 640,527"/>
+        <TextEquiv conf="0.854">
+          <Unicode>components or custom training procedures, and incorporate</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r000-l038" index="1" custom="{&quot;heights&quot;: [17.8, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,560 169,560 228,560 286,560 344,560 402,560 461,560 518,560 577,560 638,560 638,535 577,535 518,535 461,535 402,535 344,535 286,535 228,535 169,535 109,535 109,560"/>
+        <Baseline points="109,552 169,552 228,552 286,552 344,552 402,552 461,552 518,552 577,552 638,552"/>
+        <TextEquiv conf="0.743">
+          <Unicode>rules or other unlearned processing stages tailored to the TSR</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r000-l041" index="2" custom="{&quot;heights&quot;: [17.7, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,585 169,585 228,587 286,585 343,585 402,587 461,585 518,585 577,585 638,585 638,561 577,561 518,561 461,561 402,562 344,561 286,561 227,562 169,561 109,561 109,585"/>
+        <Baseline points="109,578 169,578 228,580 286,578 344,578 402,580 461,578 518,578 577,578 638,578"/>
+        <TextEquiv conf="0.761">
+          <Unicode>task, which brings in prior knowledge to lessen the burden</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r000-l042" index="3" custom="{&quot;heights&quot;: [17.4, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="110,612 170,612 229,614 286,614 345,612 402,614 461,614 518,614 577,614 638,614 638,589 577,589 518,589 461,589 402,589 345,588 286,589 229,589 171,588 110,588 110,612"/>
+        <Baseline points="110,605 170,605 229,607 286,607 345,605 402,607 461,607 518,607 577,607 638,607"/>
+        <TextEquiv conf="0.900">
+          <Unicode>placed on learning the task from data. Currently, no solution</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r000-l044" index="4" custom="{&quot;heights&quot;: [17.4, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,638 169,640 228,640 286,640 345,640 402,640 461,640 520,640 578,640 640,640 640,615 578,615 520,615 461,615 402,615 345,615 286,615 228,615 169,615 109,614 109,638"/>
+        <Baseline points="109,631 169,633 228,633 286,633 345,633 402,633 461,633 520,633 578,633 640,633"/>
+        <TextEquiv conf="0.836">
+          <Unicode>exists that uses a simple supervised learning approach with</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r000-l045" index="5" custom="{&quot;heights&quot;: [17.9, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="641,642 580,641 521,642 462,642 404,641 345,642 287,641 228,641 169,641 108,639 108,664 169,665 228,665 286,665 345,667 403,665 462,667 521,667 580,665 641,667 641,642"/>
+        <Baseline points="108,657 169,658 228,658 286,658 345,660 404,658 462,660 521,660 580,658 641,660"/>
+        <TextEquiv conf="0.921">
+          <Unicode>an off-the-shelf architecture, solves the TSR task completely,</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r000-l047" index="6" custom="{&quot;heights&quot;: [16.9, 6.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="107,692 488,694 488,670 442,670 401,670 359,670 318,670 276,670 235,670 193,670 152,670 108,669 107,692"/>
+        <Baseline points="107,686 152,687 193,687 235,687 276,687 318,687 359,687 401,687 442,687 488,687"/>
+        <TextEquiv conf="0.973">
+          <Unicode>and achieves state-of-the-art performance.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r013" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="746,510 686,510 686,613 1218,613 1217,510 746,510"/>
+      <TextLine id="r013-l037" index="0" custom="{&quot;heights&quot;: [17.0, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,510 686,534 746,534 804,534 863,534 922,534 979,534 1038,534 1096,534 1155,534 1217,534 1217,510 1155,510 1096,510 1038,510 979,510 922,510 863,510 804,510 746,510 686,510"/>
+        <Baseline points="686,527 746,527 804,527 863,527 922,527 979,527 1038,527 1096,527 1155,527 1217,527"/>
+        <TextEquiv conf="0.853">
+          <Unicode>these are removed. This provides a set of conditions for</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r013-l039" index="1" custom="{&quot;heights&quot;: [17.5, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,560 746,560 804,560 863,560 922,560 979,560 1038,560 1096,560 1155,560 1217,560 1217,535 1155,535 1096,535 1038,535 979,535 922,535 863,535 804,535 746,535 686,535 686,560"/>
+        <Baseline points="686,552 746,552 804,552 863,552 922,552 979,552 1038,552 1096,552 1155,552 1217,552"/>
+        <TextEquiv conf="0.612">
+          <Unicode>quality and consistency that the annotations are quaranteed to</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r013-l040" index="2" custom="{&quot;heights&quot;: [17.5, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,585 746,585 805,587 863,585 922,585 979,587 1038,585 1096,585 1155,587 1217,587 1217,562 1155,562 1097,561 1038,561 979,562 922,561 863,561 804,562 746,561 686,561 686,585"/>
+        <Baseline points="686,578 746,578 804,580 863,578 922,578 979,580 1038,578 1096,578 1155,580 1217,580"/>
+        <TextEquiv conf="0.565">
+          <Unicode>meet. In the rest of this section, we describe these conditions</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r013-l043" index="3" custom="{&quot;heights&quot;: [16.4, 6.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,613 746,613 804,613 863,613 922,613 980,613 1039,613 1098,613 1157,613 1218,613 1218,591 1157,591 1098,591 1039,591 980,591 922,591 863,591 804,591 746,591 686,591 686,613"/>
+        <Baseline points="686,607 746,607 804,607 863,607 922,607 980,607 1039,607 1098,607 1157,607 1218,607"/>
+        <TextEquiv conf="0.505">
+          <Unicode>and the steps we take to derive ground truth that meets them.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r001" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="108,868 109,1587 640,1587 638,765 358,765 308,719 109,721 108,868"/>
+      <TextLine id="r001-l050" index="0" custom="{&quot;heights&quot;: [19.2, 7.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="135,721 132,721 109,721 109,748 134,748 155,746 176,746 198,746 219,746 240,746 262,746 283,746 308,746 308,719 135,721"/>
+        <Baseline points="109,740 133,740 155,739 176,739 198,739 219,739 240,739 262,739 283,739 308,739"/>
+        <TextEquiv conf="0.598">
+          <Unicode>3. Pub Tables-IM</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l052" index="1" custom="{&quot;heights&quot;: [16.6, 6.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="580,765 524,765 469,765 414,765 358,765 303,765 248,765 192,765 135,763 134,787 192,788 248,788 303,788 358,788 414,788 469,788 524,788 580,788 638,788 638,765 580,765"/>
+        <Baseline points="135,780 192,782 248,782 303,782 358,782 414,782 469,782 524,782 580,782 638,782"/>
+        <TextEquiv conf="0.978">
+          <Unicode>In this section, we describe the process used to develop</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l054" index="2" custom="{&quot;heights&quot;: [17.5, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="638,790 578,790 520,790 461,790 402,790 345,790 286,790 228,790 169,790 109,788 109,813 169,814 228,814 286,814 345,814 402,814 461,814 520,814 578,814 638,814 638,790"/>
+        <Baseline points="109,806 169,807 228,807 286,807 345,807 402,807 461,807 520,807 578,807 638,807"/>
+        <TextEquiv conf="0.833">
+          <Unicode>Pub Tables-IM. First, to obtain a large source of annotated</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l056" index="3" custom="{&quot;heights&quot;: [18.0, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="638,815 578,816 520,816 461,816 402,816 345,815 286,816 228,816 169,816 109,815 109,840 169,842 228,842 286,842 345,840 402,842 461,842 520,842 578,842 639,840 638,815"/>
+        <Baseline points="109,833 169,834 228,834 286,834 345,833 402,834 461,834 520,834 578,834 638,833"/>
+        <TextEquiv conf="0.505">
+          <Unicode>tables, we choose the PMCOA corpus, which consists of</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l058" index="4" custom="{&quot;heights&quot;: [17.6, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,867 169,867 228,869 286,869 344,869 402,869 461,869 518,869 577,869 639,867 638,843 576,844 518,844 461,844 402,844 344,844 286,844 228,844 169,843 109,843 109,867"/>
+        <Baseline points="109,860 169,860 228,862 286,862 344,862 402,862 461,862 518,862 577,862 638,860"/>
+        <TextEquiv conf="0.478">
+          <Unicode>millions of publicly available scientific articles. In the PM.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l060" index="5" custom="{&quot;heights&quot;: [17.7, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="108,893 167,894 226,894 285,894 344,894 402,894 461,894 520,894 578,894 639,894 639,870 578,870 520,870 461,870 402,870 344,870 285,870 226,870 167,870 108,868 108,893"/>
+        <Baseline points="108,886 167,887 226,887 285,887 344,887 402,887 461,887 520,887 578,887 639,887"/>
+        <TextEquiv conf="0.644">
+          <Unicode>COA corpus, each scientific article is given in two forms: as</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l062" index="6" custom="{&quot;heights&quot;: [17.8, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,895 578,897 520,895 460,897 403,895 345,895 286,895 227,897 169,895 109,895 109,920 169,920 228,922 286,920 345,920 402,920 461,922 519,920 578,922 639,920 639,895"/>
+        <Baseline points="109,913 169,913 228,915 286,913 345,913 402,913 461,915 520,913 578,915 639,913"/>
+        <TextEquiv conf="0.725">
+          <Unicode>a PDF document, which visually presents the article, and as</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l064" index="7" custom="{&quot;heights&quot;: [17.2, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="108,947 167,947 226,949 285,949 344,949 402,949 461,949 520,949 578,949 639,949 639,925 578,925 520,925 461,925 402,925 344,925 285,925 226,925 168,923 108,923 108,947"/>
+        <Baseline points="108,940 167,940 226,942 285,942 344,942 402,942 461,942 520,942 578,942 639,942"/>
+        <TextEquiv conf="0.795">
+          <Unicode>an XMII document, which provides a semantic description</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l066" index="8" custom="{&quot;heights&quot;: [17.5, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,950 580,950 521,950 462,950 404,950 345,950 286,950 228,950 169,950 109,949 109,973 169,975 228,975 286,975 345,975 404,975 462,975 521,975 580,975 639,975 639,950"/>
+        <Baseline points="109,966 169,968 228,968 286,968 345,968 404,968 462,968 521,968 580,968 639,968"/>
+        <TextEquiv conf="0.707">
+          <Unicode>and hierarchical organization of the document's elements</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l068" index="9" custom="{&quot;heights&quot;: [16.7, 6.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,977 579,978 521,977 462,977 403,978 345,977 286,977 228,977 169,977 109,975 109,999 169,1000 228,1000 286,1000 345,1000 404,1001 462,1000 521,1000 580,1001 639,1000 639,977"/>
+        <Baseline points="109,992 169,993 228,993 286,993 345,993 404,995 462,993 521,993 580,995 639,993"/>
+        <TextEquiv conf="0.612">
+          <Unicode>Rach table 's content and structure is specified using standard</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l070" index="10" custom="{&quot;heights&quot;: [17.6, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1026 129,1026 147,1026 166,1027 183,1027 202,1027 223,1027 223,1003 202,1003 183,1003 166,1003 149,1002 129,1001 109,1001 109,1026"/>
+        <Baseline points="109,1019 129,1019 147,1019 166,1021 183,1021 202,1021 223,1021"/>
+        <TextEquiv conf="0.975">
+          <Unicode>HTML tags.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l072" index="11" custom="{&quot;heights&quot;: [17.0, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1031 581,1031 525,1031 469,1031 414,1031 359,1031 303,1031 248,1031 192,1031 135,1031 135,1055 192,1055 248,1055 303,1055 359,1055 414,1055 469,1055 525,1055 581,1055 639,1055 639,1031"/>
+        <Baseline points="135,1048 192,1048 248,1048 303,1048 359,1048 414,1048 469,1048 525,1048 581,1048 639,1048"/>
+        <TextEquiv conf="0.573">
+          <Unicode>However, because this data was not intended for use as</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l073" index="12" custom="{&quot;heights&quot;: [18.0, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1054 578,1055 520,1055 462,1055 404,1055 345,1055 288,1055 229,1055 170,1055 110,1055 110,1081 170,1081 229,1081 288,1081 345,1081 404,1081 462,1081 520,1081 578,1081 639,1079 639,1054"/>
+        <Baseline points="110,1073 170,1073 229,1073 288,1073 345,1073 404,1073 462,1073 520,1073 578,1073 639,1072"/>
+        <TextEquiv conf="0.493">
+          <Unicode>ground truth for table extraction modeling, it does not explic-</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l075" index="13" custom="{&quot;heights&quot;: [17.6, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1082 578,1082 520,1082 461,1082 402,1082 345,1083 286,1083 228,1082 169,1082 109,1082 109,1106 169,1106 227,1106 286,1108 345,1108 402,1106 461,1106 520,1106 578,1106 639,1106 639,1082"/>
+        <Baseline points="109,1099 169,1099 228,1099 286,1101 345,1101 402,1099 461,1099 520,1099 578,1099 639,1099"/>
+        <TextEquiv conf="0.554">
+          <Unicode>itly label or quarantee multiple things that would be helpful</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l076" index="14" custom="{&quot;heights&quot;: [17.8, 7.2], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1134 169,1135 228,1135 285,1135 344,1135 401,1135 459,1135 517,1135 576,1135 637,1134 637,1109 575,1110 517,1110 459,1110 401,1110 344,1110 285,1110 228,1110 169,1110 109,1109 109,1134"/>
+        <Baseline points="109,1126 169,1128 228,1128 285,1128 344,1128 401,1128 459,1128 517,1128 575,1128 637,1126"/>
+        <TextEquiv conf="0.857">
+          <Unicode>for this purpose. For instance, although the same tables ap</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l079" index="15" custom="{&quot;heights&quot;: [17.9, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1136 578,1136 520,1136 462,1136 404,1136 345,1136 288,1136 229,1136 170,1136 110,1136 110,1161 170,1161 229,1161 288,1161 345,1161 404,1161 462,1161 520,1161 578,1161 639,1161 639,1136"/>
+        <Baseline points="110,1154 170,1154 229,1154 288,1154 345,1154 404,1154 462,1154 520,1154 578,1154 639,1154"/>
+        <TextEquiv conf="0.806">
+          <Unicode>pear in both documents, no direct correspondence between</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l081" index="16" custom="{&quot;heights&quot;: [17.4, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1186 169,1186 228,1186 286,1186 344,1186 402,1186 461,1186 518,1186 577,1186 638,1186 638,1162 577,1162 518,1162 461,1162 402,1162 344,1162 286,1162 228,1162 169,1162 109,1162 109,1186"/>
+        <Baseline points="109,1179 169,1179 228,1179 286,1179 344,1179 402,1179 461,1179 518,1179 577,1179 638,1179"/>
+        <TextEquiv conf="0.541">
+          <Unicode>them is given, nor the spatial location of each table. In terms</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l082" index="17" custom="{&quot;heights&quot;: [17.9, 7.2], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1190 580,1190 521,1190 462,1190 404,1190 345,1190 286,1190 228,1190 169,1189 109,1189 109,1214 169,1214 228,1215 286,1215 345,1215 404,1215 462,1215 521,1215 580,1215 639,1215 639,1190"/>
+        <Baseline points="109,1207 169,1207 228,1208 286,1208 345,1208 404,1208 462,1208 521,1208 580,1208 639,1208"/>
+        <TextEquiv conf="0.628">
+          <Unicode>of data quality, while tables are generally annotated reliably,</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l084" index="18" custom="{&quot;heights&quot;: [17.8, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1215 579,1216 521,1216 462,1216 404,1216 345,1216 286,1216 228,1216 169,1216 109,1215 109,1239 169,1241 228,1241 286,1241 345,1241 404,1241 462,1241 521,1241 580,1241 639,1239 639,1215"/>
+        <Baseline points="109,1232 169,1234 228,1234 286,1234 345,1234 404,1234 462,1234 521,1234 580,1234 639,1232"/>
+        <TextEquiv conf="0.647">
+          <Unicode>it is not quaranteed that column headers are annotated com-</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l086" index="19" custom="{&quot;heights&quot;: [17.5, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1242 578,1242 520,1242 462,1242 404,1242 345,1244 288,1242 229,1242 170,1242 110,1242 110,1266 170,1266 229,1266 288,1266 345,1268 404,1266 462,1266 520,1266 578,1266 639,1266 639,1242"/>
+        <Baseline points="110,1260 170,1260 229,1260 288,1260 345,1261 404,1260 462,1260 520,1260 578,1260 639,1260"/>
+        <TextEquiv conf="0.511">
+          <Unicode>pletely or that text content as annotated exactly matches the</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l088" index="20" custom="{&quot;heights&quot;: [17.8, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1270 580,1270 521,1270 462,1270 404,1269 345,1270 286,1270 228,1270 169,1269 109,1269 109,1294 169,1294 228,1295 286,1295 345,1295 403,1294 462,1295 521,1295 580,1295 639,1295 639,1270"/>
+        <Baseline points="109,1287 169,1287 228,1288 286,1288 345,1288 404,1287 462,1288 521,1288 580,1288 639,1288"/>
+        <TextEquiv conf="0.774">
+          <Unicode>text content as it appears in the PDF. Finally, some labels,</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l090" index="21" custom="{&quot;heights&quot;: [16.7, 6.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1297 580,1297 521,1297 462,1297 404,1297 345,1297 286,1297 228,1297 169,1297 109,1296 109,1319 169,1321 228,1321 286,1321 345,1321 404,1321 462,1321 521,1321 580,1321 639,1321 639,1297"/>
+        <Baseline points="109,1313 169,1314 228,1314 286,1314 345,1314 404,1314 462,1314 521,1314 580,1314 639,1314"/>
+        <TextEquiv conf="0.563">
+          <Unicode>such as the row header for each table, are not annotated at</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l093" index="22" custom="{&quot;heights&quot;: [17.2, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="108,1347 142,1347 142,1323 108,1323 108,1347"/>
+        <Baseline points="108,1340 142,1340"/>
+        <TextEquiv conf="0.920">
+          <Unicode>all.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l095" index="23" custom="{&quot;heights&quot;: [16.9, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1350 581,1351 525,1351 471,1351 415,1351 359,1351 305,1351 249,1351 193,1351 136,1350 136,1374 193,1375 249,1375 305,1375 359,1375 415,1375 471,1375 525,1375 581,1375 639,1374 639,1350"/>
+        <Baseline points="136,1367 193,1368 249,1368 305,1368 359,1368 415,1368 471,1368 525,1368 581,1368 639,1367"/>
+        <TextEquiv conf="0.796">
+          <Unicode>The basic approach we take to overcome these issues is</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l097" index="24" custom="{&quot;heights&quot;: [17.3, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1377 639,1375 578,1377 520,1375 461,1375 402,1375 345,1377 287,1375 227,1377 169,1375 109,1375 109,1400 169,1400 228,1401 286,1400 345,1401 402,1400 461,1400 519,1400 578,1401 639,1400 639,1377"/>
+        <Baseline points="109,1393 169,1393 228,1394 286,1393 345,1394 402,1393 461,1393 520,1393 578,1394 639,1393"/>
+        <TextEquiv conf="0.845">
+          <Unicode>first we attempt to reliably infer as much missing annotation</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l098" index="25" custom="{&quot;heights&quot;: [17.3, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="639,1403 578,1403 520,1403 461,1403 402,1403 345,1403 286,1403 228,1403 169,1403 109,1401 109,1425 169,1427 228,1427 286,1427 345,1427 402,1427 461,1427 520,1427 578,1427 640,1427 639,1403"/>
+        <Baseline points="109,1418 169,1420 228,1420 286,1420 345,1420 402,1420 461,1420 520,1420 578,1420 640,1420"/>
+        <TextEquiv conf="0.981">
+          <Unicode>information as possible (for instance, the spatial location</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l100" index="26" custom="{&quot;heights&quot;: [18.2, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1453 169,1454 228,1454 286,1454 344,1454 402,1454 461,1454 518,1454 577,1454 638,1454 638,1429 577,1429 518,1429 461,1429 402,1429 344,1429 286,1429 228,1429 169,1429 109,1427 109,1453"/>
+        <Baseline points="109,1446 169,1447 228,1447 286,1447 344,1447 402,1447 461,1447 518,1447 577,1447 638,1447"/>
+        <TextEquiv conf="0.676">
+          <Unicode>of each table) from the information that is present, then we</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l102" index="27" custom="{&quot;heights&quot;: [17.5, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1478 169,1480 228,1480 286,1480 345,1480 402,1480 461,1480 520,1480 578,1480 640,1480 640,1455 578,1455 520,1455 461,1455 402,1455 345,1455 286,1455 228,1455 169,1455 109,1454 109,1478 109,1478"/>
+        <Baseline points="109,1471 169,1473 228,1473 286,1473 345,1473 402,1473 461,1473 520,1473 578,1473 640,1473"/>
+        <TextEquiv conf="0.777">
+          <Unicode>verify that each annotation meets certain requirements for</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l104" index="28" custom="{&quot;heights&quot;: [16.9, 6.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1505 169,1507 228,1507 286,1507 344,1507 402,1507 461,1507 518,1507 577,1507 639,1505 638,1482 576,1483 518,1483 461,1483 402,1483 344,1483 286,1483 228,1483 169,1483 109,1482 109,1503 109,1505"/>
+        <Baseline points="109,1499 169,1500 228,1500 286,1500 344,1500 402,1500 461,1500 518,1500 577,1500 638,1499"/>
+        <TextEquiv conf="0.837">
+          <Unicode>consistency. In some cases, we correct an annotation to</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l106" index="29" custom="{&quot;heights&quot;: [17.6, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1533 169,1534 228,1534 286,1534 344,1534 402,1534 461,1534 518,1534 577,1534 638,1534 638,1510 577,1510 518,1510 461,1510 402,1510 344,1510 286,1510 228,1510 169,1510 109,1508 109,1529 109,1533"/>
+        <Baseline points="109,1526 169,1527 228,1527 286,1527 344,1527 402,1527 461,1527 518,1527 577,1527 638,1527"/>
+        <TextEquiv conf="0.969">
+          <Unicode>attempt to make it more consistent, such as merging cells</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l108" index="30" custom="{&quot;heights&quot;: [17.4, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="109,1558 169,1560 228,1560 286,1560 344,1560 402,1560 461,1560 518,1560 577,1560 638,1560 638,1536 577,1536 518,1536 461,1536 402,1536 344,1536 286,1536 228,1536 169,1536 109,1534 109,1554 109,1558"/>
+        <Baseline points="109,1552 169,1553 228,1553 286,1553 344,1553 402,1553 461,1553 518,1553 577,1553 638,1553"/>
+        <TextEquiv conf="0.986">
+          <Unicode>that are oversegmented. We consider certain requirements</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l111" index="31" custom="{&quot;heights&quot;: [16.2, 6.3], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="169,1587 228,1587 286,1587 345,1587 402,1587 461,1587 520,1587 578,1587 640,1587 640,1564 578,1564 520,1564 461,1564 402,1564 345,1564 286,1564 228,1564 169,1564 109,1564 109,1587 169,1587"/>
+        <Baseline points="109,1580 169,1580 228,1580 286,1580 345,1580 402,1580 461,1580 520,1580 578,1580 640,1580"/>
+        <TextEquiv conf="0.981">
+          <Unicode>for tables to be strict and samples whose annotations violate</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r015" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="685,1006 685,1032 704,1033 819,1033 863,1007 1217,1006 1217,664 687,663 685,1006"/>
+      <TextLine id="r015-l046" index="0" custom="{&quot;heights&quot;: [17.2, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="687,687 747,688 806,688 865,688 922,688 980,688 1039,688 1096,688 1155,688 1217,688 1217,664 1155,664 1096,664 1039,664 980,664 922,664 865,664 806,664 747,664 687,663 687,687"/>
+        <Baseline points="687,680 747,681 806,681 865,681 922,681 980,681 1039,681 1096,681 1155,681 1217,681"/>
+        <TextEquiv conf="0.576">
+          <Unicode>Alignment Textin a PDF document has spatial location</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l048" index="1" custom="{&quot;heights&quot;: [17.4, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="691,715 751,717 809,717 866,717 923,714 982,714 1039,714 1096,714 1154,714 1215,713 1215,688 1153,690 1096,690 1039,690 982,690 923,690 865,693 809,693 751,693 692,691 691,715"/>
+        <Baseline points="691,709 751,710 809,710 866,710 923,707 982,707 1039,707 1096,707 1154,707 1215,706"/>
+        <TextEquiv conf="0.285">
+          <Unicode>(Rmin, Umin, Rmax, Umar), while text in an XMI document ap-</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l049" index="2" custom="{&quot;heights&quot;: [17.3, 6.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1217,733 1216,714 1155,716 1098,716 1039,716 982,716 923,716 866,716 807,716 750,716 690,716 690,740 750,740 807,740 866,740 923,740 982,740 1039,740 1098,740 1155,740 1217,738 1217,733"/>
+        <Baseline points="690,733 750,733 807,733 866,733 923,733 982,733 1039,733 1098,733 1155,733 1217,731"/>
+        <TextEquiv conf="0.779">
+          <Unicode>pears inside semantically labeled tags. Because the cor-</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l051" index="3" custom="{&quot;heights&quot;: [18.1, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="687,767 746,767 804,767 863,767 922,767 979,767 1038,767 1096,767 1155,767 1217,767 1217,742 1155,742 1096,742 1038,742 979,742 922,742 863,742 804,742 746,742 687,742 687,767"/>
+        <Baseline points="687,760 746,760 804,760 863,760 922,760 979,760 1038,760 1096,760 1155,760 1217,760"/>
+        <TextEquiv conf="0.634">
+          <Unicode>respondence between these is not given, the first step in</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l053" index="4" custom="{&quot;heights&quot;: [18.0, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="687,794 746,793 804,793 863,793 922,793 979,793 1038,793 1096,793 1155,793 1217,793 1217,768 1155,768 1096,768 1038,768 979,768 922,768 863,768 804,768 746,768 687,769 687,794"/>
+        <Baseline points="687,787 746,786 804,786 863,786 922,786 979,786 1038,786 1096,786 1155,786 1217,786"/>
+        <TextEquiv conf="0.941">
+          <Unicode>creating Pub Tables-IM is to match the text content from</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l055" index="5" custom="{&quot;heights&quot;: [17.6, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="687,820 746,820 804,820 863,820 922,820 979,820 1038,820 1096,820 1155,820 1217,820 1217,795 1155,795 1096,795 1038,795 979,795 922,795 863,795 804,795 746,795 687,795 687,820"/>
+        <Baseline points="687,813 746,813 804,813 863,813 922,813 979,813 1038,813 1096,813 1155,813 1217,813"/>
+        <TextEquiv conf="0.621">
+          <Unicode>both. We process the PDF document into a sequence of</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l057" index="6" custom="{&quot;heights&quot;: [18.2, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,847 746,847 804,847 863,847 922,847 979,847 1038,847 1096,847 1155,847 1217,847 1217,822 1155,822 1096,822 1038,822 979,822 922,822 863,822 804,822 746,822 687,822 686,847"/>
+        <Baseline points="686,840 746,840 804,840 863,840 922,840 979,840 1038,840 1096,840 1155,840 1217,840"/>
+        <TextEquiv conf="0.974">
+          <Unicode>characters each with their associated bounding box and use</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l059" index="7" custom="{&quot;heights&quot;: [17.9, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,873 746,873 804,873 863,873 920,873 979,873 1038,873 1095,873 1154,873 1215,873 1215,848 1154,848 1095,848 1038,848 979,848 920,848 863,848 804,848 746,848 686,848 686,873"/>
+        <Baseline points="686,866 746,866 804,866 863,866 920,866 979,866 1038,866 1095,866 1154,866 1215,866"/>
+        <TextEquiv conf="0.757">
+          <Unicode>the Needleman-Wunsch algorithm (10) to align this with the</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l061" index="8" custom="{&quot;heights&quot;: [17.4, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,900 746,900 804,900 863,900 922,900 979,900 1038,900 1096,900 1155,900 1217,900 1217,876 1155,876 1096,876 1038,876 979,876 922,876 863,876 804,876 746,876 686,876 686,900"/>
+        <Baseline points="686,893 746,893 804,893 863,893 922,893 979,893 1038,893 1096,893 1155,893 1217,893"/>
+        <TextEquiv conf="0.982">
+          <Unicode>character sequence for the text extracted from each table</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l063" index="9" custom="{&quot;heights&quot;: [18.3, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,927 746,927 804,927 863,927 922,927 979,927 1038,927 1096,927 1155,927 1217,927 1217,902 1155,902 1096,902 1038,902 979,902 922,902 863,902 804,902 746,902 686,902 686,927"/>
+        <Baseline points="686,920 746,920 804,920 863,920 922,920 979,920 1038,920 1096,920 1155,920 1217,920"/>
+        <TextEquiv conf="0.798">
+          <Unicode>HTML. This connects the text within each HTML tag to its</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l065" index="10" custom="{&quot;heights&quot;: [18.1, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,954 686,955 746,953 804,953 863,953 922,953 979,953 1038,953 1096,953 1155,953 1217,953 1217,928 1155,928 1096,928 1038,928 979,928 922,928 863,928 804,928 746,928 686,929 686,954"/>
+        <Baseline points="686,948 746,946 804,946 863,946 922,946 979,946 1038,946 1096,946 1155,946 1217,946"/>
+        <TextEquiv conf="0.749">
+          <Unicode>spatial location with the PDF document. For each cell with</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l067" index="11" custom="{&quot;heights&quot;: [17.1, 6.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,978 686,980 746,980 804,980 863,980 922,980 979,980 1038,980 1096,980 1155,980 1217,980 1217,956 1155,956 1096,956 1038,956 979,956 922,956 863,956 804,956 746,956 686,956 686,978"/>
+        <Baseline points="686,973 746,973 804,973 863,973 922,973 979,973 1038,973 1096,973 1155,973 1217,973"/>
+        <TextEquiv conf="0.691">
+          <Unicode>text, we compute the union of the bounding boxes for each</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l069" index="12" custom="{&quot;heights&quot;: [17.0, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1072,1006 1096,1006 1113,1006 1217,1006 1216,982 1155,983 1097,982 1037,983 979,982 922,982 863,983 804,983 746,983 686,982 685,1006 746,1007 804,1007 863,1007 922,1006 979,1006 1013,1007 1072,1006"/>
+        <Baseline points="686,999 746,1000 804,1000 863,1000 922,999 979,999 1038,1000 1096,999 1155,1000 1217,999"/>
+        <TextEquiv conf="0.848">
+          <Unicode>character of the cell's text, which we refer to as a text cell</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r015-l071" index="13" custom="{&quot;heights&quot;: [18.2, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="704,1033 720,1033 736,1033 751,1033 767,1033 783,1033 799,1033 819,1033 819,1008 799,1008 783,1008 767,1008 751,1008 736,1008 720,1008 704,1008 687,1007 685,1032 704,1033"/>
+        <Baseline points="686,1025 704,1026 720,1026 736,1026 751,1026 767,1026 783,1026 799,1026 819,1026"/>
+        <TextEquiv conf="0.996">
+          <Unicode>bounding box.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="r014" custom="{&quot;category&quot;: &quot;text&quot;}">
+      <Coords points="685,1215 686,1587 823,1587 863,1560 1218,1560 1216,1083 686,1083 685,1215"/>
+      <TextLine id="r014-l074" index="0" custom="{&quot;heights&quot;: [16.6, 6.6], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1216,1083 1155,1084 1096,1084 1038,1084 979,1084 922,1084 863,1083 818,1083 686,1083 686,1106 746,1106 804,1106 863,1106 922,1107 979,1107 1038,1107 1096,1107 1155,1107 1216,1106 1216,1083"/>
+        <Baseline points="686,1099 746,1099 804,1099 863,1099 922,1101 979,1101 1038,1101 1096,1101 1155,1101 1216,1099"/>
+        <TextEquiv conf="0.976">
+          <Unicode>Completion Following alignment, we complete the spatial</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l077" index="1" custom="{&quot;heights&quot;: [17.5, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1216,1110 1155,1110 1096,1110 1038,1110 979,1110 922,1110 863,1110 804,1110 746,1110 686,1110 686,1135 746,1135 804,1135 863,1135 922,1135 979,1135 1038,1135 1096,1135 1155,1135 1216,1135 1216,1110"/>
+        <Baseline points="686,1128 746,1128 804,1128 863,1128 922,1128 979,1128 1038,1128 1096,1128 1155,1128 1216,1128"/>
+        <TextEquiv conf="0.789">
+          <Unicode>annotations to define bounding boxes for rows, columns, and</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l078" index="2" custom="{&quot;heights&quot;: [18.0, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1216,1136 1155,1136 1096,1136 1038,1136 979,1136 922,1136 863,1136 804,1136 746,1136 686,1136 686,1161 746,1161 804,1161 863,1161 922,1161 979,1161 1038,1161 1096,1161 1155,1161 1217,1161 1216,1136"/>
+        <Baseline points="686,1154 746,1154 804,1154 863,1154 922,1154 979,1154 1038,1154 1096,1154 1155,1154 1217,1154"/>
+        <TextEquiv conf="0.905">
+          <Unicode>the entire table. The bounding box for the table is defined</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l080" index="3" custom="{&quot;heights&quot;: [17.2, 6.7], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="685,1186 746,1188 804,1186 863,1186 920,1186 979,1186 1038,1186 1095,1186 1153,1188 1215,1190 1216,1166 1154,1164 1095,1162 1038,1162 979,1162 920,1162 863,1162 804,1162 745,1164 686,1162 685,1185 685,1186"/>
+        <Baseline points="686,1179 746,1181 804,1179 863,1179 920,1179 979,1179 1038,1179 1095,1179 1154,1181 1215,1184"/>
+        <TextEquiv conf="0.239">
+          <Unicode>simply as the union of all text cell bounding boxes. The 2min</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l083" index="4" custom="{&quot;heights&quot;: [17.4, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="746,1216 805,1215 863,1214 920,1215 979,1215 1038,1215 1095,1215 1154,1215 1215,1215 1215,1191 1154,1191 1095,1191 1038,1191 979,1191 920,1191 864,1189 804,1191 745,1192 686,1191 685,1215 746,1216"/>
+        <Baseline points="686,1208 746,1209 804,1208 863,1207 920,1208 979,1208 1038,1208 1095,1208 1154,1208 1215,1208"/>
+        <TextEquiv conf="0.249">
+          <Unicode>and Rmax of the bounding box for each row are defined as</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l085" index="5" custom="{&quot;heights&quot;: [17.8, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="685,1241 746,1242 804,1241 863,1241 920,1241 979,1241 1038,1241 1095,1241 1154,1241 1215,1241 1215,1216 1154,1216 1095,1216 1038,1216 979,1216 920,1216 863,1216 804,1216 745,1217 686,1216 685,1240 685,1241"/>
+        <Baseline points="686,1234 746,1235 804,1234 863,1234 920,1234 979,1234 1038,1234 1095,1234 1154,1234 1215,1234"/>
+        <TextEquiv conf="0.591">
+          <Unicode>the &amp;min and zmar of the table, giving every row the same</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l087" index="6" custom="{&quot;heights&quot;: [17.4, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1266 746,1266 804,1266 863,1268 920,1269 979,1269 1038,1266 1095,1266 1154,1266 1215,1266 1215,1242 1154,1242 1095,1242 1038,1242 978,1245 920,1245 864,1244 805,1242 746,1242 686,1242 686,1266"/>
+        <Baseline points="686,1260 746,1260 804,1260 863,1261 920,1262 979,1262 1038,1260 1095,1260 1154,1260 1215,1260"/>
+        <TextEquiv conf="0.465">
+          <Unicode>horizontal length. The Umin and ymax of the bounding box for</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l089" index="7" custom="{&quot;heights&quot;: [17.4, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="1217,1271 1155,1269 1096,1271 1038,1271 979,1271 922,1269 863,1271 805,1269 746,1269 686,1269 686,1294 746,1294 804,1294 863,1295 922,1294 979,1295 1038,1295 1097,1295 1155,1294 1216,1295 1217,1274 1217,1271"/>
+        <Baseline points="686,1287 746,1287 804,1287 863,1288 922,1287 979,1288 1038,1288 1096,1288 1155,1287 1217,1288"/>
+        <TextEquiv conf="0.350">
+          <Unicode>each row, m. are defined as the zmin and zmax of the union</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l091" index="8" custom="{&quot;heights&quot;: [17.9, 7.0], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1321 746,1321 804,1321 863,1321 922,1321 979,1321 1038,1321 1096,1321 1155,1321 1217,1321 1217,1296 1155,1296 1096,1296 1038,1296 979,1296 922,1296 863,1296 804,1296 746,1296 686,1296 686,1321"/>
+        <Baseline points="686,1314 746,1314 804,1314 863,1314 922,1314 979,1314 1038,1314 1096,1314 1155,1314 1217,1314"/>
+        <TextEquiv conf="0.982">
+          <Unicode>of the text cells for each cell whose starting row or ending</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l092" index="9" custom="{&quot;heights&quot;: [17.6, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1347 746,1347 804,1347 863,1347 922,1349 979,1348 1038,1348 1096,1347 1155,1347 1217,1347 1217,1322 1155,1322 1096,1322 1037,1324 979,1324 921,1325 864,1322 804,1322 746,1322 686,1322 686,1347"/>
+        <Baseline points="686,1340 746,1340 804,1340 863,1340 922,1343 979,1341 1038,1341 1096,1340 1155,1340 1217,1340"/>
+        <TextEquiv conf="0.219">
+          <Unicode>row is m. Similarly, the Umin and z max of the bounding box</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l094" index="10" custom="{&quot;heights&quot;: [17.5, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1374 746,1374 804,1374 863,1374 922,1374 979,1375 1038,1375 1097,1375 1155,1374 1217,1374 1217,1349 1155,1349 1096,1351 1038,1351 979,1351 922,1349 863,1349 804,1349 746,1349 686,1349 686,1374"/>
+        <Baseline points="686,1367 746,1367 804,1367 863,1367 922,1367 979,1368 1038,1368 1096,1368 1155,1367 1217,1367"/>
+        <TextEquiv conf="0.553">
+          <Unicode>for each column are defined as the Vmin and ymar of the table</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l096" index="11" custom="{&quot;heights&quot;: [17.3, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="687,1400 747,1401 806,1400 865,1401 922,1400 980,1400 1039,1400 1096,1400 1155,1400 1216,1401 1217,1377 1155,1375 1096,1375 1039,1375 980,1375 922,1375 864,1377 806,1375 747,1377 687,1375 687,1400"/>
+        <Baseline points="687,1393 747,1394 806,1393 865,1394 922,1393 980,1393 1039,1393 1096,1393 1155,1393 1217,1394"/>
+        <TextEquiv conf="0.219">
+          <Unicode>The Emin and zmar of the bounding box for each column,</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l099" index="12" custom="{&quot;heights&quot;: [17.3, 6.8], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1427 746,1427 804,1427 863,1427 922,1428 979,1428 1038,1427 1096,1427 1155,1427 1217,1427 1217,1403 1155,1403 1096,1403 1038,1403 979,1404 922,1404 864,1403 804,1403 746,1403 686,1403 686,1427"/>
+        <Baseline points="686,1420 746,1420 804,1420 863,1420 922,1421 979,1421 1038,1420 1096,1420 1155,1420 1217,1420"/>
+        <TextEquiv conf="0.434">
+          <Unicode>n, are defined as the &amp;min and &amp;max of the union of the text</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l101" index="13" custom="{&quot;heights&quot;: [18.3, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1454 746,1454 804,1454 863,1454 922,1454 979,1454 1038,1454 1096,1454 1155,1454 1217,1454 1217,1429 1155,1429 1096,1429 1038,1429 979,1429 922,1429 863,1429 804,1429 746,1429 686,1429 686,1454"/>
+        <Baseline points="686,1447 746,1447 804,1447 863,1447 922,1447 979,1447 1038,1447 1096,1447 1155,1447 1217,1447"/>
+        <TextEquiv conf="0.970">
+          <Unicode>cell for each cell whose starting column or ending column</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l103" index="14" custom="{&quot;heights&quot;: [18.1, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1480 746,1480 804,1480 863,1480 922,1480 979,1480 1038,1480 1096,1480 1155,1480 1217,1480 1217,1455 1155,1455 1096,1455 1038,1455 979,1455 922,1455 863,1455 804,1455 746,1455 686,1455 686,1480"/>
+        <Baseline points="686,1473 746,1473 804,1473 863,1473 922,1473 979,1473 1038,1473 1096,1473 1155,1473 1217,1473"/>
+        <TextEquiv conf="0.533">
+          <Unicode>is n. From these definitions, the grid cell for each cell is</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l105" index="15" custom="{&quot;heights&quot;: [17.6, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1507 746,1507 804,1507 863,1507 922,1507 979,1507 1038,1507 1096,1507 1155,1507 1217,1507 1217,1482 1155,1482 1096,1482 1038,1482 979,1482 922,1482 863,1482 804,1482 746,1482 686,1482 686,1507"/>
+        <Baseline points="686,1500 746,1500 804,1500 863,1500 922,1500 979,1500 1038,1500 1096,1500 1155,1500 1217,1500"/>
+        <TextEquiv conf="0.988">
+          <Unicode>defined as the union of the bounding boxes of the cell</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l107" index="16" custom="{&quot;heights&quot;: [18.4, 7.1], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="686,1534 746,1534 804,1534 863,1534 922,1534 979,1534 1038,1534 1096,1534 1155,1534 1217,1534 1217,1509 1155,1509 1096,1509 1038,1509 979,1509 922,1509 863,1509 804,1509 746,1509 686,1509 686,1534"/>
+        <Baseline points="686,1527 746,1527 804,1527 863,1527 922,1527 979,1527 1038,1527 1096,1527 1155,1527 1217,1527"/>
+        <TextEquiv conf="0.960">
+          <Unicode>rows intersected with the union of the bounding boxes for</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l109" index="17" custom="{&quot;heights&quot;: [18.0, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="922,1560 980,1560 1039,1560 1098,1560 1157,1560 1218,1560 1218,1535 1157,1535 1098,1535 1039,1535 980,1535 922,1535 863,1535 804,1535 746,1535 686,1535 686,1560 746,1560 804,1560 863,1560 922,1560"/>
+        <Baseline points="686,1553 746,1553 804,1553 863,1553 922,1553 980,1553 1039,1553 1098,1553 1157,1553 1218,1553"/>
+        <TextEquiv conf="0.802">
+          <Unicode>its columns. Unlike the text cell, the grid cell is defined even</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r014-l110" index="18" custom="{&quot;heights&quot;: [17.2, 6.9], &quot;category&quot;: &quot;text&quot;}">
+        <Coords points="704,1587 721,1587 737,1587 754,1587 770,1587 787,1587 803,1587 823,1587 823,1563 803,1563 787,1563 770,1563 754,1563 737,1563 721,1563 704,1563 686,1563 686,1587 704,1587"/>
+        <Baseline points="686,1580 704,1580 721,1580 737,1580 754,1580 770,1580 787,1580 803,1580 823,1580"/>
+        <TextEquiv conf="0.977">
+          <Unicode>for blank cells.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+  </Page>
+</PcGts>
