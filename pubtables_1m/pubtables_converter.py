@@ -110,7 +110,7 @@ class PubTablesConverter:
         self.output_folder = output_folder
         # self.task_image_path = task_image_path
         self.output_folder_images_render = os.path.join(output_folder, 'images_render')
-        self.output_folder_images_words = os.path.join(output_folder, 'images_words')
+        # self.output_folder_images_words = os.path.join(output_folder, 'images_words')
         self.output_folder_page_xml = os.path.join(output_folder, 'page_xml')
         self.output_folder_page_xml_render = os.path.join(output_folder, 'page_xml_render')
         self.output_folder_reconstruction = os.path.join(output_folder, 'reconstruction')
@@ -142,7 +142,7 @@ class PubTablesConverter:
 
         if not self.mass_export:
             os.makedirs(self.output_folder_images_render, exist_ok=True)
-            os.makedirs(self.output_folder_images_words, exist_ok=True)
+            # os.makedirs(self.output_folder_images_words, exist_ok=True)
             os.makedirs(self.output_folder_reconstruction, exist_ok=True)
             self.categories_seen = set()
         
@@ -319,7 +319,7 @@ def load_file_groups(folders: list[str]=['example_data/voc_xml', 'example_data/i
 
     print(f'Loading files from folders:')
 
-    folder_files: list(set) = []
+    folder_files: list[set] = []
     for folder, ext in zip(folders, exts):
         files = [f.replace(ext, '') for f in os.listdir(folder) if f.endswith(ext)]
         folder_files.append(set(files))
