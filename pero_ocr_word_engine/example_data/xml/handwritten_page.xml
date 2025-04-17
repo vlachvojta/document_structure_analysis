@@ -2,204 +2,1134 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-04-17T09:53:54.662103+00:00</Created>
-    <LastChange>2025-04-17T09:53:54.662103+00:00</LastChange>
+    <Created>2025-04-17T12:30:01.057789+00:00</Created>
+    <LastChange>2025-04-17T12:30:01.057789+00:00</LastChange>
   </Metadata>
   <Page imageFilename="handwritten_page" imageWidth="3000" imageHeight="2000">
     <TextRegion id="r000" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="586,907 602,1052 597,1193 607,1383 600,1486 607,1640 827,1642 1579,1627 1576,1478 1612,1380 1614,1327 1592,1272 1545,1226 1524,1132 1532,1035 1563,887 1563,835 1589,744 1584,549 1560,415 1560,356 1516,183 1516,124 614,143 593,279 594,344 614,424 613,718 601,807 602,859 586,907"/>
-      <TextLine id="r000-l004" index="0" custom="{&quot;heights&quot;: [42.4, 16.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l004" index="0" custom="{&quot;heights&quot;: [42.4, 16.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1516,124 614,143 615,201 719,199 819,196 917,191 1016,191 1115,188 1214,188 1313,186 1412,183 1516,183 1516,124"/>
         <Baseline points="615,185 719,182 818,180 917,175 1016,175 1115,172 1214,172 1313,169 1412,167 1516,167"/>
+        <Word id="r000-l004_w000">
+          <Coords points="617,135 869,135 869,201 617,201"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pomocnice</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l004_w001">
+          <Coords points="891,129 1113,129 1113,193 891,193"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kuchařky.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l004_w002">
+          <Coords points="1130,127 1246,127 1246,188 1130,188"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Pom.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l004_w003">
+          <Coords points="1256,125 1372,125 1372,186 1256,186"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kuch.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l004_w004">
+          <Coords points="1393,124 1509,124 1509,184 1393,184"/>
+          <TextEquiv conf="1.000">
+            <Unicode>stala</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.719">
           <Unicode>pomocnice kuchařky. Pom. kuch. stala</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l008" index="1" custom="{&quot;heights&quot;: [41.4, 16.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l008" index="1" custom="{&quot;heights&quot;: [41.4, 16.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="610,246 696,246 777,246 858,243 938,240 1019,238 1099,238 1181,238 1261,235 1347,235 1347,177 1261,177 1179,180 1099,180 1019,180 936,183 856,185 775,188 696,188 610,188 610,246"/>
         <Baseline points="610,229 696,229 776,229 857,227 938,224 1019,221 1099,221 1180,221 1261,219 1347,219"/>
+        <Word id="r000-l008_w000">
+          <Coords points="630,188 667,188 667,246 630,246"/>
+          <TextEquiv conf="0.999">
+            <Unicode>se</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l008_w001">
+          <Coords points="696,185 842,185 842,245 696,245"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Ccilie</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l008_w002">
+          <Coords points="863,180 1121,180 1121,242 863,242"/>
+          <TextEquiv conf="0.998">
+            <Unicode>Ptaszniková</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l008_w003">
+          <Coords points="1138,179 1183,179 1183,237 1138,237"/>
+          <TextEquiv conf="1.000">
+            <Unicode>od</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l008_w004">
+          <Coords points="1200,178 1234,178 1234,236 1200,236"/>
+          <TextEquiv conf="1.000">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l008_w005">
+          <Coords points="1229,177 1263,177 1263,236 1229,236"/>
+          <TextEquiv conf="0.424">
+            <Unicode>I.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l008_w006">
+          <Coords points="1258,176 1346,176 1346,235 1258,235"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1963.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.454">
           <Unicode>se Ccilie Ptaszniková od 6. I. 1963.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l017" index="2" custom="{&quot;heights&quot;: [46.5, 17.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l017" index="2" custom="{&quot;heights&quot;: [46.5, 17.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="594,344 701,341 806,338 906,333 1011,336 1113,333 1217,331 1318,325 1422,325 1532,325 1532,261 1422,261 1318,261 1214,266 1111,269 1010,271 908,269 803,274 700,277 593,279 594,344"/>
         <Baseline points="594,326 701,323 805,320 907,315 1011,318 1112,315 1217,313 1318,307 1422,307 1532,307"/>
+        <Word id="r000-l017_w000">
+          <Coords points="596,274 763,274 763,343 596,343"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Funkce</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l017_w001">
+          <Coords points="778,273 803,273 803,338 778,338"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l017_w002">
+          <Coords points="831,269 989,269 989,337 831,337"/>
+          <TextEquiv conf="1.000">
+            <Unicode>veřejná</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l017_w003">
+          <Coords points="1004,265 1200,265 1200,333 1004,333"/>
+          <TextEquiv conf="1.000">
+            <Unicode>činnost</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l017_w004">
+          <Coords points="1227,262 1386,262 1386,329 1227,329"/>
+          <TextEquiv conf="1.000">
+            <Unicode>učitelů</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l017_w005">
+          <Coords points="1396,261 1418,261 1418,326 1396,326"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l017_w006">
+          <Coords points="1421,260 1531,260 1531,326 1421,326"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vych.:</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.583">
           <Unicode>Funkce a veřejná činnost učitelů a vych.:</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l026" index="3" custom="{&quot;heights&quot;: [42.1, 16.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l026" index="3" custom="{&quot;heights&quot;: [42.1, 16.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1560,356 1459,356 1361,359 1268,362 1172,362 1076,362 981,364 886,364 788,367 689,370 691,428 790,425 886,423 983,423 1076,420 1172,420 1269,420 1363,418 1459,415 1560,415 1560,356"/>
         <Baseline points="690,412 789,409 886,406 982,406 1076,404 1172,404 1269,404 1362,401 1459,399 1560,399"/>
+        <Word id="r000-l026_w000">
+          <Coords points="693,366 797,366 797,426 693,426"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Jitka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l026_w001">
+          <Coords points="811,363 1015,363 1015,425 811,425"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Kotasová:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l026_w002">
+          <Coords points="1017,360 1228,360 1228,421 1017,421"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Skupinová</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l026_w003">
+          <Coords points="1235,358 1369,358 1369,418 1235,418"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedoucí</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l026_w004">
+          <Coords points="1367,357 1424,357 1424,417 1367,417"/>
+          <TextEquiv conf="0.780">
+            <Unicode>80,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l026_w005">
+          <Coords points="1426,357 1494,357 1494,416 1426,416"/>
+          <TextEquiv conf="0.997">
+            <Unicode>ref.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l026_w006">
+          <Coords points="1496,356 1553,356 1553,415 1496,415"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pro</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.425">
           <Unicode>Jitka Kotasová: Skupinová vedoucí 80, ref. pro</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l031" index="4" custom="{&quot;heights&quot;: [39.3, 15.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l031" index="4" custom="{&quot;heights&quot;: [39.3, 15.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="615,479 719,476 818,474 920,471 1019,471 1118,469 1219,466 1319,466 1418,463 1524,461 1523,406 1416,409 1317,411 1219,411 1117,414 1018,417 920,417 817,419 718,422 614,424 615,479"/>
         <Baseline points="615,464 719,461 818,458 920,456 1019,456 1118,453 1219,451 1318,451 1417,448 1524,445"/>
+        <Word id="r000-l031_w000">
+          <Coords points="627,420 762,420 762,478 627,478"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l031_w001">
+          <Coords points="778,417 899,417 899,475 778,475"/>
+          <TextEquiv conf="1.000">
+            <Unicode>film,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l031_w002">
+          <Coords points="908,413 1142,413 1142,472 908,472"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pomáhala</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l031_w003">
+          <Coords points="1162,411 1235,411 1235,467 1162,467"/>
+          <TextEquiv conf="1.000">
+            <Unicode>při</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l031_w004">
+          <Coords points="1248,409 1389,409 1389,466 1248,466"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedení</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l031_w005">
+          <Coords points="1412,406 1523,406 1523,463 1412,463"/>
+          <TextEquiv conf="1.000">
+            <Unicode>žáků</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.967">
           <Unicode>školní film, pomáhala při vedení žáků</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l036" index="5" custom="{&quot;heights&quot;: [37.6, 14.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l036" index="5" custom="{&quot;heights&quot;: [37.6, 14.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="614,528 673,525 730,520 784,517 841,517 897,517 953,515 1008,515 1065,515 1128,515 1128,463 1065,463 1008,463 953,463 894,465 841,465 784,465 728,468 669,473 614,476 614,528"/>
         <Baseline points="614,513 672,511 729,505 784,503 841,503 896,503 953,500 1008,500 1065,500 1128,500"/>
+        <Word id="r000-l036_w000">
+          <Coords points="616,472 656,472 656,527 616,527"/>
+          <TextEquiv conf="0.815">
+            <Unicode>TJ</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l036_w001">
+          <Coords points="666,465 807,465 807,524 666,524"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Slovan</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l036_w002">
+          <Coords points="823,463 877,463 877,517 823,517"/>
+          <TextEquiv conf="0.969">
+            <Unicode>Sl.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l036_w003">
+          <Coords points="879,462 1128,462 1128,516 879,516"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Bohumín.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.770">
           <Unicode>TJ Slovan Sl. Bohumín.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l037" index="6" custom="{&quot;heights&quot;: [37.6, 14.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l037" index="6" custom="{&quot;heights&quot;: [37.6, 14.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="680,567 777,567 871,564 964,562 1055,559 1149,559 1243,559 1334,559 1428,557 1527,557 1527,504 1428,504 1333,507 1243,507 1149,507 1055,507 963,510 869,512 775,515 680,515 680,567"/>
         <Baseline points="680,552 776,552 870,550 964,547 1055,544 1149,544 1243,544 1334,544 1428,542 1527,542"/>
+        <Word id="r000-l037_w000">
+          <Coords points="689,513 768,513 768,567 689,567"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Běla</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l037_w001">
+          <Coords points="784,508 1058,508 1058,565 784,565"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Jonášková:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l037_w002">
+          <Coords points="1074,505 1292,505 1292,560 1074,560"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Náčelnice</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l037_w003">
+          <Coords points="1304,505 1345,505 1345,557 1304,557"/>
+          <TextEquiv conf="1.000">
+            <Unicode>TJ</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l037_w004">
+          <Coords points="1347,504 1526,504 1526,557 1347,557"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Slovan,</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.688">
           <Unicode>Běla Jonášková: Náčelnice TJ Slovan,</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l039" index="7" custom="{&quot;heights&quot;: [37.6, 14.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l039" index="7" custom="{&quot;heights&quot;: [37.6, 14.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="613,619 722,616 828,614 936,614 1043,611 1149,606 1256,606 1363,606 1469,601 1584,601 1584,549 1469,549 1361,554 1256,554 1149,554 1040,559 934,562 828,562 721,564 613,567 613,619"/>
         <Baseline points="613,604 722,602 828,599 935,599 1042,597 1149,591 1256,591 1362,591 1469,586 1584,586"/>
+        <Word id="r000-l039_w000">
+          <Coords points="632,563 794,563 794,618 632,618"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedoucí</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l039_w001">
+          <Coords points="810,559 962,559 962,614 810,614"/>
+          <TextEquiv conf="1.000">
+            <Unicode>řaček,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l039_w002">
+          <Coords points="974,557 1057,557 1057,611 974,611"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ref.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l039_w003">
+          <Coords points="1063,556 1123,556 1123,609 1063,609"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pro</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l039_w004">
+          <Coords points="1158,554 1235,554 1235,608 1158,608"/>
+          <TextEquiv conf="1.000">
+            <Unicode>sběr</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l039_w005">
+          <Coords points="1263,550 1445,550 1445,606 1263,606"/>
+          <TextEquiv conf="1.000">
+            <Unicode>surovin,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l039_w006">
+          <Coords points="1457,548 1583,548 1583,602 1457,602"/>
+          <TextEquiv conf="1.000">
+            <Unicode>správ-</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.778">
           <Unicode>vedoucí řaček, ref. pro sběr surovin, správ-</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l041" index="8" custom="{&quot;heights&quot;: [35.6, 14.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l041" index="8" custom="{&quot;heights&quot;: [35.6, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="613,663 712,665 808,663 904,660 1001,658 1099,655 1196,655 1292,652 1389,650 1493,647 1492,597 1388,600 1291,603 1195,605 1099,605 999,608 903,610 807,613 710,616 613,613 613,663"/>
         <Baseline points="613,649 711,651 808,649 904,646 1000,643 1099,641 1196,641 1292,638 1389,636 1493,633"/>
+        <Word id="r000-l041_w000">
+          <Coords points="615,613 735,613 735,664 615,664"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kyně</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l041_w001">
+          <Coords points="775,610 879,610 879,662 775,662"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škol.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l041_w002">
+          <Coords points="900,606 1126,606 1126,660 900,660"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kabinetu,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l041_w003">
+          <Coords points="1132,602 1279,602 1279,655 1132,655"/>
+          <TextEquiv conf="1.000">
+            <Unicode>členka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l041_w004">
+          <Coords points="1307,599 1404,599 1404,651 1307,651"/>
+          <TextEquiv conf="1.000">
+            <Unicode>sehce</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l041_w005">
+          <Coords points="1416,597 1476,597 1476,649 1416,649"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pro</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.788">
           <Unicode>kyně škol. kabinetu, členka sehce pro</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l043" index="9" custom="{&quot;heights&quot;: [37.2, 14.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l043" index="9" custom="{&quot;heights&quot;: [37.2, 14.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="613,718 712,713 808,710 904,708 998,705 1094,702 1191,702 1284,700 1381,700 1482,700 1482,648 1381,648 1284,648 1189,651 1094,651 997,653 903,656 807,658 710,661 613,666 613,718"/>
         <Baseline points="613,703 711,698 808,696 904,693 998,690 1094,688 1191,688 1284,685 1381,685 1482,685"/>
+        <Word id="r000-l043_w000">
+          <Coords points="632,662 701,662 701,716 632,716"/>
+          <TextEquiv conf="1.000">
+            <Unicode>těl.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l043_w001">
+          <Coords points="710,658 805,658 805,713 710,713"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vých.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l043_w002">
+          <Coords points="821,655 886,655 886,709 821,709"/>
+          <TextEquiv conf="1.000">
+            <Unicode>při</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l043_w003">
+          <Coords points="902,650 1095,650 1095,707 902,707"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Okres.ped.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l043_w004">
+          <Coords points="1107,649 1215,649 1215,702 1107,702"/>
+          <TextEquiv conf="1.000">
+            <Unicode>sboru</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l043_w005">
+          <Coords points="1227,648 1245,648 1245,700 1227,700"/>
+          <TextEquiv conf="0.997">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l043_w006">
+          <Coords points="1256,648 1482,648 1482,700 1256,700"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Karviné.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.632">
           <Unicode>těl. vých. při Okres.ped. sboru v Karviné.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l045" index="10" custom="{&quot;heights&quot;: [36.7, 14.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l045" index="10" custom="{&quot;heights&quot;: [36.7, 14.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1588,693 1485,693 1385,695 1286,698 1187,701 1092,701 992,703 894,703 794,706 693,706 693,757 795,757 894,754 993,754 1092,752 1188,752 1287,749 1386,746 1485,744 1589,744 1588,693"/>
         <Baseline points="693,742 795,742 894,740 993,740 1092,737 1188,737 1287,735 1386,732 1485,729 1589,729"/>
+        <Word id="r000-l045_w000">
+          <Coords points="701,704 811,704 811,757 701,757"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Jana</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l045_w001">
+          <Coords points="823,701 1052,701 1052,755 823,755"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Šímova:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l045_w002">
+          <Coords points="1077,698 1264,698 1264,752 1077,752"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Převzala</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l045_w003">
+          <Coords points="1286,694 1460,694 1460,748 1286,748"/>
+          <TextEquiv conf="1.000">
+            <Unicode>funkci</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l045_w004">
+          <Coords points="1482,692 1575,692 1575,745 1482,745"/>
+          <TextEquiv conf="1.000">
+            <Unicode>skup</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.665">
           <Unicode>Jana Šímova: Převzala funkci skup</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l046" index="11" custom="{&quot;heights&quot;: [37.3, 14.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l046" index="11" custom="{&quot;heights&quot;: [37.3, 14.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="613,807 717,804 816,801 917,799 1016,799 1118,799 1217,796 1319,796 1416,794 1523,799 1526,747 1419,742 1317,744 1217,744 1117,747 1016,747 917,747 814,749 715,752 611,755 613,807"/>
         <Baseline points="612,792 716,789 815,787 917,784 1016,784 1118,784 1217,782 1318,782 1417,779 1524,784"/>
+        <Word id="r000-l046_w000">
+          <Coords points="638,750 795,750 795,805 638,805"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedoucí</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l046_w001">
+          <Coords points="805,748 863,748 863,801 805,801"/>
+          <TextEquiv conf="1.000">
+            <Unicode>80,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l046_w002">
+          <Coords points="886,744 1170,744 1170,800 886,800"/>
+          <TextEquiv conf="1.000">
+            <Unicode>bezpečnostní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l046_w003">
+          <Coords points="1196,744 1366,744 1366,796 1196,796"/>
+          <TextEquiv conf="1.000">
+            <Unicode>referent</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l046_w004">
+          <Coords points="1398,744 1523,744 1523,796 1398,796"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školy,</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.859">
           <Unicode>vedoucí 80, bezpečnostní referent školy,</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l048" index="12" custom="{&quot;heights&quot;: [37.5, 14.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l048" index="12" custom="{&quot;heights&quot;: [37.5, 14.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="602,859 683,856 761,854 839,851 917,848 993,848 1071,848 1149,846 1227,843 1310,843 1310,791 1227,791 1148,794 1069,796 993,796 917,796 838,799 759,801 681,804 601,807 602,859"/>
         <Baseline points="602,844 683,841 761,839 839,836 917,834 993,834 1071,834 1149,831 1227,828 1310,828"/>
+        <Word id="r000-l048_w000">
+          <Coords points="627,800 782,800 782,857 627,857"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedoucí</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l048_w001">
+          <Coords points="810,797 920,797 920,852 810,852"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škol.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l048_w002">
+          <Coords points="948,794 1054,794 1054,848 948,848"/>
+          <TextEquiv conf="1.000">
+            <Unicode>učiti</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l048_w003">
+          <Coords points="1079,791 1310,791 1310,846 1079,846"/>
+          <TextEquiv conf="1.000">
+            <Unicode>knihovny.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.396">
           <Unicode>vedoucí škol. učiti knihovny.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l049" index="13" custom="{&quot;heights&quot;: [37.5, 14.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l049" index="13" custom="{&quot;heights&quot;: [37.5, 14.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1563,835 1459,835 1360,835 1262,838 1163,840 1067,843 968,846 872,848 773,851 672,851 672,903 774,903 873,900 969,898 1068,895 1165,893 1264,890 1360,887 1459,887 1563,887 1563,835"/>
         <Baseline points="672,888 774,888 873,886 969,883 1068,881 1164,878 1263,875 1360,873 1459,873 1563,873"/>
+        <Word id="r000-l049_w000">
+          <Coords points="682,848 836,848 836,904 682,904"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Anděla</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l049_w001">
+          <Coords points="865,841 1131,841 1131,899 865,899"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Šelongova:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l049_w002">
+          <Coords points="1150,835 1435,835 1435,892 1150,892"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Zástupkyně</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l049_w003">
+          <Coords points="1447,833 1563,833 1563,887 1447,887"/>
+          <TextEquiv conf="1.000">
+            <Unicode>sboru</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.588">
           <Unicode>Anděla Šelongova: Zástupkyně sboru</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l053" index="14" custom="{&quot;heights&quot;: [38.4, 15.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l053" index="14" custom="{&quot;heights&quot;: [38.4, 15.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="592,961 699,953 805,950 912,948 1019,945 1123,942 1230,942 1337,942 1444,937 1553,935 1555,924 1554,881 1442,884 1335,889 1230,889 1123,889 1018,892 911,894 804,897 697,899 586,907 592,961"/>
         <Baseline points="590,946 698,938 805,935 912,933 1019,930 1123,927 1230,927 1336,927 1443,922 1555,920"/>
+        <Word id="r000-l053_w000">
+          <Coords points="616,902 661,902 661,957 616,957"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ve</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l053_w001">
+          <Coords points="690,897 832,897 832,954 690,954"/>
+          <TextEquiv conf="1.000">
+            <Unicode>výboru</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l053_w002">
+          <Coords points="868,893 957,893 957,949 868,949"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ROH,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l053_w003">
+          <Coords points="979,887 1246,887 1246,946 979,946"/>
+          <TextEquiv conf="1.000">
+            <Unicode>správkyně</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l053_w004">
+          <Coords points="1288,884 1404,884 1404,940 1288,940"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škol.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l053_w005">
+          <Coords points="1415,882 1555,882 1555,938 1415,938"/>
+          <TextEquiv conf="1.000">
+            <Unicode>žákov.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.626">
           <Unicode>ve výboru ROH, správkyně škol. žákov.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l057" index="15" custom="{&quot;heights&quot;: [38.4, 15.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l057" index="15" custom="{&quot;heights&quot;: [38.4, 15.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="600,1008 701,1000 797,997 894,997 990,995 1087,995 1183,992 1279,992 1375,989 1477,989 1477,936 1375,936 1278,939 1183,939 1085,941 990,941 893,944 797,944 700,946 596,954 600,1008"/>
         <Baseline points="599,993 701,985 797,982 894,982 990,980 1086,980 1183,977 1279,977 1375,974 1477,974"/>
+        <Word id="r000-l057_w000">
+          <Coords points="636,944 861,944 861,1004 636,1004"/>
+          <TextEquiv conf="1.000">
+            <Unicode>knihovny</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l057_w001">
+          <Coords points="914,938 1181,938 1181,996 914,996"/>
+          <TextEquiv conf="1.000">
+            <Unicode>zdravotní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l057_w002">
+          <Coords points="1210,936 1477,936 1477,991 1210,991"/>
+          <TextEquiv conf="1.000">
+            <Unicode>referentka,</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.844">
           <Unicode>knihovny zdravotní referentka,</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l061" index="16" custom="{&quot;heights&quot;: [37.9, 14.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l061" index="16" custom="{&quot;heights&quot;: [37.9, 14.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="686,1049 767,1046 847,1041 927,1039 1008,1041 1089,1041 1170,1039 1250,1039 1336,1039 1336,986 1250,986 1170,986 1088,989 1008,988 929,986 845,989 763,994 684,996 601,999 602,1052 686,1049"/>
         <Baseline points="602,1037 685,1034 766,1032 847,1026 927,1024 1008,1026 1089,1026 1170,1024 1250,1024 1336,1024"/>
+        <Word id="r000-l061_w000">
+          <Coords points="621,992 786,992 786,1050 621,1050"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedoucí</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l061_w001">
+          <Coords points="826,987 995,987 995,1043 826,1043"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Dorosku</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l061_w002">
+          <Coords points="1024,986 1111,986 1111,1039 1024,1039"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ČSČK</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l061_w003">
+          <Coords points="1156,985 1214,985 1214,1038 1156,1038"/>
+          <TextEquiv conf="1.000">
+            <Unicode>na</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l061_w004">
+          <Coords points="1229,985 1337,985 1337,1038 1229,1038"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škole.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.706">
           <Unicode>vedoucí Dorosku ČSČK na škole.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l065" index="17" custom="{&quot;heights&quot;: [38.4, 14.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l065" index="17" custom="{&quot;heights&quot;: [38.4, 14.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1532,1035 1435,1035 1344,1035 1252,1038 1162,1038 1073,1038 981,1040 890,1043 800,1043 705,1045 706,1099 800,1096 891,1096 983,1093 1073,1091 1162,1091 1253,1091 1344,1088 1435,1088 1527,1088 1532,1035"/>
         <Baseline points="706,1084 800,1081 891,1081 982,1078 1073,1076 1162,1076 1253,1076 1344,1073 1435,1073 1529,1073"/>
+        <Word id="r000-l065_w000">
+          <Coords points="715,1042 849,1042 849,1098 715,1098"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Lumír</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l065_w001">
+          <Coords points="885,1037 1160,1037 1160,1094 885,1094"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Vavronšek:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l065_w002">
+          <Coords points="1180,1036 1274,1036 1274,1090 1180,1090"/>
+          <TextEquiv conf="1.000">
+            <Unicode>řed.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l065_w003">
+          <Coords points="1293,1035 1418,1035 1418,1089 1293,1089"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školy,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l065_w004">
+          <Coords points="1420,1034 1522,1034 1522,1088 1420,1088"/>
+          <TextEquiv conf="1.000">
+            <Unicode>člen</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.515">
           <Unicode>Lumír Vavronšek: řed. školy, člen</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l067" index="18" custom="{&quot;heights&quot;: [36.0, 14.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l067" index="18" custom="{&quot;heights&quot;: [36.0, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="599,1139 599,1142 706,1142 808,1142 909,1139 1011,1139 1113,1139 1215,1137 1316,1132 1417,1132 1524,1132 1524,1082 1417,1082 1316,1082 1212,1087 1111,1089 1011,1089 909,1089 807,1092 706,1092 601,1092 599,1139"/>
         <Baseline points="600,1128 706,1128 808,1128 909,1125 1011,1125 1112,1125 1214,1123 1316,1118 1417,1118 1524,1118"/>
+        <Word id="r000-l067_w000">
+          <Coords points="611,1091 747,1091 747,1141 611,1141"/>
+          <TextEquiv conf="1.000">
+            <Unicode>výboru</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l067_w001">
+          <Coords points="762,1090 882,1090 882,1141 762,1141"/>
+          <TextEquiv conf="1.000">
+            <Unicode>VOKSČ</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l067_w002">
+          <Coords points="894,1089 932,1089 932,1140 894,1140"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ve</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l067_w003">
+          <Coords points="941,1089 992,1089 992,1139 941,1139"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Str</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l067_w004">
+          <Coords points="1001,1084 1284,1084 1284,1139 1001,1139"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Bohumíně,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l067_w005">
+          <Coords points="1309,1081 1457,1081 1457,1134 1309,1134"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školské</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l067_w006">
+          <Coords points="1488,1080 1507,1080 1507,1130 1488,1130"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.425">
           <Unicode>výboru VOKSČ ve Str Bohumíně, školské a</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l069" index="19" custom="{&quot;heights&quot;: [36.1, 14.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l069" index="19" custom="{&quot;heights&quot;: [36.1, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="607,1194 712,1192 810,1189 912,1189 1011,1189 1110,1186 1211,1181 1311,1181 1409,1179 1516,1181 1517,1131 1410,1128 1309,1131 1211,1131 1108,1136 1010,1139 912,1139 810,1139 710,1141 606,1144 607,1194"/>
         <Baseline points="607,1180 711,1177 810,1175 912,1175 1011,1175 1110,1172 1211,1167 1310,1167 1409,1164 1516,1167"/>
+        <Word id="r000-l069_w000">
+          <Coords points="631,1141 748,1141 748,1193 631,1193"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kult.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l069_w001">
+          <Coords points="769,1137 940,1137 940,1190 769,1190"/>
+          <TextEquiv conf="1.000">
+            <Unicode>komise</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l069_w002">
+          <Coords points="958,1135 1060,1135 1060,1187 958,1187"/>
+          <TextEquiv conf="1.000">
+            <Unicode>MNV.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l069_w003">
+          <Coords points="1084,1133 1211,1133 1211,1185 1084,1185"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Konal</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l069_w004">
+          <Coords points="1235,1129 1488,1129 1488,1183 1235,1183"/>
+          <TextEquiv conf="1.000">
+            <Unicode>přednášky</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.628">
           <Unicode>kult. komise MNV. Konal přednášky</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l071" index="20" custom="{&quot;heights&quot;: [37.0, 14.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l071" index="20" custom="{&quot;heights&quot;: [37.0, 14.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="600,1244 701,1239 800,1236 896,1236 996,1236 1092,1234 1191,1231 1287,1231 1386,1231 1490,1228 1489,1177 1385,1180 1287,1180 1191,1180 1091,1182 994,1185 896,1185 800,1185 700,1187 597,1193 600,1244"/>
         <Baseline points="599,1230 701,1224 800,1222 896,1222 995,1222 1092,1219 1191,1217 1287,1217 1386,1217 1490,1214"/>
+        <Word id="r000-l071_w000">
+          <Coords points="608,1190 625,1190 625,1242 608,1242"/>
+          <TextEquiv conf="1.000">
+            <Unicode>s</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l071_w001">
+          <Coords points="644,1185 867,1185 867,1241 644,1241"/>
+          <TextEquiv conf="1.000">
+            <Unicode>diafilmy</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l071_w002">
+          <Coords points="895,1183 967,1183 967,1236 895,1236"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pro</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l071_w003">
+          <Coords points="995,1181 1080,1181 1080,1234 995,1234"/>
+          <TextEquiv conf="1.000">
+            <Unicode>oev.,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l071_w004">
+          <Coords points="1115,1180 1209,1180 1209,1232 1115,1232"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedl</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l071_w005">
+          <Coords points="1244,1177 1490,1177 1490,1231 1244,1231"/>
+          <TextEquiv conf="1.000">
+            <Unicode>turistický</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.792">
           <Unicode>s diafilmy pro oev., vedl turistický</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l073" index="21" custom="{&quot;heights&quot;: [37.7, 14.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l073" index="21" custom="{&quot;heights&quot;: [37.7, 14.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1435,1226 1330,1228 1229,1231 1124,1234 1021,1234 920,1234 814,1236 711,1236 603,1241 605,1294 711,1289 816,1289 920,1286 1021,1286 1126,1286 1230,1284 1332,1281 1435,1278 1545,1278 1545,1226 1435,1226"/>
         <Baseline points="604,1279 711,1274 815,1274 920,1271 1021,1271 1125,1271 1230,1269 1331,1266 1435,1263 1545,1263"/>
+        <Word id="r000-l073_w000">
+          <Coords points="616,1235 875,1235 875,1292 616,1292"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pionýrský</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l073_w001">
+          <Coords points="920,1231 1112,1231 1112,1287 920,1287"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kroužek</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l073_w002">
+          <Coords points="1164,1229 1287,1229 1287,1283 1164,1283"/>
+          <TextEquiv conf="1.000">
+            <Unicode>žáků</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l073_w003">
+          <Coords points="1316,1228 1353,1228 1353,1281 1316,1281"/>
+          <TextEquiv conf="1.000">
+            <Unicode>4.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l073_w004">
+          <Coords points="1355,1228 1373,1228 1373,1280 1355,1280"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l073_w005">
+          <Coords points="1398,1227 1432,1227 1432,1280 1398,1280"/>
+          <TextEquiv conf="1.000">
+            <Unicode>5.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l073_w006">
+          <Coords points="1438,1225 1544,1225 1544,1279 1438,1279"/>
+          <TextEquiv conf="1.000">
+            <Unicode>třídy.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.559">
           <Unicode>pionýrský kroužek žáků 4. a 5. třídy.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l076" index="22" custom="{&quot;heights&quot;: [38.6, 15.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l076" index="22" custom="{&quot;heights&quot;: [38.6, 15.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1487,1272 1391,1272 1294,1274 1198,1274 1098,1277 1001,1282 907,1282 808,1287 709,1287 709,1341 811,1341 907,1336 1004,1336 1100,1331 1198,1328 1295,1328 1391,1325 1487,1325 1592,1325 1592,1272 1487,1272"/>
         <Baseline points="709,1326 810,1326 907,1321 1003,1321 1099,1316 1198,1313 1295,1313 1391,1310 1487,1310 1592,1310"/>
+        <Word id="r000-l076_w000">
+          <Coords points="718,1283 877,1283 877,1341 718,1341"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Marie</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l076_w001">
+          <Coords points="896,1274 1227,1274 1227,1336 896,1336"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Stejskaldková,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l076_w002">
+          <Coords points="1240,1273 1332,1273 1332,1328 1240,1328"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ved.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l076_w003">
+          <Coords points="1334,1271 1480,1271 1480,1326 1334,1326"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vychova</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l076_w004">
+          <Coords points="1489,1271 1591,1271 1591,1325 1489,1325"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Velka,</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.563">
           <Unicode>Marie Stejskaldková, ved. vychova Velka,</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l079" index="23" custom="{&quot;heights&quot;: [38.0, 14.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l079" index="23" custom="{&quot;heights&quot;: [38.0, 14.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1614,1327 1500,1322 1388,1324 1279,1324 1169,1327 1060,1327 950,1330 841,1330 730,1335 617,1338 618,1390 733,1388 841,1383 951,1383 1060,1380 1170,1380 1279,1377 1389,1377 1497,1375 1612,1380 1614,1327"/>
         <Baseline points="617,1375 732,1373 841,1368 951,1368 1060,1365 1170,1365 1279,1362 1389,1362 1498,1360 1613,1365"/>
+        <Word id="r000-l079_w000">
+          <Coords points="627,1334 704,1334 704,1390 627,1390"/>
+          <TextEquiv conf="1.000">
+            <Unicode>člen</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l079_w001">
+          <Coords points="737,1330 867,1330 867,1386 737,1386"/>
+          <TextEquiv conf="1.000">
+            <Unicode>zdrav.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l079_w002">
+          <Coords points="886,1327 1043,1327 1043,1383 886,1383"/>
+          <TextEquiv conf="1.000">
+            <Unicode>hlídky</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l079_w003">
+          <Coords points="1073,1325 1163,1325 1163,1379 1073,1379"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ČSČK</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l079_w004">
+          <Coords points="1189,1325 1206,1325 1206,1378 1189,1378"/>
+          <TextEquiv conf="1.000">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l079_w005">
+          <Coords points="1225,1324 1383,1324 1383,1378 1225,1378"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Novém</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l079_w006">
+          <Coords points="1405,1324 1612,1324 1612,1378 1405,1378"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Bohumíny</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.672">
           <Unicode>člen zdrav. hlídky ČSČK v Novém Bohumíny</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l082" index="24" custom="{&quot;heights&quot;: [39.1, 15.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l082" index="24" custom="{&quot;heights&quot;: [39.1, 15.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="607,1438 714,1438 818,1435 922,1432 1024,1432 1128,1430 1232,1427 1334,1427 1438,1425 1547,1425 1547,1370 1438,1370 1333,1373 1232,1373 1127,1376 1023,1378 922,1378 817,1381 713,1383 607,1383 607,1438"/>
         <Baseline points="607,1422 714,1422 818,1420 922,1417 1024,1417 1128,1415 1232,1412 1334,1412 1438,1409 1547,1409"/>
+        <Word id="r000-l082_w000">
+          <Coords points="609,1381 750,1381 750,1438 609,1438"/>
+          <TextEquiv conf="1.000">
+            <Unicode>členka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l082_w001">
+          <Coords points="784,1378 924,1378 924,1435 784,1435"/>
+          <TextEquiv conf="1.000">
+            <Unicode>výboru</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l082_w002">
+          <Coords points="955,1377 993,1377 993,1432 955,1432"/>
+          <TextEquiv conf="1.000">
+            <Unicode>TJ</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l082_w003">
+          <Coords points="1002,1375 1137,1375 1137,1431 1002,1431"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Sokol</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l082_w004">
+          <Coords points="1160,1374 1181,1374 1181,1429 1160,1429"/>
+          <TextEquiv conf="1.000">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l082_w005">
+          <Coords points="1197,1373 1249,1373 1249,1428 1197,1428"/>
+          <TextEquiv conf="1.000">
+            <Unicode>N.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l082_w006">
+          <Coords points="1259,1369 1547,1369 1547,1427 1259,1427"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Bohumíně,</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.840">
           <Unicode>členka výboru TJ Sokol v N. Bohumíně,</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l085" index="25" custom="{&quot;heights&quot;: [41.6, 16.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l085" index="25" custom="{&quot;heights&quot;: [41.6, 16.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1576,1420 1464,1420 1356,1423 1249,1425 1145,1423 1036,1425 930,1425 822,1428 715,1430 606,1433 607,1491 717,1488 824,1485 930,1483 1037,1483 1143,1480 1251,1483 1358,1480 1464,1478 1576,1478 1576,1420"/>
         <Baseline points="607,1474 716,1472 823,1469 930,1467 1037,1467 1144,1464 1250,1467 1357,1464 1464,1461 1576,1461"/>
+        <Word id="r000-l085_w000">
+          <Coords points="620,1428 780,1428 780,1489 620,1489"/>
+          <TextEquiv conf="1.000">
+            <Unicode>vedoucí</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l085_w001">
+          <Coords points="820,1425 1017,1425 1017,1485 820,1485"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školního</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l085_w002">
+          <Coords points="1074,1421 1366,1421 1366,1482 1074,1482"/>
+          <TextEquiv conf="1.000">
+            <Unicode>stravování,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l085_w003">
+          <Coords points="1386,1420 1569,1420 1569,1479 1386,1479"/>
+          <TextEquiv conf="1.000">
+            <Unicode>správky</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.994">
           <Unicode>vedoucí školního stravování, správky</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l091" index="26" custom="{&quot;heights&quot;: [43.1, 17.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l092" index="26" custom="{&quot;heights&quot;: [43.1, 17.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="603,1546 660,1544 712,1541 766,1538 818,1538 874,1538 925,1536 980,1536 1031,1536 1091,1538 1093,1478 1033,1476 980,1476 925,1476 871,1478 818,1478 766,1478 709,1481 657,1484 600,1486 603,1546"/>
         <Baseline points="602,1529 659,1527 711,1524 766,1521 818,1521 873,1521 925,1519 980,1519 1032,1519 1092,1521"/>
+        <Word id="r000-l092_w000">
+          <Coords points="623,1481 689,1481 689,1545 623,1545"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ně</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l092_w001">
+          <Coords points="722,1476 871,1476 871,1540 722,1540"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l092_w002">
+          <Coords points="904,1476 1092,1476 1092,1537 904,1537"/>
+          <TextEquiv conf="1.000">
+            <Unicode>zahrady.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.983">
           <Unicode>ně školní zahrady.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l097" index="27" custom="{&quot;heights&quot;: [50.1, 19.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l096" index="27" custom="{&quot;heights&quot;: [50.1, 19.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="827,1642 933,1637 1039,1637 1077,1637 1579,1627 1578,1557 1465,1560 1359,1562 1252,1565 1145,1568 1039,1568 933,1568 823,1573 719,1573 608,1570 607,1640 827,1642"/>
         <Baseline points="607,1620 719,1623 826,1623 933,1618 1039,1618 1146,1618 1253,1615 1360,1613 1467,1610 1579,1607"/>
+        <Word id="r000-l096_w000">
+          <Coords points="609,1570 781,1570 781,1640 609,1640"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Změny</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l096_w001">
+          <Coords points="819,1570 846,1570 846,1639 819,1639"/>
+          <TextEquiv conf="1.000">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l096_w002">
+          <Coords points="875,1568 1025,1568 1025,1639 875,1639"/>
+          <TextEquiv conf="1.000">
+            <Unicode>počtu</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l096_w003">
+          <Coords points="1050,1565 1199,1565 1199,1637 1050,1637"/>
+          <TextEquiv conf="1.000">
+            <Unicode>žáků,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l096_w004">
+          <Coords points="1216,1560 1465,1560 1465,1634 1216,1634"/>
+          <TextEquiv conf="1.000">
+            <Unicode>zdravotní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l096_w005">
+          <Coords points="1469,1557 1578,1557 1578,1629 1469,1629"/>
+          <TextEquiv conf="1.000">
+            <Unicode>stavo:</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.342">
           <Unicode>Změny v počtu žáků, zdravotní stavo:</Unicode>
         </TextEquiv>
@@ -207,72 +1137,228 @@
     </TextRegion>
     <TextRegion id="r001" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="1805,123 1756,123 1756,180 1847,183 1907,227 1912,363 1907,500 2126,508 2126,453 2102,270 2156,185 2159,128 1980,120 1805,123"/>
-      <TextLine id="r001-l001" index="0" custom="{&quot;heights&quot;: [41.3, 16.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l001" index="0" custom="{&quot;heights&quot;: [41.3, 16.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1756,123 1756,180 1802,180 1847,183 1892,183 1934,180 1976,178 2021,180 2063,183 2107,183 2156,185 2159,128 2099,125 2063,125 2024,123 1980,120 1931,123 1889,126 1847,125 1805,123 1756,123"/>
         <Baseline points="1756,164 1803,164 1847,167 1891,167 1933,164 1977,162 2022,164 2063,167 2108,167 2157,169"/>
+        <Word id="r001-l001_w000">
+          <Coords points="1765,122 1902,122 1902,181 1765,181"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Třída:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l001_w001">
+          <Coords points="1930,123 2014,123 2014,181 1930,181"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Stav</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l001_w002">
+          <Coords points="2025,123 2054,123 2054,181 2025,181"/>
+          <TextEquiv conf="1.000">
+            <Unicode>3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l001_w003">
+          <Coords points="2054,124 2083,124 2083,182 2054,182"/>
+          <TextEquiv conf="1.000">
+            <Unicode>9.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l001_w004">
+          <Coords points="2076,124 2156,124 2156,184 2076,184"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1962</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.828">
           <Unicode>Třída: Stav 3. 9. 1962</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l005" index="1" custom="{&quot;heights&quot;: [35.1, 13.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l005" index="1" custom="{&quot;heights&quot;: [35.1, 13.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1946,227 1982,227 2018,227 2060,230 2063,181 2021,179 1982,178 1946,178 1907,178 1907,227 1946,227"/>
         <Baseline points="1907,214 1946,214 1982,214 2019,214 2061,216"/>
+        <Word id="r001-l005_w000">
+          <Coords points="1908,177 1955,177 1955,227 1908,227"/>
+          <TextEquiv conf="1.000">
+            <Unicode>h.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l005_w001">
+          <Coords points="1965,177 2007,177 2007,227 1965,227"/>
+          <TextEquiv conf="1.000">
+            <Unicode>d.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l005_w002">
+          <Coords points="2032,179 2060,179 2060,230 2032,230"/>
+          <TextEquiv conf="0.587">
+            <Unicode>c.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.978">
           <Unicode>h. d. c.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l009" index="2" custom="{&quot;heights&quot;: [32.0, 12.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l009" index="2" custom="{&quot;heights&quot;: [32.0, 12.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1911,270 1951,273 1985,273 2020,273 2053,271 2092,271 2092,226 2053,226 2016,229 1985,229 1951,229 1914,226 1911,270"/>
         <Baseline points="1912,258 1951,261 1985,261 2019,261 2053,258 2092,258"/>
+        <Word id="r001-l009_w000">
+          <Coords points="1910,226 1950,226 1950,272 1910,272"/>
+          <TextEquiv conf="1.000">
+            <Unicode>12</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l009_w001">
+          <Coords points="1998,228 2016,228 2016,272 1998,272"/>
+          <TextEquiv conf="1.000">
+            <Unicode>6</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l009_w002">
+          <Coords points="2055,224 2092,224 2092,271 2055,271"/>
+          <TextEquiv conf="1.000">
+            <Unicode>18</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.998">
           <Unicode>12 6 18</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l012" index="3" custom="{&quot;heights&quot;: [34.8, 14.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l012" index="3" custom="{&quot;heights&quot;: [34.8, 14.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2061,270 2029,268 1990,267 1956,267 1917,267 1917,316 1956,316 1990,316 2026,316 2061,319 2102,319 2102,270 2061,270"/>
         <Baseline points="1917,302 1956,302 1990,302 2027,302 2061,305 2102,305"/>
+        <Word id="r001-l012_w000">
+          <Coords points="1920,267 1965,267 1965,316 1920,316"/>
+          <TextEquiv conf="1.000">
+            <Unicode>19</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l012_w001">
+          <Coords points="1992,267 2024,267 2024,317 1992,317"/>
+          <TextEquiv conf="0.997">
+            <Unicode>14</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l012_w002">
+          <Coords points="2064,269 2102,269 2102,318 2064,318"/>
+          <TextEquiv conf="1.000">
+            <Unicode>33</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.997">
           <Unicode>19 14 33</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l018" index="4" custom="{&quot;heights&quot;: [35.8, 14.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l018" index="4" custom="{&quot;heights&quot;: [35.8, 14.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1916,366 1949,363 1980,363 2009,363 2038,363 2068,366 2105,366 2105,316 2068,316 2043,313 2009,313 1980,313 1949,313 1912,316 1916,366"/>
         <Baseline points="1915,352 1949,349 1980,349 2009,349 2040,349 2068,352 2105,352"/>
+        <Word id="r001-l018_w000">
+          <Coords points="1917,313 1966,313 1966,365 1917,365"/>
+          <TextEquiv conf="0.997">
+            <Unicode>20</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l018_w001">
+          <Coords points="2000,313 2039,313 2039,364 2000,364"/>
+          <TextEquiv conf="0.997">
+            <Unicode>11</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l018_w002">
+          <Coords points="2067,314 2104,314 2104,366 2067,366"/>
+          <TextEquiv conf="1.000">
+            <Unicode>31</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="1.000">
           <Unicode>20 11 31</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l022" index="5" custom="{&quot;heights&quot;: [35.4, 13.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l022" index="5" custom="{&quot;heights&quot;: [35.4, 13.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2115,366 2076,366 2048,363 2017,361 1977,363 1949,363 1912,363 1912,412 1949,412 1981,412 2013,410 2044,412 2076,415 2115,415 2115,372 2115,366"/>
         <Baseline points="1912,399 1949,399 1980,399 2014,396 2045,399 2076,401 2115,401"/>
+        <Word id="r001-l022_w000">
+          <Coords points="1911,362 1964,362 1964,412 1911,412"/>
+          <TextEquiv conf="1.000">
+            <Unicode>18</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l022_w001">
+          <Coords points="2010,362 2030,362 2030,412 2010,412"/>
+          <TextEquiv conf="1.000">
+            <Unicode>9</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l022_w002">
+          <Coords points="2067,364 2103,364 2103,415 2067,415"/>
+          <TextEquiv conf="1.000">
+            <Unicode>27</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="1.000">
           <Unicode>18 9 27</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l028" index="6" custom="{&quot;heights&quot;: [35.2, 13.4], &quot;category&quot;: &quot;text&quot;}">
-        <Coords points="1997,459 2050,461 2052,413 2000,410 1997,459"/>
-        <Baseline points="1998,445 2050,448"/>
-        <TextEquiv conf="1.000">
-          <Unicode>13</Unicode>
-        </TextEquiv>
-      </TextLine>
-      <TextLine id="r001-l029" index="7" custom="{&quot;heights&quot;: [39.2, 14.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l028" index="6" custom="{&quot;heights&quot;: [39.2, 14.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1918,460 1962,457 1959,404 1915,406 1918,460"/>
         <Baseline points="1917,445 1962,443"/>
+        <Word id="r001-l028_w000">
+          <Coords points="1914,403 1955,403 1955,459 1914,459"/>
+          <TextEquiv conf="0.999">
+            <Unicode>11</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="1.000">
           <Unicode>11</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l030" index="8" custom="{&quot;heights&quot;: [36.4, 13.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l029" index="7" custom="{&quot;heights&quot;: [35.2, 13.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="1997,459 2050,461 2052,413 2000,410 1997,459"/>
+        <Baseline points="1998,445 2050,448"/>
+        <Word id="r001-l029_w000">
+          <Coords points="2000,410 2039,410 2039,461 2000,461"/>
+          <TextEquiv conf="1.000">
+            <Unicode>13</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="1.000">
+          <Unicode>13</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r001-l030" index="8" custom="{&quot;heights&quot;: [36.4, 13.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2058,462 2118,462 2118,412 2058,412 2058,462"/>
         <Baseline points="2058,448 2118,448"/>
+        <Word id="r001-l030_w000">
+          <Coords points="2068,412 2109,412 2109,462 2068,462"/>
+          <TextEquiv conf="1.000">
+            <Unicode>24</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="1.000">
           <Unicode>24</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r001-l032" index="9" custom="{&quot;heights&quot;: [39.0, 15.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l032" index="9" custom="{&quot;heights&quot;: [39.0, 15.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1907,500 1939,500 1962,502 2052,505 2059,505 2065,505 2126,508 2126,453 2089,453 2064,451 2029,451 2001,451 1973,448 1944,446 1909,446 1907,500"/>
         <Baseline points="1907,485 1941,485 1969,487 2001,490 2029,490 2061,490 2089,492 2126,492"/>
+        <Word id="r001-l032_w000">
+          <Coords points="1910,445 1953,445 1953,501 1910,501"/>
+          <TextEquiv conf="1.000">
+            <Unicode>80</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l032_w001">
+          <Coords points="1993,449 2036,449 2036,505 1993,505"/>
+          <TextEquiv conf="1.000">
+            <Unicode>53</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l032_w002">
+          <Coords points="2065,451 2120,451 2120,507 2065,507"/>
+          <TextEquiv conf="1.000">
+            <Unicode>133</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.961">
           <Unicode>80 53 133</Unicode>
         </TextEquiv>
@@ -287,107 +1373,323 @@
           <Unicode></Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l003" index="1" custom="{&quot;heights&quot;: [41.2, 16.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l003" index="1" custom="{&quot;heights&quot;: [41.2, 16.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2639,141 2584,141 2530,141 2477,139 2420,139 2365,139 2313,136 2258,133 2201,131 2198,188 2255,191 2310,193 2365,196 2420,196 2474,196 2530,198 2584,198 2639,198 2699,198 2699,141 2639,141"/>
         <Baseline points="2199,172 2256,175 2311,177 2365,180 2420,180 2475,180 2530,182 2584,182 2639,182 2699,182"/>
+        <Word id="r005-l003_w000">
+          <Coords points="2212,131 2267,131 2267,191 2212,191"/>
+          <TextEquiv conf="1.000">
+            <Unicode>29.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l003_w001">
+          <Coords points="2267,133 2303,133 2303,192 2267,192"/>
+          <TextEquiv conf="1.000">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l003_w002">
+          <Coords points="2299,135 2380,135 2380,194 2299,194"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1962</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l003_w003">
+          <Coords points="2422,138 2576,138 2576,198 2422,198"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Přibylo:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l003_w004">
+          <Coords points="2578,141 2700,141 2700,198 2578,198"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Ubylo:</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.745">
           <Unicode>29. 6. 1962 Přibylo: Ubylo:</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l006" index="2" custom="{&quot;heights&quot;: [31.0, 12.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l006" index="2" custom="{&quot;heights&quot;: [31.0, 12.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2219,231 2261,234 2308,234 2308,190 2261,190 2221,188 2173,188 2173,231 2219,231"/>
         <Baseline points="2173,219 2220,219 2261,221 2308,221"/>
+        <Word id="r005-l006_w000">
+          <Coords points="2180,187 2267,187 2267,232 2180,232"/>
+          <TextEquiv conf="0.792">
+            <Unicode>h.d.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l006_w001">
+          <Coords points="2283,190 2309,190 2309,233 2283,233"/>
+          <TextEquiv conf="0.477">
+            <Unicode>c.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.835">
           <Unicode>h.d. c.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l007" index="3" custom="{&quot;heights&quot;: [36.8, 14.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l007" index="3" custom="{&quot;heights&quot;: [36.8, 14.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2704,195 2665,190 2626,190 2592,190 2555,193 2524,192 2493,190 2459,187 2423,187 2384,187 2384,238 2423,238 2455,238 2489,241 2524,244 2559,244 2592,241 2626,241 2658,241 2694,246 2704,195"/>
         <Baseline points="2384,224 2423,224 2457,224 2490,227 2524,229 2558,229 2592,227 2626,227 2660,227 2697,232"/>
+        <Word id="r005-l007_w000">
+          <Coords points="2396,187 2488,187 2488,240 2396,240"/>
+          <TextEquiv conf="0.867">
+            <Unicode>h.d.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l007_w001">
+          <Coords points="2506,189 2541,189 2541,241 2506,241"/>
+          <TextEquiv conf="0.642">
+            <Unicode>a.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l007_w002">
+          <Coords points="2578,190 2619,190 2619,242 2578,242"/>
+          <TextEquiv conf="0.821">
+            <Unicode>h.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l007_w003">
+          <Coords points="2621,191 2697,191 2697,243 2621,243"/>
+          <TextEquiv conf="0.968">
+            <Unicode>d.c.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.532">
           <Unicode>h.d. a. h. d.c.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l011" index="4" custom="{&quot;heights&quot;: [28.7, 11.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l011" index="4" custom="{&quot;heights&quot;: [28.7, 11.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2231,277 2261,275 2292,275 2324,275 2360,275 2360,234 2324,234 2292,234 2261,234 2228,237 2196,237 2196,277 2231,277"/>
         <Baseline points="2196,266 2230,266 2261,263 2292,263 2324,263 2360,263"/>
+        <Word id="r005-l011_w000">
+          <Coords points="2204,235 2242,235 2242,277 2204,277"/>
+          <TextEquiv conf="1.000">
+            <Unicode>12</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l011_w001">
+          <Coords points="2278,234 2294,234 2294,275 2278,275"/>
+          <TextEquiv conf="1.000">
+            <Unicode>5</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l011_w002">
+          <Coords points="2329,234 2360,234 2360,275 2329,275"/>
+          <TextEquiv conf="1.000">
+            <Unicode>17</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.997">
           <Unicode>12 5 17</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l014" index="5" custom="{&quot;heights&quot;: [30.6, 12.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l014" index="5" custom="{&quot;heights&quot;: [30.6, 12.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2201,322 2244,322 2281,320 2319,322 2363,322 2363,279 2319,279 2284,277 2241,279 2201,279 2201,322"/>
         <Baseline points="2201,310 2243,310 2282,307 2319,310 2363,310"/>
+        <Word id="r005-l014_w000">
+          <Coords points="2203,278 2240,278 2240,323 2203,323"/>
+          <TextEquiv conf="1.000">
+            <Unicode>19</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l014_w001">
+          <Coords points="2264,278 2298,278 2298,321 2264,321"/>
+          <TextEquiv conf="0.999">
+            <Unicode>14</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l014_w002">
+          <Coords points="2322,278 2361,278 2361,323 2322,323"/>
+          <TextEquiv conf="1.000">
+            <Unicode>33</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.996">
           <Unicode>19 14 33</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l015" index="6" custom="{&quot;heights&quot;: [39.5, 15.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l015" index="6" custom="{&quot;heights&quot;: [39.5, 15.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2689,271 2634,273 2584,273 2584,328 2637,328 2692,325 2689,271"/>
         <Baseline points="2584,313 2636,313 2691,310"/>
+        <Word id="r005-l015_w000">
+          <Coords points="2582,273 2631,273 2631,327 2582,327"/>
+          <TextEquiv conf="0.914">
+            <Unicode>1-</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l015_w001">
+          <Coords points="2662,271 2684,271 2684,326 2662,326"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.901">
           <Unicode>1- 1</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l016" index="7" custom="{&quot;heights&quot;: [33.2, 12.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l016" index="7" custom="{&quot;heights&quot;: [33.2, 12.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2446,325 2519,328 2520,282 2447,279 2446,325"/>
         <Baseline points="2446,313 2519,315"/>
+        <Word id="r005-l016_w000">
+          <Coords points="2464,280 2508,280 2508,327 2464,327"/>
+          <TextEquiv conf="0.570">
+            <Unicode>.1</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.476">
           <Unicode>.1</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l020" index="8" custom="{&quot;heights&quot;: [32.1, 12.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l020" index="8" custom="{&quot;heights&quot;: [32.1, 12.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2196,370 2230,370 2261,370 2292,370 2324,370 2360,370 2360,325 2324,325 2292,325 2261,325 2230,325 2196,325 2196,370"/>
         <Baseline points="2196,357 2230,357 2261,357 2292,357 2324,357 2360,357"/>
+        <Word id="r005-l020_w000">
+          <Coords points="2205,324 2247,324 2247,369 2205,369"/>
+          <TextEquiv conf="0.998">
+            <Unicode>20</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l020_w001">
+          <Coords points="2265,324 2293,324 2293,369 2265,369"/>
+          <TextEquiv conf="0.990">
+            <Unicode>11</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l020_w002">
+          <Coords points="2319,324 2353,324 2353,369 2319,369"/>
+          <TextEquiv conf="1.000">
+            <Unicode>31</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.996">
           <Unicode>20 11 31</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l021" index="9" custom="{&quot;heights&quot;: [30.0, 11.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l021" index="9" custom="{&quot;heights&quot;: [30.0, 11.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2419,407 2453,410 2456,369 2422,366 2419,407"/>
         <Baseline points="2420,396 2454,399"/>
+        <Word id="r005-l021_w000">
+          <Coords points="2419,365 2438,365 2438,408 2419,408"/>
+          <TextEquiv conf="0.999">
+            <Unicode>-</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.999">
           <Unicode>-</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l023" index="10" custom="{&quot;heights&quot;: [30.9, 12.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l023" index="10" custom="{&quot;heights&quot;: [30.9, 12.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2532,413 2533,370 2455,368 2454,411 2532,413"/>
         <Baseline points="2454,399 2532,401"/>
+        <Word id="r005-l023_w000">
+          <Coords points="2464,368 2513,368 2513,412 2464,412"/>
+          <TextEquiv conf="0.999">
+            <Unicode>22</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.999">
           <Unicode>22</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l024" index="11" custom="{&quot;heights&quot;: [32.5, 12.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l024" index="11" custom="{&quot;heights&quot;: [32.5, 12.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2196,414 2233,414 2264,414 2295,414 2326,414 2363,414 2363,369 2326,369 2295,369 2264,369 2233,369 2196,369 2196,414"/>
         <Baseline points="2196,401 2233,401 2264,401 2295,401 2326,401 2363,401"/>
+        <Word id="r005-l024_w000">
+          <Coords points="2199,369 2239,369 2239,414 2199,414"/>
+          <TextEquiv conf="1.000">
+            <Unicode>18</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l024_w001">
+          <Coords points="2265,369 2300,369 2300,414 2265,414"/>
+          <TextEquiv conf="1.000">
+            <Unicode>10</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l024_w002">
+          <Coords points="2315,369 2355,369 2355,414 2315,414"/>
+          <TextEquiv conf="1.000">
+            <Unicode>28</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.964">
           <Unicode>18 10 28</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l025" index="12" custom="{&quot;heights&quot;: [50.8, 18.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l025" index="12" custom="{&quot;heights&quot;: [50.8, 18.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2633,356 2630,425 2701,428 2703,358 2633,356"/>
         <Baseline points="2631,406 2701,409"/>
+        <Word id="r005-l025_w000">
+          <Coords points="2635,355 2693,355 2693,426 2635,426"/>
+          <TextEquiv conf="1.000">
+            <Unicode>11</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="1.000">
           <Unicode>11</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l027" index="13" custom="{&quot;heights&quot;: [30.8, 12.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l027" index="13" custom="{&quot;heights&quot;: [30.8, 12.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2192,458 2224,458 2260,460 2290,458 2324,458 2363,458 2363,415 2324,415 2290,415 2256,417 2227,415 2193,415 2192,458"/>
         <Baseline points="2192,445 2225,445 2259,448 2290,445 2324,445 2363,445"/>
+        <Word id="r005-l027_w000">
+          <Coords points="2194,414 2228,414 2228,458 2194,458"/>
+          <TextEquiv conf="0.998">
+            <Unicode>11</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l027_w001">
+          <Coords points="2256,415 2295,415 2295,458 2256,458"/>
+          <TextEquiv conf="1.000">
+            <Unicode>13</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l027_w002">
+          <Coords points="2319,414 2351,414 2351,458 2319,458"/>
+          <TextEquiv conf="0.999">
+            <Unicode>24</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.992">
           <Unicode>11 13 24</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l033" index="14" custom="{&quot;heights&quot;: [33.3, 13.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l033" index="14" custom="{&quot;heights&quot;: [33.3, 13.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2191,506 2229,506 2253,507 2281,508 2297,508 2306,509 2373,511 2373,464 2332,464 2300,462 2264,462 2232,459 2192,459 2191,506"/>
         <Baseline points="2191,492 2230,492 2264,495 2298,495 2332,498 2373,498"/>
+        <Word id="r005-l033_w000">
+          <Coords points="2194,458 2231,458 2231,506 2194,506"/>
+          <TextEquiv conf="1.000">
+            <Unicode>80</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l033_w001">
+          <Coords points="2256,460 2290,460 2290,508 2256,508"/>
+          <TextEquiv conf="1.000">
+            <Unicode>53</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l033_w002">
+          <Coords points="2307,462 2368,462 2368,511 2307,511"/>
+          <TextEquiv conf="1.000">
+            <Unicode>133</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.617">
           <Unicode>80 53 133</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r005-l035" index="15" custom="{&quot;heights&quot;: [40.2, 15.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l035" index="15" custom="{&quot;heights&quot;: [40.2, 15.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2569,516 2700,513 2697,457 2650,460 2613,460 2569,460 2569,516"/>
         <Baseline points="2569,500 2613,500 2652,500 2699,498"/>
+        <Word id="r005-l035_w000">
+          <Coords points="2587,457 2699,457 2699,516 2587,516"/>
+          <TextEquiv conf="0.981">
+            <Unicode>123</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.989">
           <Unicode>123</Unicode>
         </TextEquiv>
@@ -395,9 +1697,15 @@
     </TextRegion>
     <TextRegion id="r006" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="2434,457 2429,510 2540,515 2540,462 2434,457"/>
-      <TextLine id="r006-l034" index="0" custom="{&quot;heights&quot;: [37.7, 14.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r006-l034" index="0" custom="{&quot;heights&quot;: [37.7, 14.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2429,510 2540,515 2540,462 2485,462 2434,457 2429,510"/>
         <Baseline points="2431,495 2485,500 2540,500"/>
+        <Word id="r006-l034_w000">
+          <Coords points="2432,457 2538,457 2538,515 2432,515"/>
+          <TextEquiv conf="0.998">
+            <Unicode>123</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="1.000">
           <Unicode>123</Unicode>
         </TextEquiv>
@@ -405,30 +1713,162 @@
     </TextRegion>
     <TextRegion id="r003" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="1782,650 1779,745 2461,748 2584,700 2691,700 2691,648 2677,609 2680,554 1834,546 1781,599 1782,650"/>
-      <TextLine id="r003-l038" index="0" custom="{&quot;heights&quot;: [40.4, 15.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l038" index="0" custom="{&quot;heights&quot;: [40.4, 15.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2680,554 2394,551 2394,551 2300,551 2255,550 1834,546 1834,602 1930,602 2024,602 2115,602 2209,604 2300,607 2394,607 2486,607 2578,604 2677,609 2680,554"/>
         <Baseline points="1834,586 1930,586 2024,586 2115,586 2209,589 2300,591 2394,591 2485,591 2579,589 2678,594"/>
+        <Word id="r003-l038_w000">
+          <Coords points="1847,545 1869,545 1869,601 1847,601"/>
+          <TextEquiv conf="1.000">
+            <Unicode>V</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l038_w001">
+          <Coords points="1903,545 2094,545 2094,603 1903,603"/>
+          <TextEquiv conf="1.000">
+            <Unicode>měsících</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l038_w002">
+          <Coords points="2125,547 2326,547 2326,605 2125,605"/>
+          <TextEquiv conf="1.000">
+            <Unicode>prosinci</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l038_w003">
+          <Coords points="2350,549 2393,549 2393,605 2350,605"/>
+          <TextEquiv conf="1.000">
+            <Unicode>až</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l038_w004">
+          <Coords points="2421,550 2569,550 2569,607 2421,607"/>
+          <TextEquiv conf="1.000">
+            <Unicode>únoru</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l038_w005">
+          <Coords points="2600,551 2678,551 2678,607 2600,607"/>
+          <TextEquiv conf="1.000">
+            <Unicode>byly</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.991">
           <Unicode>V měsících prosinci až únoru byly</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r003-l040" index="1" custom="{&quot;heights&quot;: [36.2, 14.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l040" index="1" custom="{&quot;heights&quot;: [36.2, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1782,650 1876,647 1964,647 2052,647 2141,650 2233,650 2321,650 2410,652 2498,652 2595,652 2595,602 2498,602 2410,602 2322,599 2233,599 2141,599 2054,597 1964,597 1876,597 1781,599 1782,650"/>
         <Baseline points="1782,636 1876,633 1964,633 2053,633 2141,636 2233,636 2321,636 2410,638 2498,638 2595,638"/>
+        <Word id="r003-l040_w000">
+          <Coords points="1790,597 1898,597 1898,648 1790,648"/>
+          <TextEquiv conf="1.000">
+            <Unicode>třídy</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l040_w001">
+          <Coords points="1920,597 2243,597 2243,649 1920,649"/>
+          <TextEquiv conf="1.000">
+            <Unicode>kontunovány</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l040_w002">
+          <Coords points="2278,599 2338,599 2338,650 2278,650"/>
+          <TextEquiv conf="1.000">
+            <Unicode>pro</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l040_w003">
+          <Coords points="2372,600 2581,600 2581,653 2372,653"/>
+          <TextEquiv conf="1.000">
+            <Unicode>infekční</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.689">
           <Unicode>třídy kontunovány pro infekční</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r003-l042" index="2" custom="{&quot;heights&quot;: [36.8, 14.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l042" index="2" custom="{&quot;heights&quot;: [36.8, 14.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2691,700 2691,648 2584,648 2486,646 2387,643 2286,646 2188,646 2089,646 1991,643 1890,646 1787,646 1787,697 1892,697 1990,694 2089,697 2188,697 2288,697 2386,694 2485,697 2584,700 2691,700"/>
         <Baseline points="1787,683 1891,683 1990,680 2089,683 2188,683 2287,683 2386,680 2485,683 2584,685 2691,685"/>
+        <Word id="r003-l042_w000">
+          <Coords points="1806,644 2051,644 2051,696 1806,696"/>
+          <TextEquiv conf="1.000">
+            <Unicode>žloutentu.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l042_w001">
+          <Coords points="2089,644 2292,644 2292,696 2089,696"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Vyskytly</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l042_w002">
+          <Coords points="2327,644 2369,644 2369,696 2327,696"/>
+          <TextEquiv conf="1.000">
+            <Unicode>se</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l042_w003">
+          <Coords points="2395,645 2572,645 2572,698 2395,698"/>
+          <TextEquiv conf="1.000">
+            <Unicode>případy</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l042_w004">
+          <Coords points="2588,647 2691,647 2691,700 2588,700"/>
+          <TextEquiv conf="1.000">
+            <Unicode>one-</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.960">
           <Unicode>žloutentu. Vyskytly se případy one-</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r003-l044" index="3" custom="{&quot;heights&quot;: [39.5, 15.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l044" index="3" custom="{&quot;heights&quot;: [39.5, 15.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1779,745 1857,745 1932,745 1952,746 2255,747 2305,745 2381,745 2461,748 2463,693 2382,690 2305,690 2231,693 2157,692 2081,692 2009,692 1934,690 1857,690 1781,690 1779,745"/>
         <Baseline points="1780,729 1857,729 1933,729 2009,732 2081,732 2157,732 2233,732 2305,729 2381,729 2462,732"/>
+        <Word id="r003-l044_w000">
+          <Coords points="1810,690 2030,690 2030,747 1810,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>mocnění</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l044_w001">
+          <Coords points="2071,692 2092,692 2092,747 2071,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l044_w002">
+          <Coords points="2123,692 2169,692 2169,747 2123,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1.,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l044_w003">
+          <Coords points="2182,692 2221,692 2221,747 2182,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>2.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l044_w004">
+          <Coords points="2235,692 2253,692 2253,747 2235,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l044_w005">
+          <Coords points="2273,692 2308,692 2308,747 2273,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l044_w006">
+          <Coords points="2322,691 2462,691 2462,747 2322,747"/>
+          <TextEquiv conf="1.000">
+            <Unicode>třídě.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.951">
           <Unicode>mocnění v 1., 2. a 3. třídě.</Unicode>
         </TextEquiv>
@@ -436,247 +1876,973 @@
     </TextRegion>
     <TextRegion id="r002" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="2075,783 1773,783 1774,846 1761,881 1765,935 1779,982 1782,1271 1771,1411 1791,1756 1912,1760 2610,1726 2613,1633 2678,1538 2686,1441 2673,1343 2738,1212 2737,1155 2749,1115 2747,1061 2711,939 2714,887 2678,785 2075,783"/>
-      <TextLine id="r002-l047" index="0" custom="{&quot;heights&quot;: [45.9, 17.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l047" index="0" custom="{&quot;heights&quot;: [45.9, 17.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1773,783 1774,846 1878,843 1977,843 2077,846 2175,843 2274,843 2373,843 2472,843 2570,843 2675,849 2678,785 2075,783 1773,783"/>
         <Baseline points="1774,828 1878,826 1977,826 2076,828 2175,826 2274,826 2373,826 2472,826 2571,826 2675,831"/>
+        <Word id="r002-l047_w000">
+          <Coords points="1778,780 1962,780 1962,845 1778,845"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Podniky</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l047_w001">
+          <Coords points="1985,779 2113,779 2113,843 1985,843"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školy,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l047_w002">
+          <Coords points="2137,779 2428,779 2428,843 2137,843"/>
+          <TextEquiv conf="1.000">
+            <Unicode>mimoškolní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l047_w003">
+          <Coords points="2448,780 2659,780 2659,846 2448,846"/>
+          <TextEquiv conf="1.000">
+            <Unicode>činnost:</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.820">
           <Unicode>Podniky školy, mimoškolní činnost:</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l050" index="1" custom="{&quot;heights&quot;: [38.0, 14.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l050" index="1" custom="{&quot;heights&quot;: [38.0, 14.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2714,887 2675,884 2645,882 2610,882 2579,882 2551,879 2516,879 2483,877 2479,929 2516,932 2547,932 2579,934 2610,934 2640,934 2672,937 2711,939 2714,887"/>
         <Baseline points="2480,914 2516,917 2548,917 2579,920 2610,920 2642,920 2673,922 2712,925"/>
+        <Word id="r002-l050_w000">
+          <Coords points="2479,876 2712,876 2712,938 2479,938"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Pořadatel:</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.990">
           <Unicode>Pořadatel:</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l051" index="2" custom="{&quot;heights&quot;: [36.6, 14.0], &quot;category&quot;: &quot;text&quot;}">
-        <Coords points="1967,934 2003,934 2037,934 2071,934 2105,934 2136,934 2171,934 2204,931 2237,931 2276,934 2279,883 2240,881 2204,880 2167,883 2136,883 2105,883 2071,883 2037,883 2003,883 1967,883 1967,934"/>
-        <Baseline points="1967,920 2003,920 2037,920 2071,920 2105,920 2136,920 2170,920 2204,917 2238,917 2277,920"/>
-        <TextEquiv conf="0.597">
-          <Unicode>Akce; podnik:</Unicode>
-        </TextEquiv>
-      </TextLine>
-      <TextLine id="r002-l052" index="3" custom="{&quot;heights&quot;: [39.2, 15.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l051" index="2" custom="{&quot;heights&quot;: [39.2, 15.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1765,935 1800,932 1831,932 1863,932 1894,932 1924,932 1963,935 1967,880 1928,878 1894,878 1863,878 1831,878 1800,878 1761,881 1765,935"/>
         <Baseline points="1764,920 1800,917 1831,917 1863,917 1894,917 1925,917 1964,920"/>
+        <Word id="r002-l051_w000">
+          <Coords points="1772,876 1933,876 1933,933 1772,933"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Datum:</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.888">
           <Unicode>Datum:</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l054" index="4" custom="{&quot;heights&quot;: [34.0, 13.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l052" index="3" custom="{&quot;heights&quot;: [36.6, 14.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="1967,934 2003,934 2037,934 2071,934 2105,934 2136,934 2171,934 2204,931 2237,931 2276,934 2279,883 2240,881 2204,880 2167,883 2136,883 2105,883 2071,883 2037,883 2003,883 1967,883 1967,934"/>
+        <Baseline points="1967,920 2003,920 2037,920 2071,920 2105,920 2136,920 2170,920 2204,917 2238,917 2277,920"/>
+        <Word id="r002-l052_w000">
+          <Coords points="1985,882 2105,882 2105,933 1985,933"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Akce;</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l052_w001">
+          <Coords points="2108,881 2275,881 2275,933 2108,933"/>
+          <TextEquiv conf="1.000">
+            <Unicode>podnik:</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.597">
+          <Unicode>Akce; podnik:</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r002-l054" index="4" custom="{&quot;heights&quot;: [34.0, 13.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2485,975 2535,975 2587,975 2587,927 2535,927 2485,927 2485,975"/>
         <Baseline points="2485,961 2535,961 2587,961"/>
+        <Word id="r002-l054_w000">
+          <Coords points="2488,927 2579,927 2579,974 2488,974"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Škola</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.991">
           <Unicode>Škola</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l055" index="5" custom="{&quot;heights&quot;: [36.1, 14.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l055" index="5" custom="{&quot;heights&quot;: [36.1, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1935,978 1980,981 2020,981 2057,978 2097,981 2136,981 2175,981 2214,981 2253,981 2298,981 2298,930 2253,930 2214,930 2175,930 2136,930 2097,930 2060,928 2017,931 1980,930 1938,928 1935,978"/>
         <Baseline points="1936,964 1980,966 2019,966 2058,964 2097,966 2136,966 2175,966 2214,966 2253,966 2298,966"/>
+        <Word id="r002-l055_w000">
+          <Coords points="1944,928 2104,928 2104,980 1944,980"/>
+          <TextEquiv conf="1.000">
+            <Unicode>zahájení</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l055_w001">
+          <Coords points="2116,930 2205,930 2205,980 2116,980"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škol.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l055_w002">
+          <Coords points="2208,930 2298,930 2298,980 2208,980"/>
+          <TextEquiv conf="1.000">
+            <Unicode>roku.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.673">
           <Unicode>zahájení škol. roku.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l056" index="6" custom="{&quot;heights&quot;: [32.8, 12.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l056" index="6" custom="{&quot;heights&quot;: [32.8, 12.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1783,982 1821,979 1855,979 1889,979 1931,977 1928,931 1887,934 1855,934 1821,934 1780,936 1783,982"/>
         <Baseline points="1782,969 1821,966 1855,966 1889,966 1930,964"/>
+        <Word id="r002-l056_w000">
+          <Coords points="1782,934 1820,934 1820,981 1782,981"/>
+          <TextEquiv conf="1.000">
+            <Unicode>3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l056_w001">
+          <Coords points="1817,933 1855,933 1855,980 1817,980"/>
+          <TextEquiv conf="1.000">
+            <Unicode>9.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l056_w002">
+          <Coords points="1855,931 1931,931 1931,979 1855,979"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1962</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.757">
           <Unicode>3. 9. 1962</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l058" index="7" custom="{&quot;heights&quot;: [33.7, 13.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l058" index="7" custom="{&quot;heights&quot;: [33.7, 13.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2485,1021 2524,1021 2558,1021 2600,1021 2600,975 2558,975 2524,975 2485,975 2485,1021"/>
         <Baseline points="2485,1008 2524,1008 2558,1008 2600,1008"/>
+        <Word id="r002-l058_w000">
+          <Coords points="2488,974 2540,974 2540,1021 2488,1021"/>
+          <TextEquiv conf="0.968">
+            <Unicode>Ti.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l058_w001">
+          <Coords points="2543,974 2598,974 2598,1021 2543,1021"/>
+          <TextEquiv conf="1.000">
+            <Unicode>uč.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.798">
           <Unicode>Ti. uč.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l059" index="8" custom="{&quot;heights&quot;: [34.5, 13.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l059" index="8" custom="{&quot;heights&quot;: [34.5, 13.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1930,1027 1985,1027 2035,1027 2087,1027 2136,1024 2186,1024 2238,1022 2287,1022 2336,1022 2393,1024 2396,976 2338,974 2287,974 2238,974 2184,976 2136,976 2085,979 2035,979 1985,979 1930,979 1930,1027"/>
         <Baseline points="1930,1013 1985,1013 2035,1013 2087,1013 2136,1011 2186,1011 2238,1008 2287,1008 2337,1008 2394,1011"/>
+        <Word id="r002-l059_w000">
+          <Coords points="1930,976 2124,976 2124,1028 1930,1028"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Vzpomínka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l059_w001">
+          <Coords points="2142,975 2179,975 2179,1024 2142,1024"/>
+          <TextEquiv conf="1.000">
+            <Unicode>he</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l059_w002">
+          <Coords points="2188,975 2245,975 2245,1023 2188,1023"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Dni</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l059_w003">
+          <Coords points="2260,974 2394,974 2394,1023 2260,1023"/>
+          <TextEquiv conf="1.000">
+            <Unicode>armády</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.627">
           <Unicode>Vzpomínka he Dni armády</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l060" index="9" custom="{&quot;heights&quot;: [31.7, 12.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l060" index="9" custom="{&quot;heights&quot;: [31.7, 12.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1780,1026 1816,1026 1850,1026 1883,1026 1923,1026 1923,982 1883,982 1850,982 1816,982 1779,982 1780,1026"/>
         <Baseline points="1780,1013 1816,1013 1850,1013 1883,1013 1923,1013"/>
+        <Word id="r002-l060_w000">
+          <Coords points="1779,981 1810,981 1810,1025 1779,1025"/>
+          <TextEquiv conf="1.000">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l060_w001">
+          <Coords points="1810,981 1853,981 1853,1025 1810,1025"/>
+          <TextEquiv conf="1.000">
+            <Unicode>10.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l060_w002">
+          <Coords points="1859,981 1921,981 1921,1025 1859,1025"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1963</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.765">
           <Unicode>6. 10. 1963</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l062" index="10" custom="{&quot;heights&quot;: [33.6, 13.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l062" index="10" custom="{&quot;heights&quot;: [33.6, 13.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2481,1068 2535,1066 2589,1066 2589,1019 2535,1019 2478,1021 2481,1068"/>
         <Baseline points="2480,1055 2535,1052 2589,1052"/>
+        <Word id="r002-l062_w000">
+          <Coords points="2483,1018 2535,1018 2535,1068 2483,1068"/>
+          <TextEquiv conf="0.760">
+            <Unicode>Tř.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l062_w001">
+          <Coords points="2536,1018 2590,1018 2590,1065 2536,1065"/>
+          <TextEquiv conf="1.000">
+            <Unicode>uč.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.556">
           <Unicode>Tř. uč.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l063" index="11" custom="{&quot;heights&quot;: [30.6, 12.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l063" index="11" custom="{&quot;heights&quot;: [30.6, 12.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1782,1070 1820,1070 1855,1072 1889,1072 1930,1072 1930,1030 1889,1030 1855,1030 1823,1027 1782,1027 1782,1070"/>
         <Baseline points="1782,1058 1821,1058 1855,1060 1889,1060 1930,1060"/>
+        <Word id="r002-l063_w000">
+          <Coords points="1784,1026 1817,1026 1817,1070 1784,1070"/>
+          <TextEquiv conf="1.000">
+            <Unicode>4.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l063_w001">
+          <Coords points="1825,1028 1859,1028 1859,1071 1825,1071"/>
+          <TextEquiv conf="1.000">
+            <Unicode>9.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l063_w002">
+          <Coords points="1864,1029 1931,1029 1931,1072 1864,1072"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1963</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.733">
           <Unicode>4. 9. 1963</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l064" index="12" custom="{&quot;heights&quot;: [35.4, 13.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l064" index="12" custom="{&quot;heights&quot;: [35.4, 13.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1936,1074 1974,1074 2011,1077 2048,1077 2085,1077 2118,1074 2155,1074 2191,1071 2228,1071 2270,1069 2267,1020 2225,1022 2191,1022 2152,1025 2118,1025 2081,1028 2048,1027 2011,1027 1977,1025 1936,1025 1936,1074"/>
         <Baseline points="1936,1060 1975,1060 2011,1063 2048,1063 2084,1063 2118,1060 2154,1060 2191,1058 2227,1058 2269,1055"/>
+        <Word id="r002-l064_w000">
+          <Coords points="1936,1024 2172,1024 2172,1075 1936,1075"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Vzpomínka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l064_w001">
+          <Coords points="2185,1020 2257,1020 2257,1072 2185,1072"/>
+          <TextEquiv conf="0.999">
+            <Unicode>SNP</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.886">
           <Unicode>Vzpomínka SNP</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l066" index="13" custom="{&quot;heights&quot;: [38.7, 15.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l066" index="13" custom="{&quot;heights&quot;: [38.7, 15.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1781,1125 1889,1128 1995,1128 2103,1128 2209,1125 2316,1123 2423,1123 2530,1120 2637,1117 2749,1115 2747,1061 2635,1063 2529,1066 2422,1068 2316,1068 2208,1071 2101,1074 1995,1074 1889,1074 1780,1071 1781,1125"/>
         <Baseline points="1780,1110 1889,1112 1995,1112 2102,1112 2209,1110 2316,1107 2423,1107 2530,1105 2636,1102 2748,1099"/>
+        <Word id="r002-l066_w000">
+          <Coords points="1779,1072 1818,1072 1818,1126 1779,1126"/>
+          <TextEquiv conf="0.989">
+            <Unicode>13.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w001">
+          <Coords points="1816,1072 1862,1072 1862,1126 1816,1126"/>
+          <TextEquiv conf="0.999">
+            <Unicode>10.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w002">
+          <Coords points="1857,1072 1937,1072 1937,1126 1857,1126"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1962,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w003">
+          <Coords points="1939,1072 2032,1072 2032,1126 1939,1126"/>
+          <TextEquiv conf="0.999">
+            <Unicode>21./2.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w004">
+          <Coords points="2027,1072 2062,1072 2062,1126 2027,1126"/>
+          <TextEquiv conf="0.595">
+            <Unicode>62</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w005">
+          <Coords points="2072,1072 2089,1072 2089,1126 2072,1126"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w006">
+          <Coords points="2099,1072 2140,1072 2140,1126 2099,1126"/>
+          <TextEquiv conf="0.998">
+            <Unicode>14.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w007">
+          <Coords points="2129,1071 2167,1071 2167,1126 2129,1126"/>
+          <TextEquiv conf="0.991">
+            <Unicode>2.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w008">
+          <Coords points="2157,1071 2222,1071 2222,1126 2157,1126"/>
+          <TextEquiv conf="0.966">
+            <Unicode>1963</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w009">
+          <Coords points="2228,1069 2388,1069 2388,1125 2228,1125"/>
+          <TextEquiv conf="1.000">
+            <Unicode>návštěva</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w010">
+          <Coords points="2398,1067 2453,1067 2453,1122 2398,1122"/>
+          <TextEquiv conf="0.998">
+            <Unicode>DPB</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w011">
+          <Coords points="2490,1064 2578,1064 2578,1121 2490,1121"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Tříd.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w012">
+          <Coords points="2575,1063 2640,1063 2640,1119 2575,1119"/>
+          <TextEquiv conf="0.998">
+            <Unicode>ač.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w013">
+          <Coords points="2643,1062 2677,1062 2677,1117 2643,1117"/>
+          <TextEquiv conf="0.982">
+            <Unicode>4.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w014">
+          <Coords points="2670,1061 2687,1061 2687,1116 2670,1116"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l066_w015">
+          <Coords points="2690,1059 2748,1059 2748,1115 2690,1115"/>
+          <TextEquiv conf="0.498">
+            <Unicode>S.lo.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.377">
           <Unicode>13. 10. 1962, 21./2. 62 a 14. 2. 1963 návštěva DPB Tříd. ač. 4. a S.lo.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l068" index="14" custom="{&quot;heights&quot;: [33.2, 13.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l068" index="14" custom="{&quot;heights&quot;: [33.2, 13.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1805,1175 1842,1175 1877,1175 1910,1172 1943,1172 1977,1172 2016,1172 2016,1126 1977,1126 1943,1126 1910,1126 1873,1129 1842,1129 1805,1129 1805,1175"/>
         <Baseline points="1805,1162 1842,1162 1876,1162 1910,1159 1943,1159 1977,1159 2016,1159"/>
+        <Word id="r002-l068_w000">
+          <Coords points="1828,1127 1843,1127 1843,1174 1828,1174"/>
+          <TextEquiv conf="1.000">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l068_w001">
+          <Coords points="1875,1126 2016,1126 2016,1173 1875,1173"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Ostravě.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.584">
           <Unicode>v Ostravě.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l070" index="15" custom="{&quot;heights&quot;: [40.8, 16.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l070" index="15" custom="{&quot;heights&quot;: [40.8, 16.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2737,1155 2625,1158 2522,1158 2416,1160 2311,1160 2205,1163 2101,1165 1994,1168 1890,1171 1783,1168 1781,1225 1892,1228 1996,1225 2103,1222 2207,1220 2311,1217 2418,1217 2522,1215 2626,1215 2738,1212 2737,1155"/>
         <Baseline points="1782,1209 1891,1211 1995,1209 2102,1206 2206,1204 2311,1201 2418,1201 2522,1198 2626,1198 2738,1196"/>
+        <Word id="r002-l070_w000">
+          <Coords points="1784,1169 1835,1169 1835,1226 1784,1226"/>
+          <TextEquiv conf="0.997">
+            <Unicode>20.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w001">
+          <Coords points="1831,1168 1878,1168 1878,1226 1831,1226"/>
+          <TextEquiv conf="1.000">
+            <Unicode>9.,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w002">
+          <Coords points="1877,1167 1924,1167 1924,1225 1877,1225"/>
+          <TextEquiv conf="1.000">
+            <Unicode>20.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w003">
+          <Coords points="1917,1167 1971,1167 1971,1224 1917,1224"/>
+          <TextEquiv conf="0.989">
+            <Unicode>XI.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w004">
+          <Coords points="1974,1166 1992,1166 1992,1223 1974,1223"/>
+          <TextEquiv conf="0.994">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w005">
+          <Coords points="1992,1165 2035,1165 2035,1223 1992,1223"/>
+          <TextEquiv conf="0.999">
+            <Unicode>11.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w006">
+          <Coords points="2031,1165 2068,1165 2068,1223 2031,1223"/>
+          <TextEquiv conf="1.000">
+            <Unicode>5.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w007">
+          <Coords points="2071,1162 2239,1162 2239,1222 2071,1222"/>
+          <TextEquiv conf="1.000">
+            <Unicode>návštěva</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w008">
+          <Coords points="2242,1161 2322,1161 2322,1219 2242,1219"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Div.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w009">
+          <Coords points="2325,1159 2418,1159 2418,1218 2325,1218"/>
+          <TextEquiv conf="0.808">
+            <Unicode>lvutek</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w010">
+          <Coords points="2486,1157 2576,1157 2576,1215 2486,1215"/>
+          <TextEquiv conf="0.916">
+            <Unicode>Teíd.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w011">
+          <Coords points="2572,1156 2626,1156 2626,1214 2572,1214"/>
+          <TextEquiv conf="0.923">
+            <Unicode>ač.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w012">
+          <Coords points="2622,1155 2701,1155 2701,1213 2622,1213"/>
+          <TextEquiv conf="0.989">
+            <Unicode>1.-3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l070_w013">
+          <Coords points="2697,1154 2737,1154 2737,1212 2697,1212"/>
+          <TextEquiv conf="0.996">
+            <Unicode>tř.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.520">
           <Unicode>20. 9., 20. XI. a 11. 5. návštěva Div. lvutek Teíd. ač. 1.-3. tř.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l072" index="16" custom="{&quot;heights&quot;: [36.3, 14.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l072" index="16" custom="{&quot;heights&quot;: [36.3, 14.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1917,1267 1953,1267 1986,1270 2016,1267 2048,1267 2079,1267 2118,1267 2118,1217 2079,1217 2048,1217 2016,1217 1982,1219 1957,1217 1917,1217 1917,1267"/>
         <Baseline points="1917,1253 1954,1253 1985,1256 2016,1253 2048,1253 2079,1253 2118,1253"/>
+        <Word id="r002-l072_w000">
+          <Coords points="1930,1217 1950,1217 1950,1268 1930,1268"/>
+          <TextEquiv conf="1.000">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l072_w001">
+          <Coords points="1972,1217 2103,1217 2103,1268 1972,1268"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Ostravě</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.999">
           <Unicode>v Ostravě</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l074" index="17" custom="{&quot;heights&quot;: [33.9, 13.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l074" index="17" custom="{&quot;heights&quot;: [33.9, 13.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1782,1319 1833,1319 1885,1321 1888,1274 1836,1271 1782,1271 1782,1319"/>
         <Baseline points="1782,1305 1834,1305 1886,1308"/>
+        <Word id="r002-l074_w000">
+          <Coords points="1783,1271 1846,1271 1846,1319 1783,1319"/>
+          <TextEquiv conf="1.000">
+            <Unicode>27.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l074_w001">
+          <Coords points="1843,1271 1886,1271 1886,1321 1843,1321"/>
+          <TextEquiv conf="1.000">
+            <Unicode>10.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.575">
           <Unicode>27. 10.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l075" index="18" custom="{&quot;heights&quot;: [39.0, 15.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l075" index="18" custom="{&quot;heights&quot;: [39.0, 15.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1926,1323 2009,1320 2087,1318 2165,1315 2243,1315 2321,1312 2400,1312 2478,1310 2556,1307 2639,1307 2639,1253 2556,1253 2476,1256 2398,1258 2321,1258 2242,1261 2165,1261 2085,1264 2007,1266 1924,1269 1926,1323"/>
         <Baseline points="1925,1308 2009,1305 2087,1303 2165,1300 2243,1300 2321,1297 2399,1297 2477,1295 2556,1292 2639,1292"/>
+        <Word id="r002-l075_w000">
+          <Coords points="1935,1261 2161,1261 2161,1322 1935,1322"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Vzpomínka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l075_w001">
+          <Coords points="2170,1260 2236,1260 2236,1315 2170,1315"/>
+          <TextEquiv conf="0.993">
+            <Unicode>dne</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l075_w002">
+          <Coords points="2255,1255 2478,1255 2478,1313 2255,1313"/>
+          <TextEquiv conf="0.999">
+            <Unicode>znárodnění</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l075_w003">
+          <Coords points="2490,1253 2638,1253 2638,1309 2490,1309"/>
+          <TextEquiv conf="0.943">
+            <Unicode>Tříd.vě.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.605">
           <Unicode>Vzpomínka dne znárodnění Tříd.vě.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l077" index="19" custom="{&quot;heights&quot;: [36.1, 14.1], &quot;category&quot;: &quot;text&quot;}">
-        <Coords points="2672,1293 2583,1295 2501,1300 2420,1306 2338,1308 2259,1308 2178,1308 2092,1313 2013,1316 1928,1316 1928,1366 2014,1366 2095,1364 2178,1358 2259,1358 2340,1358 2424,1356 2504,1350 2585,1345 2673,1343 2672,1293"/>
-        <Baseline points="1928,1352 2014,1352 2094,1349 2178,1344 2259,1344 2339,1344 2423,1342 2503,1336 2584,1331 2673,1329"/>
-        <TextEquiv conf="0.521">
-          <Unicode>Předání Štafety přítelství a měru MNV, škola</Unicode>
-        </TextEquiv>
-      </TextLine>
-      <TextLine id="r002-l078" index="20" custom="{&quot;heights&quot;: [32.3, 12.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l077" index="19" custom="{&quot;heights&quot;: [32.3, 12.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1779,1365 1860,1367 1861,1322 1780,1320 1779,1365"/>
         <Baseline points="1779,1352 1860,1355"/>
+        <Word id="r002-l077_w000">
+          <Coords points="1782,1320 1819,1320 1819,1366 1782,1366"/>
+          <TextEquiv conf="0.998">
+            <Unicode>7.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l077_w001">
+          <Coords points="1821,1321 1861,1321 1861,1367 1821,1367"/>
+          <TextEquiv conf="1.000">
+            <Unicode>11.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.995">
           <Unicode>7. 11.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l080" index="21" custom="{&quot;heights&quot;: [32.5, 12.4], &quot;category&quot;: &quot;text&quot;}">
-        <Coords points="1771,1411 1815,1411 1862,1414 1864,1369 1818,1367 1775,1366 1771,1411"/>
-        <Baseline points="1772,1399 1816,1399 1863,1402"/>
-        <TextEquiv conf="0.982">
-          <Unicode>7. 11.</Unicode>
+      <TextLine id="r002-l078" index="20" custom="{&quot;heights&quot;: [36.1, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="2672,1293 2583,1295 2501,1300 2420,1306 2338,1308 2259,1308 2178,1308 2092,1313 2013,1316 1928,1316 1928,1366 2014,1366 2095,1364 2178,1358 2259,1358 2340,1358 2424,1356 2504,1350 2585,1345 2673,1343 2672,1293"/>
+        <Baseline points="1928,1352 2014,1352 2094,1349 2178,1344 2259,1344 2339,1344 2423,1342 2503,1336 2584,1331 2673,1329"/>
+        <Word id="r002-l078_w000">
+          <Coords points="1928,1313 2085,1313 2085,1366 1928,1366"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Předání</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l078_w001">
+          <Coords points="2086,1310 2212,1310 2212,1363 2086,1363"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Štafety</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l078_w002">
+          <Coords points="2213,1305 2379,1305 2379,1360 2213,1360"/>
+          <TextEquiv conf="1.000">
+            <Unicode>přítelství</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l078_w003">
+          <Coords points="2384,1304 2404,1304 2404,1355 2384,1355"/>
+          <TextEquiv conf="1.000">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l078_w004">
+          <Coords points="2409,1300 2492,1300 2492,1354 2409,1354"/>
+          <TextEquiv conf="1.000">
+            <Unicode>měru</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l078_w005">
+          <Coords points="2507,1297 2568,1297 2568,1350 2507,1350"/>
+          <TextEquiv conf="1.000">
+            <Unicode>MNV,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l078_w006">
+          <Coords points="2586,1292 2672,1292 2672,1346 2586,1346"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škola</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.521">
+          <Unicode>Předání Štafety přítelství a měru MNV, škola</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l081" index="22" custom="{&quot;heights&quot;: [36.0, 14.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l080" index="21" custom="{&quot;heights&quot;: [36.0, 14.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1923,1413 2001,1413 2076,1410 2153,1410 2227,1405 2301,1405 2376,1403 2452,1403 2527,1400 2608,1397 2607,1347 2526,1350 2450,1353 2376,1353 2299,1355 2227,1355 2149,1360 2076,1360 1999,1363 1923,1363 1923,1413"/>
         <Baseline points="1923,1399 2001,1399 2076,1396 2152,1396 2227,1391 2300,1391 2376,1389 2451,1389 2527,1386 2608,1383"/>
+        <Word id="r002-l080_w000">
+          <Coords points="1921,1361 2033,1361 2033,1413 1921,1413"/>
+          <TextEquiv conf="1.000">
+            <Unicode>školní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l080_w001">
+          <Coords points="2047,1355 2307,1355 2307,1411 2047,1411"/>
+          <TextEquiv conf="1.000">
+            <Unicode>shromáždění</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l080_w002">
+          <Coords points="2316,1354 2333,1354 2333,1405 2316,1405"/>
+          <TextEquiv conf="1.000">
+            <Unicode>k</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l080_w003">
+          <Coords points="2344,1352 2402,1352 2402,1404 2344,1404"/>
+          <TextEquiv conf="1.000">
+            <Unicode>výr.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l080_w004">
+          <Coords points="2401,1351 2475,1351 2475,1402 2401,1402"/>
+          <TextEquiv conf="1.000">
+            <Unicode>VŘSR</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l080_w005">
+          <Coords points="2496,1347 2601,1347 2601,1400 2496,1400"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Škola</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.579">
           <Unicode>školní shromáždění k výr. VŘSR Škola</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l083" index="23" custom="{&quot;heights&quot;: [34.2, 13.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l081" index="22" custom="{&quot;heights&quot;: [32.5, 12.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="1771,1411 1815,1411 1862,1414 1864,1369 1818,1367 1775,1366 1771,1411"/>
+        <Baseline points="1772,1399 1816,1399 1863,1402"/>
+        <Word id="r002-l081_w000">
+          <Coords points="1774,1365 1811,1365 1811,1410 1774,1410"/>
+          <TextEquiv conf="0.999">
+            <Unicode>7.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l081_w001">
+          <Coords points="1812,1365 1856,1365 1856,1413 1812,1413"/>
+          <TextEquiv conf="1.000">
+            <Unicode>11.</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.982">
+          <Unicode>7. 11.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r002-l083" index="23" custom="{&quot;heights&quot;: [34.2, 13.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1928,1459 2012,1459 2092,1457 2173,1454 2253,1451 2334,1451 2416,1451 2496,1446 2576,1444 2662,1444 2662,1396 2576,1396 2495,1399 2413,1404 2334,1404 2253,1404 2172,1406 2091,1409 2010,1412 1928,1412 1928,1459"/>
         <Baseline points="1928,1446 2011,1446 2092,1443 2173,1441 2253,1438 2334,1438 2415,1438 2496,1433 2576,1430 2662,1430"/>
+        <Word id="r002-l083_w000">
+          <Coords points="1935,1408 2110,1408 2110,1459 1935,1459"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Mecinár.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l083_w001">
+          <Coords points="2112,1406 2182,1406 2182,1455 2112,1455"/>
+          <TextEquiv conf="1.000">
+            <Unicode>den</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l083_w002">
+          <Coords points="2199,1401 2422,1401 2422,1453 2199,1453"/>
+          <TextEquiv conf="1.000">
+            <Unicode>studenstva</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l083_w003">
+          <Coords points="2427,1400 2446,1400 2446,1448 2427,1448"/>
+          <TextEquiv conf="0.988">
+            <Unicode>-</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l083_w004">
+          <Coords points="2442,1399 2497,1399 2497,1448 2442,1448"/>
+          <TextEquiv conf="0.792">
+            <Unicode>vxp.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l083_w005">
+          <Coords points="2496,1397 2593,1397 2593,1446 2496,1446"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Tříd.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l083_w006">
+          <Coords points="2601,1395 2662,1395 2662,1444 2601,1444"/>
+          <TextEquiv conf="0.993">
+            <Unicode>uč.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.678">
           <Unicode>Mecinár. den studenstva - vxp. Tříd. uč.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l084" index="24" custom="{&quot;heights&quot;: [31.4, 12.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l084" index="24" custom="{&quot;heights&quot;: [31.4, 12.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1774,1461 1818,1461 1865,1464 1867,1420 1820,1417 1774,1417 1774,1456 1774,1461"/>
         <Baseline points="1774,1448 1818,1448 1865,1451"/>
+        <Word id="r002-l084_w000">
+          <Coords points="1773,1416 1826,1416 1826,1461 1773,1461"/>
+          <TextEquiv conf="0.997">
+            <Unicode>17.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l084_w001">
+          <Coords points="1825,1417 1865,1417 1865,1464 1825,1464"/>
+          <TextEquiv conf="0.998">
+            <Unicode>11.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.991">
           <Unicode>17. 11.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l086" index="25" custom="{&quot;heights&quot;: [33.3, 13.2], &quot;category&quot;: &quot;text&quot;}">
-        <Coords points="2686,1441 2647,1441 2615,1441 2579,1444 2550,1444 2516,1444 2478,1446 2481,1493 2516,1490 2550,1490 2583,1490 2615,1488 2647,1488 2682,1488 2686,1441"/>
-        <Baseline points="2480,1480 2516,1477 2550,1477 2582,1477 2615,1474 2647,1474 2683,1474"/>
-        <TextEquiv conf="0.273">
-          <Unicode>MVNV, škola</Unicode>
-        </TextEquiv>
-      </TextLine>
-      <TextLine id="r002-l087" index="26" custom="{&quot;heights&quot;: [29.8, 11.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l086" index="25" custom="{&quot;heights&quot;: [29.8, 11.8], &quot;category&quot;: &quot;text&quot;}">
         <Coords points="2415,1492 2475,1492 2475,1450 2415,1450 2415,1492"/>
         <Baseline points="2415,1480 2475,1480"/>
         <TextEquiv conf="1.000">
           <Unicode></Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l088" index="27" custom="{&quot;heights&quot;: [35.4, 13.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l087" index="26" custom="{&quot;heights&quot;: [33.3, 13.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="2686,1441 2647,1441 2615,1441 2579,1444 2550,1444 2516,1444 2478,1446 2481,1493 2516,1490 2550,1490 2583,1490 2615,1488 2647,1488 2682,1488 2686,1441"/>
+        <Baseline points="2480,1480 2516,1477 2550,1477 2582,1477 2615,1474 2647,1474 2683,1474"/>
+        <Word id="r002-l087_w000">
+          <Coords points="2488,1443 2573,1443 2573,1492 2488,1492"/>
+          <TextEquiv conf="1.000">
+            <Unicode>MVNV,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l087_w001">
+          <Coords points="2593,1440 2683,1440 2683,1489 2593,1489"/>
+          <TextEquiv conf="1.000">
+            <Unicode>škola</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.273">
+          <Unicode>MVNV, škola</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r002-l088" index="27" custom="{&quot;heights&quot;: [35.4, 13.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1936,1509 1991,1509 2040,1507 2090,1507 2139,1504 2189,1504 2238,1501 2287,1499 2337,1499 2392,1496 2390,1447 2335,1449 2287,1449 2236,1452 2186,1455 2139,1455 2087,1457 2040,1457 1988,1460 1936,1460 1936,1509"/>
         <Baseline points="1936,1495 1990,1495 2040,1493 2089,1493 2139,1490 2188,1490 2238,1487 2287,1485 2337,1485 2391,1482"/>
+        <Word id="r002-l088_w000">
+          <Coords points="1934,1456 2104,1456 2104,1509 1934,1509"/>
+          <TextEquiv conf="0.995">
+            <Unicode>Ahadernie</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l088_w001">
+          <Coords points="2112,1455 2129,1455 2129,1505 2112,1505"/>
+          <TextEquiv conf="0.998">
+            <Unicode>k</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l088_w002">
+          <Coords points="2146,1450 2276,1450 2276,1504 2146,1504"/>
+          <TextEquiv conf="1.000">
+            <Unicode>rakonč.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l088_w003">
+          <Coords points="2278,1447 2379,1447 2379,1500 2278,1500"/>
+          <TextEquiv conf="1.000">
+            <Unicode>MČSP</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.644">
           <Unicode>Ahadernie k rakonč. MČSP</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l089" index="28" custom="{&quot;heights&quot;: [32.8, 12.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l089" index="28" custom="{&quot;heights&quot;: [32.8, 12.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1777,1511 1816,1511 1852,1511 1886,1511 1928,1511 1928,1465 1886,1465 1852,1465 1816,1465 1777,1465 1777,1501 1777,1511"/>
         <Baseline points="1777,1498 1816,1498 1852,1498 1886,1498 1928,1498"/>
+        <Word id="r002-l089_w000">
+          <Coords points="1779,1464 1811,1464 1811,1510 1779,1510"/>
+          <TextEquiv conf="1.000">
+            <Unicode>9.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l089_w001">
+          <Coords points="1808,1464 1852,1464 1852,1510 1808,1510"/>
+          <TextEquiv conf="1.000">
+            <Unicode>12.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l089_w002">
+          <Coords points="1855,1464 1926,1464 1926,1510 1855,1510"/>
+          <TextEquiv conf="0.986">
+            <Unicode>1962</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.607">
           <Unicode>9. 12. 1962</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l090" index="29" custom="{&quot;heights&quot;: [34.8, 13.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l090" index="29" custom="{&quot;heights&quot;: [34.8, 13.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2678,1489 2639,1489 2608,1489 2576,1489 2545,1489 2511,1492 2477,1492 2477,1540 2515,1540 2545,1538 2576,1538 2608,1538 2639,1538 2678,1538 2678,1489"/>
         <Baseline points="2477,1527 2514,1527 2545,1524 2576,1524 2608,1524 2639,1524 2678,1524"/>
+        <Word id="r002-l090_w000">
+          <Coords points="2480,1489 2557,1489 2557,1540 2480,1540"/>
+          <TextEquiv conf="0.937">
+            <Unicode>Ra/,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l090_w001">
+          <Coords points="2569,1488 2626,1488 2626,1537 2569,1537"/>
+          <TextEquiv conf="0.938">
+            <Unicode>tř.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l090_w002">
+          <Coords points="2624,1488 2679,1488 2679,1537 2624,1537"/>
+          <TextEquiv conf="1.000">
+            <Unicode>uč.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.662">
           <Unicode>Ra/, tř. uč.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l092" index="30" custom="{&quot;heights&quot;: [34.4, 13.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l091" index="30" custom="{&quot;heights&quot;: [34.4, 13.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2442,1543 2473,1540 2469,1492 2438,1495 2442,1543"/>
         <Baseline points="2441,1529 2472,1527"/>
+        <Word id="r002-l091_w000">
+          <Coords points="2437,1493 2459,1493 2459,1543 2437,1543"/>
+          <TextEquiv conf="0.237">
+            <Unicode>.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.345">
           <Unicode>.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l093" index="31" custom="{&quot;heights&quot;: [36.2, 14.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l093" index="31" custom="{&quot;heights&quot;: [36.2, 14.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1928,1559 1988,1557 2043,1557 2098,1554 2152,1551 2206,1549 2262,1549 2317,1546 2371,1544 2433,1544 2433,1493 2371,1493 2314,1496 2259,1498 2206,1498 2150,1501 2095,1503 2041,1506 1988,1506 1926,1509 1928,1559"/>
         <Baseline points="1928,1545 1988,1542 2042,1542 2097,1540 2152,1537 2206,1534 2261,1534 2316,1532 2371,1529 2433,1529"/>
+        <Word id="r002-l093_w000">
+          <Coords points="1929,1501 2148,1501 2148,1559 1929,1559"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Představení</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l093_w001">
+          <Coords points="2157,1496 2283,1496 2283,1551 2157,1551"/>
+          <TextEquiv conf="0.991">
+            <Unicode>Strýčka</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l093_w002">
+          <Coords points="2294,1492 2433,1492 2433,1547 2294,1547"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Jedličky</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.667">
           <Unicode>Představení Strýčka Jedličky</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l094" index="32" custom="{&quot;heights&quot;: [37.1, 14.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l094" index="32" custom="{&quot;heights&quot;: [37.1, 14.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1780,1564 1818,1564 1853,1564 1887,1562 1929,1559 1925,1508 1884,1510 1849,1513 1818,1513 1779,1513 1779,1546 1780,1564"/>
         <Baseline points="1779,1550 1818,1550 1852,1550 1886,1547 1928,1545"/>
+        <Word id="r002-l094_w000">
+          <Coords points="1779,1513 1814,1513 1814,1565 1779,1565"/>
+          <TextEquiv conf="0.998">
+            <Unicode>3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l094_w001">
+          <Coords points="1813,1513 1844,1513 1844,1565 1813,1565"/>
+          <TextEquiv conf="0.968">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l094_w002">
+          <Coords points="1845,1507 1928,1507 1928,1564 1845,1564"/>
+          <TextEquiv conf="1.000">
+            <Unicode>18162</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.507">
           <Unicode>3. 6. 18162</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l095" index="33" custom="{&quot;heights&quot;: [37.2, 14.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l095" index="33" custom="{&quot;heights&quot;: [37.2, 14.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1925,1609 1980,1609 2030,1609 2082,1606 2131,1604 2181,1604 2233,1601 2281,1598 2332,1601 2390,1598 2387,1547 2330,1549 2284,1547 2231,1549 2179,1552 2131,1552 2079,1555 2027,1557 1980,1557 1925,1557 1925,1609"/>
         <Baseline points="1925,1594 1980,1594 2029,1594 2081,1592 2131,1589 2180,1589 2233,1586 2282,1584 2332,1586 2389,1584"/>
+        <Word id="r002-l095_w000">
+          <Coords points="1928,1554 2073,1554 2073,1610 1928,1610"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Školní</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l095_w001">
+          <Coords points="2102,1549 2260,1549 2260,1605 2102,1605"/>
+          <TextEquiv conf="1.000">
+            <Unicode>zájezdy,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l095_w002">
+          <Coords points="2262,1546 2388,1546 2388,1601 2262,1601"/>
+          <TextEquiv conf="1.000">
+            <Unicode>výlety.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.985">
           <Unicode>Školní zájezdy, výlety.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l096" index="34" custom="{&quot;heights&quot;: [30.7, 12.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l097" index="34" custom="{&quot;heights&quot;: [30.7, 12.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2490,1632 2530,1632 2563,1630 2602,1630 2602,1587 2563,1587 2527,1590 2490,1590 2490,1632"/>
         <Baseline points="2490,1620 2530,1620 2563,1618 2602,1618"/>
+        <Word id="r002-l097_w000">
+          <Coords points="2492,1588 2543,1588 2543,1632 2492,1632"/>
+          <TextEquiv conf="0.939">
+            <Unicode>Ti.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l097_w001">
+          <Coords points="2551,1586 2602,1586 2602,1630 2551,1630"/>
+          <TextEquiv conf="0.880">
+            <Unicode>ne.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.687">
           <Unicode>Ti. ne.</Unicode>
         </TextEquiv>
@@ -688,60 +2854,210 @@
           <Unicode></Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l099" index="36" custom="{&quot;heights&quot;: [35.7, 14.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l099" index="36" custom="{&quot;heights&quot;: [35.7, 14.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1923,1660 1976,1658 2025,1653 2072,1650 2121,1647 2167,1645 2218,1645 2264,1642 2313,1642 2368,1642 2368,1592 2313,1592 2264,1592 2215,1595 2167,1595 2119,1598 2069,1600 2022,1603 1971,1608 1921,1611 1923,1660"/>
         <Baseline points="1923,1646 1975,1644 2024,1639 2071,1636 2121,1633 2167,1631 2217,1631 2264,1628 2313,1628 2368,1628"/>
+        <Word id="r002-l099_w000">
+          <Coords points="1934,1607 1969,1607 1969,1659 1934,1659"/>
+          <TextEquiv conf="1.000">
+            <Unicode>I.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l099_w001">
+          <Coords points="1975,1602 2029,1602 2029,1656 1975,1656"/>
+          <TextEquiv conf="0.969">
+            <Unicode>tr:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l099_w002">
+          <Coords points="2056,1596 2136,1596 2136,1650 2056,1650"/>
+          <TextEquiv conf="0.939">
+            <Unicode>200</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l099_w003">
+          <Coords points="2156,1595 2173,1595 2173,1645 2156,1645"/>
+          <TextEquiv conf="0.991">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l099_w004">
+          <Coords points="2199,1592 2363,1592 2363,1644 2199,1644"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Ostravě</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.555">
           <Unicode>I. tr: 200 v Ostravě</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l100" index="37" custom="{&quot;heights&quot;: [30.1, 12.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l100" index="37" custom="{&quot;heights&quot;: [30.1, 12.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1787,1661 1868,1659 1867,1616 1786,1619 1787,1661"/>
         <Baseline points="1787,1649 1868,1646"/>
+        <Word id="r002-l100_w000">
+          <Coords points="1789,1617 1834,1617 1834,1661 1789,1661"/>
+          <TextEquiv conf="0.999">
+            <Unicode>13.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l100_w001">
+          <Coords points="1835,1616 1867,1616 1867,1659 1835,1659"/>
+          <TextEquiv conf="0.999">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.584">
           <Unicode>13. 6.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l101" index="38" custom="{&quot;heights&quot;: [31.8, 12.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l101" index="38" custom="{&quot;heights&quot;: [31.8, 12.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2613,1633 2569,1633 2527,1636 2488,1635 2488,1680 2530,1680 2569,1677 2612,1677 2613,1633"/>
         <Baseline points="2488,1667 2530,1667 2569,1665 2612,1665"/>
+        <Word id="r002-l101_w000">
+          <Coords points="2495,1634 2547,1634 2547,1680 2495,1680"/>
+          <TextEquiv conf="0.842">
+            <Unicode>Fř.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l101_w001">
+          <Coords points="2557,1632 2612,1632 2612,1678 2557,1678"/>
+          <TextEquiv conf="0.956">
+            <Unicode>adr</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.455">
           <Unicode>Fř. adr</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l102" index="39" custom="{&quot;heights&quot;: [29.9, 11.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l102" index="39" custom="{&quot;heights&quot;: [29.9, 11.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1792,1705 1870,1705 1870,1663 1792,1663 1792,1705"/>
         <Baseline points="1792,1693 1870,1693"/>
+        <Word id="r002-l102_w000">
+          <Coords points="1795,1663 1836,1663 1836,1705 1795,1705"/>
+          <TextEquiv conf="0.999">
+            <Unicode>13.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l102_w001">
+          <Coords points="1839,1663 1869,1663 1869,1705 1839,1705"/>
+          <TextEquiv conf="0.999">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.730">
           <Unicode>13. 6.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l103" index="40" custom="{&quot;heights&quot;: [35.6, 14.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l103" index="40" custom="{&quot;heights&quot;: [35.6, 14.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1924,1710 1976,1705 2025,1699 2072,1697 2121,1694 2167,1692 2217,1692 2264,1692 2314,1692 2369,1689 2366,1640 2312,1642 2264,1642 2217,1642 2167,1642 2119,1645 2069,1647 2022,1650 1971,1655 1919,1661 1924,1710"/>
         <Baseline points="1923,1696 1975,1691 2024,1685 2071,1683 2121,1680 2167,1678 2217,1678 2264,1678 2313,1678 2368,1675"/>
+        <Word id="r002-l103_w000">
+          <Coords points="1922,1654 1972,1654 1972,1709 1922,1709"/>
+          <TextEquiv conf="1.000">
+            <Unicode>II.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l103_w001">
+          <Coords points="1975,1650 2031,1650 2031,1704 1975,1704"/>
+          <TextEquiv conf="1.000">
+            <Unicode>tř.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l103_w002">
+          <Coords points="2049,1644 2119,1644 2119,1698 2049,1698"/>
+          <TextEquiv conf="0.979">
+            <Unicode>Lov</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l103_w003">
+          <Coords points="2154,1642 2172,1642 2172,1692 2154,1692"/>
+          <TextEquiv conf="0.857">
+            <Unicode>v</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l103_w004">
+          <Coords points="2206,1640 2363,1640 2363,1691 2206,1691"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Ostravě</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.732">
           <Unicode>II. tř. Lov v Ostravě</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l104" index="41" custom="{&quot;heights&quot;: [31.1, 12.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l104" index="41" custom="{&quot;heights&quot;: [31.1, 12.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2610,1683 2569,1683 2530,1686 2493,1686 2493,1729 2533,1729 2569,1726 2610,1726 2610,1683"/>
         <Baseline points="2493,1717 2532,1717 2569,1714 2610,1714"/>
+        <Word id="r002-l104_w000">
+          <Coords points="2495,1684 2546,1684 2546,1728 2495,1728"/>
+          <TextEquiv conf="0.841">
+            <Unicode>Tr.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l104_w001">
+          <Coords points="2554,1683 2610,1683 2610,1727 2554,1727"/>
+          <TextEquiv conf="0.865">
+            <Unicode>uč.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.712">
           <Unicode>Tr. uč.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r002-l105" index="42" custom="{&quot;heights&quot;: [33.6, 13.4], &quot;category&quot;: &quot;text&quot;}">
-        <Coords points="1875,1759 1878,1759 1878,1712 1834,1712 1794,1709 1791,1756 1875,1759"/>
-        <Baseline points="1792,1743 1834,1745 1878,1745"/>
-        <TextEquiv conf="0.887">
-          <Unicode>13. 6.</Unicode>
-        </TextEquiv>
-      </TextLine>
-      <TextLine id="r002-l106" index="43" custom="{&quot;heights&quot;: [40.9, 16.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l105" index="42" custom="{&quot;heights&quot;: [40.9, 16.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="2273,1743 2306,1741 2303,1684 2256,1686 2214,1689 2173,1692 2134,1691 2089,1694 2050,1694 2006,1697 1964,1699 1920,1702 1923,1759 1968,1756 2010,1754 2050,1751 2093,1751 2134,1749 2149,1749 2273,1743"/>
         <Baseline points="1923,1743 1967,1740 2009,1738 2050,1735 2092,1735 2134,1732 2175,1732 2217,1730 2259,1727 2305,1725"/>
+        <Word id="r002-l105_w000">
+          <Coords points="1920,1698 1973,1698 1973,1758 1920,1758"/>
+          <TextEquiv conf="1.000">
+            <Unicode>III.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l105_w001">
+          <Coords points="1974,1696 2031,1696 2031,1755 1974,1755"/>
+          <TextEquiv conf="1.000">
+            <Unicode>tr.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l105_w002">
+          <Coords points="2032,1687 2222,1687 2222,1753 2032,1753"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Kyjovice</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l105_w003">
+          <Coords points="2219,1687 2240,1687 2240,1745 2219,1745"/>
+          <TextEquiv conf="1.000">
+            <Unicode>-</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l105_w004">
+          <Coords points="2252,1684 2305,1684 2305,1743 2252,1743"/>
+          <TextEquiv conf="1.000">
+            <Unicode>les</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.524">
           <Unicode>III. tr. Kyjovice - les</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="r002-l106" index="43" custom="{&quot;heights&quot;: [33.6, 13.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="1875,1759 1878,1759 1878,1712 1834,1712 1794,1709 1791,1756 1875,1759"/>
+        <Baseline points="1792,1743 1834,1745 1878,1745"/>
+        <Word id="r002-l106_w000">
+          <Coords points="1794,1709 1839,1709 1839,1759 1794,1759"/>
+          <TextEquiv conf="0.999">
+            <Unicode>13.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r002-l106_w001">
+          <Coords points="1840,1712 1875,1712 1875,1759 1840,1759"/>
+          <TextEquiv conf="0.999">
+            <Unicode>6.</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.887">
+          <Unicode>13. 6.</Unicode>
         </TextEquiv>
       </TextLine>
       <TextLine id="r002-l107" index="44" custom="{&quot;heights&quot;: [36.5, 14.5], &quot;category&quot;: &quot;text&quot;}">
@@ -754,23 +3070,41 @@
     </TextRegion>
     <TextRegion id="r004" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="1797,223 1797,369 1842,369 1837,223 1797,223"/>
-      <TextLine id="r004-l010" index="0" custom="{&quot;heights&quot;: [34.4, 12.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r004-l010" index="0" custom="{&quot;heights&quot;: [34.4, 12.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1797,271 1837,271 1837,223 1797,223 1797,271"/>
         <Baseline points="1797,258 1837,258"/>
+        <Word id="r004-l010_w000">
+          <Coords points="1800,223 1835,223 1835,270 1800,270"/>
+          <TextEquiv conf="0.996">
+            <Unicode>I.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.996">
           <Unicode>I.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r004-l013" index="1" custom="{&quot;heights&quot;: [35.9, 13.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r004-l013" index="1" custom="{&quot;heights&quot;: [35.9, 13.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1797,319 1839,319 1839,296 1838,269 1797,269 1797,319"/>
         <Baseline points="1797,305 1839,305"/>
+        <Word id="r004-l013_w000">
+          <Coords points="1797,268 1838,268 1838,318 1797,318"/>
+          <TextEquiv conf="0.999">
+            <Unicode>II.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.995">
           <Unicode>II.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r004-l019" index="2" custom="{&quot;heights&quot;: [37.6, 14.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r004-l019" index="2" custom="{&quot;heights&quot;: [37.6, 14.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="1797,369 1842,369 1840,317 1797,317 1797,369"/>
         <Baseline points="1797,354 1841,354"/>
+        <Word id="r004-l019_w000">
+          <Coords points="1797,316 1840,316 1840,368 1797,368"/>
+          <TextEquiv conf="0.936">
+            <Unicode>III.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.996">
           <Unicode>III.</Unicode>
         </TextEquiv>

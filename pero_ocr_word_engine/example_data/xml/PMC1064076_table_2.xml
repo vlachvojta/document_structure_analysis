@@ -2,22 +2,142 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-04-17T09:53:51.624767+00:00</Created>
-    <LastChange>2025-04-17T09:53:51.624767+00:00</LastChange>
+    <Created>2025-04-17T12:29:57.611231+00:00</Created>
+    <LastChange>2025-04-17T12:29:57.611231+00:00</LastChange>
   </Metadata>
   <Page imageFilename="PMC1064076_table_2" imageWidth="684" imageHeight="413">
     <TextRegion id="r000" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="98,0 30,0 30,26 181,26 230,14 629,14 629,0 98,0"/>
-      <TextLine id="r000-l001" index="0" custom="{&quot;heights&quot;: [9.5, 4.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l001" index="0" custom="{&quot;heights&quot;: [9.5, 4.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="30,0 30,14 97,14 163,15 230,14 296,14 296,14 629,14 629,0 560,1 494,1 428,1 362,1 296,0 294,0 230,0 163,1 98,0 30,0"/>
         <Baseline points="30,10 98,10 163,11 230,10 296,10 362,11 428,11 494,11 560,11 629,10"/>
+        <Word id="r000-l001_w000">
+          <Coords points="32,0 93,0 93,13 32,13"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Associations</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w001">
+          <Coords points="97,0 106,0 106,13 97,13"/>
+          <TextEquiv conf="1.000">
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w002">
+          <Coords points="108,0 140,0 140,14 108,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>breast</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w003">
+          <Coords points="142,0 175,0 175,14 142,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>cancer</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w004">
+          <Coords points="178,0 196,0 196,14 178,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>with</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w005">
+          <Coords points="199,0 216,0 216,14 199,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>the</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w006">
+          <Coords points="220,0 274,0 274,14 220,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>manganese</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w007">
+          <Coords points="278,0 331,0 331,14 278,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>superozide</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w008">
+          <Coords points="334,0 384,0 384,14 334,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>dismutase</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w009">
+          <Coords points="386,0 459,0 459,14 386,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>polymorphism,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w010">
+          <Coords points="462,0 504,0 504,14 462,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>stratified</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w011">
+          <Coords points="507,0 518,0 518,14 507,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>by</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w012">
+          <Coords points="521,0 559,0 559,14 521,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>litestyle</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w013">
+          <Coords points="562,0 600,0 600,14 562,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>factors,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w014">
+          <Coords points="600,0 610,0 610,14 600,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>in</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l001_w015">
+          <Coords points="612,0 627,0 627,14 612,14"/>
+          <TextEquiv conf="1.000">
+            <Unicode>the</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.751">
           <Unicode>Associations of breast cancer with the manganese superozide dismutase polymorphism, stratified by litestyle factors, in the</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r000-l002" index="1" custom="{&quot;heights&quot;: [8.6, 3.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r000-l002" index="1" custom="{&quot;heights&quot;: [8.6, 3.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="30,26 47,26 64,26 80,26 96,26 113,26 129,26 146,26 162,26 181,26 181,13 162,13 146,13 129,13 113,13 96,13 80,13 64,13 47,13 30,13 30,26"/>
         <Baseline points="30,22 47,22 64,22 80,22 96,22 113,22 129,22 146,22 162,22 181,22"/>
+        <Word id="r000-l002_w000">
+          <Coords points="32,12 77,12 77,25 32,25"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Shanghai</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l002_w001">
+          <Coords points="81,12 113,12 113,25 81,25"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Breast</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l002_w002">
+          <Coords points="116,12 149,12 149,25 116,25"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Cancer</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r000-l002_w003">
+          <Coords points="152,12 179,12 179,25 152,25"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Study</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.982">
           <Unicode>Shanghai Breast Cancer Study</Unicode>
         </TextEquiv>
@@ -25,9 +145,33 @@
     </TextRegion>
     <TextRegion id="r001" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="49,38 34,38 34,50 164,50 164,38 49,38"/>
-      <TextLine id="r001-l003" index="0" custom="{&quot;heights&quot;: [8.2, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r001-l004" index="0" custom="{&quot;heights&quot;: [8.2, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="34,38 34,50 49,50 64,50 78,50 92,50 105,50 119,50 134,50 148,50 164,50 164,38 148,38 134,38 119,38 105,38 92,38 78,38 64,38 49,38 34,38"/>
         <Baseline points="34,46 49,46 64,46 78,46 92,46 105,46 119,46 134,46 148,46 164,46"/>
+        <Word id="r001-l004_w000">
+          <Coords points="37,38 75,38 75,50 37,50"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Stratified</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l004_w001">
+          <Coords points="78,38 110,38 110,50 78,50"/>
+          <TextEquiv conf="1.000">
+            <Unicode>variable</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l004_w002">
+          <Coords points="112,38 127,38 127,50 112,50"/>
+          <TextEquiv conf="1.000">
+            <Unicode>lby</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r001-l004_w003">
+          <Coords points="130,38 163,38 163,50 130,50"/>
+          <TextEquiv conf="0.999">
+            <Unicode>median)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.508">
           <Unicode>Stratified variable lby median)</Unicode>
         </TextEquiv>
@@ -35,9 +179,21 @@
     </TextRegion>
     <TextRegion id="r028" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="410,38 394,38 394,49 481,49 481,38 410,38"/>
-      <TextLine id="r028-l004" index="0" custom="{&quot;heights&quot;: [8.5, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r028-l003" index="0" custom="{&quot;heights&quot;: [8.5, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="394,38 394,49 410,49 424,49 437,49 451,49 465,49 481,49 481,38 465,38 451,38 437,38 424,38 410,38 394,38"/>
         <Baseline points="394,46 410,46 424,46 437,46 451,46 465,46 481,46"/>
+        <Word id="r028-l003_w000">
+          <Coords points="396,38 429,38 429,49 396,49"/>
+          <TextEquiv conf="0.850">
+            <Unicode>MnSOG</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r028-l003_w001">
+          <Coords points="436,38 480,38 480,49 436,49"/>
+          <TextEquiv conf="1.000">
+            <Unicode>genotypes</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.503">
           <Unicode>MnSOG genotypes</Unicode>
         </TextEquiv>
@@ -45,9 +201,15 @@
     </TextRegion>
     <TextRegion id="r018" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="311,59 277,60 277,74 311,73 311,59"/>
-      <TextLine id="r018-l007" index="0" custom="{&quot;heights&quot;: [8.9, 4.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r018-l006" index="0" custom="{&quot;heights&quot;: [8.9, 4.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="277,60 277,74 311,73 311,59 277,60"/>
         <Baseline points="277,69 311,68"/>
+        <Word id="r018-l006_w000">
+          <Coords points="279,58 311,58 311,74 279,74"/>
+          <TextEquiv conf="0.977">
+            <Unicode>Valval</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.632">
           <Unicode>Valval</Unicode>
         </TextEquiv>
@@ -55,9 +217,15 @@
     </TextRegion>
     <TextRegion id="r030" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="466,58 431,59 432,73 467,72 466,58"/>
-      <TextLine id="r030-l006" index="0" custom="{&quot;heights&quot;: [9.8, 4.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r030-l007" index="0" custom="{&quot;heights&quot;: [9.8, 4.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="431,59 432,73 467,72 466,58 431,59"/>
         <Baseline points="432,69 467,68"/>
+        <Word id="r030-l007_w000">
+          <Coords points="434,57 466,57 466,73 434,73"/>
+          <TextEquiv conf="0.856">
+            <Unicode>VavAla</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.515">
           <Unicode>VavAla</Unicode>
         </TextEquiv>
@@ -65,9 +233,15 @@
     </TextRegion>
     <TextRegion id="r042" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="610,58 575,59 575,74 610,73 610,58"/>
-      <TextLine id="r042-l005" index="0" custom="{&quot;heights&quot;: [9.6, 5.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r042-l005" index="0" custom="{&quot;heights&quot;: [9.6, 5.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="575,59 575,74 610,73 610,58 575,59"/>
         <Baseline points="575,69 610,68"/>
+        <Word id="r042-l005_w000">
+          <Coords points="577,57 610,57 610,74 577,74"/>
+          <TextEquiv conf="0.994">
+            <Unicode>Alaiala</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.556">
           <Unicode>Alaiala</Unicode>
         </TextEquiv>
@@ -75,7 +249,7 @@
     </TextRegion>
     <TextRegion id="r017" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="254,84 238,85 239,99 255,98 254,84"/>
-      <TextLine id="r017-l013" index="0" custom="{&quot;heights&quot;: [8.8, 4.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r017-l011" index="0" custom="{&quot;heights&quot;: [8.8, 4.6], &quot;category&quot;: &quot;text&quot;}">
         <Coords points="238,85 239,99 255,98 254,84 238,85"/>
         <Baseline points="239,94 254,93"/>
         <TextEquiv conf="1.000">
@@ -85,9 +259,27 @@
     </TextRegion>
     <TextRegion id="r021" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="311,84 295,84 295,97 359,97 359,84 311,84"/>
-      <TextLine id="r021-l010" index="0" custom="{&quot;heights&quot;: [8.7, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r021-l009" index="0" custom="{&quot;heights&quot;: [8.7, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="295,84 295,97 311,97 327,97 342,97 359,97 359,84 342,84 327,84 311,84 295,84"/>
         <Baseline points="295,93 311,93 327,93 342,93 359,93"/>
+        <Word id="r021-l009_w000">
+          <Coords points="299,84 315,84 315,96 299,96"/>
+          <TextEquiv conf="0.995">
+            <Unicode>ORD</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r021-l009_w001">
+          <Coords points="317,84 342,84 342,96 317,96"/>
+          <TextEquiv conf="0.716">
+            <Unicode>19S95</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r021-l009_w002">
+          <Coords points="346,84 358,84 358,96 346,96"/>
+          <TextEquiv conf="0.935">
+            <Unicode>CII</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.234">
           <Unicode>ORD 19S95 CII</Unicode>
         </TextEquiv>
@@ -95,7 +287,7 @@
     </TextRegion>
     <TextRegion id="r029" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="408,84 396,85 397,97 409,96 408,84"/>
-      <TextLine id="r029-l009" index="0" custom="{&quot;heights&quot;: [8.5, 4.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r029-l008" index="0" custom="{&quot;heights&quot;: [8.5, 4.2], &quot;category&quot;: &quot;text&quot;}">
         <Coords points="396,85 397,97 409,96 408,84 396,85"/>
         <Baseline points="397,93 409,92"/>
         <TextEquiv conf="1.000">
@@ -105,9 +297,27 @@
     </TextRegion>
     <TextRegion id="r031" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="462,84 446,84 446,97 511,98 511,85 462,84"/>
-      <TextLine id="r031-l008" index="0" custom="{&quot;heights&quot;: [8.9, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r031-l010" index="0" custom="{&quot;heights&quot;: [8.9, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="446,84 446,97 462,97 477,97 488,97 511,98 511,85 493,85 485,85 462,84 446,84"/>
         <Baseline points="446,93 462,93 478,93 493,94 511,94"/>
+        <Word id="r031-l010_w000">
+          <Coords points="450,84 467,84 467,97 450,97"/>
+          <TextEquiv conf="0.958">
+            <Unicode>ORE</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r031-l010_w001">
+          <Coords points="467,84 493,84 493,97 467,97"/>
+          <TextEquiv conf="0.835">
+            <Unicode>(9590</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r031-l010_w002">
+          <Coords points="498,85 510,85 510,98 498,98"/>
+          <TextEquiv conf="0.982">
+            <Unicode>CII</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.244">
           <Unicode>ORE (9590 CII</Unicode>
         </TextEquiv>
@@ -125,9 +335,27 @@
     </TextRegion>
     <TextRegion id="r043" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="598,84 581,86 582,98 646,97 646,84 598,84"/>
-      <TextLine id="r043-l011" index="0" custom="{&quot;heights&quot;: [8.7, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r043-l013" index="0" custom="{&quot;heights&quot;: [8.7, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="581,86 582,98 598,97 614,97 629,97 646,97 646,84 629,84 614,84 598,84 581,86"/>
         <Baseline points="582,94 598,93 614,93 629,93 646,93"/>
+        <Word id="r043-l013_w000">
+          <Coords points="586,84 603,84 603,97 586,97"/>
+          <TextEquiv conf="0.998">
+            <Unicode>ORG</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r043-l013_w001">
+          <Coords points="604,84 628,84 628,97 604,97"/>
+          <TextEquiv conf="0.985">
+            <Unicode>19596</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r043-l013_w002">
+          <Coords points="633,84 646,84 646,97 633,97"/>
+          <TextEquiv conf="0.988">
+            <Unicode>CII</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.317">
           <Unicode>ORG 19596 CII</Unicode>
         </TextEquiv>
@@ -135,9 +363,21 @@
     </TextRegion>
     <TextRegion id="r020" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="305,109 289,109 289,121 401,121 401,109 305,109"/>
-      <TextLine id="r020-l014" index="0" custom="{&quot;heights&quot;: [8.6, 3.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r020-l014" index="0" custom="{&quot;heights&quot;: [8.6, 3.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="289,109 289,121 305,121 318,121 331,121 345,121 358,121 371,121 385,121 401,121 401,109 385,109 371,109 358,109 345,109 331,109 318,109 305,109 289,109"/>
         <Baseline points="289,117 305,117 318,117 331,117 345,117 358,117 371,117 385,117 401,117"/>
+        <Word id="r020-l014_w000">
+          <Coords points="292,108 365,108 365,121 292,121"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Premenopausal</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r020-l014_w001">
+          <Coords points="368,108 400,108 400,121 368,121"/>
+          <TextEquiv conf="0.999">
+            <Unicode>women</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.991">
           <Unicode>Premenopausal women</Unicode>
         </TextEquiv>
@@ -145,9 +385,15 @@
     </TextRegion>
     <TextRegion id="r002" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="55,128 34,129 34,141 56,140 55,128"/>
-      <TextLine id="r002-l015" index="0" custom="{&quot;heights&quot;: [7.7, 3.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r002-l015" index="0" custom="{&quot;heights&quot;: [7.7, 3.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="34,129 34,141 56,140 55,128 34,129"/>
         <Baseline points="34,137 56,136"/>
+        <Word id="r002-l015_w000">
+          <Coords points="37,127 55,127 55,140 37,140"/>
+          <TextEquiv conf="0.852">
+            <Unicode>BMI</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.894">
           <Unicode>BMI</Unicode>
         </TextEquiv>
@@ -155,23 +401,59 @@
     </TextRegion>
     <TextRegion id="r004" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="47,168 35,199 135,197 134,186 118,187 92,169 90,149 48,148 47,168"/>
-      <TextLine id="r004-l017" index="0" custom="{&quot;heights&quot;: [7.9, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r004-l017" index="0" custom="{&quot;heights&quot;: [7.9, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="47,159 68,160 90,160 90,149 68,149 48,148 47,159"/>
         <Baseline points="47,156 68,157 90,157"/>
+        <Word id="r004-l017_w000">
+          <Coords points="50,147 54,147 54,159 50,159"/>
+          <TextEquiv conf="0.929">
+            <Unicode>s</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r004-l017_w001">
+          <Coords points="57,148 90,148 90,160 57,160"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Median</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.948">
           <Unicode>s Median</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r004-l023" index="1" custom="{&quot;heights&quot;: [7.4, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r004-l025" index="1" custom="{&quot;heights&quot;: [7.4, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="69,168 47,168 47,179 69,179 92,180 92,169 69,168"/>
         <Baseline points="47,175 69,175 92,176"/>
+        <Word id="r004-l025_w000">
+          <Coords points="57,168 89,168 89,179 57,179"/>
+          <TextEquiv conf="0.840">
+            <Unicode>Mledian</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.420">
           <Unicode> Mledian</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r004-l030" index="2" custom="{&quot;heights&quot;: [7.6, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r004-l030" index="2" custom="{&quot;heights&quot;: [7.6, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="35,199 135,197 134,186 118,187 105,187 91,187 78,187 64,187 50,187 39,187 35,199"/>
         <Baseline points="36,195 50,195 64,195 78,195 91,195 105,195 118,195 135,194"/>
+        <Word id="r004-l030_w000">
+          <Coords points="36,187 62,187 62,199 36,199"/>
+          <TextEquiv conf="0.996">
+            <Unicode>Vears</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r004-l030_w001">
+          <Coords points="65,188 73,188 73,199 65,199"/>
+          <TextEquiv conf="0.995">
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r004-l030_w002">
+          <Coords points="75,186 131,186 131,199 75,199"/>
+          <TextEquiv conf="0.999">
+            <Unicode>menstruaticn</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.590">
           <Unicode>Vears of menstruaticn</Unicode>
         </TextEquiv>
@@ -179,16 +461,28 @@
     </TextRegion>
     <TextRegion id="r013" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="227,160 226,179 268,179 268,148 227,148 227,160"/>
-      <TextLine id="r013-l020" index="0" custom="{&quot;heights&quot;: [9.1, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r013-l020" index="0" custom="{&quot;heights&quot;: [9.1, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="268,148 248,148 227,148 227,160 248,160 268,160 268,148"/>
         <Baseline points="227,157 248,157 268,157"/>
+        <Word id="r013-l020_w000">
+          <Coords points="229,147 267,147 267,160 229,160"/>
+          <TextEquiv conf="0.996">
+            <Unicode>2501275</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.963">
           <Unicode>2501275</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r013-l025" index="1" custom="{&quot;heights&quot;: [8.9, 3.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r013-l023" index="1" custom="{&quot;heights&quot;: [8.9, 3.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="226,179 247,179 268,179 268,166 247,166 226,166 226,179"/>
         <Baseline points="226,175 247,175 268,175"/>
+        <Word id="r013-l023_w000">
+          <Coords points="228,166 267,166 267,179 228,179"/>
+          <TextEquiv conf="0.999">
+            <Unicode>3001288</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.519">
           <Unicode>3001288</Unicode>
         </TextEquiv>
@@ -196,16 +490,40 @@
     </TextRegion>
     <TextRegion id="r022" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="308,160 307,179 346,180 346,148 308,148 308,160"/>
-      <TextLine id="r022-l018" index="0" custom="{&quot;heights&quot;: [8.3, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r022-l021" index="0" custom="{&quot;heights&quot;: [8.3, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="346,148 327,148 308,148 308,160 327,160 346,160 346,148"/>
         <Baseline points="308,157 327,157 346,157"/>
+        <Word id="r022-l021_w000">
+          <Coords points="309,148 321,148 321,159 309,159"/>
+          <TextEquiv conf="0.998">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r022-l021_w001">
+          <Coords points="324,148 345,148 345,159 324,159"/>
+          <TextEquiv conf="0.921">
+            <Unicode>(ref.)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.575">
           <Unicode>1.0 (ref.)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r022-l024" index="1" custom="{&quot;heights&quot;: [8.5, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r022-l024" index="1" custom="{&quot;heights&quot;: [8.5, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="307,179 326,179 346,180 346,168 327,167 308,167 307,179"/>
         <Baseline points="307,175 327,175 346,176"/>
+        <Word id="r022-l024_w000">
+          <Coords points="309,166 322,166 322,179 309,179"/>
+          <TextEquiv conf="0.999">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r022-l024_w001">
+          <Coords points="325,166 346,166 346,180 325,180"/>
+          <TextEquiv conf="0.938">
+            <Unicode>(ref)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.593">
           <Unicode>1.0 (ref)</Unicode>
         </TextEquiv>
@@ -213,16 +531,28 @@
     </TextRegion>
     <TextRegion id="r026" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="388,149 386,180 421,179 417,147 388,149"/>
-      <TextLine id="r026-l019" index="0" custom="{&quot;heights&quot;: [8.1, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r026-l022" index="0" custom="{&quot;heights&quot;: [8.1, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="388,149 388,160 418,159 417,147 388,149"/>
         <Baseline points="388,157 417,156"/>
+        <Word id="r026-l022_w000">
+          <Coords points="389,147 417,147 417,160 389,160"/>
+          <TextEquiv conf="0.946">
+            <Unicode>79189</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.721">
           <Unicode>79189</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r026-l029" index="1" custom="{&quot;heights&quot;: [8.9, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r026-l026" index="1" custom="{&quot;heights&quot;: [8.9, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="386,180 421,179 419,166 387,167 386,180"/>
         <Baseline points="386,176 420,175"/>
+        <Word id="r026-l026_w000">
+          <Coords points="386,166 420,166 420,180 386,180"/>
+          <TextEquiv conf="0.902">
+            <Unicode>106189</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.818">
           <Unicode>106189</Unicode>
         </TextEquiv>
@@ -230,16 +560,58 @@
     </TextRegion>
     <TextRegion id="r033" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="464,148 448,148 448,180 508,180 507,148 464,148"/>
-      <TextLine id="r033-l022" index="0" custom="{&quot;heights&quot;: [8.8, 3.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r033-l018" index="0" custom="{&quot;heights&quot;: [8.8, 3.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="448,148 448,160 464,160 478,160 491,160 507,160 507,148 491,148 478,148 464,148 448,148"/>
         <Baseline points="448,157 464,157 478,157 491,157 507,157"/>
+        <Word id="r033-l018_w000">
+          <Coords points="450,147 463,147 463,160 450,160"/>
+          <TextEquiv conf="0.626">
+            <Unicode>0.9</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r033-l018_w001">
+          <Coords points="465,147 479,147 479,160 465,160"/>
+          <TextEquiv conf="0.998">
+            <Unicode>10.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r033-l018_w002">
+          <Coords points="478,147 499,147 499,160 478,160"/>
+          <TextEquiv conf="0.992">
+            <Unicode>6-1.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r033-l018_w003">
+          <Coords points="499,147 504,147 504,160 499,160"/>
+          <TextEquiv conf="0.499">
+            <Unicode>2)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.724">
           <Unicode>0.9 10. 6-1. 2)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r033-l027" index="1" custom="{&quot;heights&quot;: [8.5, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r033-l029" index="1" custom="{&quot;heights&quot;: [8.5, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="448,180 467,180 478,180 492,179 508,180 508,168 493,167 477,168 464,168 448,168 448,180"/>
         <Baseline points="448,176 464,176 478,176 492,175 508,176"/>
+        <Word id="r033-l029_w000">
+          <Coords points="450,167 458,167 458,180 450,180"/>
+          <TextEquiv conf="0.986">
+            <Unicode>1.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r033-l029_w001">
+          <Coords points="459,167 463,167 463,179 459,179"/>
+          <TextEquiv conf="0.994">
+            <Unicode>1</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r033-l029_w002">
+          <Coords points="465,167 506,167 506,179 465,179"/>
+          <TextEquiv conf="0.915">
+            <Unicode>(0.8-1.6)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.527">
           <Unicode>1. 1 (0.8-1.6)</Unicode>
         </TextEquiv>
@@ -247,53 +619,113 @@
     </TextRegion>
     <TextRegion id="r036" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="537,159 535,181 559,181 556,147 537,147 537,159"/>
-      <TextLine id="r036-l016" index="0" custom="{&quot;heights&quot;: [8.6, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r036-l016" index="0" custom="{&quot;heights&quot;: [8.6, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="537,147 537,159 556,159 556,147 537,147"/>
         <Baseline points="537,156 556,156"/>
+        <Word id="r036-l016_w000">
+          <Coords points="539,146 554,146 554,159 539,159"/>
+          <TextEquiv conf="0.989">
+            <Unicode>817</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.941">
           <Unicode>817</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r036-l028" index="1" custom="{&quot;heights&quot;: [10.7, 4.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r036-l027" index="1" custom="{&quot;heights&quot;: [10.7, 4.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="535,181 559,181 557,166 536,166 535,181"/>
         <Baseline points="535,176 558,176"/>
+        <Word id="r036-l027_w000">
+          <Coords points="535,165 557,165 557,180 535,180"/>
+          <TextEquiv conf="0.999">
+            <Unicode>1315</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.994">
           <Unicode>1315</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r045" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r047" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="584,160 584,180 643,180 643,148 584,148 584,160"/>
-      <TextLine id="r045-l021" index="0" custom="{&quot;heights&quot;: [8.2, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r047-l019" index="0" custom="{&quot;heights&quot;: [8.2, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="643,148 627,148 614,148 599,148 584,148 584,160 599,160 614,160 627,160 643,160 643,148"/>
         <Baseline points="584,157 599,157 614,157 627,157 643,157"/>
+        <Word id="r047-l019_w000">
+          <Coords points="586,148 635,148 635,159 586,159"/>
+          <TextEquiv conf="0.962">
+            <Unicode>1.940.5-3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r047-l019_w001">
+          <Coords points="635,148 642,148 642,159 635,159"/>
+          <TextEquiv conf="0.500">
+            <Unicode>7)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.493">
           <Unicode>1.940.5-3. 7)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r045-l026" index="1" custom="{&quot;heights&quot;: [8.2, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r047-l028" index="1" custom="{&quot;heights&quot;: [8.2, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="584,180 599,179 614,179 627,179 643,180 643,168 627,167 614,167 599,167 584,168 584,180"/>
         <Baseline points="584,176 599,175 614,175 627,175 643,176"/>
+        <Word id="r047-l028_w000">
+          <Coords points="586,167 591,167 591,179 586,179"/>
+          <TextEquiv conf="1.000">
+            <Unicode>2</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r047-l028_w001">
+          <Coords points="594,167 599,167 599,179 594,179"/>
+          <TextEquiv conf="1.000">
+            <Unicode>5</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r047-l028_w002">
+          <Coords points="602,167 640,167 640,179 602,179"/>
+          <TextEquiv conf="0.978">
+            <Unicode>10.9-7.0</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.524">
           <Unicode>2 5 10.9-7.0</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r008" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r009" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="68,207 47,207 47,218 90,218 90,207 68,207"/>
-      <TextLine id="r008-l037" index="0" custom="{&quot;heights&quot;: [7.6, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r009-l036" index="0" custom="{&quot;heights&quot;: [7.6, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="47,207 47,218 68,218 90,218 90,207 68,207 47,207"/>
         <Baseline points="47,215 68,215 90,215"/>
+        <Word id="r009-l036_w000">
+          <Coords points="50,206 54,206 54,217 50,217"/>
+          <TextEquiv conf="0.824">
+            <Unicode>s</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r009-l036_w001">
+          <Coords points="57,206 88,206 88,217 57,217"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Median</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.851">
           <Unicode>s Median</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r011" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r008" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="69,226 47,226 47,238 92,238 92,226 69,226"/>
-      <TextLine id="r011-l041" index="0" custom="{&quot;heights&quot;: [8.2, 4.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r008-l039" index="0" custom="{&quot;heights&quot;: [8.2, 4.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="47,226 47,238 69,238 92,238 92,226 69,226 47,226"/>
         <Baseline points="47,234 69,234 92,234"/>
+        <Word id="r008-l039_w000">
+          <Coords points="58,226 91,226 91,238 58,238"/>
+          <TextEquiv conf="0.993">
+            <Unicode>Median</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.608">
           <Unicode> Median</Unicode>
         </TextEquiv>
@@ -301,16 +733,28 @@
     </TextRegion>
     <TextRegion id="r012" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="226,219 225,239 267,239 268,206 226,206 226,219"/>
-      <TextLine id="r012-l034" index="0" custom="{&quot;heights&quot;: [8.9, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r012-l033" index="0" custom="{&quot;heights&quot;: [8.9, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="268,206 247,206 226,206 226,219 247,219 268,219 268,206"/>
         <Baseline points="226,215 247,215 268,215"/>
+        <Word id="r012-l033_w000">
+          <Coords points="228,205 267,205 267,218 228,218"/>
+          <TextEquiv conf="1.000">
+            <Unicode>2031286</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.981">
           <Unicode>2031286</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r012-l039" index="1" custom="{&quot;heights&quot;: [9.3, 4.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r012-l041" index="1" custom="{&quot;heights&quot;: [9.3, 4.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="225,239 245,239 267,239 267,225 245,225 225,225 225,239"/>
         <Baseline points="225,234 245,234 267,234"/>
+        <Word id="r012-l041_w000">
+          <Coords points="229,225 266,225 266,238 229,238"/>
+          <TextEquiv conf="0.989">
+            <Unicode>3471277</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.921">
           <Unicode>3471277</Unicode>
         </TextEquiv>
@@ -318,57 +762,135 @@
     </TextRegion>
     <TextRegion id="r019" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="289,244 288,258 405,259 421,239 421,225 416,206 388,206 385,225 353,245 289,244"/>
-      <TextLine id="r019-l031" index="0" custom="{&quot;heights&quot;: [9.1, 3.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r019-l037" index="0" custom="{&quot;heights&quot;: [9.1, 3.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="388,206 388,219 416,219 416,206 388,206"/>
         <Baseline points="388,215 416,215"/>
+        <Word id="r019-l037_w000">
+          <Coords points="390,205 415,205 415,218 390,218"/>
+          <TextEquiv conf="0.839">
+            <Unicode>77191</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.494">
           <Unicode>77191</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r019-l040" index="1" custom="{&quot;heights&quot;: [9.9, 4.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r019-l040" index="1" custom="{&quot;heights&quot;: [9.9, 4.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="421,225 402,225 385,225 385,239 402,239 421,239 421,225"/>
         <Baseline points="385,234 402,234 421,234"/>
+        <Word id="r019-l040_w000">
+          <Coords points="387,224 419,224 419,238 387,238"/>
+          <TextEquiv conf="0.996">
+            <Unicode>102197</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.978">
           <Unicode>102197</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r019-l045" index="2" custom="{&quot;heights&quot;: [9.4, 4.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r019-l045" index="2" custom="{&quot;heights&quot;: [9.4, 4.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="288,258 405,259 405,245 390,245 378,245 365,245 353,245 340,245 328,245 314,245 302,245 289,244 288,258"/>
         <Baseline points="288,253 302,254 314,254 328,254 340,254 353,254 365,254 378,254 390,254 405,254"/>
+        <Word id="r019-l045_w000">
+          <Coords points="289,244 368,244 368,259 289,259"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Postmenopausal</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r019-l045_w001">
+          <Coords points="371,244 405,244 405,259 371,259"/>
+          <TextEquiv conf="1.000">
+            <Unicode>women</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.911">
           <Unicode>Postmenopausal women</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r025" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r024" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="327,207 308,207 308,238 346,239 345,207 327,207"/>
-      <TextLine id="r025-l036" index="0" custom="{&quot;heights&quot;: [7.5, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r024-l034" index="0" custom="{&quot;heights&quot;: [7.5, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="308,207 308,218 327,218 345,218 345,207 327,207 308,207"/>
         <Baseline points="308,215 327,215 345,215"/>
+        <Word id="r024-l034_w000">
+          <Coords points="309,206 322,206 322,217 309,217"/>
+          <TextEquiv conf="0.999">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r024-l034_w001">
+          <Coords points="326,206 344,206 344,217 326,217"/>
+          <TextEquiv conf="0.978">
+            <Unicode>(ref.</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.538">
           <Unicode>1.0 (ref.</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r025-l042" index="1" custom="{&quot;heights&quot;: [7.7, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r024-l042" index="1" custom="{&quot;heights&quot;: [7.7, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="308,238 326,238 346,239 346,228 327,227 308,227 308,238"/>
         <Baseline points="308,234 327,234 346,236"/>
+        <Word id="r024-l042_w000">
+          <Coords points="309,226 322,226 322,237 309,237"/>
+          <TextEquiv conf="0.996">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r024-l042_w001">
+          <Coords points="325,226 345,226 345,238 325,238"/>
+          <TextEquiv conf="0.781">
+            <Unicode>íret.)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.503">
           <Unicode>1.0 íret.)</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r034" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r035" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="464,206 448,206 448,239 508,240 507,206 464,206"/>
-      <TextLine id="r034-l035" index="0" custom="{&quot;heights&quot;: [8.9, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r035-l032" index="0" custom="{&quot;heights&quot;: [8.9, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="448,206 448,219 464,219 478,219 491,219 507,219 507,206 491,206 478,206 464,206 448,206"/>
         <Baseline points="448,215 464,215 478,215 491,215 507,215"/>
+        <Word id="r035-l032_w000">
+          <Coords points="450,205 458,205 458,218 450,218"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r035-l032_w001">
+          <Coords points="459,205 464,205 464,218 459,218"/>
+          <TextEquiv conf="1.000">
+            <Unicode>2</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r035-l032_w002">
+          <Coords points="466,205 506,205 506,218 466,218"/>
+          <TextEquiv conf="0.842">
+            <Unicode>10.8-1.77</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.373">
           <Unicode>1. 2 10.8-1.77</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r034-l038" index="1" custom="{&quot;heights&quot;: [9.5, 4.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r035-l038" index="1" custom="{&quot;heights&quot;: [9.5, 4.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="448,239 464,239 477,239 487,239 508,240 508,226 492,226 478,225 464,225 448,225 448,239"/>
         <Baseline points="448,234 464,234 478,234 492,236 508,236"/>
+        <Word id="r035-l038_w000">
+          <Coords points="450,224 464,224 464,238 450,238"/>
+          <TextEquiv conf="0.308">
+            <Unicode>O.B</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r035-l038_w001">
+          <Coords points="464,225 508,225 508,239 464,239"/>
+          <TextEquiv conf="0.944">
+            <Unicode>10.6-1.2)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.512">
           <Unicode>O.B 10.6-1.2)</Unicode>
         </TextEquiv>
@@ -376,16 +898,28 @@
     </TextRegion>
     <TextRegion id="r037" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="537,219 536,240 560,239 556,205 537,205 537,219"/>
-      <TextLine id="r037-l033" index="0" custom="{&quot;heights&quot;: [9.6, 4.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r037-l035" index="0" custom="{&quot;heights&quot;: [9.6, 4.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="537,205 537,219 556,219 556,205 537,205"/>
         <Baseline points="537,215 556,215"/>
+        <Word id="r037-l035_w000">
+          <Coords points="540,204 554,204 554,218 540,218"/>
+          <TextEquiv conf="0.367">
+            <Unicode>B18</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.567">
           <Unicode>B18</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r037-l044" index="1" custom="{&quot;heights&quot;: [11.4, 4.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r037-l044" index="1" custom="{&quot;heights&quot;: [11.4, 4.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="536,240 560,239 558,223 537,224 536,240"/>
         <Baseline points="536,236 560,235"/>
+        <Word id="r037-l044_w000">
+          <Coords points="536,223 559,223 559,240 536,240"/>
+          <TextEquiv conf="0.989">
+            <Unicode>1319</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.613">
           <Unicode>1319</Unicode>
         </TextEquiv>
@@ -393,77 +927,173 @@
     </TextRegion>
     <TextRegion id="r044" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="584,218 583,239 643,238 643,206 584,206 584,218"/>
-      <TextLine id="r044-l032" index="0" custom="{&quot;heights&quot;: [8.4, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r044-l031" index="0" custom="{&quot;heights&quot;: [8.4, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="643,206 627,206 614,206 599,206 584,206 584,218 599,218 614,218 627,218 643,218 643,206"/>
         <Baseline points="584,215 599,215 614,215 627,215 643,215"/>
+        <Word id="r044-l031_w000">
+          <Coords points="586,206 594,206 594,218 586,218"/>
+          <TextEquiv conf="0.999">
+            <Unicode>1.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r044-l031_w001">
+          <Coords points="595,206 598,206 598,218 595,218"/>
+          <TextEquiv conf="1.000">
+            <Unicode>A</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r044-l031_w002">
+          <Coords points="602,206 639,206 639,218 602,218"/>
+          <TextEquiv conf="0.996">
+            <Unicode>10.5-3.77</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.797">
           <Unicode>1. A 10.5-3.77</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r044-l043" index="1" custom="{&quot;heights&quot;: [8.5, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r044-l043" index="1" custom="{&quot;heights&quot;: [8.5, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="583,239 598,238 613,238 627,238 643,238 643,226 627,226 613,226 598,226 584,227 583,239"/>
         <Baseline points="583,236 598,234 613,234 627,234 643,234"/>
+        <Word id="r044-l043_w000">
+          <Coords points="586,226 595,226 595,239 586,239"/>
+          <TextEquiv conf="0.998">
+            <Unicode>2.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r044-l043_w001">
+          <Coords points="596,226 600,226 600,238 596,238"/>
+          <TextEquiv conf="0.593">
+            <Unicode>8</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r044-l043_w002">
+          <Coords points="602,225 643,225 643,238 602,238"/>
+          <TextEquiv conf="0.866">
+            <Unicode>10.8-8.0)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.475">
           <Unicode>2. 8 10.8-8.0)</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r005" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r006" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="55,265 35,265 35,278 55,278 55,265"/>
-      <TextLine id="r005-l046" index="0" custom="{&quot;heights&quot;: [8.9, 4.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r006-l046" index="0" custom="{&quot;heights&quot;: [8.9, 4.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="35,265 35,278 55,278 55,265 35,265"/>
         <Baseline points="35,274 55,274"/>
+        <Word id="r006-l046_w000">
+          <Coords points="38,264 53,264 53,277 38,277"/>
+          <TextEquiv conf="0.888">
+            <Unicode>BMI</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.398">
           <Unicode>BMI</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r007" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r010" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="69,285 47,286 47,316 92,316 91,285 69,285"/>
-      <TextLine id="r007-l051" index="0" custom="{&quot;heights&quot;: [7.7, 3.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r010-l052" index="0" custom="{&quot;heights&quot;: [7.7, 3.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="47,286 47,297 69,296 91,296 91,285 69,285 47,286"/>
         <Baseline points="47,294 69,293 91,293"/>
+        <Word id="r010-l052_w000">
+          <Coords points="50,285 54,285 54,296 50,296"/>
+          <TextEquiv conf="0.895">
+            <Unicode>s</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r010-l052_w001">
+          <Coords points="57,284 90,284 90,296 57,296"/>
+          <TextEquiv conf="0.998">
+            <Unicode>Median</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.934">
           <Unicode>s Median</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r007-l060" index="1" custom="{&quot;heights&quot;: [7.4, 3.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r010-l057" index="1" custom="{&quot;heights&quot;: [7.4, 3.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="69,316 92,316 92,306 69,306 47,306 47,316 69,316"/>
         <Baseline points="47,313 69,313 92,313"/>
+        <Word id="r010-l057_w000">
+          <Coords points="57,306 90,306 90,316 57,316"/>
+          <TextEquiv conf="0.978">
+            <Unicode>Hedian</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.772">
           <Unicode>Hedian</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r014" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r015" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="247,285 227,285 227,317 267,317 267,285 247,285"/>
-      <TextLine id="r014-l053" index="0" custom="{&quot;heights&quot;: [9.0, 3.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r015-l050" index="0" custom="{&quot;heights&quot;: [9.0, 3.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="227,285 227,297 247,297 267,297 267,285 247,285 227,285"/>
         <Baseline points="227,294 247,294 267,294"/>
+        <Word id="r015-l050_w000">
+          <Coords points="228,284 266,284 266,297 228,297"/>
+          <TextEquiv conf="0.976">
+            <Unicode>126/156</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.488">
           <Unicode>126/156</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r014-l059" index="1" custom="{&quot;heights&quot;: [9.4, 3.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r015-l059" index="1" custom="{&quot;heights&quot;: [9.4, 3.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="227,317 247,317 267,317 267,304 247,304 227,304 227,317"/>
         <Baseline points="227,313 247,313 267,313"/>
+        <Word id="r015-l059_w000">
+          <Coords points="229,304 266,304 266,317 229,317"/>
+          <TextEquiv conf="0.891">
+            <Unicode>152161</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.728">
           <Unicode>152161</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r024" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r025" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="327,285 308,285 308,317 346,317 346,285 327,285"/>
-      <TextLine id="r024-l052" index="0" custom="{&quot;heights&quot;: [8.2, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r025-l051" index="0" custom="{&quot;heights&quot;: [8.2, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="308,285 308,297 327,297 346,297 346,285 327,285 308,285"/>
         <Baseline points="308,294 327,294 346,294"/>
+        <Word id="r025-l051_w000">
+          <Coords points="309,285 322,285 322,296 309,296"/>
+          <TextEquiv conf="0.998">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r025-l051_w001">
+          <Coords points="325,285 345,285 345,296 325,296"/>
+          <TextEquiv conf="0.987">
+            <Unicode>íref.)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.745">
           <Unicode>1.0 íref.)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r024-l055" index="1" custom="{&quot;heights&quot;: [9.2, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r025-l056" index="1" custom="{&quot;heights&quot;: [9.2, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="308,317 327,317 346,317 346,304 327,304 308,304 308,317"/>
         <Baseline points="308,313 327,313 346,313"/>
+        <Word id="r025-l056_w000">
+          <Coords points="308,304 322,304 322,317 308,317"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r025-l056_w001">
+          <Coords points="326,304 345,304 345,317 326,317"/>
+          <TextEquiv conf="0.659">
+            <Unicode>(et)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.774">
           <Unicode>1.0 (et)</Unicode>
         </TextEquiv>
@@ -471,33 +1101,69 @@
     </TextRegion>
     <TextRegion id="r027" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="387,302 387,316 416,318 418,285 387,284 387,302"/>
-      <TextLine id="r027-l047" index="0" custom="{&quot;heights&quot;: [8.6, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r027-l047" index="0" custom="{&quot;heights&quot;: [8.6, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="418,285 387,284 387,296 417,297 418,285"/>
         <Baseline points="387,293 417,294"/>
+        <Word id="r027-l047_w000">
+          <Coords points="390,284 417,284 417,297 390,297"/>
+          <TextEquiv conf="0.999">
+            <Unicode>39152</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.893">
           <Unicode>39152</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r027-l054" index="1" custom="{&quot;heights&quot;: [10.0, 4.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r027-l054" index="1" custom="{&quot;heights&quot;: [10.0, 4.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="387,316 416,318 417,303 387,302 387,316"/>
         <Baseline points="387,312 416,313"/>
+        <Word id="r027-l054_w000">
+          <Coords points="390,302 416,302 416,317 390,317"/>
+          <TextEquiv conf="0.995">
+            <Unicode>48150</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.652">
           <Unicode>48150</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r035" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r034" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="464,284 448,284 449,317 508,317 508,284 464,284"/>
-      <TextLine id="r035-l050" index="0" custom="{&quot;heights&quot;: [9.2, 3.8], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r034-l053" index="0" custom="{&quot;heights&quot;: [9.2, 3.8], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="448,284 449,297 464,297 478,297 492,297 508,297 508,284 492,284 478,284 464,284 448,284"/>
         <Baseline points="448,294 464,294 478,294 492,294 508,294"/>
+        <Word id="r034-l053_w000">
+          <Coords points="450,284 459,284 459,297 450,297"/>
+          <TextEquiv conf="0.999">
+            <Unicode>1.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r034-l053_w001">
+          <Coords points="460,284 507,284 507,297 460,297"/>
+          <TextEquiv conf="0.915">
+            <Unicode>010.6-1.6)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.564">
           <Unicode>1. 010.6-1.6)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r035-l056" index="1" custom="{&quot;heights&quot;: [9.6, 4.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r034-l060" index="1" custom="{&quot;heights&quot;: [9.6, 4.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="465,317 479,317 492,317 508,317 508,304 492,304 479,304 465,304 449,304 449,317 465,317"/>
         <Baseline points="449,313 465,313 479,313 492,313 508,313"/>
+        <Word id="r034-l060_w000">
+          <Coords points="450,303 463,303 463,317 450,317"/>
+          <TextEquiv conf="0.960">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r034-l060_w001">
+          <Coords points="466,303 507,303 507,317 466,317"/>
+          <TextEquiv conf="0.926">
+            <Unicode>10.6-1.6)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.581">
           <Unicode>1.0 10.6-1.6)</Unicode>
         </TextEquiv>
@@ -505,43 +1171,109 @@
     </TextRegion>
     <TextRegion id="r038" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="537,296 537,317 556,316 556,284 537,284 537,296"/>
-      <TextLine id="r038-l048" index="0" custom="{&quot;heights&quot;: [8.8, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r038-l049" index="0" custom="{&quot;heights&quot;: [8.8, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="537,284 537,296 556,296 556,284 537,284"/>
         <Baseline points="537,293 556,293"/>
+        <Word id="r038-l049_w000">
+          <Coords points="539,283 554,283 554,296 539,296"/>
+          <TextEquiv conf="0.967">
+            <Unicode>417</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.946">
           <Unicode>417</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r038-l057" index="1" custom="{&quot;heights&quot;: [8.3, 3.9], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r038-l055" index="1" custom="{&quot;heights&quot;: [8.3, 3.9], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="537,317 556,316 555,304 537,305 537,317"/>
         <Baseline points="537,313 556,312"/>
+        <Word id="r038-l055_w000">
+          <Coords points="539,304 555,304 555,317 539,317"/>
+          <TextEquiv conf="0.521">
+            <Unicode>319</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.562">
           <Unicode>319</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r047" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r046" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="585,284 584,317 643,316 643,286 585,284"/>
-      <TextLine id="r047-l049" index="0" custom="{&quot;heights&quot;: [8.1, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r046-l048" index="0" custom="{&quot;heights&quot;: [8.1, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="584,296 599,297 614,297 627,297 643,297 643,286 627,286 614,286 599,286 585,284 584,296"/>
         <Baseline points="584,293 599,294 614,294 627,294 643,294"/>
+        <Word id="r046-l048_w000">
+          <Coords points="587,284 598,284 598,296 587,296"/>
+          <TextEquiv conf="0.872">
+            <Unicode>0.7</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r046-l048_w001">
+          <Coords points="601,285 636,285 636,297 601,297"/>
+          <TextEquiv conf="0.989">
+            <Unicode>(0.2-2.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r046-l048_w002">
+          <Coords points="635,285 643,285 643,296 635,296"/>
+          <TextEquiv conf="0.933">
+            <Unicode>5)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.583">
           <Unicode>0.7 (0.2-2. 5)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r047-l058" index="1" custom="{&quot;heights&quot;: [8.8, 3.5], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r046-l058" index="1" custom="{&quot;heights&quot;: [8.8, 3.5], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="584,317 643,316 643,303 626,305 614,305 599,305 584,305 584,317"/>
         <Baseline points="584,313 599,313 614,313 627,313 643,312"/>
+        <Word id="r046-l058_w000">
+          <Coords points="586,304 599,304 599,317 586,317"/>
+          <TextEquiv conf="0.917">
+            <Unicode>O.B</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r046-l058_w001">
+          <Coords points="601,304 635,304 635,317 601,317"/>
+          <TextEquiv conf="0.995">
+            <Unicode>(0.2-3.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r046-l058_w002">
+          <Coords points="634,303 643,303 643,316 634,316"/>
+          <TextEquiv conf="0.565">
+            <Unicode>71</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.395">
           <Unicode>O.B (0.2-3. 71</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r006" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r005" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="36,325 35,335 136,335 136,324 36,325"/>
-      <TextLine id="r006-l061" index="0" custom="{&quot;heights&quot;: [7.5, 3.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r005-l061" index="0" custom="{&quot;heights&quot;: [7.5, 3.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="35,335 77,335 78,335 78,335 136,335 136,324 105,325 91,326 78,325 64,326 50,326 36,325 35,335"/>
         <Baseline points="35,332 50,333 65,333 78,332 92,333 105,332 119,332 136,332"/>
+        <Word id="r005-l061_w000">
+          <Coords points="37,325 61,325 61,336 37,336"/>
+          <TextEquiv conf="0.846">
+            <Unicode>Years</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l061_w001">
+          <Coords points="65,325 73,325 73,336 65,336"/>
+          <TextEquiv conf="0.605">
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r005-l061_w002">
+          <Coords points="76,324 129,324 129,336 76,336"/>
+          <TextEquiv conf="0.996">
+            <Unicode>menstruation</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.509">
           <Unicode>Years of menstruation</Unicode>
         </TextEquiv>
@@ -549,16 +1281,58 @@
     </TextRegion>
     <TextRegion id="r032" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="448,355 448,375 507,375 507,343 448,343 448,355"/>
-      <TextLine id="r032-l062" index="0" custom="{&quot;heights&quot;: [8.5, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r032-l067" index="0" custom="{&quot;heights&quot;: [8.5, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="507,343 491,343 478,343 464,343 448,343 448,355 464,355 478,355 491,355 507,355 507,343"/>
         <Baseline points="448,352 464,352 478,352 491,352 507,352"/>
+        <Word id="r032-l067_w000">
+          <Coords points="450,343 459,343 459,354 450,354"/>
+          <TextEquiv conf="0.997">
+            <Unicode>1.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r032-l067_w001">
+          <Coords points="459,343 463,343 463,354 459,354"/>
+          <TextEquiv conf="0.997">
+            <Unicode>1</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r032-l067_w002">
+          <Coords points="466,343 489,343 489,354 466,354"/>
+          <TextEquiv conf="0.973">
+            <Unicode>10.7-</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r032-l067_w003">
+          <Coords points="492,343 504,343 504,354 492,354"/>
+          <TextEquiv conf="0.544">
+            <Unicode>1.B</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.515">
           <Unicode>1. 1 10.7- 1.B</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r032-l069" index="1" custom="{&quot;heights&quot;: [8.5, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r032-l073" index="1" custom="{&quot;heights&quot;: [8.5, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="448,375 464,375 478,375 491,375 507,375 507,363 491,363 478,363 464,363 448,363 448,375"/>
         <Baseline points="448,371 464,371 478,371 491,371 507,371"/>
+        <Word id="r032-l073_w000">
+          <Coords points="450,362 458,362 458,374 450,374"/>
+          <TextEquiv conf="0.903">
+            <Unicode>O.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r032-l073_w001">
+          <Coords points="459,362 463,362 463,374 459,374"/>
+          <TextEquiv conf="0.974">
+            <Unicode>B</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r032-l073_w002">
+          <Coords points="466,362 506,362 506,374 466,374"/>
+          <TextEquiv conf="0.958">
+            <Unicode>10.5-1.37</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.586">
           <Unicode>O. B 10.5-1.37</Unicode>
         </TextEquiv>
@@ -566,9 +1340,15 @@
     </TextRegion>
     <TextRegion id="r016" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="248,344 228,344 228,355 267,355 267,344 248,344"/>
-      <TextLine id="r016-l066" index="0" custom="{&quot;heights&quot;: [8.1, 3.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r016-l062" index="0" custom="{&quot;heights&quot;: [8.1, 3.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="228,344 228,355 248,355 267,355 267,344 248,344 228,344"/>
         <Baseline points="228,352 248,352 267,352"/>
+        <Word id="r016-l062_w000">
+          <Coords points="228,343 266,343 266,354 228,354"/>
+          <TextEquiv conf="0.996">
+            <Unicode>12B1172</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.328">
           <Unicode>12B1172</Unicode>
         </TextEquiv>
@@ -576,16 +1356,40 @@
     </TextRegion>
     <TextRegion id="r023" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="308,355 308,375 346,375 346,345 308,344 308,355"/>
-      <TextLine id="r023-l065" index="0" custom="{&quot;heights&quot;: [8.1, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r023-l068" index="0" custom="{&quot;heights&quot;: [8.1, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="308,344 308,355 326,355 345,356 346,345 308,344"/>
         <Baseline points="308,352 327,352 345,353"/>
+        <Word id="r023-l068_w000">
+          <Coords points="309,343 323,343 323,354 309,354"/>
+          <TextEquiv conf="1.000">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r023-l068_w001">
+          <Coords points="325,343 345,343 345,355 325,355"/>
+          <TextEquiv conf="0.975">
+            <Unicode>íref)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.949">
           <Unicode>1.0 íref)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r023-l073" index="1" custom="{&quot;heights&quot;: [7.9, 3.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r023-l071" index="1" custom="{&quot;heights&quot;: [7.9, 3.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="308,375 327,375 346,375 346,364 327,364 308,364 308,375"/>
         <Baseline points="308,371 327,371 346,371"/>
+        <Word id="r023-l071_w000">
+          <Coords points="309,363 322,363 322,374 309,374"/>
+          <TextEquiv conf="0.995">
+            <Unicode>1.0</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r023-l071_w001">
+          <Coords points="325,363 345,363 345,374 325,374"/>
+          <TextEquiv conf="0.736">
+            <Unicode>íref)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.644">
           <Unicode>1.0 íref)</Unicode>
         </TextEquiv>
@@ -593,9 +1397,15 @@
     </TextRegion>
     <TextRegion id="r041" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="556,344 538,344 538,355 556,355 556,344"/>
-      <TextLine id="r041-l064" index="0" custom="{&quot;heights&quot;: [8.0, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r041-l064" index="0" custom="{&quot;heights&quot;: [8.0, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="538,344 538,355 556,355 556,344 538,344"/>
         <Baseline points="538,352 556,352"/>
+        <Word id="r041-l064_w000">
+          <Coords points="539,343 554,343 554,354 539,354"/>
+          <TextEquiv conf="0.998">
+            <Unicode>216</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.993">
           <Unicode>216</Unicode>
         </TextEquiv>
@@ -603,30 +1413,246 @@
     </TextRegion>
     <TextRegion id="r003" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="34,406 526,406 556,395 624,394 623,384 491,385 473,375 448,375 448,361 417,344 388,344 346,362 346,375 319,375 296,385 35,384 34,406"/>
-      <TextLine id="r003-l068" index="0" custom="{&quot;heights&quot;: [7.9, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l065" index="0" custom="{&quot;heights&quot;: [7.9, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="388,344 388,355 417,355 417,344 388,344"/>
         <Baseline points="388,352 417,352"/>
+        <Word id="r003-l065_w000">
+          <Coords points="390,343 416,343 416,354 390,354"/>
+          <TextEquiv conf="0.430">
+            <Unicode>A4159</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.392">
           <Unicode>A4159</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r003-l071" index="1" custom="{&quot;heights&quot;: [9.7, 4.7], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l074" index="1" custom="{&quot;heights&quot;: [9.7, 4.7], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="388,376 417,376 417,362 388,362 388,376"/>
         <Baseline points="388,371 417,371"/>
+        <Word id="r003-l074_w000">
+          <Coords points="390,361 416,361 416,376 390,376"/>
+          <TextEquiv conf="0.440">
+            <Unicode>41148</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.530">
           <Unicode>41148</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r003-l076" index="2" custom="{&quot;heights&quot;: [7.6, 3.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l076" index="2" custom="{&quot;heights&quot;: [7.6, 3.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="624,394 623,384 555,385 491,385 426,385 362,385 296,385 231,385 167,385 102,385 35,384 35,394 102,395 167,395 231,395 296,395 362,395 426,395 491,395 556,395 624,394"/>
         <Baseline points="35,391 102,392 167,392 231,392 296,392 362,392 426,392 491,392 556,392 623,391"/>
+        <Word id="r003-l076_w000">
+          <Coords points="40,384 74,384 74,395 40,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Number</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w001">
+          <Coords points="78,384 85,384 85,395 78,395"/>
+          <TextEquiv conf="0.901">
+            <Unicode>of</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w002">
+          <Coords points="89,384 154,384 154,395 89,395"/>
+          <TextEquiv conf="0.995">
+            <Unicode>casesícontrols.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w003">
+          <Coords points="156,384 159,384 159,395 156,395"/>
+          <TextEquiv conf="0.475">
+            <Unicode>+</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w004">
+          <Coords points="161,384 198,384 198,395 161,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>Adjusted</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w005">
+          <Coords points="200,384 212,384 212,395 200,395"/>
+          <TextEquiv conf="0.998">
+            <Unicode>for</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w006">
+          <Coords points="216,384 235,384 235,395 216,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>age.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w007">
+          <Coords points="241,385 264,385 264,395 241,395"/>
+          <TextEquiv conf="0.997">
+            <Unicode>Vears</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w008">
+          <Coords points="268,385 276,385 276,395 268,395"/>
+          <TextEquiv conf="0.840">
+            <Unicode>ci</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w009">
+          <Coords points="280,385 333,385 333,395 280,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>menstruation</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w010">
+          <Coords points="337,385 341,385 341,395 337,395"/>
+          <TextEquiv conf="0.559">
+            <Unicode>=</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w011">
+          <Coords points="347,385 399,385 399,395 347,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>menopausal</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w012">
+          <Coords points="400,385 416,385 416,395 400,395"/>
+          <TextEquiv conf="0.999">
+            <Unicode>age</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w013">
+          <Coords points="420,385 428,385 428,395 420,395"/>
+          <TextEquiv conf="0.998">
+            <Unicode>or</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w014">
+          <Coords points="432,384 446,384 446,395 432,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>age</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w015">
+          <Coords points="450,384 458,384 458,395 450,395"/>
+          <TextEquiv conf="0.993">
+            <Unicode>at</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w016">
+          <Coords points="459,384 497,384 497,395 459,395"/>
+          <TextEquiv conf="0.998">
+            <Unicode>intervisw</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w017">
+          <Coords points="499,384 511,384 511,395 499,395"/>
+          <TextEquiv conf="0.996">
+            <Unicode>for</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w018">
+          <Coords points="514,384 582,384 582,395 514,395"/>
+          <TextEquiv conf="1.000">
+            <Unicode>premenopausal</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l076_w019">
+          <Coords points="584,384 621,384 621,395 584,395"/>
+          <TextEquiv conf="0.999">
+            <Unicode>women-</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.484">
           <Unicode>Number of casesícontrols. + Adjusted for age. Vears ci menstruation = menopausal age or age at intervisw for premenopausal women-</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r003-l077" index="3" custom="{&quot;heights&quot;: [7.9, 4.0], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r003-l077" index="3" custom="{&quot;heights&quot;: [7.9, 4.0], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="90,406 144,406 198,406 252,406 307,406 361,406 415,406 469,406 526,406 526,394 469,394 415,394 361,394 307,394 252,394 198,394 144,394 90,394 35,394 34,406 90,406"/>
         <Baseline points="34,402 90,402 144,402 198,402 252,402 307,402 361,402 415,402 469,402 526,402"/>
+        <Word id="r003-l077_w000">
+          <Coords points="38,394 78,394 78,406 38,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>menarche</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w001">
+          <Coords points="82,394 101,394 101,406 82,406"/>
+          <TextEquiv conf="0.997">
+            <Unicode>age.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w002">
+          <Coords points="103,394 117,394 117,406 103,406"/>
+          <TextEquiv conf="0.947">
+            <Unicode>Cl,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w003">
+          <Coords points="118,394 165,394 165,406 118,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>confidence</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w004">
+          <Coords points="166,394 201,394 201,406 166,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>interval;</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w005">
+          <Coords points="202,394 243,394 243,406 202,406"/>
+          <TextEquiv conf="0.989">
+            <Unicode>MnSOD,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w006">
+          <Coords points="246,394 294,394 294,406 246,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>manganese</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w007">
+          <Coords points="297,394 344,394 344,406 297,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>superozide</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w008">
+          <Coords points="346,394 393,394 393,406 346,406"/>
+          <TextEquiv conf="0.999">
+            <Unicode>dismutase:</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w009">
+          <Coords points="396,394 414,394 414,406 396,406"/>
+          <TextEquiv conf="0.887">
+            <Unicode>OŘ,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w010">
+          <Coords points="416,394 437,394 437,406 416,406"/>
+          <TextEquiv conf="0.998">
+            <Unicode>odda</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w011">
+          <Coords points="438,394 463,394 463,406 438,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ratio;</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w012">
+          <Coords points="464,394 481,394 481,406 464,406"/>
+          <TextEquiv conf="1.000">
+            <Unicode>ref.,</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r003-l077_w013">
+          <Coords points="481,394 523,394 523,406 481,406"/>
+          <TextEquiv conf="0.999">
+            <Unicode>reference</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.482">
           <Unicode>menarche age. Cl, confidence interval; MnSOD, manganese superozide dismutase: OŘ, odda ratio; ref., reference</Unicode>
         </TextEquiv>
@@ -634,56 +1660,116 @@
     </TextRegion>
     <TextRegion id="r039" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="556,363 537,363 537,375 556,375 556,363"/>
-      <TextLine id="r039-l075" index="0" custom="{&quot;heights&quot;: [8.0, 3.6], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r039-l075" index="0" custom="{&quot;heights&quot;: [8.0, 3.6], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="537,363 537,375 556,375 556,363 537,363"/>
         <Baseline points="537,371 556,371"/>
+        <Word id="r039-l075_w000">
+          <Coords points="539,363 552,363 552,375 539,375"/>
+          <TextEquiv conf="0.979">
+            <Unicode>515</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.818">
           <Unicode>515</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r015" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r014" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="247,364 227,364 227,375 267,375 267,364 247,364"/>
-      <TextLine id="r015-l070" index="0" custom="{&quot;heights&quot;: [7.9, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r014-l072" index="0" custom="{&quot;heights&quot;: [7.9, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="227,364 227,375 247,375 267,375 267,364 247,364 227,364"/>
         <Baseline points="227,371 247,371 267,371"/>
+        <Word id="r014-l072_w000">
+          <Coords points="228,363 266,363 266,374 228,374"/>
+          <TextEquiv conf="0.994">
+            <Unicode>1501145</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.685">
           <Unicode>1501145</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r010" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r011" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="68,344 47,344 47,355 90,355 90,344 68,344"/>
-      <TextLine id="r010-l067" index="0" custom="{&quot;heights&quot;: [8.1, 3.1], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r011-l066" index="0" custom="{&quot;heights&quot;: [8.1, 3.1], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="47,344 47,355 68,355 90,355 90,344 68,344 47,344"/>
         <Baseline points="47,352 68,352 90,352"/>
+        <Word id="r011-l066_w000">
+          <Coords points="50,343 54,343 54,354 50,354"/>
+          <TextEquiv conf="0.762">
+            <Unicode>s</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r011-l066_w001">
+          <Coords points="57,343 88,343 88,354 57,354"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Median</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.825">
           <Unicode>s Median</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r009" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r007" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="69,364 47,364 47,375 92,375 92,364 69,364"/>
-      <TextLine id="r009-l072" index="0" custom="{&quot;heights&quot;: [7.5, 3.2], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r007-l070" index="0" custom="{&quot;heights&quot;: [7.5, 3.2], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="47,364 47,375 69,375 92,375 92,364 69,364 47,364"/>
         <Baseline points="47,371 69,371 92,371"/>
+        <Word id="r007-l070_w000">
+          <Coords points="59,364 91,364 91,374 59,374"/>
+          <TextEquiv conf="0.997">
+            <Unicode>Median</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.517">
           <Unicode> Median</Unicode>
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion id="r046" custom="{&quot;category&quot;: &quot;text&quot;}">
+    <TextRegion id="r045" custom="{&quot;category&quot;: &quot;text&quot;}">
       <Coords points="599,344 584,344 585,375 643,375 643,344 599,344"/>
-      <TextLine id="r046-l063" index="0" custom="{&quot;heights&quot;: [7.9, 3.3], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r045-l063" index="0" custom="{&quot;heights&quot;: [7.9, 3.3], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="584,344 584,355 599,355 614,355 627,355 643,355 643,344 627,344 614,344 599,344 584,344"/>
         <Baseline points="584,352 599,352 614,352 627,352 643,352"/>
+        <Word id="r045-l063_w000">
+          <Coords points="587,343 599,343 599,354 587,354"/>
+          <TextEquiv conf="0.678">
+            <Unicode>O.A</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r045-l063_w001">
+          <Coords points="602,343 615,343 615,354 602,354"/>
+          <TextEquiv conf="0.998">
+            <Unicode>10.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r045-l063_w002">
+          <Coords points="614,343 636,343 636,354 614,354"/>
+          <TextEquiv conf="0.753">
+            <Unicode>1-2.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="r045-l063_w003">
+          <Coords points="636,343 642,343 642,354 636,354"/>
+          <TextEquiv conf="0.500">
+            <Unicode>2)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.530">
           <Unicode>O.A 10. 1-2. 2)</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine id="r046-l074" index="1" custom="{&quot;heights&quot;: [8.2, 3.4], &quot;category&quot;: &quot;text&quot;}">
+      <TextLine id="r045-l069" index="1" custom="{&quot;heights&quot;: [8.2, 3.4], &quot;category&quot;: &quot;text&quot;, &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
         <Coords points="600,375 614,375 627,375 643,375 643,363 627,363 614,363 600,363 585,363 585,375 600,375"/>
         <Baseline points="585,371 600,371 614,371 627,371 643,371"/>
+        <Word id="r045-l069_w000">
+          <Coords points="586,363 639,363 639,374 586,374"/>
+          <TextEquiv conf="0.960">
+            <Unicode>1.010.3-3.5)</Unicode>
+          </TextEquiv>
+        </Word>
         <TextEquiv conf="0.802">
           <Unicode>1.010.3-3.5)</Unicode>
         </TextEquiv>
