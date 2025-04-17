@@ -1,11 +1,11 @@
 import os
-import sys
+# import sys
 import argparse
 
 import cv2
 import numpy as np
 
-from huggingface_hub import hf_hub_download
+# from huggingface_hub import hf_hub_download
 from PIL import Image
 from transformers import DetrImageProcessor, TableTransformerForObjectDetection
 import torch
@@ -18,7 +18,7 @@ class TableDetectionEngine:
 
     def __init__(self, model_name: str = "microsoft/table-transformer-detection", device: str = "cuda"):
         self.feature_extractor = DetrImageProcessor()
-        self.detection_model = TableTransformerForObjectDetection.from_pretrained("microsoft/table-transformer-detection")
+        self.detection_model = TableTransformerForObjectDetection.from_pretrained(model_name)
         self.id2label = self.detection_model.config.id2label
 
     def __call__(self, image):
@@ -104,7 +104,7 @@ def main():
     for image_file in image_files:
         image_path = os.path.join(args.image_folder, image_file)
         image = Image.open(image_path).convert("RGB")
-        width, height = image.size
+        # width, height = image.size
 
         results = table_detection_engine(image)
         print(f'results: {results}')

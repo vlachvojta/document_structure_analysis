@@ -1,11 +1,11 @@
 import os
-import sys
+# import sys
 import argparse
 
 import cv2
 import numpy as np
 
-from huggingface_hub import hf_hub_download
+# from huggingface_hub import hf_hub_download
 from PIL import Image
 from transformers import DetrImageProcessor, TableTransformerForObjectDetection
 import torch
@@ -79,7 +79,7 @@ def parse_args():
     # args.add_argument("--device", type=str, default="cuda")
     args.add_argument("-i", "--image-folder", type=str, default="example_data/tables")
     args.add_argument("-r", "--rendered", type=str, default="example_data/tables_tsr_renders",
-                      help="folder to save rendered images")
+                      help="Folder to save rendered images")
 
     return args.parse_args()
 
@@ -99,22 +99,26 @@ def main():
     tsr_engine = TableStructureRecognitionEngine()
 
     for image_file in image_files:
+        print(f'Processing {image_file}...')
         image_path = os.path.join(args.image_folder, image_file)
         image = Image.open(image_path).convert("RGB")
 
         results = tsr_engine(image)
-        print(f'tsr result: {results}')
+        # print(f'tsr result: {results}')
 
         voc_layout = tsr_engine.call_result_to_voc_layout(image, results, image_file)
-        print(f'voc layout: {voc_layout}')
+        # print(f'voc layout: {voc_layout}')
         table_id = voc_layout.table_id
 
         image_columns = tsr_engine.plot_categories(np.array(image), results, ["table column"])
         cv2.imwrite(os.path.join(args.rendered, f"{table_id}_columns.png"), image_columns)
+        print(f'\t-image with columns: {os.path.join(args.rendered, f"{table_id}_columns.png")}')
         image_rows = tsr_engine.plot_categories(np.array(image), results, ["table row", "table projected row header"])
         cv2.imwrite(os.path.join(args.rendered, f"{table_id}_rows.png"), image_rows)
+        print(f'\t-image with rows: {os.path.join(args.rendered, f"{table_id}_rows.png")}')
         image_other = tsr_engine.plot_categories(np.array(image), results, ["table spanning cell", "table column header", "table"])
         cv2.imwrite(os.path.join(args.rendered, f"{table_id}_other.png"), image_other)
+        print(f'\t-image with other: {os.path.join(args.rendered, f"{table_id}_other.png")}')
 
 
 if __name__ == "__main__":
