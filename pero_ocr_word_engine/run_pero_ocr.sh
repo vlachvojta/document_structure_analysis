@@ -5,7 +5,8 @@
 # Date: 10.10.2024
 # Arguments:
 #   $1: path to folder of images to infer
-# Usage: ./run_pero_ocr.sh /path/to/images
+#   $2: path to config file (default: pipeline_layout_sort_ocr_czech_handwritten.ini)
+# Usage: ./run_pero_ocr.sh /path/to/images /path/to/config.ini
 # Description: Saves resulting data (page xmls and renders) in folders inside the images folder (for example /path/to/images -> /path/to/images/xml, /path/to/images/render)
 
 # return $2 if $1 is empty (return default value if argument is not provided)
@@ -34,12 +35,8 @@ fi
 RENDER_PATH=${IMAGES}/render
 RENDER_LINE_PATH=${IMAGES}/render_line
 XML_PATH=${IMAGES}/xml
-# get pwd
 
 source ~/.env_pero/bin/activate
-
-# Generate xmls
-# python $PERO_OCR/user_scripts/parse_folder.py -c pipeline_config_double_layout_parser_and_engines_cpu.ini -i images --output-render-path output_render --output-line-path output_line/ --output-xml-path xmls --output-alto-path xmls --output-logit-path logits --device cpu  # CPU
 
 files_in_image_dir=$(ls -p -1 $IMAGES | grep -v / | wc -l)
 echo "Reading ${files_in_image_dir} image files from ${IMAGES}":
@@ -51,9 +48,6 @@ python $PERO_OCR/user_scripts/parse_folder.py \
     --output-xml-path $XML_PATH \
     --output-render-path $RENDER_PATH \
     --output-render-category \
-
-    # --output-line-path $RENDER_LINE_PATH \
-    # --output-alto-path $ALTO_PATH \
 
 # print info about input and output files
 files_exported=$(ls -p -1 $XML_PATH/*.xml | wc -l)
