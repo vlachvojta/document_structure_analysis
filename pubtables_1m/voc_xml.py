@@ -536,7 +536,7 @@ def convert_to_VocWord(obj) -> VocWord:
     else:
         raise ValueError(f'Object of type {type(obj)} does not have coords or polygon attribute')
 
-def objects_intersect(big: VocObject | VocWord | TableCell, small: VocObject | VocWord | TableCell, tolerance: int) -> tuple[bool, bool]:
+def objects_intersect(big: VocObject | VocWord | TableCell, small: VocObject | VocWord | TableCell, tolerance: int = 0) -> tuple[bool, bool]:
     """Return True if two objects intersect, with a tolerance. Return a tuple of two bools: (intersect on x axis, intersect on y axis)."""
     big = convert_to_VocWord(big)
     small = convert_to_VocWord(small)

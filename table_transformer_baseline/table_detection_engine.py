@@ -16,7 +16,9 @@ from pubtables_1m.voc_xml import VocObject
 class TableDetectionEngine:
     """Use microsoft table transformer model to detect tables in images."""
 
-    def __init__(self, model_name: str = "microsoft/table-transformer-detection", device: str = "cuda"):
+    def __init__(self, model_name: str = "microsoft/table-transformer-detection", 
+                 detection_threshold: float = 0.2, device: str = "cuda"):
+        self.detection_threshold = detection_threshold
         self.feature_extractor = DetrImageProcessor()
         self.detection_model = TableTransformerForObjectDetection.from_pretrained(model_name)
         self.id2label = self.detection_model.config.id2label
@@ -28,7 +30,7 @@ class TableDetectionEngine:
         with torch.no_grad():
             outputs = self.detection_model(**encoding)
         results = self.feature_extractor.post_process_object_detection(
-            outputs, threshold=0.7, target_sizes=[(height, width)])[0]
+            outputs, threshold=self.detection_threshold, target_sizes=[(height, width)])[0]
 
         return results
 
