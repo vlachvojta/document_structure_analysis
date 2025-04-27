@@ -87,7 +87,8 @@ class TableEngine:
                 voc_layout = VocLayout(objects=voc_objects,
                                         words=words_filtered,
                                         width=table_crop.width, height=table_crop.height, depth=3,
-                                        table_id=f'{page_layout.id}_table_{table_id}')
+                                        table_id=f'{page_layout.id}_table_{table_id}',
+                                        tolerance=-10)
                                         # xml_file=os.path.splitext(os.path.basename(image_path))[0],
                                         # word_file=os.path.splitext(os.path.basename(image_path))[0])
 
