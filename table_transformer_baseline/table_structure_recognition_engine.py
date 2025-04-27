@@ -33,11 +33,15 @@ class TableStructureRecognitionEngine:
         results = self.feature_extractor.post_process_object_detection(outputs, threshold=0.6, target_sizes=target_sizes)[0]
         return results
     
-    def call_result_to_voc_objects(self, results: dict) -> list[VocObject]:
+    def call_result_to_voc_objects(self, results: dict, shift_coords: tuple[int, int] = [0, 0]) -> list[VocObject]:
         detected_objects = []
         for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
             box = [round(i, 2) for i in box.tolist()]
             xmin, ymin, xmax, ymax = box
+            xmin += shift_coords[0]
+            ymin += shift_coords[1]
+            xmax += shift_coords[0]
+            ymax += shift_coords[1]
             detected_object = VocObject(category=self.id2label[label.item()],
                                         xmin=xmin, ymin=ymin, xmax=xmax, ymax=ymax,
                                         confidence=score.item())

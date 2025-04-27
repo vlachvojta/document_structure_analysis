@@ -22,14 +22,15 @@ class WordDetectionEngine:
     Word detection engine for OCR processing.
     This class is responsible for detecting words in images and providing the detected words in a page_layout as well as VocWord objects.
     """
-    def __init__(self, work_dir: str,image_content_type: ImageContentType = ImageContentType.czech_handwritten,
-                 pero_script_path: str = 'run_pero_ocr.sh'):
+    def __init__(self, work_dir: str, image_content_type: ImageContentType = ImageContentType.czech_handwritten,
+                 pero_script_path: str = None):
         self.image_content_type = image_content_type
 
         self.work_dir = work_dir
         os.makedirs(self.work_dir, exist_ok=True)
 
-        self.pero_script_path = pero_script_path
+        pero_script_default_path = os.path.join(os.path.dirname(__file__), 'run_pero_ocr.sh')
+        self.pero_script_path = pero_script_path if pero_script_path else pero_script_default_path
         if not os.path.isfile(self.pero_script_path):
             raise FileNotFoundError(f"Pero OCR script not found at {self.pero_script_path}. Please provide a valid path")
 
@@ -40,7 +41,7 @@ class WordDetectionEngine:
             raise ValueError(f"Invalid content type: {image_content_type}. Must be one of {[e.value for e in ImageContentType]}")
 
         config_name = f'pipeline_layout_sort_ocr_{image_content_type.value}.ini'
-        self.config_file = os.path.join(os.path.dirname(pero_script_path), config_name)
+        self.config_file = os.path.join(os.path.dirname(self.pero_script_path), config_name)
         if not os.path.isfile(self.config_file):
             raise FileNotFoundError(f"Pero OCR config file not found at {self.config_file}. Please provide a valid path")
 
@@ -49,7 +50,7 @@ class WordDetectionEngine:
 
     def process_dir(self, work_dir: str) -> list[PageLayout]:
         """Process the input image and return a PageLayout object with detected words."""
-        command = [f'./{self.pero_script_path} {work_dir} {self.config_file}']
+        command = [f'{self.pero_script_path} {work_dir} {self.config_file}']
         print(f"Running pero_ocr script: {' '.join(command)}")
         # try:
         pero_ocr_result = subprocess.run(command, shell=True) #, check=True)

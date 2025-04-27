@@ -32,8 +32,8 @@ class TableDetectionEngine:
 
         return results
 
-    def get_tables_as_voc_objects(self, image: Image.Image) -> list[VocObject]:
-        results = self(image)
+    def get_tables_as_voc_objects(self, results: dict) -> list[VocObject]:
+        # results = self(image)
         tables = []
         for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
             box = [round(i, 2) for i in box.tolist()]
