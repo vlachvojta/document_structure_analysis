@@ -39,17 +39,17 @@ from organizer.utils import xywh_to_polygon
 def parseargs():
     """Parse arguments."""
     parser = argparse.ArgumentParser()
-    # parser.add_argument(
-    #     "-i", "--image-folder", default='example_data/2_cell_detection_tasks/images',
-    #     help="Input folder where to look for images.")
+    parser.add_argument(
+        "-i", "--image-folder", default='example_data/5_table_page_xmls_to_page_xmls/0_images',
+        help="Input folder where to look for images.")
     # parser.add_argument(
     #     "-l", "--label-file", type=str, default='example_data/4_annotated_HTML_tables.json',
     #     help="Label studio JSON export file.")
     parser.add_argument(
-        "-x", "--xml-folder", type=str, default='example_data/5_table_page_xmls_to_page_xmls/2_page_xmls/',
+        "-x", "--xml-folder", type=str, default='example_data/5_table_page_xmls_to_page_xmls/3_page_xmls_with_OCR/',
         help="Folder with table page xml files with detected cells and table structure.")
     parser.add_argument(
-        "-o", "--output-folder", type=str, default='example_data/5_table_page_xmls_to_page_xmls/3_batck_to_table_page_xmls/',
+        "-o", "--output-folder", type=str, default='example_data/5_table_page_xmls_to_page_xmls/4_back_to_table_page_xmls/',
         help="Output folder where to save cut out objects.")
     # parser.add_argument(
     #     '-v', "--verbose", action='store_true', default=False,
@@ -79,7 +79,6 @@ def main():
             raise ValueError(f'XML file {xml_file} does not exist in {args.xml_folder}')
         if not os.path.isfile(xml_file_path):
             raise ValueError(f'XML file {xml_file} is not a file in {args.xml_folder}')
-        print(f'Processing {xml_file}...')
 
         page_layout = PageLayout(id=xml_file, file=xml_file_path)
         if page_layout is None:
@@ -88,7 +87,7 @@ def main():
         table_layout = TablePageLayout.from_page_layout_with_structure_in_custom(page_layout)
 
         # render layout to render_file_path
-        canvas = np.zeros(page_layout.page_size + (3,), dtype=np.uint8)
+        canvas = load_canvas(xml_file_path, args.image_folder)
         table_layout.render_to_image(canvas)
         render_file_path = os.path.join(render_dir, xml_file.replace('.xml', '.png'))
         cv2.imwrite(render_file_path, canvas)
@@ -107,6 +106,18 @@ def main():
     print(f'Exported {xml_files_exported} XML files to {args.output_folder}')
     end = time.time()
     print(f'Total time: {end - start:.2f} s')
+
+def load_canvas(xml_file, image_folder):
+    """Load canvas from XML file."""
+    fallback_canvas = np.zeros((1000, 1000, 3), dtype=np.uint8)
+
+    # load image
+    image_file = os.path.join(image_folder, os.path.basename(xml_file).replace('.xml', '.jpg'))
+    if not os.path.exists(image_file) or not os.path.isfile(image_file):
+        return fallback_canvas
+
+    image = cv2.imread(image_file)
+    return image
 
 if __name__ == "__main__":
     main()
