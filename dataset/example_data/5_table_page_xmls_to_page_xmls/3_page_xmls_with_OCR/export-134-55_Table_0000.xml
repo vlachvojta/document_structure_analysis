@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-05-11T13:15:08.135459+00:00</Created>
+    <LastChange>2025-05-11T13:15:08.135459+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="export-134-55_Table_0000" imageWidth="775" imageHeight="209">
+    <TextRegion id="table">
+      <Coords points="0,0 775,0 775,209 0,209"/>
+      <TextLine id="1" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="11,17 123,17 123,60 11,60"/>
+        <Baseline points="11,50 123,50"/>
+        <Word id="1_w000">
+          <Coords points="22,17 108,17 108,60 22,60"/>
+          <TextEquiv conf="0.999">
+            <Unicode>JZD</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.928">
+          <Unicode>JZD</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="3" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [59.0, 19.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="203,14 430,14 430,92 203,92"/>
+        <Baseline points="203,73 430,73"/>
+        <Word id="3_w000">
+          <Coords points="203,14 248,14 248,92 203,92"/>
+          <TextEquiv conf="0.957">
+            <Unicode>III.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="3_w001">
+          <Coords points="263,14 389,14 389,92 263,92"/>
+          <TextEquiv conf="0.993">
+            <Unicode>typu</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.667">
+          <Unicode>III. typu</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="6" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [34.0, 11.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="614,15 758,15 758,60 614,60"/>
+        <Baseline points="614,49 758,49"/>
+        <Word id="6_w000">
+          <Coords points="634,15 699,15 699,60 634,60"/>
+          <TextEquiv conf="1.000">
+            <Unicode>185</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.999">
+          <Unicode>185</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="2" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [36.0, 11.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="9,85 121,85 121,132 9,132"/>
+        <Baseline points="9,121 121,121"/>
+        <Word id="2_w000">
+          <Coords points="18,85 105,85 105,132 18,132"/>
+          <TextEquiv conf="0.992">
+            <Unicode>JZD</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.962">
+          <Unicode>JZD</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="4" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [71.0, 23.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="174,71 526,71 526,165 174,165"/>
+        <Baseline points="174,142 526,142"/>
+        <Word id="4_w000">
+          <Coords points="174,71 241,71 241,165 174,165"/>
+          <TextEquiv conf="0.967">
+            <Unicode>III.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="4_w001">
+          <Coords points="247,71 277,71 277,165 247,165"/>
+          <TextEquiv conf="0.997">
+            <Unicode>a</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="4_w002">
+          <Coords points="301,71 380,71 380,165 301,165"/>
+          <TextEquiv conf="0.994">
+            <Unicode>IV.</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="4_w003">
+          <Coords points="398,71 525,71 525,165 398,165"/>
+          <TextEquiv conf="0.858">
+            <Unicode>typa</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.808">
+          <Unicode>III. a IV. typa</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="5" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 11.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="565,82 718,82 718,126 565,126"/>
+        <Baseline points="565,115 718,115"/>
+        <Word id="5_w000">
+          <Coords points="573,82 588,82 588,126 573,126"/>
+          <TextEquiv conf="1.000">
+            <Unicode>6</Unicode>
+          </TextEquiv>
+        </Word>
+        <Word id="5_w001">
+          <Coords points="618,82 706,82 706,126 618,126"/>
+          <TextEquiv conf="1.000">
+            <Unicode>478</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.755">
+          <Unicode>6 478</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="7" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [42.0, 13.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="263,143 467,143 467,198 263,198"/>
+        <Baseline points="263,185 467,185"/>
+        <Word id="7_w000">
+          <Coords points="266,143 410,143 410,198 266,198"/>
+          <TextEquiv conf="0.999">
+            <Unicode>Celkem</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="0.986">
+          <Unicode>Celkem</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="8" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [31.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
+        <Coords points="562,150 710,150 710,191 562,191"/>
+        <Baseline points="562,181 710,181"/>
+        <Word id="8_w000">
+          <Coords points="570,150 698,150 698,191 570,191"/>
+          <TextEquiv conf="1.000">
+            <Unicode>6663</Unicode>
+          </TextEquiv>
+        </Word>
+        <TextEquiv conf="1.000">
+          <Unicode>6663</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+  </Page>
+</PcGts>
