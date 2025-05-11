@@ -2,94 +2,316 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-05-11T11:03:04.098509+00:00</Created>
-    <LastChange>2025-05-11T11:03:04.098509+00:00</LastChange>
+    <Created>2025-05-11T13:30:25.217875+00:00</Created>
+    <LastChange>2025-05-11T13:30:25.217875+00:00</LastChange>
   </Metadata>
   <Page imageFilename="318ff59139154f75ac778b50f53c58dc-img_0127_Table_tl0lY7D-Rd" imageHeight="253" imageWidth="851">
     <TableRegion id="table">
       <Coords points="0,0 851,0 851,253 0,253"/>
       <TableCell id="0" type="Table_cell" row="0" col="0" rowSpan="1" colSpan="1">
         <Coords points="3,3 616,3 616,68 3,68"/>
-        <TextLine id="0" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [49.0, 16.0]}">
+        <TextLine id="0" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [49.0, 16.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="3,3 616,3 616,68 3,68"/>
           <Baseline points="3,52 616,52"/>
+          <Word id="0_w000">
+            <Coords points="3,3 122,3 122,68 3,68"/>
+            <TextEquiv conf="0.999">
+              <Unicode>Produkce</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="0_w001">
+            <Coords points="134,3 291,3 291,68 134,68"/>
+            <TextEquiv conf="1.000">
+              <Unicode>živočišné</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="0_w002">
+            <Coords points="315,3 418,3 418,68 315,68"/>
+            <TextEquiv conf="1.000">
+              <Unicode>výroby</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="0_w003">
+            <Coords points="434,3 455,3 455,68 434,68"/>
+            <TextEquiv conf="1.000">
+              <Unicode>v</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="0_w004">
+            <Coords points="459,3 521,3 521,68 459,68"/>
+            <TextEquiv conf="0.997">
+              <Unicode>roce</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="0_w005">
+            <Coords points="525,3 615,3 615,68 525,68"/>
+            <TextEquiv conf="0.984">
+              <Unicode>1971-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.835">
+            <Unicode>Produkce živočišné výroby v roce 1971-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="1" type="Table_cell" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="627,19 698,19 698,46 627,46"/>
-        <TextLine id="1" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 6.0]}">
+        <TextLine id="1" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="627,19 698,19 698,46 627,46"/>
           <Baseline points="627,40 698,40"/>
+          <Word id="1_w000">
+            <Coords points="632,19 667,19 667,46 632,46"/>
+            <TextEquiv conf="0.996">
+              <Unicode>840</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="1_w001">
+            <Coords points="685,19 694,19 694,46 685,46"/>
+            <TextEquiv conf="0.965">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.809">
+            <Unicode>840 -</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="2" type="Table_cell" row="0" col="2" rowSpan="1" colSpan="1">
         <Coords points="751,16 838,16 838,45 751,45"/>
-        <TextLine id="2" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+        <TextLine id="2" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="751,16 838,16 838,45 751,45"/>
           <Baseline points="751,38 838,38"/>
+          <Word id="2_w000">
+            <Coords points="753,16 837,16 837,45 753,45"/>
+            <TextEquiv conf="0.999">
+              <Unicode>1103-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.971">
+            <Unicode>1103-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="3" type="Table_cell" row="1" col="0" rowSpan="1" colSpan="1">
         <Coords points="3,76 407,76 407,125 3,125"/>
-        <TextLine id="3" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [37.0, 12.0]}">
+        <TextLine id="3" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [37.0, 12.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="3,76 407,76 407,125 3,125"/>
           <Baseline points="3,113 407,113"/>
+          <Word id="3_w000">
+            <Coords points="3,76 118,76 118,125 3,125"/>
+            <TextEquiv conf="0.998">
+              <Unicode>Příchovky</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="3_w001">
+            <Coords points="130,76 146,76 146,125 130,125"/>
+            <TextEquiv conf="1.000">
+              <Unicode>a</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="3_w002">
+            <Coords points="158,76 291,76 291,125 158,125"/>
+            <TextEquiv conf="1.000">
+              <Unicode>přírustky</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="3_w003">
+            <Coords points="307,76 394,76 394,125 307,125"/>
+            <TextEquiv conf="0.997">
+              <Unicode>zvířat</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.986">
+            <Unicode>Příchovky a přírustky zvířat</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="4" type="Table_cell" row="1" col="1" rowSpan="1" colSpan="1">
         <Coords points="611,80 700,80 700,110 611,110"/>
-        <TextLine id="4" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+        <TextLine id="4" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="611,80 700,80 700,110 611,110"/>
           <Baseline points="611,103 700,103"/>
+          <Word id="4_w000">
+            <Coords points="613,80 699,80 699,110 613,110"/>
+            <TextEquiv conf="0.999">
+              <Unicode>1128,-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.990">
+            <Unicode>1128,-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="5" type="Table_cell" row="1" col="2" rowSpan="1" colSpan="1">
         <Coords points="769,72 848,72 848,107 769,107"/>
-        <TextLine id="5" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="5" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="769,72 848,72 848,107 769,107"/>
           <Baseline points="769,99 848,99"/>
+          <Word id="5_w000">
+            <Coords points="769,72 842,72 842,107 769,107"/>
+            <TextEquiv conf="0.992">
+              <Unicode>748,-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.992">
+            <Unicode>748,-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="6" type="Table_cell" row="2" col="0" rowSpan="1" colSpan="1">
         <Coords points="8,128 440,128 440,171 8,171"/>
-        <TextLine id="6" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 10.0]}">
+        <TextLine id="6" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="8,128 440,128 440,171 8,171"/>
           <Baseline points="8,161 440,161"/>
+          <Word id="6_w000">
+            <Coords points="8,128 70,128 70,171 8,171"/>
+            <TextEquiv conf="1.000">
+              <Unicode>Celkem</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="6_w001">
+            <Coords points="87,128 146,128 146,171 87,171"/>
+            <TextEquiv conf="0.978">
+              <Unicode>hrubá</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="6_w002">
+            <Coords points="157,128 249,128 249,171 157,171"/>
+            <TextEquiv conf="1.000">
+              <Unicode>zeměď.</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="6_w003">
+            <Coords points="257,128 366,128 366,171 257,171"/>
+            <TextEquiv conf="1.000">
+              <Unicode>produkce</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="6_w004">
+            <Coords points="390,128 428,128 428,171 390,171"/>
+            <TextEquiv conf="0.985">
+              <Unicode>ŽV</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.486">
+            <Unicode>Celkem hrubá zeměď. produkce ŽV</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="7" type="Table_cell" row="2" col="1" rowSpan="1" colSpan="1">
         <Coords points="611,144 690,144 690,172 611,172"/>
-        <TextLine id="7" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+        <TextLine id="7" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="611,144 690,144 690,172 611,172"/>
           <Baseline points="611,165 690,165"/>
+          <Word id="7_w000">
+            <Coords points="613,144 689,144 689,172 613,172"/>
+            <TextEquiv conf="0.998">
+              <Unicode>1968,-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.939">
+            <Unicode>1968,-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="8" type="Table_cell" row="2" col="2" rowSpan="1" colSpan="1">
         <Coords points="748,141 847,141 847,174 748,174"/>
-        <TextLine id="8" index="8" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="8" index="8" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="748,141 847,141 847,174 748,174"/>
           <Baseline points="748,166 847,166"/>
+          <Word id="8_w000">
+            <Coords points="750,141 842,141 842,174 750,174"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1851,-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.890">
+            <Unicode>1851,-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="9" type="Table_cell" row="3" col="0" rowSpan="1" colSpan="1">
         <Coords points="6,190 472,190 472,252 6,252"/>
-        <TextLine id="9" index="9" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [47.0, 15.0]}">
+        <TextLine id="9" index="9" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [47.0, 15.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="6,190 472,190 472,252 6,252"/>
           <Baseline points="6,237 472,237"/>
+          <Word id="9_w000">
+            <Coords points="6,190 115,190 115,252 6,252"/>
+            <TextEquiv conf="1.000">
+              <Unicode>Náklady</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="9_w001">
+            <Coords points="131,190 170,190 170,252 131,252"/>
+            <TextEquiv conf="1.000">
+              <Unicode>na</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="9_w002">
+            <Coords points="178,190 252,190 252,252 178,252"/>
+            <TextEquiv conf="0.997">
+              <Unicode>živ.</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="9_w003">
+            <Coords points="252,190 338,190 338,252 252,252"/>
+            <TextEquiv conf="0.999">
+              <Unicode>výrobu</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="9_w004">
+            <Coords points="342,190 408,190 408,252 342,252"/>
+            <TextEquiv conf="0.968">
+              <Unicode>přímí</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="9_w005">
+            <Coords points="408,190 428,190 428,252 408,252"/>
+            <TextEquiv conf="0.944">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <Word id="9_w006">
+            <Coords points="420,190 471,190 471,252 420,252"/>
+            <TextEquiv conf="0.566">
+              <Unicode>mzdy</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.561">
+            <Unicode>Náklady na živ. výrobu přímí - mzdy</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="10" type="Table_cell" row="3" col="1" rowSpan="1" colSpan="1">
         <Coords points="619,193 711,193 711,237 619,237"/>
-        <TextLine id="10" index="10" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 11.0]}">
+        <TextLine id="10" index="10" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 11.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="619,193 711,193 711,237 619,237"/>
           <Baseline points="619,226 711,226"/>
+          <Word id="10_w000">
+            <Coords points="622,193 710,193 710,237 622,237"/>
+            <TextEquiv conf="0.995">
+              <Unicode>242,-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.976">
+            <Unicode>242,-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="11" type="Table_cell" row="3" col="2" rowSpan="1" colSpan="1">
         <Coords points="764,201 850,201 850,241 764,241"/>
-        <TextLine id="11" index="11" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [30.0, 10.0]}">
+        <TextLine id="11" index="11" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [30.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="764,201 850,201 850,241 764,241"/>
           <Baseline points="764,231 850,231"/>
+          <Word id="11_w000">
+            <Coords points="764,201 849,201 849,241 764,241"/>
+            <TextEquiv conf="1.000">
+              <Unicode>387,-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.991">
+            <Unicode>387,-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
     </TableRegion>

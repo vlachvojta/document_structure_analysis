@@ -2,633 +2,1434 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
   <Metadata>
     <Creator>Pero OCR</Creator>
-    <Created>2025-05-11T11:03:04.179526+00:00</Created>
-    <LastChange>2025-05-11T11:03:04.179526+00:00</LastChange>
+    <Created>2025-05-11T13:30:25.249632+00:00</Created>
+    <LastChange>2025-05-11T13:30:25.249632+00:00</LastChange>
   </Metadata>
   <Page imageFilename="0FE57CEBF7DB11E48B56B8CA3A743057-img_0087_Table_AGatn-HUWW" imageHeight="339" imageWidth="959">
     <TableRegion id="table">
       <Coords points="0,0 959,0 959,339 0,339"/>
       <TableCell id="4" type="Header_cell" row="0" col="1" rowSpan="1" colSpan="1">
         <Coords points="153,4 196,4 196,46 153,46"/>
-        <TextLine id="4" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [32.0, 10.0]}">
+        <TextLine id="4" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [32.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="153,4 196,4 196,46 153,46"/>
           <Baseline points="153,36 196,36"/>
+          <Word id="4_w000">
+            <Coords points="156,4 195,4 195,46 156,46"/>
+            <TextEquiv conf="0.998">
+              <Unicode>h.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.998">
+            <Unicode>h.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="10" type="Header_cell" row="0" col="2" rowSpan="1" colSpan="1">
         <Coords points="207,10 259,10 259,45 207,45"/>
-        <TextLine id="10" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="10" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="207,10 259,10 259,45 207,45"/>
           <Baseline points="207,37 259,37"/>
+          <Word id="10_w000">
+            <Coords points="216,10 249,10 249,45 216,45"/>
+            <TextEquiv conf="0.994">
+              <Unicode>d.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.993">
+            <Unicode>d.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="11" type="Header_cell" row="0" col="3" rowSpan="1" colSpan="1">
         <Coords points="272,21 313,21 313,48 272,48"/>
-        <TextLine id="11" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [21.0, 6.0]}">
+        <TextLine id="11" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [21.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="272,21 313,21 313,48 272,48"/>
           <Baseline points="272,42 313,42"/>
+          <Word id="11_w000">
+            <Coords points="283,21 308,21 308,48 283,48"/>
+            <TextEquiv conf="0.948">
+              <Unicode>c.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.947">
+            <Unicode>c.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="5" type="Header_cell" row="0" col="4" rowSpan="1" colSpan="1">
         <Coords points="408,12 466,12 466,53 408,53"/>
-        <TextLine id="5" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [31.0, 10.0]}">
+        <TextLine id="5" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [31.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="408,12 466,12 466,53 408,53"/>
           <Baseline points="408,43 466,43"/>
+          <Word id="5_w000">
+            <Coords points="424,12 465,12 465,53 424,53"/>
+            <TextEquiv conf="0.897">
+              <Unicode>h.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.898">
+            <Unicode>h.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="12" type="Header_cell" row="0" col="5" rowSpan="1" colSpan="1">
         <Coords points="466,19 513,19 513,53 466,53"/>
-        <TextLine id="12" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+        <TextLine id="12" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [26.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="466,19 513,19 513,53 466,53"/>
           <Baseline points="466,45 513,45"/>
+          <Word id="12_w000">
+            <Coords points="475,19 512,19 512,53 475,53"/>
+            <TextEquiv conf="0.995">
+              <Unicode>d.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.993">
+            <Unicode>d.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="13" type="Header_cell" row="0" col="6" rowSpan="1" colSpan="1">
         <Coords points="522,28 559,28 559,50 522,50"/>
-        <TextLine id="13" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+        <TextLine id="13" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [17.0, 5.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="522,28 559,28 559,50 522,50"/>
           <Baseline points="522,45 559,45"/>
+          <Word id="13_w000">
+            <Coords points="532,28 558,28 558,50 532,50"/>
+            <TextEquiv conf="0.707">
+              <Unicode>c.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.694">
+            <Unicode>c.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="6" type="Header_cell" row="0" col="7" rowSpan="1" colSpan="1">
         <Coords points="633,17 686,17 686,57 633,57"/>
-        <TextLine id="6" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [30.0, 10.0]}">
+        <TextLine id="6" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [30.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="633,17 686,17 686,57 633,57"/>
           <Baseline points="633,47 686,47"/>
+          <Word id="6_w000">
+            <Coords points="649,17 685,17 685,57 649,57"/>
+            <TextEquiv conf="0.500">
+              <Unicode>h.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.962">
+            <Unicode>h.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="14" type="Header_cell" row="0" col="8" rowSpan="1" colSpan="1">
         <Coords points="688,28 732,28 732,56 688,56"/>
-        <TextLine id="14" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+        <TextLine id="14" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [21.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="688,28 732,28 732,56 688,56"/>
           <Baseline points="688,49 732,49"/>
+          <Word id="14_w000">
+            <Coords points="701,28 727,28 727,56 701,56"/>
+            <TextEquiv conf="0.971">
+              <Unicode>d.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.969">
+            <Unicode>d.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="15" type="Header_cell" row="0" col="9" rowSpan="1" colSpan="1">
         <Coords points="747,37 782,37 782,59 747,59"/>
-        <TextLine id="15" index="8" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+        <TextLine id="15" index="8" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [17.0, 5.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="747,37 782,37 782,59 747,59"/>
           <Baseline points="747,54 782,54"/>
+          <Word id="15_w000">
+            <Coords points="757,37 778,37 778,59 757,59"/>
+            <TextEquiv conf="0.908">
+              <Unicode>9.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.883">
+            <Unicode>9.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="7" type="Header_cell" row="0" col="10" rowSpan="1" colSpan="1">
         <Coords points="820,22 860,22 860,55 820,55"/>
-        <TextLine id="7" index="9" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="7" index="9" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="820,22 860,22 860,55 820,55"/>
           <Baseline points="820,47 860,47"/>
+          <Word id="7_w000">
+            <Coords points="827,22 859,22 859,55 827,55"/>
+            <TextEquiv conf="0.991">
+              <Unicode>h.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.987">
+            <Unicode>h.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="16" type="Header_cell" row="0" col="11" rowSpan="1" colSpan="1">
         <Coords points="862,28 905,28 905,58 862,58"/>
-        <TextLine id="16" index="10" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+        <TextLine id="16" index="10" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [23.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="862,28 905,28 905,58 862,58"/>
           <Baseline points="862,51 905,51"/>
+          <Word id="16_w000">
+            <Coords points="874,28 904,28 904,58 874,58"/>
+            <TextEquiv conf="0.994">
+              <Unicode>d.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.996">
+            <Unicode>d.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="17" type="Header_cell" row="0" col="12" rowSpan="1" colSpan="1">
         <Coords points="908,39 942,39 942,56 908,56"/>
-        <TextLine id="17" index="11" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [13.0, 4.0]}">
+        <TextLine id="17" index="11" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Header_cell&quot;}, &quot;heights&quot;: [13.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="908,39 942,39 942,56 908,56"/>
           <Baseline points="908,52 942,52"/>
+          <Word id="17_w000">
+            <Coords points="915,39 941,39 941,56 915,56"/>
+            <TextEquiv conf="0.522">
+              <Unicode>C.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.265">
+            <Unicode>C.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="1" type="Row_ID_cell" row="1" col="0" rowSpan="1" colSpan="1">
         <Coords points="39,51 81,51 81,97 39,97"/>
-        <TextLine id="1" index="12" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [35.0, 11.0]}">
+        <TextLine id="1" index="12" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [35.0, 11.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="39,51 81,51 81,97 39,97"/>
           <Baseline points="39,86 81,86"/>
+          <Word id="1_w000">
+            <Coords points="42,51 80,51 80,97 42,97"/>
+            <TextEquiv conf="0.999">
+              <Unicode>I.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>I.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="18" type="Table_cell" row="1" col="1" rowSpan="1" colSpan="1">
         <Coords points="156,60 212,60 212,90 156,90"/>
-        <TextLine id="18" index="13" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+        <TextLine id="18" index="13" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="156,60 212,60 212,90 156,90"/>
           <Baseline points="156,83 212,83"/>
+          <Word id="18_w000">
+            <Coords points="164,60 191,60 191,90 164,90"/>
+            <TextEquiv conf="1.000">
+              <Unicode>12</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>12</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="19" type="Table_cell" row="1" col="2" rowSpan="1" colSpan="1">
         <Coords points="244,61 269,61 269,91 244,91"/>
-        <TextLine id="19" index="14" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+        <TextLine id="19" index="14" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="244,61 269,61 269,91 244,91"/>
           <Baseline points="244,84 269,84"/>
+          <Word id="19_w000">
+            <Coords points="246,61 257,61 257,91 246,91"/>
+            <TextEquiv conf="0.999">
+              <Unicode>6</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>6</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="20" type="Table_cell" row="1" col="3" rowSpan="1" colSpan="1">
         <Coords points="297,59 341,59 341,92 297,92"/>
-        <TextLine id="20" index="15" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="20" index="15" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="297,59 341,59 341,92 297,92"/>
           <Baseline points="297,84 341,84"/>
+          <Word id="20_w000">
+            <Coords points="304,59 329,59 329,92 304,92"/>
+            <TextEquiv conf="0.992">
+              <Unicode>18</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.991">
+            <Unicode>18</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="36" type="Table_cell" row="1" col="4" rowSpan="1" colSpan="1">
         <Coords points="442,64 502,64 502,99 442,99"/>
-        <TextLine id="36" index="16" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="36" index="16" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="442,64 502,64 502,99 442,99"/>
           <Baseline points="442,91 502,91"/>
+          <Word id="36_w000">
+            <Coords points="456,64 484,64 484,99 456,99"/>
+            <TextEquiv conf="1.000">
+              <Unicode>12</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>12</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="37" type="Table_cell" row="1" col="5" rowSpan="1" colSpan="1">
         <Coords points="520,66 552,66 552,94 520,94"/>
-        <TextLine id="37" index="17" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+        <TextLine id="37" index="17" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="520,66 552,66 552,94 520,94"/>
           <Baseline points="520,87 552,87"/>
+          <Word id="37_w000">
+            <Coords points="526,66 536,66 536,94 526,94"/>
+            <TextEquiv conf="0.999">
+              <Unicode>5</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>5</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="38" type="Table_cell" row="1" col="6" rowSpan="1" colSpan="1">
         <Coords points="568,65 613,65 613,100 568,100"/>
-        <TextLine id="38" index="18" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="38" index="18" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="568,65 613,65 613,100 568,100"/>
           <Baseline points="568,92 613,92"/>
+          <Word id="38_w000">
+            <Coords points="575,65 600,65 600,100 575,100"/>
+            <TextEquiv conf="1.000">
+              <Unicode>17</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>17</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="54" type="Table_cell" row="1" col="7" rowSpan="1" colSpan="1">
         <Coords points="662,73 688,73 688,95 662,95"/>
-        <TextLine id="54" index="19" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+        <TextLine id="54" index="19" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="662,73 688,73 688,95 662,95"/>
           <Baseline points="662,90 688,90"/>
+          <Word id="54_w000">
+            <Coords points="666,73 674,73 674,95 666,95"/>
+            <TextEquiv conf="0.733">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.865">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="55" type="Table_cell" row="1" col="8" rowSpan="1" colSpan="1">
         <Coords points="711,79 732,79 732,90 711,90"/>
-        <TextLine id="55" index="20" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [9.0, 2.0]}">
+        <TextLine id="55" index="20" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [9.0, 2.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="711,79 732,79 732,90 711,90"/>
           <Baseline points="711,88 732,88"/>
+          <Word id="55_w000">
+            <Coords points="717,79 722,79 722,90 717,90"/>
+            <TextEquiv conf="0.623">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.807">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="56" type="Table_cell" row="1" col="9" rowSpan="1" colSpan="1">
         <Coords points="743,77 767,77 767,91 743,91"/>
-        <TextLine id="56" index="21" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [11.0, 3.0]}">
+        <TextLine id="56" index="21" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [11.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="743,77 767,77 767,91 743,91"/>
           <Baseline points="743,88 767,88"/>
+          <Word id="56_w000">
+            <Coords points="749,77 754,77 754,91 749,91"/>
+            <TextEquiv conf="0.050">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.521">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="72" type="Table_cell" row="1" col="10" rowSpan="1" colSpan="1">
         <Coords points="830,75 854,75 854,94 830,94"/>
-        <TextLine id="72" index="22" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [15.0, 4.0]}">
+        <TextLine id="72" index="22" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [15.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="830,75 854,75 854,94 830,94"/>
           <Baseline points="830,90 854,90"/>
+          <Word id="72_w000">
+            <Coords points="838,75 844,75 844,94 838,94"/>
+            <TextEquiv conf="0.690">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.844">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="73" type="Table_cell" row="1" col="11" rowSpan="1" colSpan="1">
         <Coords points="870,72 900,72 900,97 870,97"/>
-        <TextLine id="73" index="23" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0]}">
+        <TextLine id="73" index="23" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="870,72 900,72 900,97 870,97"/>
           <Baseline points="870,91 900,91"/>
+          <Word id="73_w000">
+            <Coords points="880,72 889,72 889,97 880,97"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="74" type="Table_cell" row="1" col="12" rowSpan="1" colSpan="1">
         <Coords points="912,67 947,67 947,101 912,101"/>
-        <TextLine id="74" index="24" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+        <TextLine id="74" index="24" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="912,67 947,67 947,101 912,101"/>
           <Baseline points="912,93 947,93"/>
+          <Word id="74_w000">
+            <Coords points="921,67 935,67 935,101 921,101"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="2" type="Row_ID_cell" row="2" col="0" rowSpan="1" colSpan="1">
         <Coords points="35,95 79,95 79,144 35,144"/>
-        <TextLine id="2" index="25" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [37.0, 12.0]}">
+        <TextLine id="2" index="25" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [37.0, 12.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="35,95 79,95 79,144 35,144"/>
           <Baseline points="35,132 79,132"/>
+          <Word id="2_w000">
+            <Coords points="38,95 78,95 78,144 38,144"/>
+            <TextEquiv conf="1.000">
+              <Unicode>II.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.997">
+            <Unicode>II.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="21" type="Table_cell" row="2" col="1" rowSpan="1" colSpan="1">
         <Coords points="164,102 217,102 217,140 164,140"/>
-        <TextLine id="21" index="26" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [29.0, 9.0]}">
+        <TextLine id="21" index="26" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [29.0, 9.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="164,102 217,102 217,140 164,140"/>
           <Baseline points="164,131 217,131"/>
+          <Word id="21_w000">
+            <Coords points="172,102 203,102 203,140 172,140"/>
+            <TextEquiv conf="1.000">
+              <Unicode>19</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>19</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="22" type="Table_cell" row="2" col="2" rowSpan="1" colSpan="1">
         <Coords points="238,101 286,101 286,136 238,136"/>
-        <TextLine id="22" index="27" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="22" index="27" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="238,101 286,101 286,136 238,136"/>
           <Baseline points="238,128 286,128"/>
+          <Word id="22_w000">
+            <Coords points="240,101 266,101 266,136 240,136"/>
+            <TextEquiv conf="1.000">
+              <Unicode>14</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>14</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="23" type="Table_cell" row="2" col="3" rowSpan="1" colSpan="1">
         <Coords points="305,106 346,106 346,138 305,138"/>
-        <TextLine id="23" index="28" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+        <TextLine id="23" index="28" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="305,106 346,106 346,138 305,138"/>
           <Baseline points="305,130 346,130"/>
+          <Word id="23_w000">
+            <Coords points="311,106 337,106 337,138 311,138"/>
+            <TextEquiv conf="1.000">
+              <Unicode>33</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>33</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="39" type="Table_cell" row="2" col="4" rowSpan="1" colSpan="1">
         <Coords points="451,111 497,111 497,144 451,144"/>
-        <TextLine id="39" index="29" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="39" index="29" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="451,111 497,111 497,144 451,144"/>
           <Baseline points="451,136 497,136"/>
+          <Word id="39_w000">
+            <Coords points="458,111 485,111 485,144 458,144"/>
+            <TextEquiv conf="1.000">
+              <Unicode>19</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>19</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="40" type="Table_cell" row="2" col="5" rowSpan="1" colSpan="1">
         <Coords points="512,113 552,113 552,143 512,143"/>
-        <TextLine id="40" index="30" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+        <TextLine id="40" index="30" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="512,113 552,113 552,143 512,143"/>
           <Baseline points="512,136 552,136"/>
+          <Word id="40_w000">
+            <Coords points="518,113 541,113 541,143 518,143"/>
+            <TextEquiv conf="1.000">
+              <Unicode>14</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>14</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="41" type="Table_cell" row="2" col="6" rowSpan="1" colSpan="1">
         <Coords points="568,114 616,114 616,146 568,146"/>
-        <TextLine id="41" index="31" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+        <TextLine id="41" index="31" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="568,114 616,114 616,146 568,146"/>
           <Baseline points="568,138 616,138"/>
+          <Word id="41_w000">
+            <Coords points="570,114 600,114 600,146 570,146"/>
+            <TextEquiv conf="1.000">
+              <Unicode>33</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>33</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="57" type="Table_cell" row="2" col="7" rowSpan="1" colSpan="1">
         <Coords points="669,113 706,113 706,148 669,148"/>
-        <TextLine id="57" index="32" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="57" index="32" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="669,113 706,113 706,148 669,148"/>
           <Baseline points="669,140 706,140"/>
+          <Word id="57_w000">
+            <Coords points="683,113 695,113 695,148 683,148"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="58" type="Table_cell" row="2" col="8" rowSpan="1" colSpan="1">
         <Coords points="714,122 731,122 731,139 714,139"/>
-        <TextLine id="58" index="33" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0]}">
+        <TextLine id="58" index="33" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="714,122 731,122 731,139 714,139"/>
           <Baseline points="714,135 731,135"/>
+          <Word id="58_w000">
+            <Coords points="717,122 724,122 724,139 717,139"/>
+            <TextEquiv conf="0.983">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.991">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="59" type="Table_cell" row="2" col="9" rowSpan="1" colSpan="1">
         <Coords points="738,108 772,108 772,149 738,149"/>
-        <TextLine id="59" index="34" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [31.0, 10.0]}">
+        <TextLine id="59" index="34" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [31.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="738,108 772,108 772,149 738,149"/>
           <Baseline points="738,139 772,139"/>
+          <Word id="59_w000">
+            <Coords points="741,108 756,108 756,149 741,149"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="75" type="Table_cell" row="2" col="10" rowSpan="1" colSpan="1">
         <Coords points="830,111 860,111 860,140 830,140"/>
-        <TextLine id="75" index="35" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+        <TextLine id="75" index="35" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="830,111 860,111 860,140 830,140"/>
           <Baseline points="830,133 860,133"/>
+          <Word id="75_w000">
+            <Coords points="838,111 849,111 849,140 838,140"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="76" type="Table_cell" row="2" col="11" rowSpan="1" colSpan="1">
         <Coords points="862,122 883,122 883,139 862,139"/>
-        <TextLine id="76" index="36" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0]}">
+        <TextLine id="76" index="36" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="862,122 883,122 883,139 862,139"/>
           <Baseline points="862,135 883,135"/>
+          <Word id="76_w000">
+            <Coords points="867,122 873,122 873,139 867,139"/>
+            <TextEquiv conf="0.877">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.938">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="77" type="Table_cell" row="2" col="12" rowSpan="1" colSpan="1">
         <Coords points="906,109 948,109 948,147 906,147"/>
-        <TextLine id="77" index="37" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [29.0, 9.0]}">
+        <TextLine id="77" index="37" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [29.0, 9.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="906,109 948,109 948,147 906,147"/>
           <Baseline points="906,138 948,138"/>
+          <Word id="77_w000">
+            <Coords points="914,109 926,109 926,147 914,147"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="3" type="Row_ID_cell" row="3" col="0" rowSpan="1" colSpan="1">
         <Coords points="49,146 91,146 91,188 49,188"/>
-        <TextLine id="3" index="38" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [32.0, 10.0]}">
+        <TextLine id="3" index="38" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [32.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="49,146 91,146 91,188 49,188"/>
           <Baseline points="49,178 91,178"/>
+          <Word id="3_w000">
+            <Coords points="49,146 90,146 90,188 49,188"/>
+            <TextEquiv conf="0.983">
+              <Unicode>III.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.969">
+            <Unicode>III.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="24" type="Table_cell" row="3" col="1" rowSpan="1" colSpan="1">
         <Coords points="163,149 219,149 219,184 163,184"/>
-        <TextLine id="24" index="39" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="24" index="39" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="163,149 219,149 219,184 163,184"/>
           <Baseline points="163,176 219,176"/>
+          <Word id="24_w000">
+            <Coords points="172,149 209,149 209,184 172,184"/>
+            <TextEquiv conf="1.000">
+              <Unicode>20</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>20</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="25" type="Table_cell" row="3" col="2" rowSpan="1" colSpan="1">
         <Coords points="244,154 292,154 292,186 244,186"/>
-        <TextLine id="25" index="40" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+        <TextLine id="25" index="40" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="244,154 292,154 292,186 244,186"/>
           <Baseline points="244,178 292,178"/>
+          <Word id="25_w000">
+            <Coords points="253,154 276,154 276,186 253,186"/>
+            <TextEquiv conf="1.000">
+              <Unicode>11</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>11</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="26" type="Table_cell" row="3" col="3" rowSpan="1" colSpan="1">
         <Coords points="312,156 354,156 354,183 312,183"/>
-        <TextLine id="26" index="41" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 6.0]}">
+        <TextLine id="26" index="41" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="312,156 354,156 354,183 312,183"/>
           <Baseline points="312,177 354,177"/>
+          <Word id="26_w000">
+            <Coords points="314,156 344,156 344,183 314,183"/>
+            <TextEquiv conf="1.000">
+              <Unicode>31</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>31</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="44" type="Table_cell" row="3" col="4" rowSpan="1" colSpan="1">
         <Coords points="444,158 496,158 496,190 444,190"/>
-        <TextLine id="44" index="42" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+        <TextLine id="44" index="42" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="444,158 496,158 496,190 444,190"/>
           <Baseline points="444,182 496,182"/>
+          <Word id="44_w000">
+            <Coords points="457,158 491,158 491,190 457,190"/>
+            <TextEquiv conf="1.000">
+              <Unicode>20</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>20</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="43" type="Table_cell" row="3" col="5" rowSpan="1" colSpan="1">
         <Coords points="508,160 547,160 547,190 508,190"/>
-        <TextLine id="43" index="43" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+        <TextLine id="43" index="43" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="508,160 547,160 547,190 508,190"/>
           <Baseline points="508,183 547,183"/>
+          <Word id="43_w000">
+            <Coords points="514,160 536,160 536,190 514,190"/>
+            <TextEquiv conf="1.000">
+              <Unicode>11</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>11</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="42" type="Table_cell" row="3" col="6" rowSpan="1" colSpan="1">
         <Coords points="558,158 613,158 613,192 558,192"/>
-        <TextLine id="42" index="44" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+        <TextLine id="42" index="44" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="558,158 613,158 613,192 558,192"/>
           <Baseline points="558,184 613,184"/>
+          <Word id="42_w000">
+            <Coords points="565,158 596,158 596,192 565,192"/>
+            <TextEquiv conf="1.000">
+              <Unicode>31</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>31</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="60" type="Table_cell" row="3" col="7" rowSpan="1" colSpan="1">
         <Coords points="675,161 702,161 702,183 675,183"/>
-        <TextLine id="60" index="45" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+        <TextLine id="60" index="45" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="675,161 702,161 702,183 675,183"/>
           <Baseline points="675,178 702,178"/>
+          <Word id="60_w000">
+            <Coords points="684,161 692,161 692,183 684,183"/>
+            <TextEquiv conf="0.974">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.986">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="61" type="Table_cell" row="3" col="8" rowSpan="1" colSpan="1">
         <Coords points="715,164 736,164 736,183 715,183"/>
-        <TextLine id="61" index="46" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [15.0, 4.0]}">
+        <TextLine id="61" index="46" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [15.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="715,164 736,164 736,183 715,183"/>
           <Baseline points="715,179 736,179"/>
+          <Word id="61_w000">
+            <Coords points="719,164 726,164 726,183 719,183"/>
+            <TextEquiv conf="0.954">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.976">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="62" type="Table_cell" row="3" col="9" rowSpan="1" colSpan="1">
         <Coords points="742,164 767,164 767,178 742,178"/>
-        <TextLine id="62" index="47" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [11.0, 3.0]}">
+        <TextLine id="62" index="47" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [11.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="742,164 767,164 767,178 742,178"/>
           <Baseline points="742,175 767,175"/>
+          <Word id="62_w000">
+            <Coords points="750,164 755,164 755,178 750,178"/>
+            <TextEquiv conf="0.076">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.535">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="78" type="Table_cell" row="3" col="10" rowSpan="1" colSpan="1">
         <Coords points="823,169 855,169 855,184 823,184"/>
-        <TextLine id="78" index="48" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [12.0, 3.0]}">
+        <TextLine id="78" index="48" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [12.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="823,169 855,169 855,184 823,184"/>
           <Baseline points="823,181 855,181"/>
+          <Word id="78_w000">
+            <Coords points="832,169 837,169 837,184 832,184"/>
+            <TextEquiv conf="0.455">
+              <Unicode>—</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.724">
+            <Unicode>—</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="79" type="Table_cell" row="3" col="11" rowSpan="1" colSpan="1">
         <Coords points="876,173 907,173 907,182 876,182"/>
-        <TextLine id="79" index="49" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [7.0, 2.0]}">
+        <TextLine id="79" index="49" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [7.0, 2.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="876,173 907,173 907,182 876,182"/>
           <Baseline points="876,180 907,180"/>
+          <Word id="79_w000">
+            <Coords points="885,173 888,173 888,182 885,182"/>
+            <TextEquiv conf="0.425">
+              <Unicode>—</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.645">
+            <Unicode>—</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="80" type="Table_cell" row="3" col="12" rowSpan="1" colSpan="1">
         <Coords points="920,172 944,172 944,184 920,184"/>
-        <TextLine id="80" index="50" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [9.0, 3.0]}">
+        <TextLine id="80" index="50" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [9.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="920,172 944,172 944,184 920,184"/>
           <Baseline points="920,181 944,181"/>
+          <Word id="80_w000">
+            <Coords points="927,172 931,172 931,184 927,184"/>
+            <TextEquiv conf="0.609">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.783">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="8" type="Row_ID_cell" row="4" col="0" rowSpan="1" colSpan="1">
         <Coords points="48,189 96,189 96,231 48,231"/>
-        <TextLine id="8" index="51" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [32.0, 10.0]}">
+        <TextLine id="8" index="51" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [32.0, 10.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="48,189 96,189 96,231 48,231"/>
           <Baseline points="48,221 96,221"/>
+          <Word id="8_w000">
+            <Coords points="51,189 95,189 95,231 51,231"/>
+            <TextEquiv conf="1.000">
+              <Unicode>IV.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>IV.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="27" type="Table_cell" row="4" col="1" rowSpan="1" colSpan="1">
         <Coords points="158,196 228,196 228,230 158,230"/>
-        <TextLine id="27" index="52" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+        <TextLine id="27" index="52" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="158,196 228,196 228,230 158,230"/>
           <Baseline points="158,222 228,222"/>
+          <Word id="27_w000">
+            <Coords points="165,196 205,196 205,230 165,230"/>
+            <TextEquiv conf="0.990">
+              <Unicode>18</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.989">
+            <Unicode>18</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="28" type="Table_cell" row="4" col="2" rowSpan="1" colSpan="1">
         <Coords points="259,199 285,199 285,230 259,230"/>
-        <TextLine id="28" index="53" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="28" index="53" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="259,199 285,199 285,230 259,230"/>
           <Baseline points="259,223 285,223"/>
+          <Word id="28_w000">
+            <Coords points="261,199 273,199 273,230 261,230"/>
+            <TextEquiv conf="0.998">
+              <Unicode>9</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>9</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="29" type="Table_cell" row="4" col="3" rowSpan="1" colSpan="1">
         <Coords points="309,195 366,195 366,234 309,234"/>
-        <TextLine id="29" index="54" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [30.0, 9.0]}">
+        <TextLine id="29" index="54" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [30.0, 9.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="309,195 366,195 366,234 309,234"/>
           <Baseline points="309,225 366,225"/>
+          <Word id="29_w000">
+            <Coords points="317,195 352,195 352,234 317,234"/>
+            <TextEquiv conf="1.000">
+              <Unicode>27</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>27</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="45" type="Table_cell" row="4" col="4" rowSpan="1" colSpan="1">
         <Coords points="447,202 493,202 493,233 447,233"/>
-        <TextLine id="45" index="55" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="45" index="55" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="447,202 493,202 493,233 447,233"/>
           <Baseline points="447,226 493,226"/>
+          <Word id="45_w000">
+            <Coords points="453,202 482,202 482,233 453,233"/>
+            <TextEquiv conf="0.999">
+              <Unicode>18</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>18</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="46" type="Table_cell" row="4" col="5" rowSpan="1" colSpan="1">
         <Coords points="511,204 551,204 551,235 511,235"/>
-        <TextLine id="46" index="56" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="46" index="56" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="511,204 551,204 551,235 511,235"/>
           <Baseline points="511,228 551,228"/>
+          <Word id="46_w000">
+            <Coords points="517,204 542,204 542,235 517,235"/>
+            <TextEquiv conf="1.000">
+              <Unicode>10</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>10</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="47" type="Table_cell" row="4" col="6" rowSpan="1" colSpan="1">
         <Coords points="557,204 613,204 613,233 557,233"/>
-        <TextLine id="47" index="57" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+        <TextLine id="47" index="57" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="557,204 613,204 613,233 557,233"/>
           <Baseline points="557,226 613,226"/>
+          <Word id="47_w000">
+            <Coords points="568,204 599,204 599,233 568,233"/>
+            <TextEquiv conf="0.999">
+              <Unicode>28</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>28</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="63" type="Table_cell" row="4" col="7" rowSpan="1" colSpan="1">
         <Coords points="664,207 686,207 686,224 664,224"/>
-        <TextLine id="63" index="58" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0]}">
+        <TextLine id="63" index="58" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="664,207 686,207 686,224 664,224"/>
           <Baseline points="664,220 686,220"/>
+          <Word id="63_w000">
+            <Coords points="672,207 679,207 679,224 672,224"/>
+            <TextEquiv conf="0.821">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.909">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="64" type="Table_cell" row="4" col="8" rowSpan="1" colSpan="1">
         <Coords points="706,198 738,198 738,231 706,231"/>
-        <TextLine id="64" index="59" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="64" index="59" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="706,198 738,198 738,231 706,231"/>
           <Baseline points="706,223 738,223"/>
+          <Word id="64_w000">
+            <Coords points="717,198 728,198 728,231 717,231"/>
+            <TextEquiv conf="0.999">
+              <Unicode>2</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>2</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="65" type="Table_cell" row="4" col="9" rowSpan="1" colSpan="1">
         <Coords points="743,204 779,204 779,232 743,232"/>
-        <TextLine id="65" index="60" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+        <TextLine id="65" index="60" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="743,204 779,204 779,232 743,232"/>
           <Baseline points="743,225 779,225"/>
+          <Word id="65_w000">
+            <Coords points="749,204 758,204 758,232 749,232"/>
+            <TextEquiv conf="0.999">
+              <Unicode>2</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>2</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="81" type="Table_cell" row="4" col="10" rowSpan="1" colSpan="1">
         <Coords points="827,216 860,216 860,235 827,235"/>
-        <TextLine id="81" index="61" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [15.0, 4.0]}">
+        <TextLine id="81" index="61" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [15.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="827,216 860,216 860,235 827,235"/>
           <Baseline points="827,231 860,231"/>
+          <Word id="81_w000">
+            <Coords points="836,216 842,216 842,235 836,235"/>
+            <TextEquiv conf="0.221">
+              <Unicode>—</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.610">
+            <Unicode>—</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="82" type="Table_cell" row="4" col="11" rowSpan="1" colSpan="1">
         <Coords points="880,205 919,205 919,237 880,237"/>
-        <TextLine id="82" index="62" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+        <TextLine id="82" index="62" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="880,205 919,205 919,237 880,237"/>
           <Baseline points="880,229 919,229"/>
+          <Word id="82_w000">
+            <Coords points="893,205 903,205 903,237 893,237"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="83" type="Table_cell" row="4" col="12" rowSpan="1" colSpan="1">
         <Coords points="916,206 947,206 947,240 916,240"/>
-        <TextLine id="83" index="63" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+        <TextLine id="83" index="63" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="916,206 947,206 947,240 916,240"/>
           <Baseline points="916,232 947,232"/>
+          <Word id="83_w000">
+            <Coords points="923,206 934,206 934,240 923,240"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="9" type="Row_ID_cell" row="5" col="0" rowSpan="1" colSpan="1">
         <Coords points="42,234 85,234 85,278 42,278"/>
-        <TextLine id="9" index="64" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [33.0, 11.0]}">
+        <TextLine id="9" index="64" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Row_ID_cell&quot;}, &quot;heights&quot;: [33.0, 11.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="42,234 85,234 85,278 42,278"/>
           <Baseline points="42,267 85,267"/>
+          <Word id="9_w000">
+            <Coords points="45,234 78,234 78,278 45,278"/>
+            <TextEquiv conf="0.998">
+              <Unicode>V.</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.998">
+            <Unicode>V.</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="32" type="Table_cell" row="5" col="1" rowSpan="1" colSpan="1">
         <Coords points="163,244 212,244 212,279 163,279"/>
-        <TextLine id="32" index="65" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+        <TextLine id="32" index="65" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="163,244 212,244 212,279 163,279"/>
           <Baseline points="163,271 212,271"/>
+          <Word id="32_w000">
+            <Coords points="170,244 197,244 197,279 170,279"/>
+            <TextEquiv conf="1.000">
+              <Unicode>11</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>11</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="31" type="Table_cell" row="5" col="2" rowSpan="1" colSpan="1">
         <Coords points="250,246 295,246 295,279 250,279"/>
-        <TextLine id="31" index="66" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="31" index="66" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="250,246 295,246 295,279 250,279"/>
           <Baseline points="250,271 295,271"/>
+          <Word id="31_w000">
+            <Coords points="252,246 283,246 283,279 252,279"/>
+            <TextEquiv conf="1.000">
+              <Unicode>13</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>13</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="30" type="Table_cell" row="5" col="3" rowSpan="1" colSpan="1">
         <Coords points="311,243 368,243 368,280 311,280"/>
-        <TextLine id="30" index="67" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [28.0, 9.0]}">
+        <TextLine id="30" index="67" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [28.0, 9.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="311,243 368,243 368,280 311,280"/>
           <Baseline points="311,271 368,271"/>
+          <Word id="30_w000">
+            <Coords points="318,243 350,243 350,280 318,280"/>
+            <TextEquiv conf="0.998">
+              <Unicode>24</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>24</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="50" type="Table_cell" row="5" col="4" rowSpan="1" colSpan="1">
         <Coords points="437,246 487,246 487,279 437,279"/>
-        <TextLine id="50" index="68" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="50" index="68" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="437,246 487,246 487,279 437,279"/>
           <Baseline points="437,271 487,271"/>
+          <Word id="50_w000">
+            <Coords points="446,246 470,246 470,279 446,279"/>
+            <TextEquiv conf="0.998">
+              <Unicode>11</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.996">
+            <Unicode>11</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="49" type="Table_cell" row="5" col="5" rowSpan="1" colSpan="1">
         <Coords points="506,247 548,247 548,278 506,278"/>
-        <TextLine id="49" index="69" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="49" index="69" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="506,247 548,247 548,278 506,278"/>
           <Baseline points="506,271 548,271"/>
+          <Word id="49_w000">
+            <Coords points="508,247 537,247 537,278 508,278"/>
+            <TextEquiv conf="1.000">
+              <Unicode>13</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>13</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="48" type="Table_cell" row="5" col="6" rowSpan="1" colSpan="1">
         <Coords points="558,246 614,246 614,282 558,282"/>
-        <TextLine id="48" index="70" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 9.0]}">
+        <TextLine id="48" index="70" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 9.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="558,246 614,246 614,282 558,282"/>
           <Baseline points="558,273 614,273"/>
+          <Word id="48_w000">
+            <Coords points="565,246 594,246 594,282 565,282"/>
+            <TextEquiv conf="0.999">
+              <Unicode>24</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>24</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="66" type="Table_cell" row="5" col="7" rowSpan="1" colSpan="1">
         <Coords points="680,258 697,258 697,273 680,273"/>
-        <TextLine id="66" index="71" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [12.0, 3.0]}">
+        <TextLine id="66" index="71" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [12.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="680,258 697,258 697,273 680,273"/>
           <Baseline points="680,270 697,270"/>
+          <Word id="66_w000">
+            <Coords points="683,258 688,258 688,273 683,273"/>
+            <TextEquiv conf="0.704">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.850">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="67" type="Table_cell" row="5" col="8" rowSpan="1" colSpan="1">
         <Coords points="719,255 744,255 744,272 719,272"/>
-        <TextLine id="67" index="72" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0]}">
+        <TextLine id="67" index="72" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [13.0, 4.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="719,255 744,255 744,272 719,272"/>
           <Baseline points="719,268 744,268"/>
+          <Word id="67_w000">
+            <Coords points="726,255 732,255 732,272 726,272"/>
+            <TextEquiv conf="0.854">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.895">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="68" type="Table_cell" row="5" col="9" rowSpan="1" colSpan="1">
         <Coords points="761,256 784,256 784,269 761,269"/>
-        <TextLine id="68" index="73" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [10.0, 3.0]}">
+        <TextLine id="68" index="73" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [10.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="761,256 784,256 784,269 761,269"/>
           <Baseline points="761,266 784,266"/>
+          <Word id="68_w000">
+            <Coords points="769,256 773,256 773,269 769,269"/>
+            <TextEquiv conf="0.808">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.900">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="84" type="Table_cell" row="5" col="10" rowSpan="1" colSpan="1">
         <Coords points="830,259 859,259 859,274 830,274"/>
-        <TextLine id="84" index="74" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [12.0, 3.0]}">
+        <TextLine id="84" index="74" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [12.0, 3.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="830,259 859,259 859,274 830,274"/>
           <Baseline points="830,271 859,271"/>
+          <Word id="84_w000">
+            <Coords points="837,259 842,259 842,274 837,274"/>
+            <TextEquiv conf="0.464">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.726">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="85" type="Table_cell" row="5" col="11" rowSpan="1" colSpan="1">
         <Coords points="880,262 901,262 901,272 880,272"/>
-        <TextLine id="85" index="75" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [8.0, 2.0]}">
+        <TextLine id="85" index="75" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [8.0, 2.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="880,262 901,262 901,272 880,272"/>
           <Baseline points="880,270 901,270"/>
+          <Word id="85_w000">
+            <Coords points="886,262 890,262 890,272 886,272"/>
+            <TextEquiv conf="0.265">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.627">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="86" type="Table_cell" row="5" col="12" rowSpan="1" colSpan="1">
         <Coords points="918,262 942,262 942,271 918,271"/>
-        <TextLine id="86" index="76" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [7.0, 2.0]}">
+        <TextLine id="86" index="76" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [7.0, 2.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="918,262 942,262 942,271 918,271"/>
           <Baseline points="918,269 942,269"/>
+          <Word id="86_w000">
+            <Coords points="926,262 929,262 929,271 926,271"/>
+            <TextEquiv conf="0.171">
+              <Unicode>-</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.574">
+            <Unicode>-</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="33" type="Table_cell" row="6" col="1" rowSpan="1" colSpan="1">
         <Coords points="156,284 203,284 203,316 156,316"/>
-        <TextLine id="33" index="77" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+        <TextLine id="33" index="77" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="156,284 203,284 203,316 156,316"/>
           <Baseline points="156,308 203,308"/>
+          <Word id="33_w000">
+            <Coords points="162,284 194,284 194,316 162,316"/>
+            <TextEquiv conf="1.000">
+              <Unicode>80</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>80</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="34" type="Table_cell" row="6" col="2" rowSpan="1" colSpan="1">
         <Coords points="239,290 284,290 284,323 239,323"/>
-        <TextLine id="34" index="78" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="34" index="78" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="239,290 284,290 284,323 239,323"/>
           <Baseline points="239,315 284,315"/>
+          <Word id="34_w000">
+            <Coords points="246,290 279,290 279,323 246,323"/>
+            <TextEquiv conf="0.985">
+              <Unicode>53</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.974">
+            <Unicode>53</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="35" type="Table_cell" row="6" col="3" rowSpan="1" colSpan="1">
         <Coords points="312,292 369,292 369,323 312,323"/>
-        <TextLine id="35" index="79" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="35" index="79" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 3, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="312,292 369,292 369,323 312,323"/>
           <Baseline points="312,316 369,316"/>
+          <Word id="35_w000">
+            <Coords points="318,292 364,292 364,323 318,323"/>
+            <TextEquiv conf="0.999">
+              <Unicode>133</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>133</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="51" type="Table_cell" row="6" col="4" rowSpan="1" colSpan="1">
         <Coords points="440,288 483,288 483,321 440,321"/>
-        <TextLine id="51" index="80" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+        <TextLine id="51" index="80" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 4, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="440,288 483,288 483,321 440,321"/>
           <Baseline points="440,313 483,313"/>
+          <Word id="51_w000">
+            <Coords points="447,288 473,288 473,321 447,321"/>
+            <TextEquiv conf="1.000">
+              <Unicode>80</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>80</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="52" type="Table_cell" row="6" col="5" rowSpan="1" colSpan="1">
         <Coords points="501,295 546,295 546,324 501,324"/>
-        <TextLine id="52" index="81" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+        <TextLine id="52" index="81" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 5, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="501,295 546,295 546,324 501,324"/>
           <Baseline points="501,317 546,317"/>
+          <Word id="52_w000">
+            <Coords points="507,295 537,295 537,324 507,324"/>
+            <TextEquiv conf="1.000">
+              <Unicode>53</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>53</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="53" type="Table_cell" row="6" col="6" rowSpan="1" colSpan="1">
         <Coords points="560,296 617,296 617,325 560,325"/>
-        <TextLine id="53" index="82" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+        <TextLine id="53" index="82" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 6, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="560,296 617,296 617,325 560,325"/>
           <Baseline points="560,318 617,318"/>
+          <Word id="53_w000">
+            <Coords points="566,296 610,296 610,325 566,325"/>
+            <TextEquiv conf="1.000">
+              <Unicode>133</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>133</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="69" type="Table_cell" row="6" col="7" rowSpan="1" colSpan="1">
         <Coords points="679,295 713,295 713,326 679,326"/>
-        <TextLine id="69" index="83" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="69" index="83" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 7, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="679,295 713,295 713,326 679,326"/>
           <Baseline points="679,319 713,319"/>
+          <Word id="69_w000">
+            <Coords points="691,295 702,295 702,326 691,326"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="70" type="Table_cell" row="6" col="8" rowSpan="1" colSpan="1">
         <Coords points="716,298 747,298 747,329 716,329"/>
-        <TextLine id="70" index="84" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+        <TextLine id="70" index="84" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 8, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="716,298 747,298 747,329 716,329"/>
           <Baseline points="716,322 747,322"/>
+          <Word id="70_w000">
+            <Coords points="722,298 733,298 733,329 722,329"/>
+            <TextEquiv conf="0.999">
+              <Unicode>2</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>2</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="71" type="Table_cell" row="6" col="9" rowSpan="1" colSpan="1">
         <Coords points="757,300 781,300 781,329 757,329"/>
-        <TextLine id="71" index="85" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+        <TextLine id="71" index="85" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 9, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="757,300 781,300 781,329 757,329"/>
           <Baseline points="757,322 781,322"/>
+          <Word id="71_w000">
+            <Coords points="763,300 774,300 774,329 763,329"/>
+            <TextEquiv conf="0.991">
+              <Unicode>3</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.994">
+            <Unicode>3</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="87" type="Table_cell" row="6" col="10" rowSpan="1" colSpan="1">
         <Coords points="838,302 867,302 867,326 838,326"/>
-        <TextLine id="87" index="86" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+        <TextLine id="87" index="86" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 10, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="838,302 867,302 867,326 838,326"/>
           <Baseline points="838,320 867,320"/>
+          <Word id="87_w000">
+            <Coords points="848,302 856,302 856,326 848,326"/>
+            <TextEquiv conf="1.000">
+              <Unicode>1</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="1.000">
+            <Unicode>1</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="88" type="Table_cell" row="6" col="11" rowSpan="1" colSpan="1">
         <Coords points="877,302 908,302 908,328 877,328"/>
-        <TextLine id="88" index="87" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+        <TextLine id="88" index="87" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 11, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="877,302 908,302 908,328 877,328"/>
           <Baseline points="877,322 908,322"/>
+          <Word id="88_w000">
+            <Coords points="884,302 893,302 893,328 884,328"/>
+            <TextEquiv conf="0.998">
+              <Unicode>2</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.999">
+            <Unicode>2</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
       <TableCell id="89" type="Table_cell" row="6" col="12" rowSpan="1" colSpan="1">
         <Coords points="921,301 947,301 947,327 921,327"/>
-        <TextLine id="89" index="88" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+        <TextLine id="89" index="88" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 12, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0], &quot;word_alignment_origin&quot;: &quot;from_logits&quot;}">
           <Coords points="921,301 947,301 947,327 921,327"/>
           <Baseline points="921,321 947,321"/>
+          <Word id="89_w000">
+            <Coords points="928,301 937,301 937,327 928,327"/>
+            <TextEquiv conf="0.997">
+              <Unicode>3</Unicode>
+            </TextEquiv>
+          </Word>
+          <TextEquiv conf="0.998">
+            <Unicode>3</Unicode>
+          </TextEquiv>
         </TextLine>
       </TableCell>
     </TableRegion>
