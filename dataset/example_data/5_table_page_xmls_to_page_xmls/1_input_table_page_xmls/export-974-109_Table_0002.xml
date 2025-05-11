@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-05-10T22:19:35.931098+00:00</Created>
+    <LastChange>2025-05-10T22:19:35.931098+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="export-974-109_Table_0002" imageHeight="238" imageWidth="817">
+    <TableRegion id="table">
+      <Coords points="0,0 817,0 817,238 0,238"/>
+      <TableCell id="1" type="Table_cell" row="0" col="0" rowSpan="1" colSpan="1">
+        <Coords points="3,20 402,20 402,85 3,85"/>
+      </TableCell>
+      <TableCell id="12" type="Table_cell" row="0" col="1" rowSpan="1" colSpan="1">
+        <Coords points="423,15 666,15 666,70 423,70"/>
+      </TableCell>
+      <TableCell id="21" type="Table_cell" row="0" col="2" rowSpan="1" colSpan="1">
+        <Coords points="709,3 807,3 807,43 709,43"/>
+      </TableCell>
+      <TableCell id="2,3" type="Table_cell" row="1" col="0" rowSpan="1" colSpan="1">
+        <Coords points="50,53 387,53 387,113 50,113"/>
+        <TextLine id="2" index="2" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="50,72 67,72 67,92 50,92"/>
+        </TextLine>
+        <TextLine id="3" index="3" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="122,53 387,53 387,113 122,113"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="13,14" type="Table_cell" row="1" col="1" rowSpan="1" colSpan="1">
+        <Coords points="422,55 624,55 624,85 422,85"/>
+        <TextLine id="13" index="13" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="422,55 510,55 510,85 422,85"/>
+        </TextLine>
+        <TextLine id="14" index="14" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="606,57 624,57 624,79 606,79"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="22" type="Table_cell" row="1" col="2" rowSpan="1" colSpan="1">
+        <Coords points="699,46 787,46 787,78 699,78"/>
+      </TableCell>
+      <TableCell id="4,5,6" type="Table_cell" row="2" col="0" rowSpan="1" colSpan="1">
+        <Coords points="44,82 345,82 345,145 44,145"/>
+        <TextLine id="4" index="4" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="44,106 65,106 65,126 44,126"/>
+        </TextLine>
+        <TextLine id="5" index="5" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="97,82 294,82 294,135 97,135"/>
+        </TextLine>
+        <TextLine id="6" index="6" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="330,127 345,127 345,145 330,145"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="15,16" type="Table_cell" row="2" col="1" rowSpan="1" colSpan="1">
+        <Coords points="418,87 615,87 615,115 418,115"/>
+        <TextLine id="15" index="15" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="418,87 493,87 493,115 418,115"/>
+        </TextLine>
+        <TextLine id="16" index="16" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="600,88 615,88 615,105 600,105"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="23" type="Table_cell" row="2" col="2" rowSpan="1" colSpan="1">
+        <Coords points="694,75 778,75 778,115 694,115"/>
+      </TableCell>
+      <TableCell id="7" type="Table_cell" row="3" col="0" rowSpan="1" colSpan="1">
+        <Coords points="14,128 210,128 210,186 14,186"/>
+      </TableCell>
+      <TableCell id="17,18" type="Table_cell" row="3" col="1" rowSpan="1" colSpan="1">
+        <Coords points="417,112 615,112 615,144 417,144"/>
+        <TextLine id="17" index="17" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="417,112 503,112 503,144 417,144"/>
+        </TextLine>
+        <TextLine id="18" index="18" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="602,113 615,113 615,132 602,132"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="24" type="Table_cell" row="3" col="2" rowSpan="1" colSpan="1">
+        <Coords points="695,105 780,105 780,151 695,151"/>
+      </TableCell>
+      <TableCell id="8,9" type="Table_cell" row="4" col="0" rowSpan="1" colSpan="1">
+        <Coords points="33,160 227,160 227,215 33,215"/>
+        <TextLine id="8" index="8" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="33,177 52,177 52,198 33,198"/>
+        </TextLine>
+        <TextLine id="9" index="9" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="92,160 227,160 227,215 92,215"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="19,20" type="Table_cell" row="4" col="1" rowSpan="1" colSpan="1">
+        <Coords points="416,146 617,146 617,183 416,183"/>
+        <TextLine id="19" index="19" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="416,146 496,146 496,183 416,183"/>
+        </TextLine>
+        <TextLine id="20" index="20" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="600,149 617,149 617,170 600,170"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="25" type="Table_cell" row="4" col="2" rowSpan="1" colSpan="1">
+        <Coords points="698,134 780,134 780,164 698,164"/>
+      </TableCell>
+      <TableCell id="10,11" type="Table_cell" row="5" col="0" rowSpan="1" colSpan="1">
+        <Coords points="28,197 189,197 189,235 28,235"/>
+        <TextLine id="10" index="10" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="28,210 52,210 52,235 28,235"/>
+        </TextLine>
+        <TextLine id="11" index="11" custom="{&quot;category&quot;: &quot;Table_cell&quot;}">
+          <Coords points="101,197 189,197 189,235 101,235"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="27" type="Table_cell" row="5" col="1" rowSpan="1" colSpan="1">
+        <Coords points="285,184 526,184 526,237 285,237"/>
+      </TableCell>
+      <TableCell id="26" type="Table_cell" row="5" col="2" rowSpan="1" colSpan="1">
+        <Coords points="688,170 775,170 775,215 688,215"/>
+      </TableCell>
+    </TableRegion>
+  </Page>
+</PcGts>

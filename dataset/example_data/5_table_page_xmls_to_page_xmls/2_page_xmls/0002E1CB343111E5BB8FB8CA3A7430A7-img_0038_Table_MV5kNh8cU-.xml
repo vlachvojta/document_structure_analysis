@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-05-11T11:02:59.199802+00:00</Created>
+    <LastChange>2025-05-11T11:02:59.199802+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="0002E1CB343111E5BB8FB8CA3A7430A7-img_0038_Table_MV5kNh8cU-" imageWidth="382" imageHeight="77">
+    <TextRegion id="table">
+      <Coords points="0,0 382,0 382,77 0,77"/>
+      <TextLine id="0" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}}">
+        <Coords points="20,10 123,10 123,35 20,35"/>
+        <Baseline points="20,29 123,29"/>
+      </TextLine>
+      <TextLine id="1" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}}">
+        <Coords points="159,10 358,10 358,35 159,35"/>
+        <Baseline points="159,29 358,29"/>
+      </TextLine>
+      <TextLine id="2" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}}">
+        <Coords points="20,49 123,49 123,72 20,72"/>
+        <Baseline points="20,67 123,67"/>
+      </TextLine>
+      <TextLine id="3" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}}">
+        <Coords points="159,48 368,48 368,73 159,73"/>
+        <Baseline points="159,67 368,67"/>
+      </TextLine>
+    </TextRegion>
+  </Page>
+</PcGts>

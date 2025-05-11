@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-05-11T11:03:03.897283+00:00</Created>
+    <LastChange>2025-05-11T11:03:03.897283+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="export-974-82_Table_0000" imageHeight="189" imageWidth="949">
+    <TableRegion id="table">
+      <Coords points="0,0 949,0 949,189 0,189"/>
+      <TableCell id="1" type="Table_cell" row="0" col="0" rowSpan="1" colSpan="1">
+        <Coords points="0,0 380,0 380,60 0,60"/>
+        <TextLine id="1" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [45.0, 15.0]}">
+          <Coords points="0,0 380,0 380,60 0,60"/>
+          <Baseline points="0,45 380,45"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="5" type="Table_cell" row="0" col="1" rowSpan="1" colSpan="1">
+        <Coords points="491,0 820,0 820,39 491,39"/>
+        <TextLine id="5" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [30.0, 9.0]}">
+          <Coords points="491,0 820,0 820,39 491,39"/>
+          <Baseline points="491,30 820,30"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="2" type="Table_cell" row="1" col="0" rowSpan="1" colSpan="1">
+        <Coords points="6,50 229,50 229,99 6,99"/>
+        <TextLine id="2" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [37.0, 12.0]}">
+          <Coords points="6,50 229,50 229,99 6,99"/>
+          <Baseline points="6,87 229,87"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="6" type="Table_cell" row="1" col="1" rowSpan="1" colSpan="1">
+        <Coords points="478,25 736,25 736,92 478,92"/>
+        <TextLine id="6" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [51.0, 16.0]}">
+          <Coords points="478,25 736,25 736,92 478,92"/>
+          <Baseline points="478,76 736,76"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="3" type="Table_cell" row="2" col="0" rowSpan="1" colSpan="1">
+        <Coords points="3,84 265,84 265,134 3,134"/>
+        <TextLine id="3" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [38.0, 12.0]}">
+          <Coords points="3,84 265,84 265,134 3,134"/>
+          <Baseline points="3,122 265,122"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="7" type="Table_cell" row="2" col="1" rowSpan="1" colSpan="1">
+        <Coords points="489,50 915,50 915,115 489,115"/>
+        <TextLine id="7" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [49.0, 16.0]}">
+          <Coords points="489,50 915,50 915,115 489,115"/>
+          <Baseline points="489,99 915,99"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="4" type="Table_cell" row="3" col="0" rowSpan="1" colSpan="1">
+        <Coords points="9,122 235,122 235,181 9,181"/>
+        <TextLine id="4" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [45.0, 14.0]}">
+          <Coords points="9,122 235,122 235,181 9,181"/>
+          <Baseline points="9,167 235,167"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="8" type="Table_cell" row="3" col="1" rowSpan="1" colSpan="1">
+        <Coords points="486,97 923,97 923,158 486,158"/>
+        <TextLine id="8" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [46.0, 15.0]}">
+          <Coords points="486,97 923,97 923,158 486,158"/>
+          <Baseline points="486,143 923,143"/>
+        </TextLine>
+      </TableCell>
+    </TableRegion>
+  </Page>
+</PcGts>

@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15">
+  <Metadata>
+    <Creator>Pero OCR</Creator>
+    <Created>2025-05-11T11:03:04.036946+00:00</Created>
+    <LastChange>2025-05-11T11:03:04.036946+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="be94807e-f13c-102f-8255-0050568c0263-img_0053_Table_Ffj9BTjPPy" imageHeight="1192" imageWidth="477">
+    <TableRegion id="table">
+      <Coords points="0,0 477,0 477,1192 0,1192"/>
+      <TableCell id="1" type="Table_cell" row="0" col="0" rowSpan="1" colSpan="1">
+        <Coords points="0,6 247,6 247,42 0,42"/>
+        <TextLine id="1" index="0" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 9.0]}">
+          <Coords points="0,6 247,6 247,42 0,42"/>
+          <Baseline points="0,33 247,33"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="8" type="Table_cell" row="0" col="1" rowSpan="1" colSpan="1">
+        <Coords points="312,7 341,7 341,28 312,28"/>
+        <TextLine id="8" index="1" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [16.0, 5.0]}">
+          <Coords points="312,7 341,7 341,28 312,28"/>
+          <Baseline points="312,23 341,23"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="11" type="Table_cell" row="0" col="2" rowSpan="1" colSpan="1">
+        <Coords points="414,6 446,6 446,37 414,37"/>
+        <TextLine id="11" index="2" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 0, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+          <Coords points="414,6 446,6 446,37 414,37"/>
+          <Baseline points="414,30 446,30"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="2" type="Table_cell" row="1" col="0" rowSpan="1" colSpan="1">
+        <Coords points="6,46 261,46 261,97 6,97"/>
+        <TextLine id="2" index="3" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [39.0, 12.0]}">
+          <Coords points="6,46 261,46 261,97 6,97"/>
+          <Baseline points="6,85 261,85"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="9" type="Table_cell" row="1" col="1" rowSpan="1" colSpan="1">
+        <Coords points="315,47 344,47 344,68 315,68"/>
+        <TextLine id="9" index="4" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [16.0, 5.0]}">
+          <Coords points="315,47 344,47 344,68 315,68"/>
+          <Baseline points="315,63 344,63"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="12" type="Table_cell" row="1" col="2" rowSpan="1" colSpan="1">
+        <Coords points="415,43 449,43 449,74 415,74"/>
+        <TextLine id="12" index="5" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 1, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+          <Coords points="415,43 449,43 449,74 415,74"/>
+          <Baseline points="415,67 449,67"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="3" type="Table_cell" row="2" col="0" rowSpan="1" colSpan="1">
+        <Coords points="6,82 178,82 178,118 6,118"/>
+        <TextLine id="3" index="6" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 9.0]}">
+          <Coords points="6,82 178,82 178,118 6,118"/>
+          <Baseline points="6,109 178,109"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="10" type="Table_cell" row="2" col="1" rowSpan="1" colSpan="1">
+        <Coords points="314,84 342,84 342,105 314,105"/>
+        <TextLine id="10" index="7" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [16.0, 5.0]}">
+          <Coords points="314,84 342,84 342,105 314,105"/>
+          <Baseline points="314,100 342,100"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="73" type="Table_cell" row="2" col="2" rowSpan="1" colSpan="1">
+        <Coords points="419,87 448,87 448,113 419,113"/>
+        <TextLine id="73" index="8" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 2, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+          <Coords points="419,87 448,87 448,113 419,113"/>
+          <Baseline points="419,107 448,107"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="4" type="Table_cell" row="3" col="0" rowSpan="1" colSpan="1">
+        <Coords points="7,121 195,121 195,164 7,164"/>
+        <TextLine id="4" index="9" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 10.0]}">
+          <Coords points="7,121 195,121 195,164 7,164"/>
+          <Baseline points="7,154 195,154"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="65" type="Table_cell" row="3" col="1" rowSpan="1" colSpan="1">
+        <Coords points="309,123 345,123 345,151 309,151"/>
+        <TextLine id="65" index="10" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="309,123 345,123 345,151 309,151"/>
+          <Baseline points="309,144 345,144"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="72" type="Table_cell" row="3" col="2" rowSpan="1" colSpan="1">
+        <Coords points="417,125 449,125 449,155 417,155"/>
+        <TextLine id="72" index="11" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 3, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+          <Coords points="417,125 449,125 449,155 417,155"/>
+          <Baseline points="417,148 449,148"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="5" type="Table_cell" row="4" col="0" rowSpan="1" colSpan="1">
+        <Coords points="9,162 211,162 211,201 9,201"/>
+        <TextLine id="5" index="12" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [30.0, 9.0]}">
+          <Coords points="9,162 211,162 211,201 9,201"/>
+          <Baseline points="9,192 211,192"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="66" type="Table_cell" row="4" col="1" rowSpan="1" colSpan="1">
+        <Coords points="312,164 341,164 341,185 312,185"/>
+        <TextLine id="66" index="13" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [16.0, 5.0]}">
+          <Coords points="312,164 341,164 341,185 312,185"/>
+          <Baseline points="312,180 341,180"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="13" type="Table_cell" row="4" col="2" rowSpan="1" colSpan="1">
+        <Coords points="421,163 451,163 451,195 421,195"/>
+        <TextLine id="13" index="14" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 4, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+          <Coords points="421,163 451,163 451,195 421,195"/>
+          <Baseline points="421,187 451,187"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="6" type="Table_cell" row="5" col="0" rowSpan="1" colSpan="1">
+        <Coords points="9,200 180,200 180,243 9,243"/>
+        <TextLine id="6" index="15" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [33.0, 10.0]}">
+          <Coords points="9,200 180,200 180,243 9,243"/>
+          <Baseline points="9,233 180,233"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="67" type="Table_cell" row="5" col="1" rowSpan="1" colSpan="1">
+        <Coords points="314,202 342,202 342,228 314,228"/>
+        <TextLine id="67" index="16" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+          <Coords points="314,202 342,202 342,228 314,228"/>
+          <Baseline points="314,222 342,222"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="71" type="Table_cell" row="5" col="2" rowSpan="1" colSpan="1">
+        <Coords points="419,203 452,203 452,231 419,231"/>
+        <TextLine id="71" index="17" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 5, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="419,203 452,203 452,231 419,231"/>
+          <Baseline points="419,224 452,224"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="7" type="Table_cell" row="6" col="0" rowSpan="1" colSpan="3">
+        <Coords points="154,248 223,248 223,281 154,281"/>
+        <TextLine id="7" index="18" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 6, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 3, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+          <Coords points="154,248 223,248 223,281 154,281"/>
+          <Baseline points="154,273 223,273"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="14" type="Table_cell" row="7" col="0" rowSpan="1" colSpan="1">
+        <Coords points="16,280 202,280 202,321 16,321"/>
+        <TextLine id="14" index="19" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 7, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [31.0, 10.0]}">
+          <Coords points="16,280 202,280 202,321 16,321"/>
+          <Baseline points="16,311 202,311"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="68" type="Table_cell" row="7" col="1" rowSpan="1" colSpan="1">
+        <Coords points="314,282 337,282 337,310 314,310"/>
+        <TextLine id="68" index="20" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 7, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="314,282 337,282 337,310 314,310"/>
+          <Baseline points="314,303 337,303"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="43" type="Table_cell" row="7" col="2" rowSpan="1" colSpan="1">
+        <Coords points="417,283 459,283 459,305 417,305"/>
+        <TextLine id="43" index="21" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 7, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+          <Coords points="417,283 459,283 459,305 417,305"/>
+          <Baseline points="417,300 459,300"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="15" type="Table_cell" row="8" col="0" rowSpan="1" colSpan="1">
+        <Coords points="17,323 276,323 276,353 17,353"/>
+        <TextLine id="15" index="22" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 8, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+          <Coords points="17,323 276,323 276,353 17,353"/>
+          <Baseline points="17,346 276,346"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="69" type="Table_cell" row="8" col="1" rowSpan="1" colSpan="1">
+        <Coords points="312,324 336,324 336,348 312,348"/>
+        <TextLine id="69" index="23" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 8, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="312,324 336,324 336,348 312,348"/>
+          <Baseline points="312,342 336,342"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="44" type="Table_cell" row="8" col="2" rowSpan="1" colSpan="1">
+        <Coords points="413,323 455,323 455,347 413,347"/>
+        <TextLine id="44" index="24" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 8, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="413,323 455,323 455,347 413,347"/>
+          <Baseline points="413,341 455,341"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="16" type="Table_cell" row="9" col="0" rowSpan="1" colSpan="1">
+        <Coords points="22,364 174,364 174,395 22,395"/>
+        <TextLine id="16" index="25" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 9, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+          <Coords points="22,364 174,364 174,395 22,395"/>
+          <Baseline points="22,388 174,388"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="45" type="Table_cell" row="9" col="2" rowSpan="1" colSpan="1">
+        <Coords points="419,363 458,363 458,386 419,386"/>
+        <TextLine id="45" index="26" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 9, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="419,363 458,363 458,386 419,386"/>
+          <Baseline points="419,381 458,381"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="17" type="Table_cell" row="10" col="0" rowSpan="1" colSpan="1">
+        <Coords points="12,400 187,400 187,433 12,433"/>
+        <TextLine id="17" index="27" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 10, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+          <Coords points="12,400 187,400 187,433 12,433"/>
+          <Baseline points="12,425 187,425"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="37" type="Table_cell" row="10" col="1" rowSpan="1" colSpan="1">
+        <Coords points="315,403 350,403 350,427 315,427"/>
+        <TextLine id="37" index="28" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 10, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="315,403 350,403 350,427 315,427"/>
+          <Baseline points="315,421 350,421"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="46" type="Table_cell" row="10" col="2" rowSpan="1" colSpan="1">
+        <Coords points="416,402 457,402 457,427 416,427"/>
+        <TextLine id="46" index="29" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 10, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0]}">
+          <Coords points="416,402 457,402 457,427 416,427"/>
+          <Baseline points="416,421 457,421"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="18" type="Table_cell" row="11" col="0" rowSpan="1" colSpan="1">
+        <Coords points="15,437 229,437 229,468 15,468"/>
+        <TextLine id="18" index="30" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 11, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+          <Coords points="15,437 229,437 229,468 15,468"/>
+          <Baseline points="15,461 229,461"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="70" type="Table_cell" row="11" col="1" rowSpan="1" colSpan="1">
+        <Coords points="324,442 342,442 342,465 324,465"/>
+        <TextLine id="70" index="31" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 11, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="324,442 342,442 342,465 324,465"/>
+          <Baseline points="324,460 342,460"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="47" type="Table_cell" row="11" col="2" rowSpan="1" colSpan="1">
+        <Coords points="409,441 455,441 455,463 409,463"/>
+        <TextLine id="47" index="32" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 11, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+          <Coords points="409,441 455,441 455,463 409,463"/>
+          <Baseline points="409,458 455,458"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="19" type="Table_cell" row="12" col="0" rowSpan="1" colSpan="1">
+        <Coords points="17,477 253,477 253,512 17,512"/>
+        <TextLine id="19" index="33" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 12, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 8.0]}">
+          <Coords points="17,477 253,477 253,512 17,512"/>
+          <Baseline points="17,504 253,504"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="38" type="Table_cell" row="12" col="1" rowSpan="1" colSpan="1">
+        <Coords points="313,476 349,476 349,510 313,510"/>
+        <TextLine id="38" index="34" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 12, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+          <Coords points="313,476 349,476 349,510 313,510"/>
+          <Baseline points="313,502 349,502"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="48" type="Table_cell" row="12" col="2" rowSpan="1" colSpan="1">
+        <Coords points="416,481 460,481 460,504 416,504"/>
+        <TextLine id="48" index="35" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 12, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="416,481 460,481 460,504 416,504"/>
+          <Baseline points="416,499 460,499"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="20" type="Table_cell" row="13" col="0" rowSpan="1" colSpan="1">
+        <Coords points="18,520 224,520 224,556 18,556"/>
+        <TextLine id="20" index="36" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 13, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [27.0, 9.0]}">
+          <Coords points="18,520 224,520 224,556 18,556"/>
+          <Baseline points="18,547 224,547"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="39" type="Table_cell" row="13" col="1" rowSpan="1" colSpan="1">
+        <Coords points="310,523 343,523 343,556 310,556"/>
+        <TextLine id="39" index="37" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 13, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+          <Coords points="310,523 343,523 343,556 310,556"/>
+          <Baseline points="310,548 343,548"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="49" type="Table_cell" row="13" col="2" rowSpan="1" colSpan="1">
+        <Coords points="420,520 463,520 463,543 420,543"/>
+        <TextLine id="49" index="38" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 13, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="420,520 463,520 463,543 420,543"/>
+          <Baseline points="420,538 463,538"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="21" type="Table_cell" row="14" col="0" rowSpan="1" colSpan="1">
+        <Coords points="26,559 247,559 247,587 26,587"/>
+        <TextLine id="21" index="39" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 14, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="26,559 247,559 247,587 26,587"/>
+          <Baseline points="26,580 247,580"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="40" type="Table_cell" row="14" col="1" rowSpan="1" colSpan="1">
+        <Coords points="316,560 348,560 348,585 316,585"/>
+        <TextLine id="40" index="40" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 14, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0]}">
+          <Coords points="316,560 348,560 348,585 316,585"/>
+          <Baseline points="316,579 348,579"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="50" type="Table_cell" row="14" col="2" rowSpan="1" colSpan="1">
+        <Coords points="417,560 461,560 461,585 417,585"/>
+        <TextLine id="50" index="41" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 14, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0]}">
+          <Coords points="417,560 461,560 461,585 417,585"/>
+          <Baseline points="417,579 461,579"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="36" type="Table_cell" row="15" col="0" rowSpan="1" colSpan="1">
+        <Coords points="26,600 284,600 284,632 26,632"/>
+        <TextLine id="36" index="42" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 15, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+          <Coords points="26,600 284,600 284,632 26,632"/>
+          <Baseline points="26,624 284,624"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="41" type="Table_cell" row="15" col="1" rowSpan="1" colSpan="1">
+        <Coords points="318,600 344,600 344,626 318,626"/>
+        <TextLine id="41" index="43" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 15, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+          <Coords points="318,600 344,600 344,626 318,626"/>
+          <Baseline points="318,620 344,620"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="51" type="Table_cell" row="15" col="2" rowSpan="1" colSpan="1">
+        <Coords points="418,600 462,600 462,625 418,625"/>
+        <TextLine id="51" index="44" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 15, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0]}">
+          <Coords points="418,600 462,600 462,625 418,625"/>
+          <Baseline points="418,619 462,619"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="22" type="Table_cell" row="16" col="0" rowSpan="1" colSpan="3">
+        <Coords points="156,643 211,643 211,670 156,670"/>
+        <TextLine id="22" index="45" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 16, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 3, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 6.0]}">
+          <Coords points="156,643 211,643 211,670 156,670"/>
+          <Baseline points="156,664 211,664"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="23" type="Table_cell" row="17" col="0" rowSpan="1" colSpan="1">
+        <Coords points="25,678 251,678 251,708 25,708"/>
+        <TextLine id="23" index="46" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 17, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+          <Coords points="25,678 251,678 251,708 25,708"/>
+          <Baseline points="25,701 251,701"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="74" type="Table_cell" row="17" col="1" rowSpan="1" colSpan="1">
+        <Coords points="324,679 355,679 355,707 324,707"/>
+        <TextLine id="74" index="47" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 17, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="324,679 355,679 355,707 324,707"/>
+          <Baseline points="324,700 355,700"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="52" type="Table_cell" row="17" col="2" rowSpan="1" colSpan="1">
+        <Coords points="418,681 459,681 459,702 418,702"/>
+        <TextLine id="52" index="48" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 17, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [16.0, 5.0]}">
+          <Coords points="418,681 459,681 459,702 418,702"/>
+          <Baseline points="418,697 459,697"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="24" type="Table_cell" row="18" col="0" rowSpan="1" colSpan="1">
+        <Coords points="29,718 243,718 243,769 29,769"/>
+        <TextLine id="24" index="49" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 18, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [39.0, 12.0]}">
+          <Coords points="29,718 243,718 243,769 29,769"/>
+          <Baseline points="29,757 243,757"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="42" type="Table_cell" row="18" col="1" rowSpan="1" colSpan="1">
+        <Coords points="326,721 348,721 348,749 326,749"/>
+        <TextLine id="42" index="50" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 18, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="326,721 348,721 348,749 326,749"/>
+          <Baseline points="326,742 348,742"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="53" type="Table_cell" row="18" col="2" rowSpan="1" colSpan="1">
+        <Coords points="421,720 457,720 457,742 421,742"/>
+        <TextLine id="53" index="51" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 18, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+          <Coords points="421,720 457,720 457,742 421,742"/>
+          <Baseline points="421,737 457,737"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="25" type="Table_cell" row="19" col="0" rowSpan="1" colSpan="1">
+        <Coords points="25,761 234,761 234,808 25,808"/>
+        <TextLine id="25" index="52" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 19, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [36.0, 11.0]}">
+          <Coords points="25,761 234,761 234,808 25,808"/>
+          <Baseline points="25,797 234,797"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="54" type="Table_cell" row="19" col="2" rowSpan="1" colSpan="1">
+        <Coords points="422,759 459,759 459,782 422,782"/>
+        <TextLine id="54" index="53" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 19, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="422,759 459,759 459,782 422,782"/>
+          <Baseline points="422,777 459,777"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="26" type="Table_cell" row="20" col="0" rowSpan="1" colSpan="1">
+        <Coords points="29,800 278,800 278,834 29,834"/>
+        <TextLine id="26" index="54" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 20, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+          <Coords points="29,800 278,800 278,834 29,834"/>
+          <Baseline points="29,826 278,826"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="55" type="Table_cell" row="20" col="2" rowSpan="1" colSpan="1">
+        <Coords points="421,799 461,799 461,821 421,821"/>
+        <TextLine id="55" index="55" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 20, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [17.0, 5.0]}">
+          <Coords points="421,799 461,799 461,821 421,821"/>
+          <Baseline points="421,816 461,816"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="27" type="Table_cell" row="21" col="0" rowSpan="1" colSpan="1">
+        <Coords points="15,834 253,834 253,867 15,867"/>
+        <TextLine id="27" index="56" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 21, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+          <Coords points="15,834 253,834 253,867 15,867"/>
+          <Baseline points="15,859 253,859"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="75" type="Table_cell" row="21" col="1" rowSpan="1" colSpan="1">
+        <Coords points="327,839 358,839 358,862 327,862"/>
+        <TextLine id="75" index="57" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 21, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="327,839 358,839 358,862 327,862"/>
+          <Baseline points="327,857 358,857"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="56" type="Table_cell" row="21" col="2" rowSpan="1" colSpan="1">
+        <Coords points="425,838 466,838 466,862 425,862"/>
+        <TextLine id="56" index="58" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 21, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="425,838 466,838 466,862 425,862"/>
+          <Baseline points="425,856 466,856"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="28" type="Table_cell" row="22" col="0" rowSpan="1" colSpan="1">
+        <Coords points="21,875 214,875 214,908 21,908"/>
+        <TextLine id="28" index="59" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 22, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+          <Coords points="21,875 214,875 214,908 21,908"/>
+          <Baseline points="21,900 214,900"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="76" type="Table_cell" row="22" col="1" rowSpan="1" colSpan="1">
+        <Coords points="322,879 353,879 353,903 322,903"/>
+        <TextLine id="76" index="60" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 22, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="322,879 353,879 353,903 322,903"/>
+          <Baseline points="322,897 353,897"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="57" type="Table_cell" row="22" col="2" rowSpan="1" colSpan="1">
+        <Coords points="425,882 464,882 464,905 425,905"/>
+        <TextLine id="57" index="61" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 22, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="425,882 464,882 464,905 425,905"/>
+          <Baseline points="425,900 464,900"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="29" type="Table_cell" row="23" col="0" rowSpan="1" colSpan="1">
+        <Coords points="23,916 200,916 200,948 23,948"/>
+        <TextLine id="29" index="62" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 23, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 8.0]}">
+          <Coords points="23,916 200,916 200,948 23,948"/>
+          <Baseline points="23,940 200,940"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="77" type="Table_cell" row="23" col="1" rowSpan="1" colSpan="1">
+        <Coords points="329,916 360,916 360,942 329,942"/>
+        <TextLine id="77" index="63" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 23, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+          <Coords points="329,916 360,916 360,942 329,942"/>
+          <Baseline points="329,936 360,936"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="58" type="Table_cell" row="23" col="2" rowSpan="1" colSpan="1">
+        <Coords points="424,920 463,920 463,944 424,944"/>
+        <TextLine id="58" index="64" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 23, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="424,920 463,920 463,944 424,944"/>
+          <Baseline points="424,938 463,938"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="30" type="Table_cell" row="24" col="0" rowSpan="1" colSpan="1">
+        <Coords points="27,953 165,953 165,986 27,986"/>
+        <TextLine id="30" index="65" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 24, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [25.0, 8.0]}">
+          <Coords points="27,953 165,953 165,986 27,986"/>
+          <Baseline points="27,978 165,978"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="78" type="Table_cell" row="24" col="1" rowSpan="1" colSpan="1">
+        <Coords points="334,957 355,957 355,980 334,980"/>
+        <TextLine id="78" index="66" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 24, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 5.0]}">
+          <Coords points="334,957 355,957 355,980 334,980"/>
+          <Baseline points="334,975 355,975"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="59" type="Table_cell" row="24" col="2" rowSpan="1" colSpan="1">
+        <Coords points="424,956 465,956 465,985 424,985"/>
+        <TextLine id="59" index="67" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 24, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [22.0, 7.0]}">
+          <Coords points="424,956 465,956 465,985 424,985"/>
+          <Baseline points="424,978 465,978"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="31" type="Table_cell" row="25" col="0" rowSpan="1" colSpan="1">
+        <Coords points="24,991 222,991 222,1044 24,1044"/>
+        <TextLine id="31" index="68" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 25, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [40.0, 13.0]}">
+          <Coords points="24,991 222,991 222,1044 24,1044"/>
+          <Baseline points="24,1031 222,1031"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="79" type="Table_cell" row="25" col="1" rowSpan="1" colSpan="1">
+        <Coords points="329,995 357,995 357,1019 329,1019"/>
+        <TextLine id="79" index="69" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 25, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [18.0, 6.0]}">
+          <Coords points="329,995 357,995 357,1019 329,1019"/>
+          <Baseline points="329,1013 357,1013"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="60" type="Table_cell" row="25" col="2" rowSpan="1" colSpan="1">
+        <Coords points="424,996 462,996 462,1022 424,1022"/>
+        <TextLine id="60" index="70" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 25, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+          <Coords points="424,996 462,996 462,1022 424,1022"/>
+          <Baseline points="424,1016 462,1016"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="32" type="Table_cell" row="26" col="0" rowSpan="1" colSpan="1">
+        <Coords points="21,1033 276,1033 276,1070 21,1070"/>
+        <TextLine id="32" index="71" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 26, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [28.0, 9.0]}">
+          <Coords points="21,1033 276,1033 276,1070 21,1070"/>
+          <Baseline points="21,1061 276,1061"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="61" type="Table_cell" row="26" col="2" rowSpan="1" colSpan="1">
+        <Coords points="426,1032 463,1032 463,1066 426,1066"/>
+        <TextLine id="61" index="72" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 26, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [26.0, 8.0]}">
+          <Coords points="426,1032 463,1032 463,1066 426,1066"/>
+          <Baseline points="426,1058 463,1058"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="33" type="Table_cell" row="27" col="0" rowSpan="1" colSpan="1">
+        <Coords points="31,1070 204,1070 204,1120 31,1120"/>
+        <TextLine id="33" index="73" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 27, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [38.0, 12.0]}">
+          <Coords points="31,1070 204,1070 204,1120 31,1120"/>
+          <Baseline points="31,1108 204,1108"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="80" type="Table_cell" row="27" col="1" rowSpan="1" colSpan="1">
+        <Coords points="325,1077 356,1077 356,1103 325,1103"/>
+        <TextLine id="80" index="74" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 27, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [20.0, 6.0]}">
+          <Coords points="325,1077 356,1077 356,1103 325,1103"/>
+          <Baseline points="325,1097 356,1097"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="62" type="Table_cell" row="27" col="2" rowSpan="1" colSpan="1">
+        <Coords points="426,1078 468,1078 468,1106 426,1106"/>
+        <TextLine id="62" index="75" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 27, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [21.0, 7.0]}">
+          <Coords points="426,1078 468,1078 468,1106 426,1106"/>
+          <Baseline points="426,1099 468,1099"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="34" type="Table_cell" row="28" col="0" rowSpan="1" colSpan="1">
+        <Coords points="33,1115 249,1115 249,1156 33,1156"/>
+        <TextLine id="34" index="76" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 28, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [31.0, 10.0]}">
+          <Coords points="33,1115 249,1115 249,1156 33,1156"/>
+          <Baseline points="33,1146 249,1146"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="63" type="Table_cell" row="28" col="2" rowSpan="1" colSpan="1">
+        <Coords points="430,1118 466,1118 466,1143 430,1143"/>
+        <TextLine id="63" index="77" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 28, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [19.0, 6.0]}">
+          <Coords points="430,1118 466,1118 466,1143 430,1143"/>
+          <Baseline points="430,1137 466,1137"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="35" type="Table_cell" row="29" col="0" rowSpan="1" colSpan="1">
+        <Coords points="33,1153 249,1153 249,1184 33,1184"/>
+        <TextLine id="35" index="78" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 29, &quot;col&quot;: 0, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+          <Coords points="33,1153 249,1153 249,1184 33,1184"/>
+          <Baseline points="33,1177 249,1177"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="81" type="Table_cell" row="29" col="1" rowSpan="1" colSpan="1">
+        <Coords points="327,1152 365,1152 365,1183 327,1183"/>
+        <TextLine id="81" index="79" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 29, &quot;col&quot;: 1, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [24.0, 7.0]}">
+          <Coords points="327,1152 365,1152 365,1183 327,1183"/>
+          <Baseline points="327,1176 365,1176"/>
+        </TextLine>
+      </TableCell>
+      <TableCell id="64" type="Table_cell" row="29" col="2" rowSpan="1" colSpan="1">
+        <Coords points="424,1155 465,1155 465,1185 424,1185"/>
+        <TextLine id="64" index="80" custom="{&quot;cell_info&quot;: {&quot;table_id&quot;: &quot;table&quot;, &quot;row&quot;: 29, &quot;col&quot;: 2, &quot;row_span&quot;: 1, &quot;col_span&quot;: 1, &quot;faulty_cell&quot;: false, &quot;type&quot;: &quot;Table_cell&quot;}, &quot;heights&quot;: [23.0, 7.0]}">
+          <Coords points="424,1155 465,1155 465,1185 424,1185"/>
+          <Baseline points="424,1178 465,1178"/>
+        </TextLine>
+      </TableCell>
+    </TableRegion>
+  </Page>
+</PcGts>
