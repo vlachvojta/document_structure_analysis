@@ -71,9 +71,10 @@ class TableStructureRecognitionEngine:
 
             box = [round(i, 2) for i in box.tolist()]
             xmin, ymin, xmax, ymax = box
-            cv2.rectangle(image, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (0, 255, 0), 2)
+            color = (0, 0, 255)
+            cv2.rectangle(image, (int(xmin), int(ymin)), (int(xmax), int(ymax)), color, 2)
             cv2.putText(image, f"{label}: {score:.2f}", (int(xmin), int(ymin) - 10),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
         return image
 
