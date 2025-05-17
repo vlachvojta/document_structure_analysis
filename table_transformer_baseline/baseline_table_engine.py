@@ -19,7 +19,7 @@ from table_transformer_baseline.table_detection_engine import TableDetectionEngi
 from organizer.tables.table_layout import TablePageLayout
 
 class TableEngine:
-    def __init__(self, work_dir: str, pero_script_path: str = None, image_content_type: ImageContentType = ImageContentType.czech_handwritten):
+    def __init__(self, work_dir: str, pero_script_path: str = None, image_content_type: ImageContentType = ImageContentType.czech_printed):
         self.work_dir = work_dir
         os.makedirs(self.work_dir, exist_ok=True)
         self.image_content_type = image_content_type
@@ -31,6 +31,10 @@ class TableEngine:
 
     def __call__(self) -> list[TablePageLayout]:
         return self.process_dir(self.work_dir)
+
+    # add async version of process_dir so it can be used in fastapi request handler in a non-blocking way
+    async def process_dir_async(self, work_dir: str) -> list[TablePageLayout]:
+        return await utils.run_in_executor(self.process_dir, work_dir)
 
     def process_dir(self, work_dir: str) -> list[TablePageLayout]:
         table_layout_render_path = os.path.join(work_dir, 'table_layout_render')
@@ -246,7 +250,7 @@ def parse_args():
     # args.add_argument("--device", type=str, default="cuda")
     args.add_argument("-i", "--work-dir", type=str, default="example_data/whole_pipeline_test/")
     args.add_argument("-c", "--content-type", type=str, choices=[e.value for e in ImageContentType],
-                      default=ImageContentType.czech_handwritten.value,
+                      default=ImageContentType.czech_printed.value,
                       help="content type of the image")
 
     return args.parse_args()
