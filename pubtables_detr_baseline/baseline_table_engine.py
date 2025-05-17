@@ -18,7 +18,7 @@ from table_transformer_baseline.table_detection_engine import TableDetectionEngi
 
 from organizer.tables.table_layout import TablePageLayout
 
-class TableEngine:
+class BaselineTableEngine:
     def __init__(self, work_dir: str, pero_script_path: str = None, image_content_type: ImageContentType = ImageContentType.czech_printed):
         self.work_dir = work_dir
         os.makedirs(self.work_dir, exist_ok=True)
@@ -258,7 +258,7 @@ def parse_args():
 def main():
     args = parse_args()
 
-    table_engine = TableEngine(args.work_dir, image_content_type=args.content_type)
+    table_engine = BaselineTableEngine(args.work_dir, image_content_type=args.content_type)
     table_page_layouts = table_engine()
     # word_detection_engine = WordDetectionEngine(args.work_dir, args.content_type)
     print(f"Loaded {len(table_page_layouts)} table page layouts: {table_page_layouts}")
